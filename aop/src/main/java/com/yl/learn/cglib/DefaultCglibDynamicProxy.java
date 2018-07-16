@@ -1,7 +1,6 @@
 package com.yl.learn.cglib;
 
 import com.yl.learn.*;
-import com.yl.test.*;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodProxy;
 

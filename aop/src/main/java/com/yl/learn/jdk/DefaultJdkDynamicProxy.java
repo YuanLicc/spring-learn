@@ -1,7 +1,6 @@
 package com.yl.learn.jdk;
 
 import com.yl.learn.*;
-import com.yl.test.*;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
