@@ -3,6 +3,7 @@ plugins {
 }
 
 version '1.0'
+group 'com.yl.learn'
 
 repositories {
     mavenCentral()
