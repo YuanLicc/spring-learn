@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jmx.export.annotation</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource</node>
+    <node x="0.0" y="486.0">org.springframework.jmx.export.annotation.ManagedMetric</node>
+    <node x="290.0" y="243.0">org.springframework.jmx.export.annotation.ManagedNotifications</node>
+    <node x="0.0" y="81.0">org.springframework.jmx.export.annotation.ManagedOperationParameters</node>
+    <node x="0.0" y="324.0">org.springframework.jmx.export.annotation.ManagedNotification</node>
+    <node x="0.0" y="243.0">org.springframework.jmx.export.annotation.AnnotationMBeanExporter</node>
+    <node x="258.0" y="324.0">org.springframework.jmx.export.annotation.ManagedOperation</node>
+    <node x="0.0" y="405.0">org.springframework.jmx.export.annotation.ManagedAttribute</node>
+    <node x="210.0" y="486.0">org.springframework.jmx.export.annotation.package-info</node>
+    <node x="0.0" y="162.0">org.springframework.jmx.export.annotation.ManagedOperationParameter</node>
+    <node x="234.0" y="405.0">org.springframework.jmx.export.annotation.ManagedResource</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="255.5" y="261.0" />
+  <SelectedNodes>
+    <node>org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

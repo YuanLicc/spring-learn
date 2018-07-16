@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.aspectj</OriginalElement>
+  <nodes>
+    <node x="1142.0" y="349.0">org.springframework.aop.aspectj.AspectJWeaverMessageHandler</node>
+    <node x="1365.3273809523807" y="182.0">org.springframework.aop.aspectj.annotation</node>
+    <node x="1040.0" y="430.0">org.springframework.aop.aspectj.AspectJAopUtils</node>
+    <node x="1468.25" y="86.0">org.springframework.aop.aspectj.SingletonAspectInstanceFactory</node>
+    <node x="282.0" y="430.0">org.springframework.aop.aspectj.DeclareParentsAdvisor</node>
+    <node x="556.0" y="430.0">org.springframework.aop.aspectj.AspectJProxyUtils</node>
+    <node x="1789.25" y="86.0">org.springframework.aop.aspectj.SimpleAspectInstanceFactory</node>
+    <node x="514.0" y="268.0">org.springframework.aop.aspectj.AspectJAfterReturningAdvice</node>
+    <node x="810.9999999999999" y="268.0">org.springframework.aop.aspectj.AspectJAfterThrowingAdvice</node>
+    <node x="538.0" y="182.0">org.springframework.aop.aspectj.AbstractAspectJAdvice</node>
+    <node x="1770.0" y="349.0">org.springframework.aop.aspectj.TypePatternClassFilter</node>
+    <node x="1266.0" y="430.0">org.springframework.aop.aspectj.package-info</node>
+    <node x="1813.25" y="0.0">org.springframework.aop.aspectj.AspectInstanceFactory</node>
+    <node x="0.0" y="349.0">org.springframework.aop.aspectj.AspectJAdviceParameterNameDiscoverer</node>
+    <node x="886.2499999999999" y="86.0">org.springframework.aop.aspectj.autoproxy</node>
+    <node x="394.0" y="349.0">org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint</node>
+    <node x="1100.0" y="268.0">org.springframework.aop.aspectj.AspectJAfterAdvice</node>
+    <node x="780.0" y="349.0">org.springframework.aop.aspectj.AspectJExpressionPointcutAdvisor</node>
+    <node x="281.0" y="268.0">org.springframework.aop.aspectj.AspectJAroundAdvice</node>
+    <node x="1083.25" y="86.0">org.springframework.aop.aspectj.InstantiationModelAwarePointcutAdvisor</node>
+    <node x="0.0" y="430.0">org.springframework.aop.aspectj.AspectJPointcutAdvisor</node>
+    <node x="0.0" y="268.0">org.springframework.aop.aspectj.AspectJMethodBeforeAdvice</node>
+    <node x="798.0" y="430.0">org.springframework.aop.aspectj.RuntimeTestWalker</node>
+    <node x="581.2499999999999" y="86.0">org.springframework.aop.aspectj.AspectJPrecedenceInformation</node>
+    <node x="1464.0" y="349.0">org.springframework.aop.aspectj.AspectJExpressionPointcut</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.aspectj.annotation" target="org.springframework.aop.aspectj.AspectJPrecedenceInformation">
+      <point x="-77.08333333333326" y="-18.0" />
+      <point x="1380.7440476190477" y="162.0" />
+      <point x="794.9999999999999" y="162.0" />
+      <point x="71.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJAfterAdvice" target="org.springframework.aop.aspectj.AbstractAspectJAdvice">
+      <point x="0.0" y="-18.0" />
+      <point x="1202.5" y="238.0" />
+      <point x="744.1" y="238.0" />
+      <point x="91.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJMethodBeforeAdvice" target="org.springframework.aop.aspectj.AbstractAspectJAdvice">
+      <point x="0.0" y="-18.0" />
+      <point x="130.5" y="238.0" />
+      <point x="560.9" y="238.0" />
+      <point x="-91.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.SingletonAspectInstanceFactory" target="org.springframework.aop.aspectj.AspectInstanceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="1618.75" y="61.0" />
+      <point x="1851.4166666666667" y="61.0" />
+      <point x="-76.33333333333326" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJAroundAdvice" target="org.springframework.aop.aspectj.AbstractAspectJAdvice">
+      <point x="0.0" y="-18.0" />
+      <point x="387.5" y="248.0" />
+      <point x="606.7" y="248.0" />
+      <point x="-45.799999999999955" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJAfterThrowingAdvice" target="org.springframework.aop.aspectj.AbstractAspectJAdvice">
+      <point x="0.0" y="-18.0" />
+      <point x="945.4999999999999" y="248.0" />
+      <point x="698.3" y="248.0" />
+      <point x="45.799999999999955" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AbstractAspectJAdvice" target="org.springframework.aop.aspectj.AspectJPrecedenceInformation">
+      <point x="0.0" y="-18.0" />
+      <point x="-71.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation" target="org.springframework.aop.aspectj.SimpleAspectInstanceFactory">
+      <point x="46.25" y="-18.0" />
+      <point x="1504.0773809523807" y="152.0" />
+      <point x="1927.75" y="152.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation" target="org.springframework.aop.aspectj.InstantiationModelAwarePointcutAdvisor">
+      <point x="-15.416666666666742" y="-18.0" />
+      <point x="1442.4107142857142" y="142.0" />
+      <point x="1265.75" y="142.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation" target="org.springframework.aop.aspectj.AspectInstanceFactory">
+      <point x="77.08333333333326" y="-18.0" />
+      <point x="1534.9107142857142" y="162.0" />
+      <point x="2076.75" y="162.0" />
+      <point x="2076.75" y="61.0" />
+      <point x="2004.0833333333333" y="61.0" />
+      <point x="76.33333333333326" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation" target="org.springframework.aop.aspectj.SingletonAspectInstanceFactory">
+      <point x="15.416666666666742" y="-18.0" />
+      <point x="1473.2440476190477" y="142.0" />
+      <point x="1618.75" y="142.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.SimpleAspectInstanceFactory" target="org.springframework.aop.aspectj.AspectInstanceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation" target="org.springframework.aop.aspectj.autoproxy">
+      <point x="-46.25" y="-18.0" />
+      <point x="1411.5773809523807" y="152.0" />
+      <point x="974.7499999999999" y="152.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.AspectJAfterReturningAdvice" target="org.springframework.aop.aspectj.AbstractAspectJAdvice">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.619933237958989" x="1038.5" y="233.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.aspectj.AspectJWeaverMessageHandler</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

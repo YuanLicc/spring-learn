@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.core.type</OriginalElement>
+  <nodes>
+    <node x="202.0" y="253.0">org.springframework.core.type.filter</node>
+    <node x="589.5" y="86.0">org.springframework.core.type.MethodMetadata</node>
+    <node x="600.75" y="172.0">org.springframework.core.type.StandardMethodMetadata</node>
+    <node x="249.0" y="86.0">org.springframework.core.type.AnnotationMetadata</node>
+    <node x="0.0" y="253.0">org.springframework.core.type.package-info</node>
+    <node x="0.0" y="86.0">org.springframework.core.type.StandardClassMetadata</node>
+    <node x="217.75" y="0.0">org.springframework.core.type.ClassMetadata</node>
+    <node x="378.375" y="172.0">org.springframework.core.type.classreading</node>
+    <node x="77.95833333333337" y="172.0">org.springframework.core.type.StandardAnnotationMetadata</node>
+    <node x="502.875" y="0.0">org.springframework.core.type.AnnotatedTypeMetadata</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.ClassMetadata">
+      <point x="0.0" y="-18.0" />
+      <point x="478.875" y="147.0" />
+      <point x="476.25" y="147.0" />
+      <point x="476.25" y="56.0" />
+      <point x="355.25" y="56.0" />
+      <point x="55.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.StandardAnnotationMetadata" target="org.springframework.core.type.StandardClassMetadata">
+      <point x="-67.25" y="-18.0" />
+      <point x="145.20833333333337" y="147.0" />
+      <point x="114.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.StandardClassMetadata" target="org.springframework.core.type.ClassMetadata">
+      <point x="0.0" y="-18.0" />
+      <point x="114.5" y="66.0" />
+      <point x="245.25" y="66.0" />
+      <point x="-55.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.MethodMetadata" target="org.springframework.core.type.AnnotatedTypeMetadata">
+      <point x="0.0" y="-18.0" />
+      <point x="676.0" y="66.0" />
+      <point x="674.625" y="66.0" />
+      <point x="57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.MethodMetadata">
+      <point x="67.0" y="-18.0" />
+      <point x="545.875" y="147.0" />
+      <point x="632.75" y="147.0" />
+      <point x="-43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.AnnotationMetadata">
+      <point x="-67.0" y="-18.0" />
+      <point x="411.875" y="147.0" />
+      <point x="402.75" y="147.0" />
+      <point x="51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.StandardMethodMetadata" target="org.springframework.core.type.MethodMetadata">
+      <point x="0.0" y="-18.0" />
+      <point x="43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.AnnotationMetadata" target="org.springframework.core.type.AnnotatedTypeMetadata">
+      <point x="51.25" y="-18.0" />
+      <point x="402.75" y="66.0" />
+      <point x="560.125" y="66.0" />
+      <point x="-57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.StandardAnnotationMetadata" target="org.springframework.core.type.AnnotationMetadata">
+      <point x="67.25" y="-18.0" />
+      <point x="279.70833333333337" y="147.0" />
+      <point x="300.25" y="147.0" />
+      <point x="-51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.AnnotationMetadata" target="org.springframework.core.type.ClassMetadata">
+      <point x="-51.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="419.0" y="144.5" />
+  <SelectedNodes>
+    <node>org.springframework.core.type.filter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

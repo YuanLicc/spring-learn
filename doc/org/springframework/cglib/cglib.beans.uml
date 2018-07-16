@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cglib.beans</OriginalElement>
+  <nodes>
+    <node x="170.0" y="324.0">org.springframework.cglib.beans.BeanMap</node>
+    <node x="0.0" y="324.0">org.springframework.cglib.beans.BulkBean</node>
+    <node x="0.0" y="0.0">org.springframework.cglib.beans.BulkBeanException</node>
+    <node x="0.0" y="243.0">org.springframework.cglib.beans.FixedKeySet</node>
+    <node x="226.0" y="81.0">org.springframework.cglib.beans.BeanMapEmitter</node>
+    <node x="0.0" y="81.0">org.springframework.cglib.beans.BulkBeanEmitter</node>
+    <node x="194.0" y="243.0">org.springframework.cglib.beans.BeanCopier</node>
+    <node x="0.0" y="162.0">org.springframework.cglib.beans.ImmutableBean</node>
+    <node x="210.0" y="162.0">org.springframework.cglib.beans.BeanGenerator</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="199.5" y="180.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

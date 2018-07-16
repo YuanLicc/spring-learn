@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.remoting.httpinvoker</OriginalElement>
+  <nodes>
+    <node x="208.5" y="0.0">org.springframework.remoting.httpinvoker.HttpInvokerRequestExecutor</node>
+    <node x="0.0" y="506.0">org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter</node>
+    <node x="8.0" y="339.0">org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor</node>
+    <node x="346.0" y="253.0">org.springframework.remoting.httpinvoker.SimpleHttpInvokerServiceExporter</node>
+    <node x="337.0" y="172.0">org.springframework.remoting.httpinvoker.HttpComponentsHttpInvokerRequestExecutor</node>
+    <node x="314.0" y="506.0">org.springframework.remoting.httpinvoker.package-info</node>
+    <node x="12.0" y="425.0">org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean</node>
+    <node x="0.0" y="253.0">org.springframework.remoting.httpinvoker.HttpInvokerClientConfiguration</node>
+    <node x="176.5" y="86.0">org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor</node>
+    <node x="0.0" y="172.0">org.springframework.remoting.httpinvoker.SimpleHttpInvokerRequestExecutor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.remoting.httpinvoker.SimpleHttpInvokerRequestExecutor" target="org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor">
+      <point x="0.0" y="-18.0" />
+      <point x="158.5" y="147.0" />
+      <point x="259.75" y="147.0" />
+      <point x="-83.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.httpinvoker.HttpComponentsHttpInvokerRequestExecutor" target="org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor">
+      <point x="0.0" y="-18.0" />
+      <point x="527.5" y="147.0" />
+      <point x="426.25" y="147.0" />
+      <point x="83.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor" target="org.springframework.remoting.httpinvoker.HttpInvokerClientConfiguration">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.httpinvoker.HttpInvokerProxyFactoryBean" target="org.springframework.remoting.httpinvoker.HttpInvokerClientInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor" target="org.springframework.remoting.httpinvoker.HttpInvokerRequestExecutor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="359.0" y="271.0" />
+  <SelectedNodes>
+    <node>org.springframework.remoting.httpinvoker.SimpleHttpInvokerRequestExecutor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

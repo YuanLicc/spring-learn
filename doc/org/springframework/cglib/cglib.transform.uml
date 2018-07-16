@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cglib.transform</OriginalElement>
+  <nodes>
+    <node x="16.0" y="339.0">org.springframework.cglib.transform.AbstractClassLoader</node>
+    <node x="290.0" y="425.0">org.springframework.cglib.transform.AbstractTransformTask</node>
+    <node x="211.0" y="172.0">org.springframework.cglib.transform.AbstractClassFilterTransformer</node>
+    <node x="0.0" y="587.0">org.springframework.cglib.transform.FieldVisitorTee</node>
+    <node x="564.0" y="339.0">org.springframework.cglib.transform.TransformingClassGenerator</node>
+    <node x="822.0" y="506.0">org.springframework.cglib.transform.MethodVisitorTee</node>
+    <node x="298.0" y="339.0">org.springframework.cglib.transform.AbstractProcessTask</node>
+    <node x="290.0" y="506.0">org.springframework.cglib.transform.ClassReaderGenerator</node>
+    <node x="226.0" y="587.0">org.springframework.cglib.transform.ClassVisitorTee</node>
+    <node x="0.0" y="86.0">org.springframework.cglib.transform.ClassEmitterTransformer</node>
+    <node x="532.0" y="172.0">org.springframework.cglib.transform.ClassTransformerChain</node>
+    <node x="0.0" y="506.0">org.springframework.cglib.transform.ClassTransformerFactory</node>
+    <node x="654.0" y="587.0">org.springframework.cglib.transform.ClassFilter</node>
+    <node x="243.0" y="258.0">org.springframework.cglib.transform.ClassFilterTransformer</node>
+    <node x="0.0" y="425.0">org.springframework.cglib.transform.TransformingClassLoader</node>
+    <node x="452.0" y="587.0">org.springframework.cglib.transform.MethodFilter</node>
+    <node x="793.0" y="86.0">org.springframework.cglib.transform.ClassTransformerTee</node>
+    <node x="556.0" y="506.0">org.springframework.cglib.transform.AnnotationVisitorTee</node>
+    <node x="54.0" y="172.0">org.springframework.cglib.transform.impl</node>
+    <node x="781.0" y="172.0">org.springframework.cglib.transform.MethodFilterTransformer</node>
+    <node x="552.0" y="0.0">org.springframework.cglib.transform.ClassTransformer</node>
+    <node x="520.0" y="86.0">org.springframework.cglib.transform.AbstractClassTransformer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cglib.transform.AbstractClassTransformer" target="org.springframework.cglib.transform.ClassTransformer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.ClassTransformerTee" target="org.springframework.cglib.transform.ClassTransformer">
+      <point x="0.0" y="-18.0" />
+      <point x="899.5" y="61.0" />
+      <point x="709.5" y="61.0" />
+      <point x="63.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.MethodFilterTransformer" target="org.springframework.cglib.transform.AbstractClassTransformer">
+      <point x="0.0" y="-18.0" />
+      <point x="903.5" y="147.0" />
+      <point x="730.8333333333333" y="147.0" />
+      <point x="84.33333333333326" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.AbstractClassFilterTransformer" target="org.springframework.cglib.transform.AbstractClassTransformer">
+      <point x="0.0" y="-18.0" />
+      <point x="361.5" y="147.0" />
+      <point x="562.1666666666666" y="147.0" />
+      <point x="-84.33333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.ClassEmitterTransformer" target="org.springframework.cglib.transform.ClassTransformer">
+      <point x="0.0" y="-18.0" />
+      <point x="122.5" y="61.0" />
+      <point x="583.5" y="61.0" />
+      <point x="-63.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.ClassFilterTransformer" target="org.springframework.cglib.transform.AbstractClassFilterTransformer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.impl" target="org.springframework.cglib.transform.ClassEmitterTransformer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.ClassTransformerChain" target="org.springframework.cglib.transform.AbstractClassTransformer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.AbstractTransformTask" target="org.springframework.cglib.transform.AbstractProcessTask">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform.TransformingClassLoader" target="org.springframework.cglib.transform.AbstractClassLoader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="513.0" y="311.5" />
+  <SelectedNodes>
+    <node>org.springframework.cglib.transform.TransformingClassLoader</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

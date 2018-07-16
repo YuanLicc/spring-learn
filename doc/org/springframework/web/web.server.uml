@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.server</OriginalElement>
+  <nodes>
+    <node x="764.5" y="253.0">org.springframework.web.server.ResponseStatusException</node>
+    <node x="468.875" y="172.0">org.springframework.web.server.ServerWebExchangeDecorator</node>
+    <node x="0.0" y="0.0">org.springframework.web.server.WebExceptionHandler</node>
+    <node x="891.0" y="349.0">org.springframework.web.server.ServerWebInputException</node>
+    <node x="1156.0" y="349.0">org.springframework.web.server.NotAcceptableStatusException</node>
+    <node x="650.0" y="349.0">org.springframework.web.server.ServerErrorException</node>
+    <node x="233.0" y="0.0">org.springframework.web.server.WebHandler</node>
+    <node x="560.0" y="430.0">org.springframework.web.server.package-info</node>
+    <node x="369.0" y="349.0">org.springframework.web.server.MethodNotAllowedException</node>
+    <node x="354.0" y="430.0">org.springframework.web.server.session</node>
+    <node x="455.625" y="86.0">org.springframework.web.server.ServerWebExchange</node>
+    <node x="948.0" y="430.0">org.springframework.web.server.i18n</node>
+    <node x="1130.0" y="430.0">org.springframework.web.server.WebFilter</node>
+    <node x="1461.0" y="349.0">org.springframework.web.server.UnsupportedMediaTypeStatusException</node>
+    <node x="0.0" y="430.0">org.springframework.web.server.DefaultServerWebExchangeBuilder</node>
+    <node x="263.25" y="172.0">org.springframework.web.server.adapter</node>
+    <node x="0.0" y="349.0">org.springframework.web.server.MediaTypeNotSupportedStatusException</node>
+    <node x="762.0" y="430.0">org.springframework.web.server.WebSession</node>
+    <node x="223.0" y="86.0">org.springframework.web.server.handler</node>
+    <node x="394.0" y="0.0">org.springframework.web.server.WebFilterChain</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.server.handler" target="org.springframework.web.server.WebFilterChain">
+      <point x="53.666666666666686" y="-18.0" />
+      <point x="357.1666666666667" y="61.0" />
+      <point x="480.5" y="61.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.MediaTypeNotSupportedStatusException" target="org.springframework.web.server.ResponseStatusException">
+      <point x="0.0" y="-18.0" />
+      <point x="174.5" y="309.0" />
+      <point x="784.9166666666666" y="309.0" />
+      <point x="-102.08333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.ServerWebExchangeDecorator" target="org.springframework.web.server.ServerWebExchange">
+      <point x="0.0" y="-18.0" />
+      <point x="49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.UnsupportedMediaTypeStatusException" target="org.springframework.web.server.ResponseStatusException">
+      <point x="0.0" y="-18.0" />
+      <point x="1631.5" y="309.0" />
+      <point x="989.0833333333334" y="309.0" />
+      <point x="102.08333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.ServerWebInputException" target="org.springframework.web.server.ResponseStatusException">
+      <point x="0.0" y="-18.0" />
+      <point x="1013.5" y="329.0" />
+      <point x="907.4166666666666" y="329.0" />
+      <point x="20.41666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.MethodNotAllowedException" target="org.springframework.web.server.ResponseStatusException">
+      <point x="0.0" y="-18.0" />
+      <point x="499.5" y="319.0" />
+      <point x="825.75" y="319.0" />
+      <point x="-61.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.ServerErrorException" target="org.springframework.web.server.ResponseStatusException">
+      <point x="0.0" y="-18.0" />
+      <point x="760.5" y="329.0" />
+      <point x="866.5833333333334" y="329.0" />
+      <point x="-20.41666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.handler" target="org.springframework.web.server.WebExceptionHandler">
+      <point x="-53.66666666666663" y="-18.0" />
+      <point x="249.83333333333337" y="61.0" />
+      <point x="106.5" y="61.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.NotAcceptableStatusException" target="org.springframework.web.server.ResponseStatusException">
+      <point x="0.0" y="-18.0" />
+      <point x="1298.5" y="319.0" />
+      <point x="948.25" y="319.0" />
+      <point x="61.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.adapter" target="org.springframework.web.server.ServerWebExchange">
+      <point x="40.25" y="-18.0" />
+      <point x="384.0" y="147.0" />
+      <point x="504.875" y="147.0" />
+      <point x="-49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.handler" target="org.springframework.web.server.WebHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.adapter" target="org.springframework.web.server.handler">
+      <point x="-40.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7135016465422612" x="901.0" y="233.0" />
+  <SelectedNodes>
+    <node>org.springframework.web.server.MediaTypeNotSupportedStatusException</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

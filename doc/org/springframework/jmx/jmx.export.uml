@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jmx.export</OriginalElement>
+  <nodes>
+    <node x="85.5" y="172.0">org.springframework.jmx.export.annotation</node>
+    <node x="40.0" y="253.0">org.springframework.jmx.export.MBeanExportException</node>
+    <node x="234.0" y="501.0">org.springframework.jmx.export.assembler</node>
+    <node x="0.0" y="420.0">org.springframework.jmx.export.MBeanExporterListener</node>
+    <node x="274.0" y="420.0">org.springframework.jmx.export.notification</node>
+    <node x="0.0" y="339.0">org.springframework.jmx.export.UnableToRegisterMBeanException</node>
+    <node x="0.0" y="86.0">org.springframework.jmx.export.metadata</node>
+    <node x="0.0" y="501.0">org.springframework.jmx.export.SpringModelMBean</node>
+    <node x="0.0" y="582.0">org.springframework.jmx.export.naming</node>
+    <node x="157.0" y="0.0">org.springframework.jmx.export.MBeanExportOperations</node>
+    <node x="346.0" y="253.0">org.springframework.jmx.export.NotificationListenerBean</node>
+    <node x="189.0" y="86.0">org.springframework.jmx.export.MBeanExporter</node>
+    <node x="456.0" y="501.0">org.springframework.jmx.export.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jmx.export.UnableToRegisterMBeanException" target="org.springframework.jmx.export.MBeanExportException">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.MBeanExporter" target="org.springframework.jmx.export.MBeanExportOperations">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.annotation" target="org.springframework.jmx.export.MBeanExporter">
+      <point x="46.25" y="-18.0" />
+      <point x="224.25" y="147.0" />
+      <point x="271.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.annotation" target="org.springframework.jmx.export.metadata">
+      <point x="-46.25" y="-18.0" />
+      <point x="131.75" y="147.0" />
+      <point x="84.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="306.5" y="309.0" />
+  <SelectedNodes>
+    <node>org.springframework.jmx.export.MBeanExporter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

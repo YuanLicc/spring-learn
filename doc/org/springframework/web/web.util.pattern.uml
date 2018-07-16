@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.util.pattern</OriginalElement>
+  <nodes>
+    <node x="209.0000000000001" y="106.0">org.springframework.web.util.pattern.WildcardTheRestPathElement</node>
+    <node x="822.0" y="187.0">org.springframework.web.util.pattern.package-info</node>
+    <node x="1052.0" y="106.0">org.springframework.web.util.pattern.CaptureVariablePathElement</node>
+    <node x="957.5000000000001" y="0.0">org.springframework.web.util.pattern.PathElement</node>
+    <node x="1341.0" y="106.0">org.springframework.web.util.pattern.CaptureTheRestPathElement</node>
+    <node x="580.0" y="187.0">org.springframework.web.util.pattern.PathPatternParser</node>
+    <node x="1024.0" y="187.0">org.springframework.web.util.pattern.SubSequence</node>
+    <node x="498.0000000000001" y="106.0">org.springframework.web.util.pattern.LiteralPathElement</node>
+    <node x="1855.0" y="106.0">org.springframework.web.util.pattern.SeparatorPathElement</node>
+    <node x="1622.0" y="106.0">org.springframework.web.util.pattern.WildcardPathElement</node>
+    <node x="0.0" y="187.0">org.springframework.web.util.pattern.InternalPathPatternParser</node>
+    <node x="723.0000000000001" y="106.0">org.springframework.web.util.pattern.SingleCharWildcardedPathElement</node>
+    <node x="1218.0" y="187.0">org.springframework.web.util.pattern.PathPattern</node>
+    <node x="306.0" y="187.0">org.springframework.web.util.pattern.PatternParseException</node>
+    <node x="0.0" y="106.0">org.springframework.web.util.pattern.RegexPathElement</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.util.pattern.WildcardPathElement" target="org.springframework.web.util.pattern.PathElement">
+      <point x="0.0" y="-18.0" />
+      <point x="1728.5" y="66.0" />
+      <point x="1078.5625" y="66.0" />
+      <point x="46.5625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.pattern.CaptureVariablePathElement" target="org.springframework.web.util.pattern.PathElement">
+      <point x="0.0" y="-18.0" />
+      <point x="1186.5" y="86.0" />
+      <point x="1041.3125" y="86.0" />
+      <point x="9.3125" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.pattern.RegexPathElement" target="org.springframework.web.util.pattern.PathElement">
+      <point x="0.0" y="-18.0" />
+      <point x="94.5" y="56.0" />
+      <point x="966.8125000000001" y="56.0" />
+      <point x="-65.1875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.pattern.WildcardTheRestPathElement" target="org.springframework.web.util.pattern.PathElement">
+      <point x="0.0" y="-18.0" />
+      <point x="343.5000000000001" y="66.0" />
+      <point x="985.4375000000001" y="66.0" />
+      <point x="-46.5625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.pattern.CaptureTheRestPathElement" target="org.springframework.web.util.pattern.PathElement">
+      <point x="0.0" y="-18.0" />
+      <point x="1471.5" y="76.0" />
+      <point x="1059.9375" y="76.0" />
+      <point x="27.9375" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.pattern.LiteralPathElement" target="org.springframework.web.util.pattern.PathElement">
+      <point x="0.0" y="-18.0" />
+      <point x="600.5000000000001" y="76.0" />
+      <point x="1004.0625000000001" y="76.0" />
+      <point x="-27.9375" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.pattern.SingleCharWildcardedPathElement" target="org.springframework.web.util.pattern.PathElement">
+      <point x="0.0" y="-18.0" />
+      <point x="877.5000000000001" y="86.0" />
+      <point x="1022.6875000000001" y="86.0" />
+      <point x="-9.3125" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.pattern.SeparatorPathElement" target="org.springframework.web.util.pattern.PathElement">
+      <point x="0.0" y="-18.0" />
+      <point x="1965.5" y="56.0" />
+      <point x="1097.1875" y="56.0" />
+      <point x="65.1875" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6202290076335878" x="1038.0" y="111.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.util.pattern.RegexPathElement</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

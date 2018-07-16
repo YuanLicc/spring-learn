@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.framework.autoproxy.target</OriginalElement>
+  <nodes>
+    <node x="78.5" y="0.0">org.springframework.aop.framework.autoproxy.target.AbstractBeanFactoryBasedTargetSourceCreator</node>
+    <node x="297.0" y="86.0">org.springframework.aop.framework.autoproxy.target.QuickTargetSourceCreator</node>
+    <node x="0.0" y="86.0">org.springframework.aop.framework.autoproxy.target.LazyInitTargetSourceCreator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.framework.autoproxy.target.LazyInitTargetSourceCreator" target="org.springframework.aop.framework.autoproxy.target.AbstractBeanFactoryBasedTargetSourceCreator">
+      <point x="0.0" y="-18.0" />
+      <point x="138.5" y="61.0" />
+      <point x="179.75" y="61.0" />
+      <point x="-101.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.target.QuickTargetSourceCreator" target="org.springframework.aop.framework.autoproxy.target.AbstractBeanFactoryBasedTargetSourceCreator">
+      <point x="0.0" y="-18.0" />
+      <point x="423.5" y="61.0" />
+      <point x="382.25" y="61.0" />
+      <point x="101.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="275.0" y="61.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.framework.autoproxy.target.LazyInitTargetSourceCreator</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

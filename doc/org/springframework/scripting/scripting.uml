@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.scripting</OriginalElement>
+  <nodes>
+    <node x="368.81944444444446" y="116.0">org.springframework.scripting.support</node>
+    <node x="441.82638888888886" y="0.0">org.springframework.scripting.ScriptSource</node>
+    <node x="0.0" y="197.0">org.springframework.scripting.ScriptCompilationException</node>
+    <node x="314.0" y="197.0">org.springframework.scripting.package-info</node>
+    <node x="0.0" y="278.0">org.springframework.scripting.config</node>
+    <node x="181.64583333333331" y="116.0">org.springframework.scripting.bsh</node>
+    <node x="0.0" y="116.0">org.springframework.scripting.groovy</node>
+    <node x="256.38888888888886" y="0.0">org.springframework.scripting.ScriptFactory</node>
+    <node x="55.38888888888886" y="0.0">org.springframework.scripting.ScriptEvaluator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.scripting.bsh" target="org.springframework.scripting.ScriptEvaluator">
+      <point x="-32.25" y="-18.0" />
+      <point x="213.89583333333331" y="76.0" />
+      <point x="145.88888888888886" y="76.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scripting.bsh" target="org.springframework.scripting.ScriptFactory">
+      <point x="32.25" y="-18.0" />
+      <point x="278.3958333333333" y="96.0" />
+      <point x="338.88888888888886" y="96.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scripting.groovy" target="org.springframework.scripting.ScriptFactory">
+      <point x="38.25" y="-18.0" />
+      <point x="114.75" y="86.0" />
+      <point x="283.88888888888886" y="86.0" />
+      <point x="-55.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scripting.support" target="org.springframework.scripting.ScriptEvaluator">
+      <point x="-53.66666666666666" y="-18.0" />
+      <point x="395.6527777777778" y="66.0" />
+      <point x="206.22222222222223" y="66.0" />
+      <point x="60.33333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scripting.support" target="org.springframework.scripting.ScriptSource">
+      <point x="53.66666666666666" y="-18.0" />
+      <point x="502.9861111111111" y="96.0" />
+      <point x="520.3263888888889" y="96.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scripting.groovy" target="org.springframework.scripting.ScriptEvaluator">
+      <point x="-38.25" y="-18.0" />
+      <point x="38.25" y="96.0" />
+      <point x="85.55555555555551" y="96.0" />
+      <point x="-60.33333333333334" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scripting.support" target="org.springframework.scripting.ScriptFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="449.31944444444446" y="56.0" />
+      <point x="393.88888888888886" y="56.0" />
+      <point x="55.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="299.5" y="157.0" />
+  <SelectedNodes>
+    <node>org.springframework.scripting.ScriptEvaluator</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

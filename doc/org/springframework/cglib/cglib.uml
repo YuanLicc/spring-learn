@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cglib</OriginalElement>
+  <nodes>
+    <node x="255.49999999999997" y="86.0">org.springframework.cglib.core</node>
+    <node x="0.0" y="253.0">org.springframework.cglib.SpringCglibInfo</node>
+    <node x="164.99999999999997" y="172.0">org.springframework.cglib.proxy</node>
+    <node x="235.49999999999997" y="0.0">org.springframework.cglib.transform</node>
+    <node x="330.0" y="172.0">org.springframework.cglib.reflect</node>
+    <node x="511.0" y="172.0">org.springframework.cglib.util</node>
+    <node x="0.0" y="172.0">org.springframework.cglib.beans</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cglib.proxy" target="org.springframework.cglib.core">
+      <point x="0.0" y="-18.0" />
+      <point x="237.49999999999997" y="152.0" />
+      <point x="306.875" y="152.0" />
+      <point x="-17.125" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.transform" target="org.springframework.cglib.core">
+      <point x="59.0" y="18.0" />
+      <point x="383.0" y="61.0" />
+      <point x="369.66666666666663" y="61.0" />
+      <point x="45.666666666666686" y="-18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.core" target="org.springframework.cglib.transform">
+      <point x="-45.66666666666663" y="-18.0" />
+      <point x="278.33333333333337" y="61.0" />
+      <point x="265.0" y="61.0" />
+      <point x="-59.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.reflect" target="org.springframework.cglib.core">
+      <point x="0.0" y="-18.0" />
+      <point x="410.5" y="152.0" />
+      <point x="341.125" y="152.0" />
+      <point x="17.125" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.util" target="org.springframework.cglib.core">
+      <point x="0.0" y="-18.0" />
+      <point x="579.5" y="142.0" />
+      <point x="375.375" y="142.0" />
+      <point x="51.375" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.beans" target="org.springframework.cglib.core">
+      <point x="2.8421709430404007E-14" y="-18.0" />
+      <point x="72.50000000000003" y="142.0" />
+      <point x="272.625" y="142.0" />
+      <point x="-51.375" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="324.0" y="144.5" />
+  <SelectedNodes>
+    <node>org.springframework.cglib.beans</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

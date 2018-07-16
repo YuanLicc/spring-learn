@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.accept</OriginalElement>
+  <nodes>
+    <node x="617.5" y="172.0">org.springframework.web.accept.FixedContentNegotiationStrategy</node>
+    <node x="0.0" y="425.0">org.springframework.web.accept.ContentNegotiationManagerFactoryBean</node>
+    <node x="208.5" y="172.0">org.springframework.web.accept.AbstractMappingContentNegotiationStrategy</node>
+    <node x="804.0" y="86.0">org.springframework.web.accept.ContentNegotiationStrategy</node>
+    <node x="0.0" y="344.0">org.springframework.web.accept.ServletPathExtensionContentNegotiationStrategy</node>
+    <node x="127.25" y="86.0">org.springframework.web.accept.MappingMediaTypeFileExtensionResolver</node>
+    <node x="742.0" y="0.0">org.springframework.web.accept.MediaTypeFileExtensionResolver</node>
+    <node x="1283.5" y="172.0">org.springframework.web.accept.ContentNegotiationManager</node>
+    <node x="946.5" y="172.0">org.springframework.web.accept.HeaderContentNegotiationStrategy</node>
+    <node x="28.0" y="258.0">org.springframework.web.accept.PathExtensionContentNegotiationStrategy</node>
+    <node x="394.0" y="425.0">org.springframework.web.accept.package-info</node>
+    <node x="420.99999999999994" y="258.0">org.springframework.web.accept.ParameterContentNegotiationStrategy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.accept.ParameterContentNegotiationStrategy" target="org.springframework.web.accept.AbstractMappingContentNegotiationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="591.5" y="233.0" />
+      <point x="500.25" y="233.0" />
+      <point x="97.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.ContentNegotiationManager" target="org.springframework.web.accept.MediaTypeFileExtensionResolver">
+      <point x="65.25" y="-18.0" />
+      <point x="1479.25" y="61.0" />
+      <point x="967.75" y="61.0" />
+      <point x="75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.PathExtensionContentNegotiationStrategy" target="org.springframework.web.accept.AbstractMappingContentNegotiationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="214.5" y="233.0" />
+      <point x="305.75" y="233.0" />
+      <point x="-97.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.HeaderContentNegotiationStrategy" target="org.springframework.web.accept.ContentNegotiationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="1105.0" y="152.0" />
+      <point x="972.125" y="152.0" />
+      <point x="33.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.ContentNegotiationManager" target="org.springframework.web.accept.ContentNegotiationStrategy">
+      <point x="-65.25" y="-18.0" />
+      <point x="1348.75" y="142.0" />
+      <point x="1039.375" y="142.0" />
+      <point x="100.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.AbstractMappingContentNegotiationStrategy" target="org.springframework.web.accept.MappingMediaTypeFileExtensionResolver">
+      <point x="-97.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.AbstractMappingContentNegotiationStrategy" target="org.springframework.web.accept.ContentNegotiationStrategy">
+      <point x="97.25" y="-18.0" />
+      <point x="500.25" y="142.0" />
+      <point x="837.625" y="142.0" />
+      <point x="-100.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.ServletPathExtensionContentNegotiationStrategy" target="org.springframework.web.accept.PathExtensionContentNegotiationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.MappingMediaTypeFileExtensionResolver" target="org.springframework.web.accept.MediaTypeFileExtensionResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="305.75" y="61.0" />
+      <point x="817.25" y="61.0" />
+      <point x="-75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept.FixedContentNegotiationStrategy" target="org.springframework.web.accept.ContentNegotiationStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="772.0" y="152.0" />
+      <point x="904.875" y="152.0" />
+      <point x="-33.625" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8306709265175719" x="772.5" y="230.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.accept.ParameterContentNegotiationStrategy</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cache.concurrent</OriginalElement>
+  <nodes>
+    <node x="0.0" y="162.0">org.springframework.cache.concurrent.ConcurrentMapCache</node>
+    <node x="0.0" y="0.0">org.springframework.cache.concurrent.ConcurrentMapCacheFactoryBean</node>
+    <node x="0.0" y="243.0">org.springframework.cache.concurrent.package-info</node>
+    <node x="0.0" y="81.0">org.springframework.cache.concurrent.ConcurrentMapCacheManager</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="146.5" y="139.5" />
+  <SelectedNodes>
+    <node>org.springframework.cache.concurrent.ConcurrentMapCache</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

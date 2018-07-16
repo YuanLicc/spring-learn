@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.util.concurrent</OriginalElement>
+  <nodes>
+    <node x="286.24999999999994" y="86.0">org.springframework.util.concurrent.CompletableToListenableFutureAdapter</node>
+    <node x="427.0" y="167.0">org.springframework.util.concurrent.ListenableFutureCallbackRegistry</node>
+    <node x="0.0" y="167.0">org.springframework.util.concurrent.FailureCallback</node>
+    <node x="0.0" y="334.0">org.springframework.util.concurrent.package-info</node>
+    <node x="201.0" y="167.0">org.springframework.util.concurrent.SuccessCallback</node>
+    <node x="526.75" y="0.0">org.springframework.util.concurrent.ListenableFuture</node>
+    <node x="928.25" y="86.0">org.springframework.util.concurrent.ListenableFutureTask</node>
+    <node x="789.0" y="167.0">org.springframework.util.concurrent.DelegatingCompletableFuture</node>
+    <node x="655.25" y="86.0">org.springframework.util.concurrent.SettableListenableFuture</node>
+    <node x="0.0" y="0.0">org.springframework.util.concurrent.FutureAdapter</node>
+    <node x="64.5" y="253.0">org.springframework.util.concurrent.ListenableFutureCallback</node>
+    <node x="21.249999999999943" y="86.0">org.springframework.util.concurrent.ListenableFutureAdapter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.util.concurrent.CompletableToListenableFutureAdapter" target="org.springframework.util.concurrent.ListenableFuture">
+      <point x="0.0" y="-18.0" />
+      <point x="460.74999999999994" y="66.0" />
+      <point x="597.625" y="66.0" />
+      <point x="-23.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureTask" target="org.springframework.util.concurrent.ListenableFuture">
+      <point x="0.0" y="-18.0" />
+      <point x="1038.75" y="56.0" />
+      <point x="692.125" y="56.0" />
+      <point x="70.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureAdapter" target="org.springframework.util.concurrent.FutureAdapter">
+      <point x="-61.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureAdapter" target="org.springframework.util.concurrent.ListenableFuture">
+      <point x="61.25" y="-18.0" />
+      <point x="204.99999999999994" y="56.0" />
+      <point x="550.375" y="56.0" />
+      <point x="-70.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureCallback" target="org.springframework.util.concurrent.SuccessCallback">
+      <point x="63.25" y="-18.0" />
+      <point x="254.25" y="228.0" />
+      <point x="291.5" y="228.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.SettableListenableFuture" target="org.springframework.util.concurrent.ListenableFuture">
+      <point x="0.0" y="-18.0" />
+      <point x="781.75" y="66.0" />
+      <point x="644.875" y="66.0" />
+      <point x="23.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.concurrent.ListenableFutureCallback" target="org.springframework.util.concurrent.FailureCallback">
+      <point x="-63.25" y="-18.0" />
+      <point x="127.75" y="228.0" />
+      <point x="90.5" y="228.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="575.0" y="185.0" />
+  <SelectedNodes>
+    <node>org.springframework.util.concurrent.ListenableFutureAdapter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

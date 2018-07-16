@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.util</OriginalElement>
+  <nodes>
+    <node x="539.0" y="339.0">org.springframework.web.util.UriComponentsBuilder</node>
+    <node x="408.0" y="744.0">org.springframework.web.util.UriTemplate</node>
+    <node x="281.0" y="339.0">org.springframework.web.util.OpaqueUriComponents</node>
+    <node x="0.0" y="501.0">org.springframework.web.util.ContentCachingRequestWrapper</node>
+    <node x="602.0" y="744.0">org.springframework.web.util.HtmlUtils</node>
+    <node x="0.0" y="86.0">org.springframework.web.util.AbstractUriTemplateHandler</node>
+    <node x="330.0" y="501.0">org.springframework.web.util.IntrospectorCleanupListener</node>
+    <node x="612.0" y="582.0">org.springframework.web.util.NestedServletException</node>
+    <node x="0.0" y="339.0">org.springframework.web.util.HierarchicalUriComponents</node>
+    <node x="285.0" y="172.0">org.springframework.web.util.DefaultUriBuilderFactory</node>
+    <node x="170.5" y="0.0">org.springframework.web.util.UriTemplateHandler</node>
+    <node x="0.0" y="582.0">org.springframework.web.util.HtmlCharacterEntityDecoder</node>
+    <node x="250.0" y="663.0">org.springframework.web.util.CookieGenerator</node>
+    <node x="0.0" y="420.0">org.springframework.web.util.ContentCachingResponseWrapper</node>
+    <node x="206.0" y="744.0">org.springframework.web.util.package-info</node>
+    <node x="780.0" y="744.0">org.springframework.web.util.WebUtils</node>
+    <node x="579.0" y="253.0">org.springframework.web.util.UriBuilder</node>
+    <node x="476.0" y="663.0">org.springframework.web.util.JavaScriptUtils</node>
+    <node x="652.0" y="501.0">org.springframework.web.util.ServletContextPropertyUtils</node>
+    <node x="4.0" y="172.0">org.springframework.web.util.DefaultUriTemplateHandler</node>
+    <node x="0.0" y="663.0">org.springframework.web.util.WebAppRootListener</node>
+    <node x="338.0" y="420.0">org.springframework.web.util.HtmlCharacterEntityReferences</node>
+    <node x="0.0" y="825.0">org.springframework.web.util.TagUtils</node>
+    <node x="702.0" y="663.0">org.springframework.web.util.UrlPathHelper</node>
+    <node x="0.0" y="744.0">org.springframework.web.util.pattern</node>
+    <node x="170.0" y="825.0">org.springframework.web.util.UriUtils</node>
+    <node x="313.0" y="86.0">org.springframework.web.util.UriBuilderFactory</node>
+    <node x="314.0" y="582.0">org.springframework.web.util.HttpSessionMutexListener</node>
+    <node x="176.5" y="253.0">org.springframework.web.util.UriComponents</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.util.DefaultUriBuilderFactory" target="org.springframework.web.util.UriBuilderFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.AbstractUriTemplateHandler" target="org.springframework.web.util.UriTemplateHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="134.5" y="61.0" />
+      <point x="221.75" y="61.0" />
+      <point x="-51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.UriBuilderFactory" target="org.springframework.web.util.UriTemplateHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="411.5" y="61.0" />
+      <point x="324.25" y="61.0" />
+      <point x="51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.OpaqueUriComponents" target="org.springframework.web.util.UriComponents">
+      <point x="0.0" y="-18.0" />
+      <point x="387.5" y="314.0" />
+      <point x="300.25" y="314.0" />
+      <point x="41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.HierarchicalUriComponents" target="org.springframework.web.util.UriComponents">
+      <point x="0.0" y="-18.0" />
+      <point x="130.5" y="314.0" />
+      <point x="217.75" y="314.0" />
+      <point x="-41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.DefaultUriTemplateHandler" target="org.springframework.web.util.AbstractUriTemplateHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.util.UriComponentsBuilder" target="org.springframework.web.util.UriBuilder">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9625425652667423" x="464.5" y="430.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.util.UriBuilder</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

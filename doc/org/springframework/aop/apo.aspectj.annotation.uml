@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.aspectj.annotation</OriginalElement>
+  <nodes>
+    <node x="540.0" y="506.0">org.springframework.aop.aspectj.annotation.AspectMetadata</node>
+    <node x="585.5" y="0.0">org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory</node>
+    <node x="1187.0" y="86.0">org.springframework.aop.aspectj.annotation.SimpleMetadataAwareAspectInstanceFactory</node>
+    <node x="0.0" y="506.0">org.springframework.aop.aspectj.annotation.NotAnAtAspectException</node>
+    <node x="40.0" y="253.0">org.springframework.aop.aspectj.annotation.AspectJAdvisorFactory</node>
+    <node x="8.0" y="339.0">org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory</node>
+    <node x="0.0" y="86.0">org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory</node>
+    <node x="762.0" y="86.0">org.springframework.aop.aspectj.annotation.LazySingletonAspectInstanceFactoryDecorator</node>
+    <node x="282.0" y="506.0">org.springframework.aop.aspectj.annotation.AspectJProxyFactory</node>
+    <node x="758.0" y="506.0">org.springframework.aop.aspectj.annotation.package-info</node>
+    <node x="1206.0" y="253.0">org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder</node>
+    <node x="354.0" y="253.0">org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl</node>
+    <node x="8.0" y="172.0">org.springframework.aop.aspectj.annotation.PrototypeAspectInstanceFactory</node>
+    <node x="796.0" y="253.0">org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator</node>
+    <node x="337.00000000000006" y="86.0">org.springframework.aop.aspectj.annotation.SingletonMetadataAwareAspectInstanceFactory</node>
+    <node x="0.0" y="425.0">org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.aspectj.annotation.SingletonMetadataAwareAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="539.5" y="66.0" />
+      <point x="710.375" y="66.0" />
+      <point x="-41.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="158.5" y="56.0" />
+      <point x="627.125" y="56.0" />
+      <point x="-124.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.LazySingletonAspectInstanceFactoryDecorator" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="964.5" y="66.0" />
+      <point x="793.625" y="66.0" />
+      <point x="41.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.SimpleMetadataAwareAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="1377.5" y="56.0" />
+      <point x="876.875" y="56.0" />
+      <point x="124.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory" target="org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.PrototypeAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory" target="org.springframework.aop.aspectj.annotation.AspectJAdvisorFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.818639798488665" x="784.0" y="271.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.aspectj.annotation.AspectMetadata</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.converter.json</OriginalElement>
+  <nodes>
+    <node x="0.0" y="167.0">org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter</node>
+    <node x="273.0" y="86.0">org.springframework.http.converter.json.JsonbHttpMessageConverter</node>
+    <node x="314.0" y="415.0">org.springframework.http.converter.json.SpringHandlerInstantiator</node>
+    <node x="354.0" y="334.0">org.springframework.http.converter.json.Jackson2ObjectMapperBuilder</node>
+    <node x="0.0" y="415.0">org.springframework.http.converter.json.MappingJacksonInputMessage</node>
+    <node x="106.5" y="0.0">org.springframework.http.converter.json.AbstractJsonHttpMessageConverter</node>
+    <node x="4.0" y="253.0">org.springframework.http.converter.json.MappingJackson2HttpMessageConverter</node>
+    <node x="0.0" y="334.0">org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean</node>
+    <node x="0.0" y="577.0">org.springframework.http.converter.json.GsonFactoryBean</node>
+    <node x="0.0" y="496.0">org.springframework.http.converter.json.MappingJacksonValue</node>
+    <node x="0.0" y="86.0">org.springframework.http.converter.json.GsonHttpMessageConverter</node>
+    <node x="226.0" y="577.0">org.springframework.http.converter.json.package-info</node>
+    <node x="258.0" y="496.0">org.springframework.http.converter.json.GsonBuilderUtils</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.converter.json.JsonbHttpMessageConverter" target="org.springframework.http.converter.json.AbstractJsonHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="403.5" y="61.0" />
+      <point x="344.25" y="61.0" />
+      <point x="79.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" target="org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.json.GsonHttpMessageConverter" target="org.springframework.http.converter.json.AbstractJsonHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="126.5" y="61.0" />
+      <point x="185.75" y="61.0" />
+      <point x="-79.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="315.5" y="306.5" />
+  <SelectedNodes>
+    <node>org.springframework.http.converter.json.MappingJackson2HttpMessageConverter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

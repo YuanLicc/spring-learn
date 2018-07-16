@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.framework.autoproxy</OriginalElement>
+  <nodes>
+    <node x="258.0" y="253.0">org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor</node>
+    <node x="370.0" y="420.0">org.springframework.aop.framework.autoproxy.ProxyCreationContext</node>
+    <node x="30.0" y="339.0">org.springframework.aop.framework.autoproxy.target</node>
+    <node x="0.0" y="420.0">org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper</node>
+    <node x="377.0" y="172.0">org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator</node>
+    <node x="218.0" y="501.0">org.springframework.aop.framework.autoproxy.package-info</node>
+    <node x="0.0" y="501.0">org.springframework.aop.framework.autoproxy.AutoProxyUtils</node>
+    <node x="0.0" y="172.0">org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator</node>
+    <node x="0.0" y="253.0">org.springframework.aop.framework.autoproxy.TargetSourceCreator</node>
+    <node x="527.5" y="86.0">org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator</node>
+    <node x="198.5" y="86.0">org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator</node>
+    <node x="377.0" y="0.0">org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.framework.autoproxy.target" target="org.springframework.aop.framework.autoproxy.TargetSourceCreator">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator">
+      <point x="0.0" y="-18.0" />
+      <point x="527.5" y="147.0" />
+      <point x="430.25" y="147.0" />
+      <point x="77.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
+      <point x="0.0" y="-18.0" />
+      <point x="654.0" y="61.0" />
+      <point x="566.75" y="61.0" />
+      <point x="63.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
+      <point x="0.0" y="-18.0" />
+      <point x="353.0" y="61.0" />
+      <point x="440.25" y="61.0" />
+      <point x="-63.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator">
+      <point x="0.0" y="-18.0" />
+      <point x="178.5" y="147.0" />
+      <point x="275.75" y="147.0" />
+      <point x="-77.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="390.5" y="268.5" />
+  <SelectedNodes>
+    <node>org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

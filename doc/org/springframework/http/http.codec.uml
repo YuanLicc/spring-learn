@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.codec</OriginalElement>
+  <nodes>
+    <node x="475.0" y="420.0">org.springframework.http.codec.CodecConfigurerFactory</node>
+    <node x="225.0" y="420.0">org.springframework.http.codec.HttpMessageEncoder</node>
+    <node x="891.0" y="339.0">org.springframework.http.codec.FormHttpMessageWriter</node>
+    <node x="983.0" y="420.0">org.springframework.http.codec.package-info</node>
+    <node x="610.0" y="339.0">org.springframework.http.codec.ResourceHttpMessageWriter</node>
+    <node x="1499.5" y="253.0">org.springframework.http.codec.HttpMessageReader</node>
+    <node x="1337.0" y="339.0">org.springframework.http.codec.FormHttpMessageReader</node>
+    <node x="1586.0" y="339.0">org.springframework.http.codec.ServerSentEventHttpMessageReader</node>
+    <node x="273.0" y="0.0">org.springframework.http.codec.CodecConfigurer</node>
+    <node x="1140.0" y="339.0">org.springframework.http.codec.multipart</node>
+    <node x="0.0" y="86.0">org.springframework.http.codec.ServerCodecConfigurer</node>
+    <node x="1923.0" y="339.0">org.springframework.http.codec.DecoderHttpMessageReader</node>
+    <node x="0.0" y="420.0">org.springframework.http.codec.HttpMessageDecoder</node>
+    <node x="146.5" y="506.0">org.springframework.http.codec.json</node>
+    <node x="249.0" y="86.0">org.springframework.http.codec.ClientCodecConfigurer</node>
+    <node x="757.0" y="420.0">org.springframework.http.codec.ServerSentEvent</node>
+    <node x="337.0" y="339.0">org.springframework.http.codec.EncoderHttpMessageWriter</node>
+    <node x="0.0" y="339.0">org.springframework.http.codec.ServerSentEventHttpMessageWriter</node>
+    <node x="1185.0" y="420.0">org.springframework.http.codec.xml</node>
+    <node x="283.0" y="172.0">org.springframework.http.codec.support</node>
+    <node x="642.0" y="253.0">org.springframework.http.codec.HttpMessageWriter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.codec.ServerSentEventHttpMessageReader" target="org.springframework.http.codec.HttpMessageReader">
+      <point x="0.0" y="-18.0" />
+      <point x="1744.5" y="319.0" />
+      <point x="1622.625" y="319.0" />
+      <point x="24.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.ServerCodecConfigurer" target="org.springframework.http.codec.CodecConfigurer">
+      <point x="0.0" y="-18.0" />
+      <point x="114.5" y="61.0" />
+      <point x="303.1666666666667" y="61.0" />
+      <point x="-60.333333333333314" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.ClientCodecConfigurer" target="org.springframework.http.codec.CodecConfigurer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.multipart" target="org.springframework.http.codec.HttpMessageWriter">
+      <point x="-44.25" y="-18.0" />
+      <point x="1184.25" y="309.0" />
+      <point x="819.3" y="309.0" />
+      <point x="78.79999999999995" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.json" target="org.springframework.http.codec.HttpMessageDecoder">
+      <point x="-34.25" y="-18.0" />
+      <point x="180.75" y="481.0" />
+      <point x="102.5" y="481.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.ResourceHttpMessageWriter" target="org.springframework.http.codec.HttpMessageWriter">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.FormHttpMessageWriter" target="org.springframework.http.codec.HttpMessageWriter">
+      <point x="0.0" y="-18.0" />
+      <point x="1005.5" y="319.0" />
+      <point x="779.9000000000001" y="319.0" />
+      <point x="39.40000000000009" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.json" target="org.springframework.http.codec.HttpMessageEncoder">
+      <point x="34.25" y="-18.0" />
+      <point x="249.25" y="481.0" />
+      <point x="327.5" y="481.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.ServerSentEventHttpMessageWriter" target="org.springframework.http.codec.HttpMessageWriter">
+      <point x="0.0" y="-18.0" />
+      <point x="158.5" y="309.0" />
+      <point x="661.7" y="309.0" />
+      <point x="-78.79999999999995" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.DecoderHttpMessageReader" target="org.springframework.http.codec.HttpMessageReader">
+      <point x="0.0" y="-18.0" />
+      <point x="2049.5" y="309.0" />
+      <point x="1671.875" y="309.0" />
+      <point x="73.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.EncoderHttpMessageWriter" target="org.springframework.http.codec.HttpMessageWriter">
+      <point x="0.0" y="-18.0" />
+      <point x="463.5" y="319.0" />
+      <point x="701.0999999999999" y="319.0" />
+      <point x="-39.40000000000009" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.support" target="org.springframework.http.codec.ClientCodecConfigurer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.support" target="org.springframework.http.codec.CodecConfigurer">
+      <point x="53.666666666666686" y="-18.0" />
+      <point x="417.1666666666667" y="147.0" />
+      <point x="488.5" y="147.0" />
+      <point x="488.5" y="61.0" />
+      <point x="423.83333333333337" y="61.0" />
+      <point x="60.33333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.multipart" target="org.springframework.http.codec.HttpMessageReader">
+      <point x="44.25" y="-18.0" />
+      <point x="1272.75" y="309.0" />
+      <point x="1524.125" y="309.0" />
+      <point x="-73.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.support" target="org.springframework.http.codec.ServerCodecConfigurer">
+      <point x="-53.66666666666663" y="-18.0" />
+      <point x="309.83333333333337" y="147.0" />
+      <point x="114.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.FormHttpMessageReader" target="org.springframework.http.codec.HttpMessageReader">
+      <point x="0.0" y="-18.0" />
+      <point x="1451.5" y="319.0" />
+      <point x="1573.375" y="319.0" />
+      <point x="-24.625" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5919854280510018" x="1088.0" y="271.0" />
+  <SelectedNodes>
+    <node>org.springframework.http.codec.CodecConfigurerFactory</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

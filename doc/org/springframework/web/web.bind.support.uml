@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.bind.support</OriginalElement>
+  <nodes>
+    <node x="0.0" y="253.0">org.springframework.web.bind.support.DefaultDataBinderFactory</node>
+    <node x="48.0" y="0.0">org.springframework.web.bind.support.WebBindingInitializer</node>
+    <node x="16.0" y="167.0">org.springframework.web.bind.support.WebDataBinderFactory</node>
+    <node x="0.0" y="86.0">org.springframework.web.bind.support.ConfigurableWebBindingInitializer</node>
+    <node x="0.0" y="415.0">org.springframework.web.bind.support.WebExchangeDataBinder</node>
+    <node x="0.0" y="496.0">org.springframework.web.bind.support.WebArgumentResolver</node>
+    <node x="274.0" y="415.0">org.springframework.web.bind.support.WebRequestDataBinder</node>
+    <node x="398.0" y="0.0">org.springframework.web.bind.support.SessionAttributeStore</node>
+    <node x="258.0" y="496.0">org.springframework.web.bind.support.package-info</node>
+    <node x="370.0" y="86.0">org.springframework.web.bind.support.DefaultSessionAttributeStore</node>
+    <node x="322.0" y="167.0">org.springframework.web.bind.support.SessionStatus</node>
+    <node x="298.0" y="253.0">org.springframework.web.bind.support.SimpleSessionStatus</node>
+    <node x="0.0" y="334.0">org.springframework.web.bind.support.SpringWebConstraintValidatorFactory</node>
+    <node x="386.0" y="334.0">org.springframework.web.bind.support.WebExchangeBindException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.bind.support.ConfigurableWebBindingInitializer" target="org.springframework.web.bind.support.WebBindingInitializer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.support.DefaultDataBinderFactory" target="org.springframework.web.bind.support.WebDataBinderFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.support.SimpleSessionStatus" target="org.springframework.web.bind.support.SessionStatus">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.support.DefaultSessionAttributeStore" target="org.springframework.web.bind.support.SessionAttributeStore">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="327.5" y="266.0" />
+  <SelectedNodes>
+    <node>org.springframework.web.bind.support.WebDataBinderFactory</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

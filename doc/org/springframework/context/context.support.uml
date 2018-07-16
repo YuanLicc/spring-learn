@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.context.support</OriginalElement>
+  <nodes>
+    <node x="1137.5" y="172.0">org.springframework.context.support.GenericXmlApplicationContext</node>
+    <node x="321.0" y="344.0">org.springframework.context.support.FileSystemXmlApplicationContext</node>
+    <node x="628.0" y="511.0">org.springframework.context.support.DelegatingMessageSource</node>
+    <node x="0.0" y="926.0">org.springframework.context.support.MessageSourceResourceBundle</node>
+    <node x="166.50000000000006" y="258.0">org.springframework.context.support.AbstractXmlApplicationContext</node>
+    <node x="379.0" y="511.0">org.springframework.context.support.AbstractMessageSource</node>
+    <node x="938.0" y="511.0">org.springframework.context.support.LiveBeansView</node>
+    <node x="918.0" y="425.0">org.springframework.context.support.LiveBeansViewMBean</node>
+    <node x="0.0" y="1007.0">org.springframework.context.support.ApplicationObjectSupport</node>
+    <node x="808.5" y="172.0">org.springframework.context.support.GenericGroovyApplicationContext</node>
+    <node x="394.0" y="764.0">org.springframework.context.support.GenericApplicationContextExtensionsKt</node>
+    <node x="377.0" y="683.0">org.springframework.context.support.ResourceBundleMessageSource</node>
+    <node x="0.0" y="1088.0">org.springframework.context.support.package-info</node>
+    <node x="0.0" y="683.0">org.springframework.context.support.ReloadableResourceBundleMessageSource</node>
+    <node x="535.5" y="172.0">org.springframework.context.support.StaticApplicationContext</node>
+    <node x="362.0" y="845.0">org.springframework.context.support.DefaultMessageSourceResolvable</node>
+    <node x="776.0" y="764.0">org.springframework.context.support.PostProcessorRegistrationDelegate</node>
+    <node x="322.0" y="926.0">org.springframework.context.support.ContextTypeMatchClassLoader</node>
+    <node x="572.0" y="1007.0">org.springframework.context.support.SimpleThreadScope</node>
+    <node x="0.0" y="764.0">org.springframework.context.support.PropertySourcesPlaceholderConfigurer</node>
+    <node x="0.0" y="344.0">org.springframework.context.support.ClassPathXmlApplicationContext</node>
+    <node x="644.0" y="926.0">org.springframework.context.support.ApplicationListenerDetector</node>
+    <node x="814.0" y="1007.0">org.springframework.context.support.BeanDefinitionDslKt</node>
+    <node x="0.0" y="845.0">org.springframework.context.support.ApplicationContextAwareProcessor</node>
+    <node x="1052.0" y="1007.0">org.springframework.context.support.BeanDefinitionDsl</node>
+    <node x="180.5" y="597.0">org.springframework.context.support.AbstractResourceBasedMessageSource</node>
+    <node x="832.5" y="86.0">org.springframework.context.support.GenericApplicationContext</node>
+    <node x="533.5" y="597.0">org.springframework.context.support.StaticMessageSource</node>
+    <node x="110.50000000000006" y="172.0">org.springframework.context.support.AbstractRefreshableConfigApplicationContext</node>
+    <node x="966.0" y="926.0">org.springframework.context.support.DefaultLifecycleProcessor</node>
+    <node x="514.2" y="0.0">org.springframework.context.support.AbstractApplicationContext</node>
+    <node x="298.0" y="1007.0">org.springframework.context.support.MessageSourceAccessor</node>
+    <node x="511.5" y="425.0">org.springframework.context.support.MessageSourceSupport</node>
+    <node x="1054.0" y="845.0">org.springframework.context.support.ConversionServiceFactoryBean</node>
+    <node x="708.0" y="845.0">org.springframework.context.support.EmbeddedValueResolutionSupport</node>
+    <node x="134.5000000000001" y="86.0">org.springframework.context.support.AbstractRefreshableApplicationContext</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.context.support.AbstractXmlApplicationContext" target="org.springframework.context.support.AbstractRefreshableConfigApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.GenericGroovyApplicationContext" target="org.springframework.context.support.GenericApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.AbstractRefreshableConfigApplicationContext" target="org.springframework.context.support.AbstractRefreshableApplicationContext">
+      <point x="5.6843418860808015E-14" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.StaticApplicationContext" target="org.springframework.context.support.GenericApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="662.0" y="147.0" />
+      <point x="876.0" y="147.0" />
+      <point x="-87.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.ReloadableResourceBundleMessageSource" target="org.springframework.context.support.AbstractResourceBasedMessageSource">
+      <point x="0.0" y="-18.0" />
+      <point x="178.5" y="658.0" />
+      <point x="263.75" y="658.0" />
+      <point x="-83.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.GenericApplicationContext" target="org.springframework.context.support.AbstractApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="963.0" y="61.0" />
+      <point x="715.95" y="61.0" />
+      <point x="67.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.GenericXmlApplicationContext" target="org.springframework.context.support.GenericApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="1280.0" y="147.0" />
+      <point x="1050.0" y="147.0" />
+      <point x="87.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.AbstractRefreshableApplicationContext" target="org.springframework.context.support.AbstractApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="313.0000000000001" y="61.0" />
+      <point x="581.45" y="61.0" />
+      <point x="-67.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.AbstractMessageSource" target="org.springframework.context.support.MessageSourceSupport">
+      <point x="0.0" y="-18.0" />
+      <point x="493.5" y="486.0" />
+      <point x="566.75" y="486.0" />
+      <point x="-55.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.StaticMessageSource" target="org.springframework.context.support.AbstractMessageSource">
+      <point x="0.0" y="-18.0" />
+      <point x="640.0" y="572.0" />
+      <point x="550.75" y="572.0" />
+      <point x="57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.LiveBeansView" target="org.springframework.context.support.LiveBeansViewMBean">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.ResourceBundleMessageSource" target="org.springframework.context.support.AbstractResourceBasedMessageSource">
+      <point x="0.0" y="-18.0" />
+      <point x="515.5" y="658.0" />
+      <point x="430.25" y="658.0" />
+      <point x="83.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.AbstractResourceBasedMessageSource" target="org.springframework.context.support.AbstractMessageSource">
+      <point x="0.0" y="-18.0" />
+      <point x="347.0" y="572.0" />
+      <point x="436.25" y="572.0" />
+      <point x="-57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.FileSystemXmlApplicationContext" target="org.springframework.context.support.AbstractXmlApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="475.5" y="319.0" />
+      <point x="386.25000000000006" y="319.0" />
+      <point x="73.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.ClassPathXmlApplicationContext" target="org.springframework.context.support.AbstractXmlApplicationContext">
+      <point x="5.6843418860808015E-14" y="-18.0" />
+      <point x="150.50000000000006" y="319.0" />
+      <point x="239.75000000000006" y="319.0" />
+      <point x="-73.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support.DelegatingMessageSource" target="org.springframework.context.support.MessageSourceSupport">
+      <point x="0.0" y="-18.0" />
+      <point x="750.5" y="486.0" />
+      <point x="677.25" y="486.0" />
+      <point x="55.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7412587412587412" x="711.5" y="562.0" />
+  <SelectedNodes>
+    <node>org.springframework.context.support.AbstractRefreshableApplicationContext</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

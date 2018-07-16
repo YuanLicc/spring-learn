@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cglib.proxy</OriginalElement>
+  <nodes>
+    <node x="614.0" y="521.0">org.springframework.cglib.proxy.Enhancer</node>
+    <node x="756.0" y="273.0">org.springframework.cglib.proxy.Dispatcher</node>
+    <node x="1039.0" y="354.0">org.springframework.cglib.proxy.BridgeMethodResolver</node>
+    <node x="209.0" y="440.0">org.springframework.cglib.proxy.MixinEverythingEmitter</node>
+    <node x="709.0" y="354.0">org.springframework.cglib.proxy.UndeclaredThrowableException</node>
+    <node x="996.0" y="96.0">org.springframework.cglib.proxy.DispatcherGenerator</node>
+    <node x="575.0" y="177.0">org.springframework.cglib.proxy.Callback</node>
+    <node x="1030.0" y="273.0">org.springframework.cglib.proxy.ProxyRefDispatcher</node>
+    <node x="491.0" y="440.0">org.springframework.cglib.proxy.CallbackHelper</node>
+    <node x="0.0" y="521.0">org.springframework.cglib.proxy.InterfaceMaker</node>
+    <node x="946.0" y="521.0">org.springframework.cglib.proxy.Proxy</node>
+    <node x="0.0" y="440.0">org.springframework.cglib.proxy.MixinBeanEmitter</node>
+    <node x="917.0" y="273.0">org.springframework.cglib.proxy.NoOp</node>
+    <node x="132.5" y="354.0">org.springframework.cglib.proxy.MixinEmitter</node>
+    <node x="218.0" y="521.0">org.springframework.cglib.proxy.CallbackInfo</node>
+    <node x="811.0" y="96.0">org.springframework.cglib.proxy.NoOpGenerator</node>
+    <node x="322.0" y="273.0">org.springframework.cglib.proxy.InvocationHandler</node>
+    <node x="784.0" y="521.0">org.springframework.cglib.proxy.Factory</node>
+    <node x="1229.0" y="96.0">org.springframework.cglib.proxy.LazyLoaderGenerator</node>
+    <node x="539.0" y="273.0">org.springframework.cglib.proxy.MethodInterceptor</node>
+    <node x="289.0" y="96.0">org.springframework.cglib.proxy.FixedValueGenerator</node>
+    <node x="161.0" y="273.0">org.springframework.cglib.proxy.LazyLoader</node>
+    <node x="420.0" y="521.0">org.springframework.cglib.proxy.MethodProxy</node>
+    <node x="522.0" y="96.0">org.springframework.cglib.proxy.MethodInterceptorGenerator</node>
+    <node x="676.5" y="0.0">org.springframework.cglib.proxy.CallbackGenerator</node>
+    <node x="1092.0" y="521.0">org.springframework.cglib.proxy.Mixin</node>
+    <node x="0.0" y="273.0">org.springframework.cglib.proxy.FixedValue</node>
+    <node x="491.0" y="354.0">org.springframework.cglib.proxy.CallbackFilter</node>
+    <node x="0.0" y="96.0">org.springframework.cglib.proxy.InvocationHandlerGenerator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cglib.proxy.CallbackHelper" target="org.springframework.cglib.proxy.CallbackFilter">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.Dispatcher" target="org.springframework.cglib.proxy.Callback">
+      <point x="0.0" y="-18.0" />
+      <point x="826.5" y="253.0" />
+      <point x="655.3571428571429" y="253.0" />
+      <point x="17.85714285714289" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.DispatcherGenerator" target="org.springframework.cglib.proxy.CallbackGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="1102.5" y="66.0" />
+      <point x="824.25" y="66.0" />
+      <point x="49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.MixinBeanEmitter" target="org.springframework.cglib.proxy.MixinEmitter">
+      <point x="0.0" y="-18.0" />
+      <point x="94.5" y="415.0" />
+      <point x="171.75" y="415.0" />
+      <point x="-39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.MethodInterceptorGenerator" target="org.springframework.cglib.proxy.CallbackGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="656.5" y="76.0" />
+      <point x="758.5833333333334" y="76.0" />
+      <point x="-16.41666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.LazyLoader" target="org.springframework.cglib.proxy.Callback">
+      <point x="0.0" y="-18.0" />
+      <point x="231.5" y="243.0" />
+      <point x="601.7857142857143" y="243.0" />
+      <point x="-35.714285714285666" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.ProxyRefDispatcher" target="org.springframework.cglib.proxy.Callback">
+      <point x="0.0" y="-18.0" />
+      <point x="1132.5" y="233.0" />
+      <point x="691.0714285714286" y="233.0" />
+      <point x="53.571428571428555" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.MixinEverythingEmitter" target="org.springframework.cglib.proxy.MixinEmitter">
+      <point x="0.0" y="-18.0" />
+      <point x="327.5" y="415.0" />
+      <point x="250.25" y="415.0" />
+      <point x="39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.FixedValueGenerator" target="org.springframework.cglib.proxy.CallbackGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="395.5" y="66.0" />
+      <point x="725.75" y="66.0" />
+      <point x="-49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.InvocationHandlerGenerator" target="org.springframework.cglib.proxy.CallbackGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="134.5" y="56.0" />
+      <point x="692.9166666666666" y="56.0" />
+      <point x="-82.08333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.MethodInterceptor" target="org.springframework.cglib.proxy.Callback">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.NoOp" target="org.springframework.cglib.proxy.Callback">
+      <point x="0.0" y="-18.0" />
+      <point x="963.5" y="243.0" />
+      <point x="673.2142857142858" y="243.0" />
+      <point x="35.71428571428578" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.LazyLoaderGenerator" target="org.springframework.cglib.proxy.CallbackGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="1335.5" y="56.0" />
+      <point x="857.0833333333334" y="56.0" />
+      <point x="82.08333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.InvocationHandler" target="org.springframework.cglib.proxy.Callback">
+      <point x="0.0" y="-18.0" />
+      <point x="420.5" y="253.0" />
+      <point x="619.6428571428571" y="253.0" />
+      <point x="-17.85714285714289" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.NoOpGenerator" target="org.springframework.cglib.proxy.CallbackGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="893.5" y="76.0" />
+      <point x="791.4166666666666" y="76.0" />
+      <point x="16.41666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.proxy.FixedValue" target="org.springframework.cglib.proxy.Callback">
+      <point x="0.0" y="-18.0" />
+      <point x="70.5" y="233.0" />
+      <point x="583.9285714285714" y="233.0" />
+      <point x="-53.571428571428555" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="721.0" y="278.5" />
+  <SelectedNodes>
+    <node>org.springframework.cglib.proxy.Enhancer</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

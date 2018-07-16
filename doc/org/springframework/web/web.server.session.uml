@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.server.session</OriginalElement>
+  <nodes>
+    <node x="168.5" y="0.0">org.springframework.web.server.session.WebSessionIdResolver</node>
+    <node x="289.0" y="86.0">org.springframework.web.server.session.CookieWebSessionIdResolver</node>
+    <node x="0.0" y="86.0">org.springframework.web.server.session.HeaderWebSessionIdResolver</node>
+    <node x="330.0" y="167.0">org.springframework.web.server.session.WebSessionStore</node>
+    <node x="0.0" y="253.0">org.springframework.web.server.session.DefaultWebSessionManager</node>
+    <node x="28.0" y="167.0">org.springframework.web.server.session.WebSessionManager</node>
+    <node x="298.0" y="253.0">org.springframework.web.server.session.InMemoryWebSessionStore</node>
+    <node x="0.0" y="334.0">org.springframework.web.server.session.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.server.session.HeaderWebSessionIdResolver" target="org.springframework.web.server.session.WebSessionIdResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="134.5" y="61.0" />
+      <point x="223.75" y="61.0" />
+      <point x="-55.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.session.CookieWebSessionIdResolver" target="org.springframework.web.server.session.WebSessionIdResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="423.5" y="61.0" />
+      <point x="334.25" y="61.0" />
+      <point x="55.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.session.DefaultWebSessionManager" target="org.springframework.web.server.session.WebSessionManager">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.session.InMemoryWebSessionStore" target="org.springframework.web.server.session.WebSessionStore">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="279.0" y="185.0" />
+  <SelectedNodes>
+    <node>org.springframework.web.server.session.HeaderWebSessionIdResolver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

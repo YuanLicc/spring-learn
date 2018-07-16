@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.scheduling.config</OriginalElement>
+  <nodes>
+    <node x="350.0" y="172.0">org.springframework.scheduling.config.FixedRateTask</node>
+    <node x="556.0" y="668.0">org.springframework.scheduling.config.ScheduledTask</node>
+    <node x="410.0" y="253.0">org.springframework.scheduling.config.AnnotationDrivenBeanDefinitionParser</node>
+    <node x="378.0" y="506.0">org.springframework.scheduling.config.SchedulerBeanDefinitionParser</node>
+    <node x="0.0" y="86.0">org.springframework.scheduling.config.TriggerTask</node>
+    <node x="330.0" y="587.0">org.springframework.scheduling.config.TaskManagementConfigUtils</node>
+    <node x="187.375" y="0.0">org.springframework.scheduling.config.Task</node>
+    <node x="76.0" y="253.0">org.springframework.scheduling.config.ScheduledTaskHolder</node>
+    <node x="0.0" y="506.0">org.springframework.scheduling.config.ScheduledTasksBeanDefinitionParser</node>
+    <node x="0.0" y="425.0">org.springframework.scheduling.config.ContextLifecycleScheduledTaskRegistrar</node>
+    <node x="259.5" y="86.0">org.springframework.scheduling.config.IntervalTask</node>
+    <node x="157.0" y="172.0">org.springframework.scheduling.config.FixedDelayTask</node>
+    <node x="0.0" y="587.0">org.springframework.scheduling.config.ExecutorBeanDefinitionParser</node>
+    <node x="64.0" y="339.0">org.springframework.scheduling.config.ScheduledTaskRegistrar</node>
+    <node x="0.0" y="749.0">org.springframework.scheduling.config.package-info</node>
+    <node x="0.0" y="668.0">org.springframework.scheduling.config.TaskExecutorFactoryBean</node>
+    <node x="12.0" y="172.0">org.springframework.scheduling.config.CronTask</node>
+    <node x="290.0" y="668.0">org.springframework.scheduling.config.TaskNamespaceHandler</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.scheduling.config.IntervalTask" target="org.springframework.scheduling.config.Task">
+      <point x="0.0" y="-18.0" />
+      <point x="338.0" y="61.0" />
+      <point x="257.125" y="61.0" />
+      <point x="23.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.config.ContextLifecycleScheduledTaskRegistrar" target="org.springframework.scheduling.config.ScheduledTaskRegistrar">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.config.ScheduledTaskRegistrar" target="org.springframework.scheduling.config.ScheduledTaskHolder">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.config.TriggerTask" target="org.springframework.scheduling.config.Task">
+      <point x="0.0" y="-18.0" />
+      <point x="74.5" y="61.0" />
+      <point x="210.625" y="61.0" />
+      <point x="-23.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.config.FixedDelayTask" target="org.springframework.scheduling.config.IntervalTask">
+      <point x="0.0" y="-18.0" />
+      <point x="243.5" y="147.0" />
+      <point x="298.75" y="147.0" />
+      <point x="-39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.config.CronTask" target="org.springframework.scheduling.config.TriggerTask">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.config.FixedRateTask" target="org.springframework.scheduling.config.IntervalTask">
+      <point x="0.0" y="-18.0" />
+      <point x="432.5" y="147.0" />
+      <point x="377.25" y="147.0" />
+      <point x="39.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="379.5" y="392.5" />
+  <SelectedNodes>
+    <node>org.springframework.scheduling.config.CronTask</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

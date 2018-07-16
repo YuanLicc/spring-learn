@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.expression.common</OriginalElement>
+  <nodes>
+    <node x="226.0" y="324.0">org.springframework.expression.common.package-info</node>
+    <node x="0.0" y="81.0">org.springframework.expression.common.CompositeStringExpression</node>
+    <node x="0.0" y="0.0">org.springframework.expression.common.TemplateAwareExpressionParser</node>
+    <node x="0.0" y="243.0">org.springframework.expression.common.LiteralExpression</node>
+    <node x="0.0" y="324.0">org.springframework.expression.common.ExpressionUtils</node>
+    <node x="0.0" y="162.0">org.springframework.expression.common.TemplateParserContext</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="191.5" y="180.0" />
+  <SelectedNodes>
+    <node>org.springframework.expression.common.package-info</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

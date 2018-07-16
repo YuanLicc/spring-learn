@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.format.number</OriginalElement>
+  <nodes>
+    <node x="233.0" y="0.0">org.springframework.format.number.AbstractNumberFormatter</node>
+    <node x="490.0" y="86.0">org.springframework.format.number.CurrencyStyleFormatter</node>
+    <node x="241.0" y="86.0">org.springframework.format.number.PercentStyleFormatter</node>
+    <node x="0.0" y="167.0">org.springframework.format.number.NumberFormatAnnotationFormatterFactory</node>
+    <node x="0.0" y="248.0">org.springframework.format.number.money</node>
+    <node x="410.0" y="167.0">org.springframework.format.number.package-info</node>
+    <node x="0.0" y="86.0">org.springframework.format.number.NumberStyleFormatter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.format.number.NumberStyleFormatter" target="org.springframework.format.number.AbstractNumberFormatter">
+      <point x="0.0" y="-18.0" />
+      <point x="110.5" y="61.0" />
+      <point x="273.8333333333333" y="61.0" />
+      <point x="-81.66666666666669" y="18.0" />
+    </edge>
+    <edge source="org.springframework.format.number.CurrencyStyleFormatter" target="org.springframework.format.number.AbstractNumberFormatter">
+      <point x="0.0" y="-18.0" />
+      <point x="608.5" y="61.0" />
+      <point x="437.1666666666667" y="61.0" />
+      <point x="81.66666666666669" y="18.0" />
+    </edge>
+    <edge source="org.springframework.format.number.PercentStyleFormatter" target="org.springframework.format.number.AbstractNumberFormatter">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="363.5" y="142.0" />
+  <SelectedNodes>
+    <node>org.springframework.format.number.NumberStyleFormatter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

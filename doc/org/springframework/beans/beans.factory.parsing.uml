@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.parsing</OriginalElement>
+  <nodes>
+    <node x="4.0" y="86.0">org.springframework.beans.factory.parsing.AbstractComponentDefinition</node>
+    <node x="444.0" y="668.0">org.springframework.beans.factory.parsing.PropertyEntry</node>
+    <node x="654.0" y="668.0">org.springframework.beans.factory.parsing.ReaderContext</node>
+    <node x="566.0" y="749.0">org.springframework.beans.factory.parsing.Location</node>
+    <node x="146.5" y="253.0">org.springframework.beans.factory.parsing.SourceExtractor</node>
+    <node x="0.0" y="668.0">org.springframework.beans.factory.parsing.AliasDefinition</node>
+    <node x="233.0" y="339.0">org.springframework.beans.factory.parsing.PassThroughSourceExtractor</node>
+    <node x="567.0" y="253.0">org.springframework.beans.factory.parsing.ReaderEventListener</node>
+    <node x="0.0" y="172.0">org.springframework.beans.factory.parsing.CompositeComponentDefinition</node>
+    <node x="202.0" y="749.0">org.springframework.beans.factory.parsing.ParseState</node>
+    <node x="388.0" y="749.0">org.springframework.beans.factory.parsing.BeanEntry</node>
+    <node x="32.0" y="420.0">org.springframework.beans.factory.parsing.ProblemReporter</node>
+    <node x="0.0" y="506.0">org.springframework.beans.factory.parsing.FailFastProblemReporter</node>
+    <node x="226.0" y="668.0">org.springframework.beans.factory.parsing.QualifierEntry</node>
+    <node x="547.0" y="339.0">org.springframework.beans.factory.parsing.EmptyReaderEventListener</node>
+    <node x="290.0" y="420.0">org.springframework.beans.factory.parsing.BeanDefinitionParsingException</node>
+    <node x="548.0" y="587.0">org.springframework.beans.factory.parsing.ImportDefinition</node>
+    <node x="0.0" y="339.0">org.springframework.beans.factory.parsing.NullSourceExtractor</node>
+    <node x="176.5" y="0.0">org.springframework.beans.factory.parsing.ComponentDefinition</node>
+    <node x="0.0" y="587.0">org.springframework.beans.factory.parsing.ConstructorArgumentEntry</node>
+    <node x="301.0" y="86.0">org.springframework.beans.factory.parsing.BeanComponentDefinition</node>
+    <node x="0.0" y="749.0">org.springframework.beans.factory.parsing.package-info</node>
+    <node x="736.0" y="749.0">org.springframework.beans.factory.parsing.Problem</node>
+    <node x="298.0" y="587.0">org.springframework.beans.factory.parsing.DefaultsDefinition</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.beans.factory.parsing.PassThroughSourceExtractor" target="org.springframework.beans.factory.parsing.SourceExtractor">
+      <point x="0.0" y="-18.0" />
+      <point x="367.5" y="314.0" />
+      <point x="282.25" y="314.0" />
+      <point x="45.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.AbstractComponentDefinition" target="org.springframework.beans.factory.parsing.ComponentDefinition">
+      <point x="0.0" y="-18.0" />
+      <point x="142.5" y="61.0" />
+      <point x="229.75" y="61.0" />
+      <point x="-53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.NullSourceExtractor" target="org.springframework.beans.factory.parsing.SourceExtractor">
+      <point x="0.0" y="-18.0" />
+      <point x="106.5" y="314.0" />
+      <point x="191.75" y="314.0" />
+      <point x="-45.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.EmptyReaderEventListener" target="org.springframework.beans.factory.parsing.ReaderEventListener">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.FailFastProblemReporter" target="org.springframework.beans.factory.parsing.ProblemReporter">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.CompositeComponentDefinition" target="org.springframework.beans.factory.parsing.AbstractComponentDefinition">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.parsing.BeanComponentDefinition" target="org.springframework.beans.factory.parsing.ComponentDefinition">
+      <point x="0.0" y="-18.0" />
+      <point x="423.5" y="61.0" />
+      <point x="336.25" y="61.0" />
+      <point x="53.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="426.5" y="392.5" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.parsing.BeanComponentDefinition</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

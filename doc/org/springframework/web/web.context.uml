@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.context</OriginalElement>
+  <nodes>
+    <node x="634.0" y="86.0">org.springframework.web.context.ServletContextAware</node>
+    <node x="274.0" y="253.0">org.springframework.web.context.AbstractContextLoaderInitializer</node>
+    <node x="0.0" y="420.0">org.springframework.web.context.ContextCleanupListener</node>
+    <node x="337.0" y="0.0">org.springframework.web.context.WebApplicationContext</node>
+    <node x="289.0" y="86.0">org.springframework.web.context.ConfigurableWebApplicationContext</node>
+    <node x="0.0" y="86.0">org.springframework.web.context.ConfigurableWebEnvironment</node>
+    <node x="32.0" y="253.0">org.springframework.web.context.ContextLoader</node>
+    <node x="206.0" y="501.0">org.springframework.web.context.package-info</node>
+    <node x="371.0" y="172.0">org.springframework.web.context.support</node>
+    <node x="0.0" y="501.0">org.springframework.web.context.request</node>
+    <node x="282.0" y="420.0">org.springframework.web.context.ServletConfigAware</node>
+    <node x="0.0" y="339.0">org.springframework.web.context.ContextLoaderListener</node>
+    <node x="532.0" y="420.0">org.springframework.web.context.annotation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.context.support" target="org.springframework.web.context.ServletContextAware">
+      <point x="53.666666666666686" y="-18.0" />
+      <point x="505.1666666666667" y="147.0" />
+      <point x="740.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.support" target="org.springframework.web.context.ConfigurableWebEnvironment">
+      <point x="-53.66666666666663" y="-18.0" />
+      <point x="397.83333333333337" y="147.0" />
+      <point x="134.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.ConfigurableWebApplicationContext" target="org.springframework.web.context.WebApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.support" target="org.springframework.web.context.ConfigurableWebApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.ContextLoaderListener" target="org.springframework.web.context.ContextLoader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="423.5" y="268.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.context.support</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http</OriginalElement>
+  <nodes>
+    <node x="677.422619047619" y="278.0">org.springframework.http.client</node>
+    <node x="682.0" y="526.0">org.springframework.http.package-info</node>
+    <node x="0.0" y="182.0">org.springframework.http.ZeroCopyHttpOutputMessage</node>
+    <node x="498.1875" y="182.0">org.springframework.http.HttpRequest</node>
+    <node x="884.0" y="526.0">org.springframework.http.CacheControl</node>
+    <node x="0.0" y="96.0">org.springframework.http.ReactiveHttpOutputMessage</node>
+    <node x="419.0" y="359.0">org.springframework.http.HttpCookie</node>
+    <node x="927.0" y="359.0">org.springframework.http.ContentDisposition</node>
+    <node x="0.0" y="526.0">org.springframework.http.MediaTypeFactory</node>
+    <node x="498.1875" y="0.0">org.springframework.http.HttpMessage</node>
+    <node x="403.0" y="445.0">org.springframework.http.ResponseCookie</node>
+    <node x="193.0" y="445.0">org.springframework.http.RequestEntity</node>
+    <node x="0.0" y="607.0">org.springframework.http.HttpHeaders</node>
+    <node x="756.0" y="607.0">org.springframework.http.MediaType</node>
+    <node x="384.0" y="607.0">org.springframework.http.HttpMethod</node>
+    <node x="934.0" y="607.0">org.springframework.http.HttpRange</node>
+    <node x="667.1875" y="182.0">org.springframework.http.StreamingHttpOutputMessage</node>
+    <node x="570.0" y="607.0">org.springframework.http.HttpStatus</node>
+    <node x="621.0" y="359.0">org.springframework.http.InvalidMediaTypeException</node>
+    <node x="194.0" y="607.0">org.springframework.http.codec</node>
+    <node x="289.1875" y="182.0">org.springframework.http.HttpInputMessage</node>
+    <node x="110.5" y="359.0">org.springframework.http.HttpEntity</node>
+    <node x="920.1875" y="96.0">org.springframework.http.ReactiveHttpInputMessage</node>
+    <node x="234.0" y="526.0">org.springframework.http.MediaTypeEditor</node>
+    <node x="460.0" y="526.0">org.springframework.http.converter</node>
+    <node x="0.0" y="445.0">org.springframework.http.ResponseEntity</node>
+    <node x="323.375" y="278.0">org.springframework.http.server</node>
+    <node x="703.1875" y="96.0">org.springframework.http.HttpOutputMessage</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.client" target="org.springframework.http.HttpRequest">
+      <point x="-19.125" y="-18.0" />
+      <point x="734.797619047619" y="238.0" />
+      <point x="609.9375" y="238.0" />
+      <point x="37.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.StreamingHttpOutputMessage" target="org.springframework.http.HttpOutputMessage">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client" target="org.springframework.http.StreamingHttpOutputMessage">
+      <point x="19.125" y="-18.0" />
+      <point x="773.047619047619" y="258.0" />
+      <point x="801.6875" y="258.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.ResponseCookie" target="org.springframework.http.HttpCookie">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client" target="org.springframework.http.HttpInputMessage">
+      <point x="-57.375" y="-18.0" />
+      <point x="696.547619047619" y="248.0" />
+      <point x="430.9375" y="248.0" />
+      <point x="47.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.RequestEntity" target="org.springframework.http.HttpEntity">
+      <point x="0.0" y="-18.0" />
+      <point x="275.5" y="420.0" />
+      <point x="216.25" y="420.0" />
+      <point x="35.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client" target="org.springframework.http.HttpOutputMessage">
+      <point x="57.375" y="-18.0" />
+      <point x="811.297619047619" y="258.0" />
+      <point x="946.6875" y="258.0" />
+      <point x="946.6875" y="162.0" />
+      <point x="867.3541666666667" y="162.0" />
+      <point x="65.66666666666669" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.server" target="org.springframework.http.HttpOutputMessage">
+      <point x="-51.0" y="-18.0" />
+      <point x="348.875" y="258.0" />
+      <point x="271.5" y="258.0" />
+      <point x="271.5" y="162.0" />
+      <point x="736.0208333333333" y="162.0" />
+      <point x="-65.66666666666669" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.ResponseEntity" target="org.springframework.http.HttpEntity">
+      <point x="0.0" y="-18.0" />
+      <point x="86.5" y="420.0" />
+      <point x="145.75" y="420.0" />
+      <point x="-35.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.server" target="org.springframework.http.HttpInputMessage">
+      <point x="0.0" y="-18.0" />
+      <point x="399.875" y="248.0" />
+      <point x="336.4375" y="248.0" />
+      <point x="-47.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.ReactiveHttpInputMessage" target="org.springframework.http.HttpMessage">
+      <point x="0.0" y="-18.0" />
+      <point x="1046.6875" y="66.0" />
+      <point x="632.2875" y="66.0" />
+      <point x="59.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.server" target="org.springframework.http.HttpRequest">
+      <point x="51.0" y="-18.0" />
+      <point x="450.875" y="258.0" />
+      <point x="535.4375" y="258.0" />
+      <point x="-37.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.ReactiveHttpOutputMessage" target="org.springframework.http.HttpMessage">
+      <point x="0.0" y="-18.0" />
+      <point x="130.5" y="56.0" />
+      <point x="513.0875" y="56.0" />
+      <point x="-59.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.HttpRequest" target="org.springframework.http.HttpMessage">
+      <point x="0.0" y="-18.0" />
+      <point x="572.6875" y="152.0" />
+      <point x="536.5839285714286" y="152.0" />
+      <point x="536.5839285714286" y="76.0" />
+      <point x="572.6875" y="76.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.ZeroCopyHttpOutputMessage" target="org.springframework.http.ReactiveHttpOutputMessage">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.HttpInputMessage" target="org.springframework.http.HttpMessage">
+      <point x="0.0" y="-18.0" />
+      <point x="383.6875" y="152.0" />
+      <point x="366.3327380952381" y="152.0" />
+      <point x="366.3327380952381" y="66.0" />
+      <point x="542.8875" y="66.0" />
+      <point x="-29.80000000000001" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.HttpOutputMessage" target="org.springframework.http.HttpMessage">
+      <point x="0.0" y="-18.0" />
+      <point x="801.6875" y="76.0" />
+      <point x="602.4875" y="76.0" />
+      <point x="29.80000000000001" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="587.0" y="321.5" />
+  <SelectedNodes>
+    <node>org.springframework.http.HttpOutputMessage</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

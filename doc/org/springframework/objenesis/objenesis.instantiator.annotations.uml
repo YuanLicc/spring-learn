@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.objenesis.instantiator.annotations</OriginalElement>
+  <nodes>
+    <node x="0.0" y="81.0">org.springframework.objenesis.instantiator.annotations.Typology</node>
+    <node x="0.0" y="0.0">org.springframework.objenesis.instantiator.annotations.Instantiator</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="78.5" y="58.5" />
+  <SelectedNodes>
+    <node>org.springframework.objenesis.instantiator.annotations.Typology</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

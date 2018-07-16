@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.wiring</OriginalElement>
+  <nodes>
+    <node x="36.0" y="0.0">org.springframework.beans.factory.wiring.BeanWiringInfoResolver</node>
+    <node x="0.0" y="329.0">org.springframework.beans.factory.wiring.package-info</node>
+    <node x="0.0" y="248.0">org.springframework.beans.factory.wiring.BeanWiringInfo</node>
+    <node x="0.0" y="86.0">org.springframework.beans.factory.wiring.ClassNameBeanWiringInfoResolver</node>
+    <node x="0.0" y="167.0">org.springframework.beans.factory.wiring.BeanConfigurerSupport</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.beans.factory.wiring.ClassNameBeanWiringInfoResolver" target="org.springframework.beans.factory.wiring.BeanWiringInfoResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="154.5" y="182.5" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.wiring.ClassNameBeanWiringInfoResolver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

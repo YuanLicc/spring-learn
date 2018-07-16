@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.multipart.support</OriginalElement>
+  <nodes>
+    <node x="0.0" y="329.0">org.springframework.web.multipart.support.StandardServletMultipartResolver</node>
+    <node x="0.0" y="410.0">org.springframework.web.multipart.support.MultipartResolutionDelegate</node>
+    <node x="362.0" y="329.0">org.springframework.web.multipart.support.ByteArrayMultipartFileEditor</node>
+    <node x="361.0" y="86.0">org.springframework.web.multipart.support.DefaultMultipartHttpServletRequest</node>
+    <node x="0.0" y="491.0">org.springframework.web.multipart.support.MultipartFilter</node>
+    <node x="0.0" y="86.0">org.springframework.web.multipart.support.StandardMultipartHttpServletRequest</node>
+    <node x="322.0" y="410.0">org.springframework.web.multipart.support.StringMultipartFileEditor</node>
+    <node x="0.0" y="167.0">org.springframework.web.multipart.support.RequestPartServletServerHttpRequest</node>
+    <node x="178.5" y="0.0">org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest</node>
+    <node x="0.0" y="248.0">org.springframework.web.multipart.support.MissingServletRequestPartException</node>
+    <node x="226.0" y="491.0">org.springframework.web.multipart.support.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.multipart.support.StandardMultipartHttpServletRequest" target="org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="170.5" y="61.0" />
+      <point x="263.75" y="61.0" />
+      <point x="-85.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.multipart.support.DefaultMultipartHttpServletRequest" target="org.springframework.web.multipart.support.AbstractMultipartHttpServletRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="527.5" y="61.0" />
+      <point x="434.25" y="61.0" />
+      <point x="85.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="347.0" y="263.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.multipart.support.StandardServletMultipartResolver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.aopalliance.intercept</OriginalElement>
+  <nodes>
+    <node x="142.5" y="0.0">org.aopalliance.intercept.Joinpoint</node>
+    <node x="257.0" y="339.0">org.aopalliance.intercept.MethodInterceptor</node>
+    <node x="162.5" y="253.0">org.aopalliance.intercept.Interceptor</node>
+    <node x="209.0" y="172.0">org.aopalliance.intercept.ConstructorInvocation</node>
+    <node x="0.0" y="172.0">org.aopalliance.intercept.MethodInvocation</node>
+    <node x="0.0" y="339.0">org.aopalliance.intercept.ConstructorInterceptor</node>
+    <node x="138.5" y="86.0">org.aopalliance.intercept.Invocation</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.aopalliance.intercept.Invocation" target="org.aopalliance.intercept.Joinpoint">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.aopalliance.intercept.MethodInvocation" target="org.aopalliance.intercept.Invocation">
+      <point x="0.0" y="-18.0" />
+      <point x="94.5" y="147.0" />
+      <point x="173.75" y="147.0" />
+      <point x="-35.25" y="18.0" />
+    </edge>
+    <edge source="org.aopalliance.intercept.MethodInterceptor" target="org.aopalliance.intercept.Interceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="355.5" y="314.0" />
+      <point x="274.25" y="314.0" />
+      <point x="37.25" y="18.0" />
+    </edge>
+    <edge source="org.aopalliance.intercept.ConstructorInterceptor" target="org.aopalliance.intercept.Interceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="118.5" y="314.0" />
+      <point x="199.75" y="314.0" />
+      <point x="-37.25" y="18.0" />
+    </edge>
+    <edge source="org.aopalliance.intercept.ConstructorInvocation" target="org.aopalliance.intercept.Invocation">
+      <point x="0.0" y="-18.0" />
+      <point x="323.5" y="147.0" />
+      <point x="244.25" y="147.0" />
+      <point x="35.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="227.0" y="187.5" />
+  <SelectedNodes>
+    <node>org.aopalliance.intercept.Invocation</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

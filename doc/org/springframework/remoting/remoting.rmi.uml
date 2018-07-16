@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.remoting.rmi</OriginalElement>
+  <nodes>
+    <node x="225.0" y="86.0">org.springframework.remoting.rmi.JndiRmiServiceExporter</node>
+    <node x="4.0" y="253.0">org.springframework.remoting.rmi.JndiRmiProxyFactoryBean</node>
+    <node x="298.0" y="167.0">org.springframework.remoting.rmi.RmiInvocationHandler</node>
+    <node x="346.0" y="501.0">org.springframework.remoting.rmi.RmiClientInterceptorUtils</node>
+    <node x="0.0" y="167.0">org.springframework.remoting.rmi.JndiRmiClientInterceptor</node>
+    <node x="4.0" y="420.0">org.springframework.remoting.rmi.RmiProxyFactoryBean</node>
+    <node x="0.0" y="582.0">org.springframework.remoting.rmi.RmiRegistryFactoryBean</node>
+    <node x="0.0" y="501.0">org.springframework.remoting.rmi.CodebaseAwareObjectInputStream</node>
+    <node x="0.0" y="86.0">org.springframework.remoting.rmi.RmiServiceExporter</node>
+    <node x="0.0" y="334.0">org.springframework.remoting.rmi.RmiClientInterceptor</node>
+    <node x="266.0" y="334.0">org.springframework.remoting.rmi.RemoteInvocationSerializingExporter</node>
+    <node x="128.5" y="0.0">org.springframework.remoting.rmi.RmiBasedExporter</node>
+    <node x="298.0" y="253.0">org.springframework.remoting.rmi.RmiInvocationWrapper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.remoting.rmi.RmiInvocationWrapper" target="org.springframework.remoting.rmi.RmiInvocationHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.rmi.JndiRmiProxyFactoryBean" target="org.springframework.remoting.rmi.JndiRmiClientInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.rmi.RmiProxyFactoryBean" target="org.springframework.remoting.rmi.RmiClientInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.rmi.RmiServiceExporter" target="org.springframework.remoting.rmi.RmiBasedExporter">
+      <point x="0.0" y="-18.0" />
+      <point x="102.5" y="61.0" />
+      <point x="175.75" y="61.0" />
+      <point x="-47.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.rmi.JndiRmiServiceExporter" target="org.springframework.remoting.rmi.RmiBasedExporter">
+      <point x="0.0" y="-18.0" />
+      <point x="343.5" y="61.0" />
+      <point x="270.25" y="61.0" />
+      <point x="47.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="303.5" y="309.0" />
+  <SelectedNodes>
+    <node>org.springframework.remoting.rmi.RmiBasedExporter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.core.codec</OriginalElement>
+  <nodes>
+    <node x="1181.0" y="182.0">org.springframework.core.codec.CharSequenceEncoder</node>
+    <node x="654.5" y="86.0">org.springframework.core.codec.AbstractEncoder</node>
+    <node x="0.0" y="182.0">org.springframework.core.codec.AbstractSingleValueEncoder</node>
+    <node x="370.0" y="521.0">org.springframework.core.codec.AbstractDataBufferDecoder</node>
+    <node x="442.0" y="349.0">org.springframework.core.codec.Decoder</node>
+    <node x="44.0" y="268.0">org.springframework.core.codec.ResourceEncoder</node>
+    <node x="459.0" y="688.0">org.springframework.core.codec.package-info</node>
+    <node x="538.0" y="182.0">org.springframework.core.codec.ByteBufferEncoder</node>
+    <node x="418.0" y="607.0">org.springframework.core.codec.StringDecoder</node>
+    <node x="217.0" y="774.0">org.springframework.core.codec.DecodingException</node>
+    <node x="972.0" y="182.0">org.springframework.core.codec.ByteArrayEncoder</node>
+    <node x="0.0" y="774.0">org.springframework.core.codec.EncodingException</node>
+    <node x="812.0" y="607.0">org.springframework.core.codec.ByteBufferDecoder</node>
+    <node x="603.0" y="607.0">org.springframework.core.codec.ByteArrayDecoder</node>
+    <node x="289.0" y="182.0">org.springframework.core.codec.ResourceRegionEncoder</node>
+    <node x="120.5" y="688.0">org.springframework.core.codec.CodecException</node>
+    <node x="755.0" y="182.0">org.springframework.core.codec.DataBufferEncoder</node>
+    <node x="201.0" y="607.0">org.springframework.core.codec.DataBufferDecoder</node>
+    <node x="410.0" y="435.0">org.springframework.core.codec.AbstractDecoder</node>
+    <node x="686.5" y="0.0">org.springframework.core.codec.Encoder</node>
+    <node x="0.0" y="607.0">org.springframework.core.codec.ResourceDecoder</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.core.codec.DataBufferEncoder" target="org.springframework.core.codec.AbstractEncoder">
+      <point x="0.0" y="-18.0" />
+      <point x="853.5" y="162.0" />
+      <point x="760.0833333333334" y="162.0" />
+      <point x="15.083333333333371" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.AbstractDataBufferDecoder" target="org.springframework.core.codec.AbstractDecoder">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.AbstractEncoder" target="org.springframework.core.codec.Encoder">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.ByteArrayDecoder" target="org.springframework.core.codec.AbstractDataBufferDecoder">
+      <point x="0.0" y="-18.0" />
+      <point x="697.5" y="587.0" />
+      <point x="552.7" y="587.0" />
+      <point x="52.200000000000045" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.AbstractSingleValueEncoder" target="org.springframework.core.codec.AbstractEncoder">
+      <point x="0.0" y="-18.0" />
+      <point x="134.5" y="142.0" />
+      <point x="669.5833333333334" y="142.0" />
+      <point x="-75.41666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.EncodingException" target="org.springframework.core.codec.CodecException">
+      <point x="0.0" y="-18.0" />
+      <point x="98.5" y="749.0" />
+      <point x="163.75" y="749.0" />
+      <point x="-43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.AbstractDecoder" target="org.springframework.core.codec.Decoder">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.ByteBufferEncoder" target="org.springframework.core.codec.AbstractEncoder">
+      <point x="0.0" y="-18.0" />
+      <point x="636.5" y="162.0" />
+      <point x="729.9166666666666" y="162.0" />
+      <point x="-15.083333333333371" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.ResourceEncoder" target="org.springframework.core.codec.AbstractSingleValueEncoder">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.ByteArrayEncoder" target="org.springframework.core.codec.AbstractEncoder">
+      <point x="0.0" y="-18.0" />
+      <point x="1066.5" y="152.0" />
+      <point x="790.25" y="152.0" />
+      <point x="45.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.DataBufferDecoder" target="org.springframework.core.codec.AbstractDataBufferDecoder">
+      <point x="0.0" y="-18.0" />
+      <point x="299.5" y="587.0" />
+      <point x="448.3" y="587.0" />
+      <point x="-52.19999999999999" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.StringDecoder" target="org.springframework.core.codec.AbstractDataBufferDecoder">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.ResourceDecoder" target="org.springframework.core.codec.AbstractDataBufferDecoder">
+      <point x="0.0" y="-18.0" />
+      <point x="90.5" y="577.0" />
+      <point x="396.1" y="577.0" />
+      <point x="-104.39999999999998" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.CharSequenceEncoder" target="org.springframework.core.codec.AbstractEncoder">
+      <point x="0.0" y="-18.0" />
+      <point x="1287.5" y="142.0" />
+      <point x="820.4166666666667" y="142.0" />
+      <point x="75.41666666666674" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.ByteBufferDecoder" target="org.springframework.core.codec.AbstractDataBufferDecoder">
+      <point x="0.0" y="-18.0" />
+      <point x="910.5" y="577.0" />
+      <point x="604.9" y="577.0" />
+      <point x="104.39999999999998" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.DecodingException" target="org.springframework.core.codec.CodecException">
+      <point x="0.0" y="-18.0" />
+      <point x="315.5" y="749.0" />
+      <point x="250.25" y="749.0" />
+      <point x="43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.codec.ResourceRegionEncoder" target="org.springframework.core.codec.AbstractEncoder">
+      <point x="0.0" y="-18.0" />
+      <point x="403.5" y="152.0" />
+      <point x="699.75" y="152.0" />
+      <point x="-45.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="697.0" y="405.0" />
+  <SelectedNodes>
+    <node>org.springframework.core.codec.Encoder</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

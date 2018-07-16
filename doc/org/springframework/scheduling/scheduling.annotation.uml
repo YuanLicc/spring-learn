@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.scheduling.annotation</OriginalElement>
+  <nodes>
+    <node x="356.0" y="653.0">org.springframework.scheduling.annotation.Async</node>
+    <node x="0.0" y="0.0">org.springframework.scheduling.annotation.AbstractAsyncConfiguration</node>
+    <node x="290.0" y="410.0">org.springframework.scheduling.annotation.AsyncAnnotationAdvisor</node>
+    <node x="362.0" y="329.0">org.springframework.scheduling.annotation.AsyncConfigurationSelector</node>
+    <node x="12.0" y="86.0">org.springframework.scheduling.annotation.ProxyAsyncConfiguration</node>
+    <node x="202.0" y="572.0">org.springframework.scheduling.annotation.EnableAsync</node>
+    <node x="314.0" y="86.0">org.springframework.scheduling.annotation.AsyncConfigurerSupport</node>
+    <node x="0.0" y="653.0">org.springframework.scheduling.annotation.Scheduled</node>
+    <node x="342.0" y="0.0">org.springframework.scheduling.annotation.AsyncConfigurer</node>
+    <node x="0.0" y="410.0">org.springframework.scheduling.annotation.SchedulingConfiguration</node>
+    <node x="0.0" y="167.0">org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor</node>
+    <node x="0.0" y="491.0">org.springframework.scheduling.annotation.SchedulingConfigurer</node>
+    <node x="0.0" y="572.0">org.springframework.scheduling.annotation.package-info</node>
+    <node x="0.0" y="248.0">org.springframework.scheduling.annotation.AnnotationAsyncExecutionInterceptor</node>
+    <node x="0.0" y="329.0">org.springframework.scheduling.annotation.AsyncAnnotationBeanPostProcessor</node>
+    <node x="178.0" y="653.0">org.springframework.scheduling.annotation.Schedules</node>
+    <node x="266.0" y="491.0">org.springframework.scheduling.annotation.EnableScheduling</node>
+    <node x="396.0" y="572.0">org.springframework.scheduling.annotation.AsyncResult</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.scheduling.annotation.ProxyAsyncConfiguration" target="org.springframework.scheduling.annotation.AbstractAsyncConfiguration">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.annotation.AsyncConfigurerSupport" target="org.springframework.scheduling.annotation.AsyncConfigurer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="315.5" y="344.5" />
+  <SelectedNodes>
+    <node>org.springframework.scheduling.annotation.Async</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

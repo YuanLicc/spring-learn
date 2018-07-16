@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.bind.annotation</OriginalElement>
+  <nodes>
+    <node x="420.0" y="582.0">org.springframework.web.bind.annotation.PathVariable</node>
+    <node x="622.0" y="582.0">org.springframework.web.bind.annotation.RequestParam</node>
+    <node x="0.0" y="663.0">org.springframework.web.bind.annotation.package-info</node>
+    <node x="326.0" y="86.0">org.springframework.web.bind.annotation.RequestMapping</node>
+    <node x="202.0" y="663.0">org.springframework.web.bind.annotation.RequestPart</node>
+    <node x="396.0" y="663.0">org.springframework.web.bind.annotation.CrossOrigin</node>
+    <node x="590.0" y="663.0">org.springframework.web.bind.annotation.CookieValue</node>
+    <node x="676.0" y="172.0">org.springframework.web.bind.annotation.PatchMapping</node>
+    <node x="0.0" y="744.0">org.springframework.web.bind.annotation.RequestBody</node>
+    <node x="0.0" y="501.0">org.springframework.web.bind.annotation.ModelAttribute</node>
+    <node x="169.0" y="172.0">org.springframework.web.bind.annotation.PutMapping</node>
+    <node x="498.25" y="253.0">org.springframework.web.bind.annotation.SessionAttributes</node>
+    <node x="218.0" y="501.0">org.springframework.web.bind.annotation.MatrixVariable</node>
+    <node x="0.0" y="420.0">org.springframework.web.bind.annotation.ExceptionHandler</node>
+    <node x="515.0" y="172.0">org.springframework.web.bind.annotation.GetMapping</node>
+    <node x="234.0" y="420.0">org.springframework.web.bind.annotation.SessionAttribute</node>
+    <node x="436.0" y="501.0">org.springframework.web.bind.annotation.ResponseStatus</node>
+    <node x="330.0" y="172.0">org.springframework.web.bind.annotation.DeleteMapping</node>
+    <node x="0.0" y="253.0">org.springframework.web.bind.annotation.ControllerAdvice</node>
+    <node x="0.0" y="172.0">org.springframework.web.bind.annotation.PostMapping</node>
+    <node x="0.0" y="582.0">org.springframework.web.bind.annotation.RequestMethod</node>
+    <node x="249.0" y="253.0">org.springframework.web.bind.annotation.ResponseBody</node>
+    <node x="280.25" y="339.0">org.springframework.web.bind.annotation.RestController</node>
+    <node x="468.0" y="420.0">org.springframework.web.bind.annotation.RequestAttribute</node>
+    <node x="39.25" y="339.0">org.springframework.web.bind.annotation.RestControllerAdvice</node>
+    <node x="210.0" y="582.0">org.springframework.web.bind.annotation.RequestHeader</node>
+    <node x="654.0" y="501.0">org.springframework.web.bind.annotation.ValueConstants</node>
+    <node x="194.0" y="744.0">org.springframework.web.bind.annotation.InitBinder</node>
+    <node x="354.0" y="0.0">org.springframework.web.bind.annotation.Mapping</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.bind.annotation.GetMapping" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="0.0" y="-18.0" />
+      <point x="585.5" y="152.0" />
+      <point x="447.09999999999997" y="152.0" />
+      <point x="34.599999999999966" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.annotation.RestControllerAdvice" target="org.springframework.web.bind.annotation.ControllerAdvice">
+      <point x="-55.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.annotation.RestController" target="org.springframework.web.bind.annotation.ResponseBody">
+      <point x="0.0" y="-18.0" />
+      <point x="39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.annotation.RequestMapping" target="org.springframework.web.bind.annotation.Mapping">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.annotation.DeleteMapping" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.annotation.PutMapping" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="0.0" y="-18.0" />
+      <point x="239.5" y="152.0" />
+      <point x="377.9" y="152.0" />
+      <point x="-34.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.annotation.PostMapping" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="0.0" y="-18.0" />
+      <point x="74.5" y="142.0" />
+      <point x="343.3" y="142.0" />
+      <point x="-69.19999999999999" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.annotation.PatchMapping" target="org.springframework.web.bind.annotation.RequestMapping">
+      <point x="0.0" y="-18.0" />
+      <point x="754.5" y="142.0" />
+      <point x="481.7" y="142.0" />
+      <point x="69.19999999999999" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.annotation.RestControllerAdvice" target="org.springframework.web.bind.annotation.ResponseBody">
+      <point x="55.25" y="-18.0" />
+      <point x="205.0" y="314.0" />
+      <point x="288.25" y="314.0" />
+      <point x="-39.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="416.5" y="390.0" />
+  <SelectedNodes>
+    <node>org.springframework.web.bind.annotation.PathVariable</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

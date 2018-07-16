@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.client</OriginalElement>
+  <nodes>
+    <node x="1268.0" y="344.0">org.springframework.http.client.HttpComponentsClientHttpRequest</node>
+    <node x="1236.25" y="425.0">org.springframework.http.client.ClientHttpRequestFactory</node>
+    <node x="2266.0" y="678.0">org.springframework.http.client.AsyncClientHttpRequestExecution</node>
+    <node x="1059.0" y="597.0">org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactory</node>
+    <node x="891.0" y="850.0">org.springframework.http.client.SimpleClientHttpResponse</node>
+    <node x="650.0000000000001" y="597.0">org.springframework.http.client.InterceptingAsyncClientHttpRequestFactory</node>
+    <node x="1741.0" y="258.0">org.springframework.http.client.InterceptingAsyncClientHttpRequest</node>
+    <node x="899.0" y="764.0">org.springframework.http.client.BufferingClientHttpResponseWrapper</node>
+    <node x="1556.5625" y="86.0">org.springframework.http.client.ClientHttpRequest</node>
+    <node x="281.0" y="850.0">org.springframework.http.client.HttpComponentsClientHttpResponse</node>
+    <node x="1003.0000000000001" y="258.0">org.springframework.http.client.SimpleStreamingClientHttpRequest</node>
+    <node x="2262.5" y="86.0">org.springframework.http.client.AbstractAsyncClientHttpRequest</node>
+    <node x="698.0000000000001" y="511.0">org.springframework.http.client.AsyncClientHttpRequestFactory</node>
+    <node x="480.0" y="931.0">org.springframework.http.client.package-info</node>
+    <node x="2619.5" y="172.0">org.springframework.http.client.SimpleStreamingAsyncClientHttpRequest</node>
+    <node x="2784.0" y="258.0">org.springframework.http.client.HttpComponentsAsyncClientHttpRequest</node>
+    <node x="1031.0" y="172.0">org.springframework.http.client.AbstractClientHttpRequest</node>
+    <node x="0.0" y="931.0">org.springframework.http.client.MultipartBodyBuilder</node>
+    <node x="995.0000000000001" y="344.0">org.springframework.http.client.OkHttp3ClientHttpRequest</node>
+    <node x="2226.5" y="172.0">org.springframework.http.client.AbstractBufferingAsyncClientHttpRequest</node>
+    <node x="345.0" y="344.0">org.springframework.http.client.InterceptingClientHttpRequest</node>
+    <node x="1164.0" y="850.0">org.springframework.http.client.HttpComponentsAsyncClientHttpResponse</node>
+    <node x="802.5" y="678.0">org.springframework.http.client.ClientHttpResponse</node>
+    <node x="1896.0" y="678.0">org.springframework.http.client.AsyncClientHttpRequestInterceptor</node>
+    <node x="2620.0" y="678.0">org.springframework.http.client.ClientHttpRequestExecution</node>
+    <node x="1484.0" y="597.0">org.springframework.http.client.SimpleClientHttpRequestFactory</node>
+    <node x="2407.0" y="258.0">org.springframework.http.client.SimpleBufferingAsyncClientHttpRequest</node>
+    <node x="2294.5" y="0.0">org.springframework.http.client.AsyncClientHttpRequest</node>
+    <node x="2150.0" y="597.0">org.springframework.http.client.InterceptingClientHttpRequestFactory</node>
+    <node x="658.0000000000001" y="344.0">org.springframework.http.client.SimpleBufferingClientHttpRequest</node>
+    <node x="0.0" y="597.0">org.springframework.http.client.OkHttp3ClientHttpRequestFactory</node>
+    <node x="329.0000000000001" y="597.0">org.springframework.http.client.Netty4ClientHttpRequestFactory</node>
+    <node x="610.0" y="764.0">org.springframework.http.client.AbstractClientHttpResponse</node>
+    <node x="1180.25" y="511.0">org.springframework.http.client.HttpComponentsClientHttpRequestFactory</node>
+    <node x="266.0" y="931.0">org.springframework.http.client.reactive</node>
+    <node x="0.0" y="344.0">org.springframework.http.client.BufferingClientHttpRequestWrapper</node>
+    <node x="1566.0" y="678.0">org.springframework.http.client.ClientHttpRequestInterceptor</node>
+    <node x="1628.0" y="764.0">org.springframework.http.client.support</node>
+    <node x="618.0" y="850.0">org.springframework.http.client.Netty4ClientHttpResponse</node>
+    <node x="1699.6875" y="172.0">org.springframework.http.client.Netty4ClientHttpRequest</node>
+    <node x="1340.0" y="258.0">org.springframework.http.client.HttpComponentsStreamingClientHttpRequest</node>
+    <node x="650.0" y="258.0">org.springframework.http.client.AbstractBufferingClientHttpRequest</node>
+    <node x="1974.3928571428573" y="511.0">org.springframework.http.client.AbstractClientHttpRequestFactoryWrapper</node>
+    <node x="2094.0" y="258.0">org.springframework.http.client.OkHttp3AsyncClientHttpRequest</node>
+    <node x="1805.0" y="597.0">org.springframework.http.client.BufferingClientHttpRequestFactory</node>
+    <node x="0.0" y="850.0">org.springframework.http.client.OkHttp3ClientHttpResponse</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.client.AbstractBufferingClientHttpRequest" target="org.springframework.http.client.AbstractClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="816.5" y="238.0" />
+      <point x="1074.5" y="238.0" />
+      <point x="-87.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.support" target="org.springframework.http.client.ClientHttpRequestInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.Netty4ClientHttpResponse" target="org.springframework.http.client.AbstractClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.Netty4ClientHttpRequestFactory" target="org.springframework.http.client.ClientHttpRequestFactory">
+      <point x="-75.25" y="-18.0" />
+      <point x="404.2500000000001" y="491.0" />
+      <point x="1312.15" y="491.0" />
+      <point x="-50.59999999999991" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.SimpleBufferingClientHttpRequest" target="org.springframework.http.client.AbstractBufferingClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.Netty4ClientHttpRequestFactory" target="org.springframework.http.client.AsyncClientHttpRequestFactory">
+      <point x="75.25" y="-18.0" />
+      <point x="554.7500000000001" y="577.0" />
+      <point x="785.9000000000001" y="577.0" />
+      <point x="-58.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.HttpComponentsAsyncClientHttpRequest" target="org.springframework.http.client.AbstractBufferingAsyncClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="2958.5" y="228.0" />
+      <point x="2552.875" y="228.0" />
+      <point x="139.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.Netty4ClientHttpRequest" target="org.springframework.http.client.AbstractAsyncClientHttpRequest">
+      <point x="61.25" y="-18.0" />
+      <point x="1883.4375" y="147.0" />
+      <point x="2312.666666666667" y="147.0" />
+      <point x="-100.33333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactory" target="org.springframework.http.client.AsyncClientHttpRequestFactory">
+      <point x="-101.25" y="-18.0" />
+      <point x="1160.25" y="577.0" />
+      <point x="903.1" y="577.0" />
+      <point x="58.59999999999991" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.SimpleBufferingAsyncClientHttpRequest" target="org.springframework.http.client.AbstractBufferingAsyncClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="2585.5" y="238.0" />
+      <point x="2459.625" y="238.0" />
+      <point x="46.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.HttpComponentsAsyncClientHttpRequestFactory" target="org.springframework.http.client.HttpComponentsClientHttpRequestFactory">
+      <point x="101.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.AbstractAsyncClientHttpRequest" target="org.springframework.http.client.AsyncClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.InterceptingClientHttpRequestFactory" target="org.springframework.http.client.AbstractClientHttpRequestFactoryWrapper">
+      <point x="0.0" y="-18.0" />
+      <point x="2324.5" y="577.0" />
+      <point x="2254.1428571428573" y="577.0" />
+      <point x="93.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.InterceptingAsyncClientHttpRequest" target="org.springframework.http.client.AbstractBufferingAsyncClientHttpRequest">
+      <point x="-1.1368683772161603E-13" y="-18.0" />
+      <point x="1907.5" y="228.0" />
+      <point x="2273.125" y="228.0" />
+      <point x="-139.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.Netty4ClientHttpRequest" target="org.springframework.http.client.ClientHttpRequest">
+      <point x="-61.25" y="-18.0" />
+      <point x="1760.9375" y="147.0" />
+      <point x="1704.3125" y="147.0" />
+      <point x="49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.AbstractBufferingAsyncClientHttpRequest" target="org.springframework.http.client.AbstractAsyncClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.AbstractClientHttpResponse" target="org.springframework.http.client.ClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="744.5" y="739.0" />
+      <point x="853.75" y="739.0" />
+      <point x="-51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.AbstractClientHttpRequest" target="org.springframework.http.client.ClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="1161.5" y="147.0" />
+      <point x="1605.8125" y="147.0" />
+      <point x="-49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.OkHttp3ClientHttpRequest" target="org.springframework.http.client.AbstractBufferingClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="1121.5" y="324.0" />
+      <point x="883.0999999999999" y="324.0" />
+      <point x="66.59999999999991" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.InterceptingClientHttpRequest" target="org.springframework.http.client.AbstractBufferingClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="491.5" y="324.0" />
+      <point x="749.9000000000001" y="324.0" />
+      <point x="-66.59999999999991" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.OkHttp3ClientHttpResponse" target="org.springframework.http.client.AbstractClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="130.5" y="820.0" />
+      <point x="636.9" y="820.0" />
+      <point x="-107.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.SimpleStreamingAsyncClientHttpRequest" target="org.springframework.http.client.AbstractAsyncClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="2798.0" y="147.0" />
+      <point x="2513.3333333333335" y="147.0" />
+      <point x="100.33333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.BufferingClientHttpResponseWrapper" target="org.springframework.http.client.ClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="1065.5" y="739.0" />
+      <point x="956.25" y="739.0" />
+      <point x="51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.AbstractClientHttpRequestFactoryWrapper" target="org.springframework.http.client.ClientHttpRequestFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="2160.8928571428573" y="481.0" />
+      <point x="1463.9500000000003" y="481.0" />
+      <point x="101.20000000000005" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.SimpleClientHttpResponse" target="org.springframework.http.client.AbstractClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="1017.5" y="830.0" />
+      <point x="798.3" y="830.0" />
+      <point x="53.799999999999955" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.BufferingClientHttpRequestWrapper" target="org.springframework.http.client.AbstractBufferingClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="162.5" y="314.0" />
+      <point x="683.3" y="314.0" />
+      <point x="-133.20000000000005" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.OkHttp3ClientHttpRequestFactory" target="org.springframework.http.client.AsyncClientHttpRequestFactory">
+      <point x="77.25" y="-18.0" />
+      <point x="231.75" y="567.0" />
+      <point x="727.3000000000001" y="567.0" />
+      <point x="-117.20000000000005" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.BufferingClientHttpRequestFactory" target="org.springframework.http.client.AbstractClientHttpRequestFactoryWrapper">
+      <point x="0.0" y="-18.0" />
+      <point x="1967.5" y="577.0" />
+      <point x="2067.6428571428573" y="577.0" />
+      <point x="-93.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.InterceptingAsyncClientHttpRequestFactory" target="org.springframework.http.client.AsyncClientHttpRequestFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.HttpComponentsStreamingClientHttpRequest" target="org.springframework.http.client.AbstractClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="1530.5" y="238.0" />
+      <point x="1248.5" y="238.0" />
+      <point x="87.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.SimpleStreamingClientHttpRequest" target="org.springframework.http.client.AbstractClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.HttpComponentsClientHttpRequest" target="org.springframework.http.client.AbstractBufferingClientHttpRequest">
+      <point x="-1.1368683772161603E-13" y="-18.0" />
+      <point x="1422.5" y="314.0" />
+      <point x="949.7" y="314.0" />
+      <point x="133.20000000000005" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.SimpleClientHttpRequestFactory" target="org.springframework.http.client.AsyncClientHttpRequestFactory">
+      <point x="-75.25" y="-18.0" />
+      <point x="1559.25" y="567.0" />
+      <point x="961.7000000000002" y="567.0" />
+      <point x="117.20000000000005" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.HttpComponentsClientHttpResponse" target="org.springframework.http.client.AbstractClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="439.5" y="830.0" />
+      <point x="690.7" y="830.0" />
+      <point x="-53.799999999999955" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.HttpComponentsAsyncClientHttpResponse" target="org.springframework.http.client.AbstractClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="1342.5" y="820.0" />
+      <point x="852.1" y="820.0" />
+      <point x="107.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.HttpComponentsClientHttpRequestFactory" target="org.springframework.http.client.ClientHttpRequestFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.SimpleClientHttpRequestFactory" target="org.springframework.http.client.ClientHttpRequestFactory">
+      <point x="75.25" y="-18.0" />
+      <point x="1709.75" y="491.0" />
+      <point x="1413.35" y="491.0" />
+      <point x="50.59999999999991" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.OkHttp3AsyncClientHttpRequest" target="org.springframework.http.client.AbstractBufferingAsyncClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="2240.5" y="238.0" />
+      <point x="2366.375" y="238.0" />
+      <point x="-46.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.OkHttp3ClientHttpRequestFactory" target="org.springframework.http.client.ClientHttpRequestFactory">
+      <point x="-77.25" y="-18.0" />
+      <point x="77.25" y="481.0" />
+      <point x="1261.5500000000002" y="481.0" />
+      <point x="-101.20000000000005" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4123057405645417" x="1566.5" y="483.5" />
+  <SelectedNodes>
+    <node>org.springframework.http.client.OkHttp3AsyncClientHttpRequest</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

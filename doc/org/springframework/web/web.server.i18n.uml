@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.server.i18n</OriginalElement>
+  <nodes>
+    <node x="206.5" y="0.0">org.springframework.web.server.i18n.LocaleContextResolver</node>
+    <node x="345.0" y="86.0">org.springframework.web.server.i18n.FixedLocaleContextResolver</node>
+    <node x="0.0" y="167.0">org.springframework.web.server.i18n.package-info</node>
+    <node x="0.0" y="86.0">org.springframework.web.server.i18n.AcceptHeaderLocaleContextResolver</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.server.i18n.FixedLocaleContextResolver" target="org.springframework.web.server.i18n.LocaleContextResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="479.5" y="61.0" />
+      <point x="378.25" y="61.0" />
+      <point x="57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.server.i18n.AcceptHeaderLocaleContextResolver" target="org.springframework.web.server.i18n.LocaleContextResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="162.5" y="61.0" />
+      <point x="263.75" y="61.0" />
+      <point x="-57.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="307.0" y="101.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.server.i18n.AcceptHeaderLocaleContextResolver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.expression</OriginalElement>
+  <nodes>
+    <node x="203.94444444444443" y="0.0">org.springframework.expression.ExpressionException</node>
+    <node x="193.0" y="86.0">org.springframework.expression.PropertyAccessor</node>
+    <node x="209.0" y="253.0">org.springframework.expression.ParserContext</node>
+    <node x="468.0" y="501.0">org.springframework.expression.MethodResolver</node>
+    <node x="380.0" y="744.0">org.springframework.expression.Operation</node>
+    <node x="0.0" y="663.0">org.springframework.expression.MethodFilter</node>
+    <node x="0.0" y="582.0">org.springframework.expression.MethodExecutor</node>
+    <node x="402.0" y="86.0">org.springframework.expression.EvaluationException</node>
+    <node x="391.25" y="172.0">org.springframework.expression.ExpressionInvocationTargetException</node>
+    <node x="192.70833333333331" y="172.0">org.springframework.expression.spel</node>
+    <node x="516.0" y="420.0">org.springframework.expression.OperatorOverloader</node>
+    <node x="0.0" y="744.0">org.springframework.expression.TypeLocator</node>
+    <node x="0.0" y="420.0">org.springframework.expression.ConstructorExecutor</node>
+    <node x="194.0" y="744.0">org.springframework.expression.TypedValue</node>
+    <node x="0.0" y="86.0">org.springframework.expression.ParseException</node>
+    <node x="202.0" y="663.0">org.springframework.expression.package-info</node>
+    <node x="436.0" y="582.0">org.springframework.expression.TypeConverter</node>
+    <node x="242.0" y="501.0">org.springframework.expression.AccessException</node>
+    <node x="404.0" y="663.0">org.springframework.expression.BeanResolver</node>
+    <node x="0.0" y="501.0">org.springframework.expression.EvaluationContext</node>
+    <node x="0.0" y="253.0">org.springframework.expression.ExpressionParser</node>
+    <node x="218.0" y="582.0">org.springframework.expression.TypeComparator</node>
+    <node x="215.0" y="339.0">org.springframework.expression.common</node>
+    <node x="258.0" y="420.0">org.springframework.expression.ConstructorResolver</node>
+    <node x="394.0" y="253.0">org.springframework.expression.Expression</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.expression.common" target="org.springframework.expression.ParserContext">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.expression.common" target="org.springframework.expression.Expression">
+      <point x="51.0" y="-18.0" />
+      <point x="342.5" y="314.0" />
+      <point x="464.5" y="314.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.expression.EvaluationException" target="org.springframework.expression.ExpressionException">
+      <point x="0.0" y="-18.0" />
+      <point x="508.5" y="61.0" />
+      <point x="363.69444444444446" y="61.0" />
+      <point x="53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.expression.ParseException" target="org.springframework.expression.ExpressionException">
+      <point x="0.0" y="-18.0" />
+      <point x="86.5" y="61.0" />
+      <point x="257.19444444444446" y="61.0" />
+      <point x="-53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.expression.spel" target="org.springframework.expression.EvaluationException">
+      <point x="45.666666666666686" y="-18.0" />
+      <point x="306.875" y="147.0" />
+      <point x="455.25" y="147.0" />
+      <point x="-53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.expression.common" target="org.springframework.expression.ExpressionParser">
+      <point x="-51.0" y="-18.0" />
+      <point x="240.5" y="314.0" />
+      <point x="94.5" y="314.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.expression.ExpressionInvocationTargetException" target="org.springframework.expression.EvaluationException">
+      <point x="0.0" y="-18.0" />
+      <point x="53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.expression.spel" target="org.springframework.expression.ParseException">
+      <point x="-45.66666666666663" y="-18.0" />
+      <point x="215.54166666666669" y="147.0" />
+      <point x="86.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.expression.spel" target="org.springframework.expression.PropertyAccessor">
+      <point x="0.0" y="-18.0" />
+      <point x="261.2083333333333" y="147.0" />
+      <point x="287.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="366.5" y="390.0" />
+  <SelectedNodes>
+    <node>org.springframework.expression.ParseException</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.client.support</OriginalElement>
+  <nodes>
+    <node x="338.0" y="334.0">org.springframework.http.client.support.HttpRequestWrapper</node>
+    <node x="0.0" y="334.0">org.springframework.http.client.support.BasicAuthorizationInterceptor</node>
+    <node x="48.0" y="167.0">org.springframework.http.client.support.HttpAccessor</node>
+    <node x="48.0" y="0.0">org.springframework.http.client.support.AsyncHttpAccessor</node>
+    <node x="0.0" y="415.0">org.springframework.http.client.support.ProxyFactoryBean</node>
+    <node x="0.0" y="86.0">org.springframework.http.client.support.InterceptingAsyncHttpAccessor</node>
+    <node x="234.0" y="415.0">org.springframework.http.client.support.package-info</node>
+    <node x="0.0" y="253.0">org.springframework.http.client.support.InterceptingHttpAccessor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.client.support.InterceptingAsyncHttpAccessor" target="org.springframework.http.client.support.AsyncHttpAccessor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.support.InterceptingHttpAccessor" target="org.springframework.http.client.support.HttpAccessor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="271.5" y="225.5" />
+  <SelectedNodes>
+    <node>org.springframework.http.client.support.HttpRequestWrapper</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

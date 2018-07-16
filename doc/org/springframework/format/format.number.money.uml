@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.format.number.money</OriginalElement>
+  <nodes>
+    <node x="0.0" y="243.0">org.springframework.format.number.money.package-info</node>
+    <node x="0.0" y="0.0">org.springframework.format.number.money.Jsr354NumberFormatAnnotationFormatterFactory</node>
+    <node x="0.0" y="162.0">org.springframework.format.number.money.CurrencyUnitFormatter</node>
+    <node x="0.0" y="81.0">org.springframework.format.number.money.MonetaryAmountFormatter</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="206.5" y="139.5" />
+  <SelectedNodes>
+    <node>org.springframework.format.number.money.package-info</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

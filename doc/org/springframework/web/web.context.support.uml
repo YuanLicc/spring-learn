@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.context.support</OriginalElement>
+  <nodes>
+    <node x="0.0" y="496.0">org.springframework.web.context.support.ServletContextAwareProcessor</node>
+    <node x="0.0" y="901.0">org.springframework.web.context.support.LiveBeansViewServlet</node>
+    <node x="0.0" y="253.0">org.springframework.web.context.support.ServletRequestHandledEvent</node>
+    <node x="0.0" y="658.0">org.springframework.web.context.support.StaticWebApplicationContext</node>
+    <node x="0.0" y="334.0">org.springframework.web.context.support.ServletContextParameterFactoryBean</node>
+    <node x="650.0" y="86.0">org.springframework.web.context.support.GroovyWebApplicationContext</node>
+    <node x="524.0" y="901.0">org.springframework.web.context.support.package-info</node>
+    <node x="330.0" y="496.0">org.springframework.web.context.support.ServletContextPropertySource</node>
+    <node x="378.0" y="334.0">org.springframework.web.context.support.ServletContextAttributeFactoryBean</node>
+    <node x="266.0" y="901.0">org.springframework.web.context.support.ServletContextScope</node>
+    <node x="620.0" y="820.0">org.springframework.web.context.support.ServletContextResource</node>
+    <node x="273.0" y="86.0">org.springframework.web.context.support.AnnotationConfigWebApplicationContext</node>
+    <node x="322.0" y="658.0">org.springframework.web.context.support.WebApplicationObjectSupport</node>
+    <node x="644.0" y="739.0">org.springframework.web.context.support.WebApplicationContextUtils</node>
+    <node x="0.0" y="415.0">org.springframework.web.context.support.ContextExposingHttpServletRequest</node>
+    <node x="314.0" y="167.0">org.springframework.web.context.support.ServletContextResourcePatternResolver</node>
+    <node x="0.0" y="820.0">org.springframework.web.context.support.StandardServletEnvironment</node>
+    <node x="644.0" y="658.0">org.springframework.web.context.support.ServletConfigPropertySource</node>
+    <node x="0.0" y="739.0">org.springframework.web.context.support.ServletContextLiveBeansView</node>
+    <node x="261.0" y="0.0">org.springframework.web.context.support.AbstractRefreshableWebApplicationContext</node>
+    <node x="322.0" y="739.0">org.springframework.web.context.support.SpringBeanAutowiringSupport</node>
+    <node x="0.0" y="86.0">org.springframework.web.context.support.XmlWebApplicationContext</node>
+    <node x="0.0" y="577.0">org.springframework.web.context.support.GenericWebApplicationContext</node>
+    <node x="314.0" y="820.0">org.springframework.web.context.support.HttpRequestHandlerServlet</node>
+    <node x="370.0" y="415.0">org.springframework.web.context.support.ServletContextAttributeExporter</node>
+    <node x="28.0" y="167.0">org.springframework.web.context.support.RequestHandledEvent</node>
+    <node x="330.0" y="577.0">org.springframework.web.context.support.ServletContextResourceLoader</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.context.support.AnnotationConfigWebApplicationContext" target="org.springframework.web.context.support.AbstractRefreshableWebApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.support.ServletRequestHandledEvent" target="org.springframework.web.context.support.RequestHandledEvent">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.support.GroovyWebApplicationContext" target="org.springframework.web.context.support.AbstractRefreshableWebApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="788.5" y="61.0" />
+      <point x="578.5" y="61.0" />
+      <point x="127.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.support.XmlWebApplicationContext" target="org.springframework.web.context.support.AbstractRefreshableWebApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="126.5" y="61.0" />
+      <point x="324.5" y="61.0" />
+      <point x="-127.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8861024033437827" x="463.5" y="468.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.context.support.ServletContextAwareProcessor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

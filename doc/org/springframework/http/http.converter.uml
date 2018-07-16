@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.converter</OriginalElement>
+  <nodes>
+    <node x="1215.7097537878788" y="86.0">org.springframework.http.converter.AbstractHttpMessageConverter</node>
+    <node x="978.2097537878788" y="192.0">org.springframework.http.converter.ByteArrayHttpMessageConverter</node>
+    <node x="2146.584753787879" y="364.0">org.springframework.http.converter.smile</node>
+    <node x="1786.2097537878788" y="192.0">org.springframework.http.converter.feed</node>
+    <node x="625.2097537878788" y="192.0">org.springframework.http.converter.ObjectToStringHttpMessageConverter</node>
+    <node x="168.5" y="445.0">org.springframework.http.converter.HttpMessageConversionException</node>
+    <node x="1989.5847537878788" y="364.0">org.springframework.http.converter.cbor</node>
+    <node x="2157.104166666667" y="278.0">org.springframework.http.converter.ResourceRegionHttpMessageConverter</node>
+    <node x="655.8035037878788" y="86.0">org.springframework.http.converter.BufferedImageHttpMessageConverter</node>
+    <node x="329.0" y="531.0">org.springframework.http.converter.HttpMessageNotWritableException</node>
+    <node x="683.0" y="445.0">org.springframework.http.converter.package-info</node>
+    <node x="0.0" y="531.0">org.springframework.http.converter.HttpMessageNotReadableException</node>
+    <node x="1760.0" y="364.0">org.springframework.http.converter.xml</node>
+    <node x="336.20975378787875" y="192.0">org.springframework.http.converter.StringHttpMessageConverter</node>
+    <node x="0.0" y="86.0">org.springframework.http.converter.FormHttpMessageConverter</node>
+    <node x="1292.2097537878788" y="192.0">org.springframework.http.converter.ResourceHttpMessageConverter</node>
+    <node x="870.3035037878788" y="0.0">org.springframework.http.converter.HttpMessageConverter</node>
+    <node x="46.0" y="192.0">org.springframework.http.converter.support</node>
+    <node x="2034.4166666666667" y="192.0">org.springframework.http.converter.AbstractGenericHttpMessageConverter</node>
+    <node x="1597.2097537878788" y="192.0">org.springframework.http.converter.protobuf</node>
+    <node x="2000.1041666666667" y="278.0">org.springframework.http.converter.json</node>
+    <node x="2025.570549242424" y="86.0">org.springframework.http.converter.GenericHttpMessageConverter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.converter.StringHttpMessageConverter" target="org.springframework.http.converter.AbstractHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="470.70975378787875" y="142.0" />
+      <point x="1233.5222537878788" y="142.0" />
+      <point x="-124.6875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.FormHttpMessageConverter" target="org.springframework.http.converter.HttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="126.5" y="56.0" />
+      <point x="897.9285037878788" y="56.0" />
+      <point x="-82.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.GenericHttpMessageConverter" target="org.springframework.http.converter.HttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="2164.070549242424" y="56.0" />
+      <point x="1063.6785037878788" y="56.0" />
+      <point x="82.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.xml" target="org.springframework.http.converter.GenericHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="1824.5" y="334.0" />
+      <point x="1933.7097537878788" y="334.0" />
+      <point x="1933.7097537878788" y="172.0" />
+      <point x="2094.820549242424" y="172.0" />
+      <point x="-69.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.ResourceHttpMessageConverter" target="org.springframework.http.converter.AbstractHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="1434.7097537878788" y="172.0" />
+      <point x="1376.0222537878788" y="172.0" />
+      <point x="17.8125" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.json" target="org.springframework.http.converter.AbstractGenericHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="2068.604166666667" y="253.0" />
+      <point x="2119.666666666667" y="253.0" />
+      <point x="-85.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.xml" target="org.springframework.http.converter.AbstractHttpMessageConverter">
+      <point x="-43.0" y="-18.0" />
+      <point x="1781.5" y="344.0" />
+      <point x="1281.7097537878788" y="344.0" />
+      <point x="1281.7097537878788" y="172.0" />
+      <point x="1340.3972537878788" y="172.0" />
+      <point x="-17.8125" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.support" target="org.springframework.http.converter.FormHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.ResourceRegionHttpMessageConverter" target="org.springframework.http.converter.AbstractGenericHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="2323.604166666667" y="253.0" />
+      <point x="2290.166666666667" y="253.0" />
+      <point x="85.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.feed" target="org.springframework.http.converter.AbstractHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="1854.7097537878788" y="152.0" />
+      <point x="1447.2722537878788" y="152.0" />
+      <point x="89.0625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.HttpMessageNotReadableException" target="org.springframework.http.converter.HttpMessageConversionException">
+      <point x="0.0" y="-18.0" />
+      <point x="154.5" y="506.0" />
+      <point x="243.75" y="506.0" />
+      <point x="-75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.xml" target="org.springframework.http.converter.json">
+      <point x="43.0" y="-18.0" />
+      <point x="1867.5" y="344.0" />
+      <point x="2022.9375" y="344.0" />
+      <point x="-45.66666666666666" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.ByteArrayHttpMessageConverter" target="org.springframework.http.converter.AbstractHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="1124.7097537878788" y="162.0" />
+      <point x="1304.7722537878788" y="162.0" />
+      <point x="-53.4375" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.AbstractGenericHttpMessageConverter" target="org.springframework.http.converter.AbstractHttpMessageConverter">
+      <point x="-85.25" y="-18.0" />
+      <point x="2119.666666666667" y="142.0" />
+      <point x="1482.8972537878788" y="142.0" />
+      <point x="124.6875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.BufferedImageHttpMessageConverter" target="org.springframework.http.converter.HttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="818.3035037878788" y="66.0" />
+      <point x="953.1785037878788" y="66.0" />
+      <point x="-27.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.AbstractGenericHttpMessageConverter" target="org.springframework.http.converter.GenericHttpMessageConverter">
+      <point x="85.25" y="-18.0" />
+      <point x="2290.166666666667" y="172.0" />
+      <point x="2233.320549242424" y="172.0" />
+      <point x="69.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.protobuf" target="org.springframework.http.converter.AbstractHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="1681.7097537878788" y="162.0" />
+      <point x="1411.6472537878788" y="162.0" />
+      <point x="53.4375" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.smile" target="org.springframework.http.converter.json">
+      <point x="0.0" y="-18.0" />
+      <point x="2219.084753787879" y="344.0" />
+      <point x="2114.2708333333335" y="344.0" />
+      <point x="45.66666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.cbor" target="org.springframework.http.converter.json">
+      <point x="0.0" y="-18.0" />
+      <point x="2058.084753787879" y="344.0" />
+      <point x="2068.604166666667" y="344.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.HttpMessageNotWritableException" target="org.springframework.http.converter.HttpMessageConversionException">
+      <point x="0.0" y="-18.0" />
+      <point x="483.5" y="506.0" />
+      <point x="394.25" y="506.0" />
+      <point x="75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.ObjectToStringHttpMessageConverter" target="org.springframework.http.converter.AbstractHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="791.7097537878788" y="152.0" />
+      <point x="1269.1472537878788" y="152.0" />
+      <point x="-89.0625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.AbstractHttpMessageConverter" target="org.springframework.http.converter.HttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="1358.2097537878788" y="66.0" />
+      <point x="1008.4285037878788" y="66.0" />
+      <point x="27.625" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5177220230983672" x="1245.4999999999998" y="283.5" />
+  <SelectedNodes>
+    <node>org.springframework.http.converter.GenericHttpMessageConverter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

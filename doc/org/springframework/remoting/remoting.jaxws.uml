@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.remoting.jaxws</OriginalElement>
+  <nodes>
+    <node x="0.0" y="86.0">org.springframework.remoting.jaxws.JaxWsPortClientInterceptor</node>
+    <node x="289.0" y="86.0">org.springframework.remoting.jaxws.LocalJaxWsServiceFactoryBean</node>
+    <node x="4.0" y="172.0">org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean</node>
+    <node x="369.0" y="339.0">org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter</node>
+    <node x="196.5" y="253.0">org.springframework.remoting.jaxws.AbstractJaxWsServiceExporter</node>
+    <node x="290.0" y="420.0">org.springframework.remoting.jaxws.package-info</node>
+    <node x="0.0" y="339.0">org.springframework.remoting.jaxws.SimpleHttpServerJaxWsServiceExporter</node>
+    <node x="156.5" y="0.0">org.springframework.remoting.jaxws.LocalJaxWsServiceFactory</node>
+    <node x="0.0" y="420.0">org.springframework.remoting.jaxws.JaxWsSoapFaultException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.remoting.jaxws.LocalJaxWsServiceFactoryBean" target="org.springframework.remoting.jaxws.LocalJaxWsServiceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="431.5" y="61.0" />
+      <point x="346.25" y="61.0" />
+      <point x="63.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter" target="org.springframework.remoting.jaxws.AbstractJaxWsServiceExporter">
+      <point x="0.0" y="-18.0" />
+      <point x="503.5" y="314.0" />
+      <point x="410.25" y="314.0" />
+      <point x="71.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.jaxws.SimpleHttpServerJaxWsServiceExporter" target="org.springframework.remoting.jaxws.AbstractJaxWsServiceExporter">
+      <point x="0.0" y="-18.0" />
+      <point x="174.5" y="314.0" />
+      <point x="267.75" y="314.0" />
+      <point x="-71.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean" target="org.springframework.remoting.jaxws.JaxWsPortClientInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.jaxws.JaxWsPortClientInterceptor" target="org.springframework.remoting.jaxws.LocalJaxWsServiceFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="134.5" y="61.0" />
+      <point x="219.75" y="61.0" />
+      <point x="-63.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="319.0" y="228.0" />
+  <SelectedNodes>
+    <node>org.springframework.remoting.jaxws.LocalJaxWsServiceFactory</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

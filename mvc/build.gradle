@@ -1,0 +1,12 @@
+version '1.0'
+group 'com.yl.test'
+apply plugin : 'war'
+
+dependencies {
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+
+    compile ("org.springframework:spring-webmvc:${springVersion}")
+    compile project(":aop")
+    compile 'org.aspectj:aspectjrt:1.8.6'
+    compile 'org.aspectj:aspectjweaver:1.8.6'
+}

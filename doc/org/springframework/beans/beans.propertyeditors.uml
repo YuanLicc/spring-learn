@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.propertyeditors</OriginalElement>
+  <nodes>
+    <node x="306.0" y="0.0">org.springframework.beans.propertyeditors.CharArrayPropertyEditor</node>
+    <node x="0.0" y="567.0">org.springframework.beans.propertyeditors.package-info</node>
+    <node x="396.0" y="648.0">org.springframework.beans.propertyeditors.FileEditor</node>
+    <node x="0.0" y="81.0">org.springframework.beans.propertyeditors.ByteArrayPropertyEditor</node>
+    <node x="250.0" y="243.0">org.springframework.beans.propertyeditors.InputSourceEditor</node>
+    <node x="452.0" y="405.0">org.springframework.beans.propertyeditors.TimeZoneEditor</node>
+    <node x="582.0" y="648.0">org.springframework.beans.propertyeditors.PathEditor</node>
+    <node x="0.0" y="405.0">org.springframework.beans.propertyeditors.CharacterEditor</node>
+    <node x="218.0" y="486.0">org.springframework.beans.propertyeditors.PatternEditor</node>
+    <node x="0.0" y="243.0">org.springframework.beans.propertyeditors.CustomNumberEditor</node>
+    <node x="266.0" y="162.0">org.springframework.beans.propertyeditors.StringTrimmerEditor</node>
+    <node x="226.0" y="405.0">org.springframework.beans.propertyeditors.CustomMapEditor</node>
+    <node x="0.0" y="324.0">org.springframework.beans.propertyeditors.CustomDateEditor</node>
+    <node x="202.0" y="567.0">org.springframework.beans.propertyeditors.LocaleEditor</node>
+    <node x="524.0" y="162.0">org.springframework.beans.propertyeditors.CustomBooleanEditor</node>
+    <node x="234.0" y="324.0">org.springframework.beans.propertyeditors.PropertiesEditor</node>
+    <node x="0.0" y="162.0">org.springframework.beans.propertyeditors.ResourceBundleEditor</node>
+    <node x="186.0" y="729.0">org.springframework.beans.propertyeditors.URLEditor</node>
+    <node x="202.0" y="648.0">org.springframework.beans.propertyeditors.ClassEditor</node>
+    <node x="468.0" y="324.0">org.springframework.beans.propertyeditors.ClassArrayEditor</node>
+    <node x="0.0" y="729.0">org.springframework.beans.propertyeditors.UUIDEditor</node>
+    <node x="404.0" y="567.0">org.springframework.beans.propertyeditors.ZoneIdEditor</node>
+    <node x="492.0" y="243.0">org.springframework.beans.propertyeditors.InputStreamEditor</node>
+    <node x="290.0" y="81.0">org.springframework.beans.propertyeditors.CustomCollectionEditor</node>
+    <node x="0.0" y="648.0">org.springframework.beans.propertyeditors.ReaderEditor</node>
+    <node x="364.0" y="729.0">org.springframework.beans.propertyeditors.URIEditor</node>
+    <node x="0.0" y="0.0">org.springframework.beans.propertyeditors.StringArrayPropertyEditor</node>
+    <node x="0.0" y="486.0">org.springframework.beans.propertyeditors.CurrencyEditor</node>
+    <node x="428.0" y="486.0">org.springframework.beans.propertyeditors.CharsetEditor</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="368.5" y="382.5" />
+  <SelectedNodes>
+    <node>org.springframework.beans.propertyeditors.CharArrayPropertyEditor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

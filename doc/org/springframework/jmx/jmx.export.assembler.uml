@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jmx.export.assembler</OriginalElement>
+  <nodes>
+    <node x="491.49999999999994" y="258.0">org.springframework.jmx.export.assembler.AbstractConfigurableMBeanInfoAssembler</node>
+    <node x="682.0" y="344.0">org.springframework.jmx.export.assembler.MethodExclusionMBeanInfoAssembler</node>
+    <node x="0.0" y="425.0">org.springframework.jmx.export.assembler.package-info</node>
+    <node x="344.99999999999994" y="344.0">org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssembler</node>
+    <node x="854.875" y="0.0">org.springframework.jmx.export.assembler.MBeanInfoAssembler</node>
+    <node x="918.125" y="258.0">org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler</node>
+    <node x="626.75" y="86.0">org.springframework.jmx.export.assembler.AbstractMBeanInfoAssembler</node>
+    <node x="1027.0" y="344.0">org.springframework.jmx.export.assembler.SimpleReflectiveMBeanInfoAssembler</node>
+    <node x="586.75" y="172.0">org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler</node>
+    <node x="0.0" y="344.0">org.springframework.jmx.export.assembler.MethodNameBasedMBeanInfoAssembler</node>
+    <node x="949.375" y="86.0">org.springframework.jmx.export.assembler.AutodetectCapableMBeanInfoAssembler</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jmx.export.assembler.AutodetectCapableMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.MBeanInfoAssembler">
+      <point x="0.0" y="-18.0" />
+      <point x="1119.875" y="61.0" />
+      <point x="1008.625" y="61.0" />
+      <point x="51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.MethodNameBasedMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.AbstractConfigurableMBeanInfoAssembler">
+      <point x="0.0" y="-18.0" />
+      <point x="162.5" y="314.0" />
+      <point x="537.125" y="314.0" />
+      <point x="-136.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.AbstractMBeanInfoAssembler">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.AbstractConfigurableMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler">
+      <point x="0.0" y="-18.0" />
+      <point x="-87.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.AbstractReflectiveMBeanInfoAssembler">
+      <point x="-67.25" y="-18.0" />
+      <point x="985.375" y="233.0" />
+      <point x="848.5" y="233.0" />
+      <point x="87.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.AbstractMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.MBeanInfoAssembler">
+      <point x="0.0" y="-18.0" />
+      <point x="761.25" y="61.0" />
+      <point x="906.125" y="61.0" />
+      <point x="-51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.MethodExclusionMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.AbstractConfigurableMBeanInfoAssembler">
+      <point x="0.0" y="-18.0" />
+      <point x="844.5" y="324.0" />
+      <point x="719.625" y="324.0" />
+      <point x="45.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.AutodetectCapableMBeanInfoAssembler">
+      <point x="67.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.AbstractConfigurableMBeanInfoAssembler">
+      <point x="0.0" y="-18.0" />
+      <point x="503.49999999999994" y="324.0" />
+      <point x="628.375" y="324.0" />
+      <point x="-45.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.assembler.SimpleReflectiveMBeanInfoAssembler" target="org.springframework.jmx.export.assembler.AbstractConfigurableMBeanInfoAssembler">
+      <point x="0.0" y="-18.0" />
+      <point x="1193.5" y="314.0" />
+      <point x="810.875" y="314.0" />
+      <point x="136.875" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9420289855072463" x="680.0" y="230.5" />
+  <SelectedNodes>
+    <node>org.springframework.jmx.export.assembler.AutodetectCapableMBeanInfoAssembler</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.format.datetime.joda</OriginalElement>
+  <nodes>
+    <node x="258.0" y="410.0">org.springframework.format.datetime.joda.YearMonthFormatter</node>
+    <node x="0.0" y="653.0">org.springframework.format.datetime.joda.DateTimeParser</node>
+    <node x="508.0" y="410.0">org.springframework.format.datetime.joda.JodaTimeConverters</node>
+    <node x="16.0" y="0.0">org.springframework.format.datetime.joda.DateTimeFormatterFactory</node>
+    <node x="0.0" y="167.0">org.springframework.format.datetime.joda.JodaDateTimeFormatAnnotationFormatterFactory</node>
+    <node x="282.0" y="329.0">org.springframework.format.datetime.joda.JodaTimeContextHolder</node>
+    <node x="484.0" y="491.0">org.springframework.format.datetime.joda.LocalDateParser</node>
+    <node x="458.0" y="167.0">org.springframework.format.datetime.joda.JodaTimeFormatterRegistrar</node>
+    <node x="0.0" y="572.0">org.springframework.format.datetime.joda.JodaTimeContext</node>
+    <node x="0.0" y="491.0">org.springframework.format.datetime.joda.DurationFormatter</node>
+    <node x="0.0" y="86.0">org.springframework.format.datetime.joda.DateTimeFormatterFactoryBean</node>
+    <node x="242.0" y="491.0">org.springframework.format.datetime.joda.MonthDayFormatter</node>
+    <node x="226.0" y="572.0">org.springframework.format.datetime.joda.LocalTimeParser</node>
+    <node x="0.0" y="248.0">org.springframework.format.datetime.joda.MillisecondInstantPrinter</node>
+    <node x="452.0" y="572.0">org.springframework.format.datetime.joda.PeriodFormatter</node>
+    <node x="0.0" y="410.0">org.springframework.format.datetime.joda.LocalDateTimeParser</node>
+    <node x="306.0" y="248.0">org.springframework.format.datetime.joda.ReadablePartialPrinter</node>
+    <node x="0.0" y="329.0">org.springframework.format.datetime.joda.ReadableInstantPrinter</node>
+    <node x="218.0" y="653.0">org.springframework.format.datetime.joda.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.format.datetime.joda.DateTimeFormatterFactoryBean" target="org.springframework.format.datetime.joda.DateTimeFormatterFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="363.5" y="344.5" />
+  <SelectedNodes>
+    <node>org.springframework.format.datetime.joda.YearMonthFormatter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

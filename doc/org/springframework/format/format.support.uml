@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.format.support</OriginalElement>
+  <nodes>
+    <node x="0.0" y="86.0">org.springframework.format.support.DefaultFormattingConversionService</node>
+    <node x="0.0" y="248.0">org.springframework.format.support.FormatterPropertyEditorAdapter</node>
+    <node x="0.0" y="167.0">org.springframework.format.support.FormattingConversionServiceFactoryBean</node>
+    <node x="0.0" y="329.0">org.springframework.format.support.package-info</node>
+    <node x="28.0" y="0.0">org.springframework.format.support.FormattingConversionService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.format.support.DefaultFormattingConversionService" target="org.springframework.format.support.FormattingConversionService">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="182.5" y="182.5" />
+  <SelectedNodes>
+    <node>org.springframework.format.support.FormattingConversionService</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cache.annotation</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">org.springframework.cache.annotation.AbstractCachingConfiguration</node>
+    <node x="0.0" y="496.0">org.springframework.cache.annotation.Cacheable</node>
+    <node x="178.0" y="496.0">org.springframework.cache.annotation.CachePut</node>
+    <node x="298.0" y="167.0">org.springframework.cache.annotation.AnnotationCacheOperationSource</node>
+    <node x="396.0" y="415.0">org.springframework.cache.annotation.CacheEvict</node>
+    <node x="330.0" y="86.0">org.springframework.cache.annotation.SpringCacheAnnotationParser</node>
+    <node x="354.0" y="0.0">org.springframework.cache.annotation.CacheAnnotationParser</node>
+    <node x="348.0" y="496.0">org.springframework.cache.annotation.Caching</node>
+    <node x="12.0" y="86.0">org.springframework.cache.annotation.ProxyCachingConfiguration</node>
+    <node x="28.0" y="167.0">org.springframework.cache.annotation.CachingConfigurer</node>
+    <node x="0.0" y="253.0">org.springframework.cache.annotation.CachingConfigurerSupport</node>
+    <node x="0.0" y="415.0">org.springframework.cache.annotation.package-info</node>
+    <node x="202.0" y="415.0">org.springframework.cache.annotation.CacheConfig</node>
+    <node x="0.0" y="334.0">org.springframework.cache.annotation.CachingConfigurationSelector</node>
+    <node x="330.0" y="334.0">org.springframework.cache.annotation.EnableCaching</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cache.annotation.SpringCacheAnnotationParser" target="org.springframework.cache.annotation.CacheAnnotationParser">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.annotation.ProxyCachingConfiguration" target="org.springframework.cache.annotation.AbstractCachingConfiguration">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.annotation.CachingConfigurerSupport" target="org.springframework.cache.annotation.CachingConfigurer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="303.5" y="266.0" />
+  <SelectedNodes>
+    <node>org.springframework.cache.annotation.ProxyCachingConfiguration</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

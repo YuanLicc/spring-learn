@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cache</OriginalElement>
+  <nodes>
+    <node x="0.0" y="253.0">org.springframework.cache.interceptor</node>
+    <node x="0.0" y="0.0">org.springframework.cache.Cache</node>
+    <node x="4.0" y="339.0">org.springframework.cache.annotation</node>
+    <node x="121.0" y="0.0">org.springframework.cache.CacheManager</node>
+    <node x="238.0" y="253.0">org.springframework.cache.package-info</node>
+    <node x="10.25" y="86.0">org.springframework.cache.support</node>
+    <node x="72.25" y="172.0">org.springframework.cache.concurrent</node>
+    <node x="0.0" y="420.0">org.springframework.cache.config</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cache.annotation" target="org.springframework.cache.interceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.support" target="org.springframework.cache.CacheManager">
+      <point x="40.25" y="-18.0" />
+      <point x="131.0" y="61.0" />
+      <point x="160.25" y="61.0" />
+      <point x="-39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.concurrent" target="org.springframework.cache.support">
+      <point x="-46.25" y="-18.0" />
+      <point x="118.5" y="147.0" />
+      <point x="90.75" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.concurrent" target="org.springframework.cache.CacheManager">
+      <point x="46.25" y="-18.0" />
+      <point x="211.0" y="147.0" />
+      <point x="238.75" y="147.0" />
+      <point x="39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.support" target="org.springframework.cache.Cache">
+      <point x="-40.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="197.5" y="228.0" />
+  <SelectedNodes>
+    <node>org.springframework.cache.annotation</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.objenesis.instantiator.gcj</OriginalElement>
+  <nodes>
+    <node x="201.0" y="86.0">org.springframework.objenesis.instantiator.gcj.GCJSerializationInstantiator</node>
+    <node x="110.5" y="0.0">org.springframework.objenesis.instantiator.gcj.GCJInstantiatorBase</node>
+    <node x="0.0" y="86.0">org.springframework.objenesis.instantiator.gcj.GCJInstantiator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.objenesis.instantiator.gcj.GCJSerializationInstantiator" target="org.springframework.objenesis.instantiator.gcj.GCJInstantiatorBase">
+      <point x="0.0" y="-18.0" />
+      <point x="343.5" y="61.0" />
+      <point x="270.25" y="61.0" />
+      <point x="53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.gcj.GCJInstantiator" target="org.springframework.objenesis.instantiator.gcj.GCJInstantiatorBase">
+      <point x="0.0" y="-18.0" />
+      <point x="90.5" y="61.0" />
+      <point x="163.75" y="61.0" />
+      <point x="-53.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="243.0" y="61.0" />
+  <SelectedNodes>
+    <node>org.springframework.objenesis.instantiator.gcj.GCJInstantiator</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

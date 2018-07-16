@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.context</OriginalElement>
+  <nodes>
+    <node x="322.0" y="531.0">org.springframework.context.NoSuchMessageException</node>
+    <node x="444.0" y="364.0">org.springframework.context.event</node>
+    <node x="1460.0" y="531.0">org.springframework.context.index</node>
+    <node x="0.0" y="531.0">org.springframework.context.ApplicationContextException</node>
+    <node x="352.8777777777775" y="86.0">org.springframework.context.Phased</node>
+    <node x="1623.0" y="364.0">org.springframework.context.support</node>
+    <node x="1650.0" y="531.0">org.springframework.context.i18n</node>
+    <node x="1474.5" y="172.0">org.springframework.context.ConfigurableApplicationContext</node>
+    <node x="1518.5" y="0.0">org.springframework.context.ApplicationEventPublisher</node>
+    <node x="1291.0" y="258.0">org.springframework.context.MessageSourceResolvable</node>
+    <node x="0.0" y="258.0">org.springframework.context.expression</node>
+    <node x="1060.0" y="531.0">org.springframework.context.package-info</node>
+    <node x="2025.75" y="0.0">org.springframework.context.MessageSource</node>
+    <node x="1178.0" y="172.0">org.springframework.context.LifecycleProcessor</node>
+    <node x="760.0" y="258.0">org.springframework.context.PayloadApplicationEvent</node>
+    <node x="2227.25" y="450.0">org.springframework.context.annotation</node>
+    <node x="205.0" y="258.0">org.springframework.context.ApplicationEventPublisherAware</node>
+    <node x="604.0" y="531.0">org.springframework.context.MessageSourceAware</node>
+    <node x="2160.0" y="258.0">org.springframework.context.ResourceLoaderAware</node>
+    <node x="527.0" y="258.0">org.springframework.context.ApplicationListener</node>
+    <node x="854.0" y="531.0">org.springframework.context.weaving</node>
+    <node x="1597.75" y="86.0">org.springframework.context.ApplicationContext</node>
+    <node x="1214.0" y="86.0">org.springframework.context.Lifecycle</node>
+    <node x="364.1277777777775" y="172.0">org.springframework.context.SmartLifecycle</node>
+    <node x="1262.0" y="531.0">org.springframework.context.config</node>
+    <node x="557.1277777777775" y="172.0">org.springframework.context.ApplicationEvent</node>
+    <node x="2393.0" y="258.0">org.springframework.context.EnvironmentAware</node>
+    <node x="1870.0" y="258.0">org.springframework.context.EmbeddedValueResolverAware</node>
+    <node x="2019.0" y="86.0">org.springframework.context.HierarchicalMessageSource</node>
+    <node x="1557.0" y="258.0">org.springframework.context.ApplicationContextInitializer</node>
+    <node x="1025.0" y="258.0">org.springframework.context.ApplicationContextAware</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.context.SmartLifecycle" target="org.springframework.context.Lifecycle">
+      <point x="43.25" y="-18.0" />
+      <point x="493.8777777777775" y="147.0" />
+      <point x="1236.1666666666667" y="147.0" />
+      <point x="-44.33333333333326" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation" target="org.springframework.context.EnvironmentAware">
+      <point x="61.66666666666663" y="-18.0" />
+      <point x="2381.4166666666665" y="425.0" />
+      <point x="2534.75" y="425.0" />
+      <point x="47.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.event" target="org.springframework.context.expression">
+      <point x="-58.0" y="-18.0" />
+      <point x="458.5" y="344.0" />
+      <point x="92.5" y="344.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.event" target="org.springframework.context.ApplicationEventPublisherAware">
+      <point x="-29.0" y="-18.0" />
+      <point x="487.5" y="334.0" />
+      <point x="355.5" y="334.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.SmartLifecycle" target="org.springframework.context.Phased">
+      <point x="-43.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation" target="org.springframework.context.ResourceLoaderAware">
+      <point x="0.0" y="-18.0" />
+      <point x="53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.LifecycleProcessor">
+      <point x="-53.66666666666663" y="-18.0" />
+      <point x="1649.8333333333335" y="334.0" />
+      <point x="1280.5" y="334.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.MessageSourceResolvable">
+      <point x="-35.777777777777715" y="-18.0" />
+      <point x="1667.7222222222222" y="324.0" />
+      <point x="1413.5" y="324.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation" target="org.springframework.context.support">
+      <point x="-61.66666666666663" y="-18.0" />
+      <point x="2258.0833333333335" y="425.0" />
+      <point x="1703.5" y="425.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationContext" target="org.springframework.context.ApplicationEventPublisher">
+      <point x="-51.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationContext" target="org.springframework.context.MessageSource">
+      <point x="51.25" y="-18.0" />
+      <point x="1751.5" y="61.0" />
+      <point x="2067.0" y="61.0" />
+      <point x="-41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.ConfigurableApplicationContext">
+      <point x="-17.888888888888914" y="-18.0" />
+      <point x="1685.611111111111" y="314.0" />
+      <point x="1546.5" y="314.0" />
+      <point x="1546.5" y="233.0" />
+      <point x="1549.75" y="233.0" />
+      <point x="-75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.event" target="org.springframework.context.ApplicationEvent">
+      <point x="0.0" y="-18.0" />
+      <point x="516.5" y="233.0" />
+      <point x="588.6277777777775" y="233.0" />
+      <point x="-63.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.EmbeddedValueResolverAware">
+      <point x="17.888888888888914" y="-18.0" />
+      <point x="1721.388888888889" y="314.0" />
+      <point x="2004.5" y="314.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationListener" target="org.springframework.context.ApplicationEvent">
+      <point x="0.0" y="-18.0" />
+      <point x="633.5" y="233.0" />
+      <point x="651.6277777777775" y="233.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.HierarchicalMessageSource" target="org.springframework.context.MessageSource">
+      <point x="0.0" y="-18.0" />
+      <point x="41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.HierarchicalMessageSource">
+      <point x="35.77777777777783" y="-18.0" />
+      <point x="1739.2777777777778" y="324.0" />
+      <point x="2149.5" y="324.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.event" target="org.springframework.context.ApplicationContextAware">
+      <point x="58.0" y="-18.0" />
+      <point x="574.5" y="344.0" />
+      <point x="1086.25" y="344.0" />
+      <point x="-61.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.ApplicationContextInitializer" target="org.springframework.context.ConfigurableApplicationContext">
+      <point x="0.0" y="-18.0" />
+      <point x="1703.5" y="233.0" />
+      <point x="1700.25" y="233.0" />
+      <point x="75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.EnvironmentAware">
+      <point x="71.55555555555554" y="-18.0" />
+      <point x="1775.0555555555557" y="344.0" />
+      <point x="2440.25" y="344.0" />
+      <point x="-47.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.ResourceLoaderAware">
+      <point x="53.66666666666663" y="-18.0" />
+      <point x="1757.1666666666665" y="334.0" />
+      <point x="2213.25" y="334.0" />
+      <point x="-53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.ConfigurableApplicationContext" target="org.springframework.context.ApplicationContext">
+      <point x="75.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.PayloadApplicationEvent" target="org.springframework.context.ApplicationEvent">
+      <point x="0.0" y="-18.0" />
+      <point x="882.5" y="233.0" />
+      <point x="714.6277777777775" y="233.0" />
+      <point x="63.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.ApplicationContextInitializer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.support" target="org.springframework.context.ApplicationContextAware">
+      <point x="-71.55555555555554" y="-18.0" />
+      <point x="1631.9444444444443" y="344.0" />
+      <point x="1208.75" y="344.0" />
+      <point x="61.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.event" target="org.springframework.context.ApplicationListener">
+      <point x="29.0" y="-18.0" />
+      <point x="545.5" y="334.0" />
+      <point x="633.5" y="334.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.LifecycleProcessor" target="org.springframework.context.Lifecycle">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.ConfigurableApplicationContext" target="org.springframework.context.Lifecycle">
+      <point x="-75.25" y="-18.0" />
+      <point x="1549.75" y="147.0" />
+      <point x="1324.8333333333333" y="147.0" />
+      <point x="44.33333333333326" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.49961568024596464" x="1291.0" y="283.5" />
+  <SelectedNodes>
+    <node>org.springframework.context.NoSuchMessageException</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

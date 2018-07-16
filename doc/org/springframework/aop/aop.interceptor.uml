@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.interceptor</OriginalElement>
+  <nodes>
+    <node x="0.0" y="420.0">org.springframework.aop.interceptor.ExposeInvocationInterceptor</node>
+    <node x="501.50000000000006" y="86.0">org.springframework.aop.interceptor.CustomizableTraceInterceptor</node>
+    <node x="394.0" y="339.0">org.springframework.aop.interceptor.AsyncExecutionInterceptor</node>
+    <node x="806.5" y="86.0">org.springframework.aop.interceptor.SimpleTraceInterceptor</node>
+    <node x="708.0" y="253.0">org.springframework.aop.interceptor.ConcurrencyThrottleInterceptor</node>
+    <node x="24.0" y="253.0">org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler</node>
+    <node x="830.5" y="172.0">org.springframework.aop.interceptor.DebugInterceptor</node>
+    <node x="515.5" y="0.0">org.springframework.aop.interceptor.AbstractTraceInterceptor</node>
+    <node x="604.0" y="420.0">org.springframework.aop.interceptor.package-info</node>
+    <node x="188.50000000000006" y="86.0">org.springframework.aop.interceptor.AbstractMonitoringInterceptor</node>
+    <node x="0.0" y="172.0">org.springframework.aop.interceptor.JamonPerformanceMonitorInterceptor</node>
+    <node x="353.0" y="172.0">org.springframework.aop.interceptor.PerformanceMonitorInterceptor</node>
+    <node x="322.0" y="420.0">org.springframework.aop.interceptor.ExposeBeanNameAdvisors</node>
+    <node x="0.0" y="339.0">org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler</node>
+    <node x="386.0" y="253.0">org.springframework.aop.interceptor.AsyncExecutionAspectSupport</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.interceptor.AbstractMonitoringInterceptor" target="org.springframework.aop.interceptor.AbstractTraceInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="335.00000000000006" y="61.0" />
+      <point x="557.6666666666667" y="61.0" />
+      <point x="-84.33333333333331" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.AsyncExecutionInterceptor" target="org.springframework.aop.interceptor.AsyncExecutionAspectSupport">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.CustomizableTraceInterceptor" target="org.springframework.aop.interceptor.AbstractTraceInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="644.0" y="61.0" />
+      <point x="642.0" y="61.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler" target="org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.DebugInterceptor" target="org.springframework.aop.interceptor.SimpleTraceInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.SimpleTraceInterceptor" target="org.springframework.aop.interceptor.AbstractTraceInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="925.0" y="61.0" />
+      <point x="726.3333333333334" y="61.0" />
+      <point x="84.33333333333331" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.PerformanceMonitorInterceptor" target="org.springframework.aop.interceptor.AbstractMonitoringInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="499.5" y="147.0" />
+      <point x="408.25000000000006" y="147.0" />
+      <point x="73.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.JamonPerformanceMonitorInterceptor" target="org.springframework.aop.interceptor.AbstractMonitoringInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="166.5" y="147.0" />
+      <point x="261.75000000000006" y="147.0" />
+      <point x="-73.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="522.0" y="228.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.interceptor.ExposeInvocationInterceptor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

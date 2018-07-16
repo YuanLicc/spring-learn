@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.validation.beanvalidation</OriginalElement>
+  <nodes>
+    <node x="0.0" y="172.0">org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean</node>
+    <node x="362.0" y="415.0">org.springframework.validation.beanvalidation.MethodValidationPostProcessor</node>
+    <node x="0.0" y="496.0">org.springframework.validation.beanvalidation.MethodValidationInterceptor</node>
+    <node x="0.0" y="334.0">org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator</node>
+    <node x="293.0" y="86.0">org.springframework.validation.beanvalidation.CustomValidatorBean</node>
+    <node x="152.5" y="0.0">org.springframework.validation.beanvalidation.SpringValidatorAdapter</node>
+    <node x="0.0" y="253.0">org.springframework.validation.beanvalidation.MessageSourceResourceBundleLocator</node>
+    <node x="0.0" y="415.0">org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory</node>
+    <node x="12.0" y="86.0">org.springframework.validation.beanvalidation.LocalValidatorFactoryBean</node>
+    <node x="322.0" y="496.0">org.springframework.validation.beanvalidation.BeanValidationPostProcessor</node>
+    <node x="0.0" y="577.0">org.springframework.validation.beanvalidation.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" target="org.springframework.validation.beanvalidation.SpringValidatorAdapter">
+      <point x="0.0" y="-18.0" />
+      <point x="142.5" y="61.0" />
+      <point x="211.75" y="61.0" />
+      <point x="-59.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean" target="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.beanvalidation.CustomValidatorBean" target="org.springframework.validation.beanvalidation.SpringValidatorAdapter">
+      <point x="0.0" y="-18.0" />
+      <point x="399.5" y="61.0" />
+      <point x="330.25" y="61.0" />
+      <point x="59.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="327.5" y="306.5" />
+  <SelectedNodes>
+    <node>org.springframework.validation.beanvalidation.LocalValidatorFactoryBean</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

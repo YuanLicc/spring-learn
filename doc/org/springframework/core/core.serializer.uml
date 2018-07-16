@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.core.serializer</OriginalElement>
+  <nodes>
+    <node x="107.37499999999997" y="0.0">org.springframework.core.serializer.Serializer</node>
+    <node x="216.99999999999997" y="86.0">org.springframework.core.serializer.support</node>
+    <node x="0.0" y="167.0">org.springframework.core.serializer.package-info</node>
+    <node x="398.0" y="86.0">org.springframework.core.serializer.DefaultDeserializer</node>
+    <node x="0.0" y="86.0">org.springframework.core.serializer.DefaultSerializer</node>
+    <node x="342.625" y="0.0">org.springframework.core.serializer.Deserializer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.core.serializer.DefaultSerializer" target="org.springframework.core.serializer.Serializer">
+      <point x="0.0" y="-18.0" />
+      <point x="98.5" y="61.0" />
+      <point x="142.62499999999997" y="61.0" />
+      <point x="-35.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.serializer.DefaultDeserializer" target="org.springframework.core.serializer.Deserializer">
+      <point x="0.0" y="-18.0" />
+      <point x="504.5" y="61.0" />
+      <point x="460.375" y="61.0" />
+      <point x="39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.serializer.support" target="org.springframework.core.serializer.Deserializer">
+      <point x="40.25" y="-18.0" />
+      <point x="337.75" y="61.0" />
+      <point x="381.875" y="61.0" />
+      <point x="-39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.serializer.support" target="org.springframework.core.serializer.Serializer">
+      <point x="-40.25" y="-18.0" />
+      <point x="257.25" y="61.0" />
+      <point x="213.12499999999997" y="61.0" />
+      <point x="35.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="305.5" y="101.5" />
+  <SelectedNodes>
+    <node>org.springframework.core.serializer.Deserializer</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

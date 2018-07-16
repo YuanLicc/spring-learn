@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.objenesis</OriginalElement>
+  <nodes>
+    <node x="0.0" y="253.0">org.springframework.objenesis.ObjenesisException</node>
+    <node x="177.0" y="172.0">org.springframework.objenesis.ObjenesisSerializer</node>
+    <node x="0.0" y="334.0">org.springframework.objenesis.ObjenesisHelper</node>
+    <node x="226.0" y="334.0">org.springframework.objenesis.strategy</node>
+    <node x="250.0" y="253.0">org.springframework.objenesis.instantiator</node>
+    <node x="0.0" y="172.0">org.springframework.objenesis.ObjenesisStd</node>
+    <node x="98.5" y="86.0">org.springframework.objenesis.ObjenesisBase</node>
+    <node x="211.0" y="0.0">org.springframework.objenesis.Objenesis</node>
+    <node x="283.5" y="86.0">org.springframework.objenesis.SpringObjenesis</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.objenesis.ObjenesisStd" target="org.springframework.objenesis.ObjenesisBase">
+      <point x="0.0" y="-18.0" />
+      <point x="78.5" y="147.0" />
+      <point x="139.75" y="147.0" />
+      <point x="-41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.ObjenesisSerializer" target="org.springframework.objenesis.ObjenesisBase">
+      <point x="0.0" y="-18.0" />
+      <point x="283.5" y="147.0" />
+      <point x="222.25" y="147.0" />
+      <point x="41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.ObjenesisBase" target="org.springframework.objenesis.Objenesis">
+      <point x="2.8421709430404007E-14" y="-18.0" />
+      <point x="181.00000000000003" y="61.0" />
+      <point x="244.25" y="61.0" />
+      <point x="-33.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.SpringObjenesis" target="org.springframework.objenesis.Objenesis">
+      <point x="0.0" y="-18.0" />
+      <point x="374.0" y="61.0" />
+      <point x="310.75" y="61.0" />
+      <point x="33.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="232.5" y="185.0" />
+  <SelectedNodes>
+    <node>org.springframework.objenesis.ObjenesisException</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

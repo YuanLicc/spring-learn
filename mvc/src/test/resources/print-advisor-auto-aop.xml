@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 扫描指定包（将 @Component 注解的类自动定义为 Spring Bean） -->
+    <context:component-scan base-package="com.yl.test"/>
+
+    <bean id="controllerPrintBeforeAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="printBeforeAdvice"></property>
+        <property name="pattern" value="com.yl.test.mvc.controller.*.*"></property>
+    </bean>
+
+    <!-- 通过 beanNames 自动代理 -->
+    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="beanNames" value="*Controller"/>
+        <property name="interceptorNames" value="controllerPrintBeforeAdvisor"></property>
+        <property name="proxyTargetClass" value="true"></property>
+    </bean>
+
+</beans>

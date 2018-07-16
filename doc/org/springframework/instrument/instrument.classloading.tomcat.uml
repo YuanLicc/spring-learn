@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.instrument.classloading.tomcat</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">org.springframework.instrument.classloading.tomcat.TomcatLoadTimeWeaver</node>
+    <node x="0.0" y="81.0">org.springframework.instrument.classloading.tomcat.package-info</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="110.5" y="58.5" />
+  <SelectedNodes>
+    <node>org.springframework.instrument.classloading.tomcat.TomcatLoadTimeWeaver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

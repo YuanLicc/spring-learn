@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.instrument.classloading.glassfish</OriginalElement>
+  <nodes>
+    <node x="0.0" y="81.0">org.springframework.instrument.classloading.glassfish.package-info</node>
+    <node x="0.0" y="0.0">org.springframework.instrument.classloading.glassfish.GlassFishLoadTimeWeaver</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="122.5" y="58.5" />
+  <SelectedNodes>
+    <node>org.springframework.instrument.classloading.glassfish.package-info</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

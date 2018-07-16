@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.format.datetime.standard</OriginalElement>
+  <nodes>
+    <node x="0.0" y="86.0">org.springframework.format.datetime.standard.DateTimeFormatterFactoryBean</node>
+    <node x="484.0" y="491.0">org.springframework.format.datetime.standard.InstantFormatter</node>
+    <node x="0.0" y="329.0">org.springframework.format.datetime.standard.TemporalAccessorParser</node>
+    <node x="0.0" y="572.0">org.springframework.format.datetime.standard.DateTimeContext</node>
+    <node x="16.0" y="0.0">org.springframework.format.datetime.standard.DateTimeFormatterFactory</node>
+    <node x="314.0" y="248.0">org.springframework.format.datetime.standard.TemporalAccessorPrinter</node>
+    <node x="282.0" y="329.0">org.springframework.format.datetime.standard.DateTimeContextHolder</node>
+    <node x="0.0" y="248.0">org.springframework.format.datetime.standard.DateTimeFormatterRegistrar</node>
+    <node x="226.0" y="572.0">org.springframework.format.datetime.standard.PeriodFormatter</node>
+    <node x="0.0" y="491.0">org.springframework.format.datetime.standard.DurationFormatter</node>
+    <node x="0.0" y="167.0">org.springframework.format.datetime.standard.Jsr310DateTimeFormatAnnotationFormatterFactory</node>
+    <node x="0.0" y="410.0">org.springframework.format.datetime.standard.DateTimeConverters</node>
+    <node x="242.0" y="491.0">org.springframework.format.datetime.standard.MonthDayFormatter</node>
+    <node x="250.0" y="410.0">org.springframework.format.datetime.standard.YearMonthFormatter</node>
+    <node x="210.0" y="653.0">org.springframework.format.datetime.standard.package-info</node>
+    <node x="0.0" y="653.0">org.springframework.format.datetime.standard.YearFormatter</node>
+    <node x="452.0" y="572.0">org.springframework.format.datetime.standard.MonthFormatter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.format.datetime.standard.DateTimeFormatterFactoryBean" target="org.springframework.format.datetime.standard.DateTimeFormatterFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="336.5" y="344.5" />
+  <SelectedNodes>
+    <node>org.springframework.format.datetime.standard.DateTimeFormatterFactory</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

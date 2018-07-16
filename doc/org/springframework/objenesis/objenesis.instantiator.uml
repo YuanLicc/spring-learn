@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.objenesis.instantiator</OriginalElement>
+  <nodes>
+    <node x="652.0" y="136.0">org.springframework.objenesis.instantiator.sun</node>
+    <node x="346.0" y="136.0">org.springframework.objenesis.instantiator.gcj</node>
+    <node x="495.0" y="136.0">org.springframework.objenesis.instantiator.perc</node>
+    <node x="181.0" y="136.0">org.springframework.objenesis.instantiator.basic</node>
+    <node x="0.0" y="136.0">org.springframework.objenesis.instantiator.android</node>
+    <node x="354.0" y="217.0">org.springframework.objenesis.instantiator.util</node>
+    <node x="423.5" y="0.0">org.springframework.objenesis.instantiator.annotations</node>
+    <node x="198.5" y="0.0">org.springframework.objenesis.instantiator.ObjectInstantiator</node>
+    <node x="0.0" y="217.0">org.springframework.objenesis.instantiator.SerializationInstantiatorHelper</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.objenesis.instantiator.android" target="org.springframework.objenesis.instantiator.ObjectInstantiator">
+      <point x="-40.25" y="-18.0" />
+      <point x="40.25" y="76.0" />
+      <point x="219.0" y="76.0" />
+      <point x="-82.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.gcj" target="org.springframework.objenesis.instantiator.annotations">
+      <point x="32.25" y="-18.0" />
+      <point x="442.75" y="116.0" />
+      <point x="520.0" y="116.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.sun" target="org.springframework.objenesis.instantiator.annotations">
+      <point x="32.25" y="-18.0" />
+      <point x="748.75" y="56.0" />
+      <point x="597.1999999999999" y="56.0" />
+      <point x="77.19999999999993" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.android" target="org.springframework.objenesis.instantiator.annotations">
+      <point x="40.25" y="-18.0" />
+      <point x="120.75" y="96.0" />
+      <point x="442.8" y="96.0" />
+      <point x="-77.19999999999999" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.perc" target="org.springframework.objenesis.instantiator.ObjectInstantiator">
+      <point x="-34.25" y="-18.0" />
+      <point x="529.25" y="76.0" />
+      <point x="342.0" y="76.0" />
+      <point x="41.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.gcj" target="org.springframework.objenesis.instantiator.ObjectInstantiator">
+      <point x="-32.25" y="-18.0" />
+      <point x="378.25" y="86.0" />
+      <point x="301.0" y="86.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.basic" target="org.springframework.objenesis.instantiator.annotations">
+      <point x="36.25" y="-18.0" />
+      <point x="289.75" y="106.0" />
+      <point x="481.4" y="106.0" />
+      <point x="-38.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.perc" target="org.springframework.objenesis.instantiator.annotations">
+      <point x="34.25" y="-18.0" />
+      <point x="597.75" y="116.0" />
+      <point x="558.5999999999999" y="116.0" />
+      <point x="38.599999999999966" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.basic" target="org.springframework.objenesis.instantiator.ObjectInstantiator">
+      <point x="-36.25" y="-18.0" />
+      <point x="217.25" y="86.0" />
+      <point x="260.0" y="86.0" />
+      <point x="-41.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.objenesis.instantiator.sun" target="org.springframework.objenesis.instantiator.ObjectInstantiator">
+      <point x="-32.25" y="-18.0" />
+      <point x="684.25" y="66.0" />
+      <point x="383.0" y="66.0" />
+      <point x="82.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="390.5" y="126.5" />
+  <SelectedNodes>
+    <node>org.springframework.objenesis.instantiator.ObjectInstantiator</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

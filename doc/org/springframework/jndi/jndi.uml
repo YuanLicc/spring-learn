@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jndi</OriginalElement>
+  <nodes>
+    <node x="500.0" y="420.0">org.springframework.jndi.package-info</node>
+    <node x="0.0" y="420.0">org.springframework.jndi.JndiTemplateEditor</node>
+    <node x="257.0" y="258.0">org.springframework.jndi.JndiObjectFactoryBean</node>
+    <node x="0.0" y="501.0">org.springframework.jndi.JndiCallback</node>
+    <node x="598.7619047619047" y="172.0">org.springframework.jndi.support</node>
+    <node x="322.0" y="339.0">org.springframework.jndi.JndiLookupFailureException</node>
+    <node x="0.0" y="258.0">org.springframework.jndi.JndiObjectTargetSource</node>
+    <node x="365.7619047619047" y="172.0">org.springframework.jndi.JndiLocatorDelegate</node>
+    <node x="391.5" y="0.0">org.springframework.jndi.JndiAccessor</node>
+    <node x="202.0" y="501.0">org.springframework.jndi.JndiTemplate</node>
+    <node x="148.76190476190473" y="172.0">org.springframework.jndi.JndiObjectLocator</node>
+    <node x="367.5" y="86.0">org.springframework.jndi.JndiLocatorSupport</node>
+    <node x="0.0" y="339.0">org.springframework.jndi.TypeMismatchNamingException</node>
+    <node x="250.0" y="420.0">org.springframework.jndi.JndiPropertySource</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jndi.JndiObjectLocator" target="org.springframework.jndi.JndiLocatorSupport">
+      <point x="0.0" y="-18.0" />
+      <point x="247.26190476190473" y="147.0" />
+      <point x="401.66666666666663" y="147.0" />
+      <point x="-68.33333333333331" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jndi.JndiObjectFactoryBean" target="org.springframework.jndi.JndiObjectLocator">
+      <point x="0.0" y="-18.0" />
+      <point x="371.5" y="233.0" />
+      <point x="296.5119047619047" y="233.0" />
+      <point x="49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jndi.JndiLocatorSupport" target="org.springframework.jndi.JndiAccessor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jndi.JndiLocatorDelegate" target="org.springframework.jndi.JndiLocatorSupport">
+      <point x="0.0" y="-18.0" />
+      <point x="472.2619047619047" y="147.0" />
+      <point x="470.0" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jndi.JndiObjectTargetSource" target="org.springframework.jndi.JndiObjectLocator">
+      <point x="0.0" y="-18.0" />
+      <point x="118.5" y="233.0" />
+      <point x="198.01190476190473" y="233.0" />
+      <point x="-49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jndi.support" target="org.springframework.jndi.JndiLocatorSupport">
+      <point x="5.6843418860808015E-14" y="-18.0" />
+      <point x="679.2619047619048" y="147.0" />
+      <point x="538.3333333333333" y="147.0" />
+      <point x="68.33333333333331" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="380.0" y="268.5" />
+  <SelectedNodes>
+    <node>org.springframework.jndi.package-info</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

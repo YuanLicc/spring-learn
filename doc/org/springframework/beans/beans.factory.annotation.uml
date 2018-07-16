@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.annotation</OriginalElement>
+  <nodes>
+    <node x="386.0" y="410.0">org.springframework.beans.factory.annotation.AnnotationBeanWiringInfoResolver</node>
+    <node x="0.0" y="572.0">org.springframework.beans.factory.annotation.InjectionMetadata</node>
+    <node x="28.0" y="0.0">org.springframework.beans.factory.annotation.AnnotatedBeanDefinition</node>
+    <node x="242.0" y="572.0">org.springframework.beans.factory.annotation.Configurable</node>
+    <node x="0.0" y="653.0">org.springframework.beans.factory.annotation.Autowired</node>
+    <node x="0.0" y="167.0">org.springframework.beans.factory.annotation.QualifierAnnotationAutowireCandidateResolver</node>
+    <node x="356.0" y="653.0">org.springframework.beans.factory.annotation.Autowire</node>
+    <node x="444.0" y="572.0">org.springframework.beans.factory.annotation.package-info</node>
+    <node x="154.0" y="734.0">org.springframework.beans.factory.annotation.Value</node>
+    <node x="314.0" y="491.0">org.springframework.beans.factory.annotation.CustomAutowireConfigurer</node>
+    <node x="0.0" y="410.0">org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor</node>
+    <node x="0.0" y="248.0">org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor</node>
+    <node x="0.0" y="329.0">org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor</node>
+    <node x="178.0" y="653.0">org.springframework.beans.factory.annotation.Qualifier</node>
+    <node x="0.0" y="734.0">org.springframework.beans.factory.annotation.Lookup</node>
+    <node x="526.0" y="653.0">org.springframework.beans.factory.annotation.Required</node>
+    <node x="0.0" y="491.0">org.springframework.beans.factory.annotation.BeanFactoryAnnotationUtils</node>
+    <node x="0.0" y="86.0">org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition" target="org.springframework.beans.factory.annotation.AnnotatedBeanDefinition">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="351.5" y="385.0" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.annotation.AnnotationBeanWiringInfoResolver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

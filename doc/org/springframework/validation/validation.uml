@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.validation</OriginalElement>
+  <nodes>
+    <node x="400.25" y="0.0">org.springframework.validation.Errors</node>
+    <node x="42.0" y="425.0">org.springframework.validation.Validator</node>
+    <node x="488.75" y="86.0">org.springframework.validation.BindingResult</node>
+    <node x="290.0" y="425.0">org.springframework.validation.BindingErrorProcessor</node>
+    <node x="516.0" y="678.0">org.springframework.validation.MessageCodeFormatter</node>
+    <node x="0.0" y="926.0">org.springframework.validation.package-info</node>
+    <node x="480.0" y="845.0">org.springframework.validation.ValidationUtils</node>
+    <node x="322.0" y="678.0">org.springframework.validation.ObjectError</node>
+    <node x="28.0" y="678.0">org.springframework.validation.MessageCodesResolver</node>
+    <node x="273.0" y="344.0">org.springframework.validation.BeanPropertyBindingResult</node>
+    <node x="530.0" y="172.0">org.springframework.validation.BindException</node>
+    <node x="0.0" y="597.0">org.springframework.validation.beanvalidation</node>
+    <node x="262.0" y="511.0">org.springframework.validation.DefaultBindingErrorProcessor</node>
+    <node x="281.0" y="172.0">org.springframework.validation.AbstractBindingResult</node>
+    <node x="251.74999999999997" y="86.0">org.springframework.validation.AbstractErrors</node>
+    <node x="326.0" y="764.0">org.springframework.validation.FieldError</node>
+    <node x="202.0" y="926.0">org.springframework.validation.DataBinder</node>
+    <node x="0.0" y="344.0">org.springframework.validation.DirectFieldBindingResult</node>
+    <node x="0.0" y="764.0">org.springframework.validation.DefaultMessageCodesResolver</node>
+    <node x="118.5" y="258.0">org.springframework.validation.AbstractPropertyBindingResult</node>
+    <node x="431.5" y="258.0">org.springframework.validation.MapBindingResult</node>
+    <node x="706.0" y="845.0">org.springframework.validation.support</node>
+    <node x="22.0" y="511.0">org.springframework.validation.SmartValidator</node>
+    <node x="250.0" y="845.0">org.springframework.validation.annotation</node>
+    <node x="0.0" y="845.0">org.springframework.validation.BindingResultUtils</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.validation.AbstractBindingResult" target="org.springframework.validation.BindingResult">
+      <point x="57.25" y="-18.0" />
+      <point x="452.75" y="147.0" />
+      <point x="530.0" y="147.0" />
+      <point x="-41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.DirectFieldBindingResult" target="org.springframework.validation.AbstractPropertyBindingResult">
+      <point x="0.0" y="-18.0" />
+      <point x="126.5" y="319.0" />
+      <point x="191.75" y="319.0" />
+      <point x="-73.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.beanvalidation" target="org.springframework.validation.SmartValidator">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.AbstractErrors" target="org.springframework.validation.Errors">
+      <point x="0.0" y="-18.0" />
+      <point x="338.25" y="61.0" />
+      <point x="427.5" y="61.0" />
+      <point x="-27.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.AbstractBindingResult" target="org.springframework.validation.AbstractErrors">
+      <point x="-57.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.FieldError" target="org.springframework.validation.ObjectError">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.MapBindingResult" target="org.springframework.validation.AbstractBindingResult">
+      <point x="0.0" y="-18.0" />
+      <point x="526.0" y="233.0" />
+      <point x="452.75" y="233.0" />
+      <point x="57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.BindingResult" target="org.springframework.validation.Errors">
+      <point x="0.0" y="-18.0" />
+      <point x="571.25" y="61.0" />
+      <point x="482.0" y="61.0" />
+      <point x="27.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.DefaultBindingErrorProcessor" target="org.springframework.validation.BindingErrorProcessor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.AbstractPropertyBindingResult" target="org.springframework.validation.AbstractBindingResult">
+      <point x="0.0" y="-18.0" />
+      <point x="265.0" y="233.0" />
+      <point x="338.25" y="233.0" />
+      <point x="-57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.BeanPropertyBindingResult" target="org.springframework.validation.AbstractPropertyBindingResult">
+      <point x="0.0" y="-18.0" />
+      <point x="403.5" y="319.0" />
+      <point x="338.25" y="319.0" />
+      <point x="73.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.BindException" target="org.springframework.validation.BindingResult">
+      <point x="0.0" y="-18.0" />
+      <point x="41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.DefaultMessageCodesResolver" target="org.springframework.validation.MessageCodesResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.validation.SmartValidator" target="org.springframework.validation.Validator">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8635437881873728" x="433.5" y="480.99999999999994" />
+  <SelectedNodes>
+    <node>org.springframework.validation.MapBindingResult</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

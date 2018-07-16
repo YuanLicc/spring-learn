@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jmx</OriginalElement>
+  <nodes>
+    <node x="305.0" y="86.0">org.springframework.jmx.access</node>
+    <node x="478.0" y="86.0">org.springframework.jmx.export</node>
+    <node x="264.75" y="0.0">org.springframework.jmx.JmxException</node>
+    <node x="0.0" y="86.0">org.springframework.jmx.MBeanServerNotFoundException</node>
+    <node x="472.0" y="0.0">org.springframework.jmx.support</node>
+    <node x="0.0" y="167.0">org.springframework.jmx.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jmx.export" target="org.springframework.jmx.JmxException">
+      <point x="-38.25" y="-18.0" />
+      <point x="516.25" y="56.0" />
+      <point x="395.58333333333337" y="56.0" />
+      <point x="52.33333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.access" target="org.springframework.jmx.support">
+      <point x="38.25" y="-18.0" />
+      <point x="419.75" y="66.0" />
+      <point x="512.25" y="66.0" />
+      <point x="-40.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.access" target="org.springframework.jmx.JmxException">
+      <point x="-38.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.MBeanServerNotFoundException" target="org.springframework.jmx.JmxException">
+      <point x="0.0" y="-18.0" />
+      <point x="142.5" y="66.0" />
+      <point x="290.9166666666667" y="66.0" />
+      <point x="-52.33333333333334" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export" target="org.springframework.jmx.support">
+      <point x="38.25" y="-18.0" />
+      <point x="40.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="316.5" y="101.5" />
+  <SelectedNodes>
+    <node>org.springframework.jmx.support</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

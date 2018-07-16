@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.target.dynamic</OriginalElement>
+  <nodes>
+    <node x="12.0" y="86.0">org.springframework.aop.target.dynamic.AbstractRefreshableTargetSource</node>
+    <node x="0.0" y="172.0">org.springframework.aop.target.dynamic.BeanFactoryRefreshableTargetSource</node>
+    <node x="92.0" y="0.0">org.springframework.aop.target.dynamic.Refreshable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.target.dynamic.AbstractRefreshableTargetSource" target="org.springframework.aop.target.dynamic.Refreshable">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.target.dynamic.BeanFactoryRefreshableTargetSource" target="org.springframework.aop.target.dynamic.AbstractRefreshableTargetSource">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="166.5" y="104.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.target.dynamic.Refreshable</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

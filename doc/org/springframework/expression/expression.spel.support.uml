@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.expression.spel.support</OriginalElement>
+  <nodes>
+    <node x="338.0" y="81.0">org.springframework.expression.spel.support.ReflectivePropertyAccessor</node>
+    <node x="0.0" y="405.0">org.springframework.expression.spel.support.StandardTypeLocator</node>
+    <node x="0.0" y="486.0">org.springframework.expression.spel.support.ReflectionHelper</node>
+    <node x="0.0" y="0.0">org.springframework.expression.spel.support.ReflectiveConstructorExecutor</node>
+    <node x="0.0" y="243.0">org.springframework.expression.spel.support.ReflectiveMethodExecutor</node>
+    <node x="0.0" y="162.0">org.springframework.expression.spel.support.StandardOperatorOverloader</node>
+    <node x="282.0" y="324.0">org.springframework.expression.spel.support.StandardTypeConverter</node>
+    <node x="258.0" y="405.0">org.springframework.expression.spel.support.BooleanTypedValue</node>
+    <node x="234.0" y="486.0">org.springframework.expression.spel.support.package-info</node>
+    <node x="0.0" y="81.0">org.springframework.expression.spel.support.ReflectiveConstructorResolver</node>
+    <node x="314.0" y="162.0">org.springframework.expression.spel.support.StandardEvaluationContext</node>
+    <node x="298.0" y="243.0">org.springframework.expression.spel.support.ReflectiveMethodResolver</node>
+    <node x="0.0" y="324.0">org.springframework.expression.spel.support.StandardTypeComparator</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="303.5" y="261.0" />
+  <SelectedNodes>
+    <node>org.springframework.expression.spel.support.ReflectivePropertyAccessor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

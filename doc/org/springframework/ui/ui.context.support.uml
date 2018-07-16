@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.ui.context.support</OriginalElement>
+  <nodes>
+    <node x="0.0" y="162.0">org.springframework.ui.context.support.DelegatingThemeSource</node>
+    <node x="0.0" y="0.0">org.springframework.ui.context.support.ResourceBundleThemeSource</node>
+    <node x="0.0" y="81.0">org.springframework.ui.context.support.UiApplicationContextUtils</node>
+    <node x="202.0" y="243.0">org.springframework.ui.context.support.SimpleTheme</node>
+    <node x="0.0" y="243.0">org.springframework.ui.context.support.package-info</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="175.5" y="139.5" />
+  <SelectedNodes>
+    <node>org.springframework.ui.context.support.DelegatingThemeSource</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.method</OriginalElement>
+  <nodes>
+    <node x="10.0" y="0.0">org.springframework.web.method.HandlerMethod</node>
+    <node x="12.0" y="86.0">org.springframework.web.method.support</node>
+    <node x="0.0" y="172.0">org.springframework.web.method.annotation</node>
+    <node x="0.0" y="253.0">org.springframework.web.method.ControllerAdviceBean</node>
+    <node x="266.0" y="253.0">org.springframework.web.method.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.method.support" target="org.springframework.web.method.HandlerMethod">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.method.annotation" target="org.springframework.web.method.support">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="211.5" y="144.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.method.annotation</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

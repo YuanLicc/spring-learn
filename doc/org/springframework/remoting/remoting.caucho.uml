@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.remoting.caucho</OriginalElement>
+  <nodes>
+    <node x="298.0" y="167.0">org.springframework.remoting.caucho.package-info</node>
+    <node x="4.0" y="253.0">org.springframework.remoting.caucho.HessianProxyFactoryBean</node>
+    <node x="0.0" y="167.0">org.springframework.remoting.caucho.HessianClientInterceptor</node>
+    <node x="257.0" y="86.0">org.springframework.remoting.caucho.SimpleHessianServiceExporter</node>
+    <node x="168.5" y="0.0">org.springframework.remoting.caucho.HessianExporter</node>
+    <node x="0.0" y="86.0">org.springframework.remoting.caucho.HessianServiceExporter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.remoting.caucho.HessianServiceExporter" target="org.springframework.remoting.caucho.HessianExporter">
+      <point x="0.0" y="-18.0" />
+      <point x="118.5" y="61.0" />
+      <point x="213.75" y="61.0" />
+      <point x="-45.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.caucho.HessianProxyFactoryBean" target="org.springframework.remoting.caucho.HessianClientInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.caucho.SimpleHessianServiceExporter" target="org.springframework.remoting.caucho.HessianExporter">
+      <point x="0.0" y="-18.0" />
+      <point x="399.5" y="61.0" />
+      <point x="304.25" y="61.0" />
+      <point x="45.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="271.0" y="144.5" />
+  <SelectedNodes>
+    <node>org.springframework.remoting.caucho.package-info</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.remoting</OriginalElement>
+  <nodes>
+    <node x="0.0" y="86.0">org.springframework.remoting.RemoteInvocationFailureException</node>
+    <node x="86.0" y="258.0">org.springframework.remoting.jaxws</node>
+    <node x="0.0" y="425.0">org.springframework.remoting.rmi</node>
+    <node x="149.0" y="425.0">org.springframework.remoting.caucho</node>
+    <node x="90.0" y="172.0">org.springframework.remoting.soap</node>
+    <node x="666.0" y="0.0">org.springframework.remoting.RemoteAccessException</node>
+    <node x="939.0" y="86.0">org.springframework.remoting.RemoteTimeoutException</node>
+    <node x="99.40000000000002" y="511.0">org.springframework.remoting.httpinvoker</node>
+    <node x="143.18333333333334" y="339.0">org.springframework.remoting.support</node>
+    <node x="337.0" y="86.0">org.springframework.remoting.RemoteLookupFailureException</node>
+    <node x="363.5" y="339.0">org.springframework.remoting.package-info</node>
+    <node x="642.0" y="86.0">org.springframework.remoting.RemoteProxyFailureException</node>
+    <node x="1196.0" y="86.0">org.springframework.remoting.RemoteConnectFailureException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.remoting.httpinvoker" target="org.springframework.remoting.rmi">
+      <point x="-48.25" y="-18.0" />
+      <point x="147.65000000000003" y="486.0" />
+      <point x="64.5" y="486.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.RemoteLookupFailureException" target="org.springframework.remoting.RemoteAccessException">
+      <point x="0.0" y="-18.0" />
+      <point x="479.5" y="66.0" />
+      <point x="734.7" y="66.0" />
+      <point x="-45.799999999999955" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.RemoteConnectFailureException" target="org.springframework.remoting.RemoteAccessException">
+      <point x="0.0" y="-18.0" />
+      <point x="1342.5" y="56.0" />
+      <point x="872.1" y="56.0" />
+      <point x="91.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.caucho" target="org.springframework.remoting.support">
+      <point x="0.0" y="-18.0" />
+      <point x="225.5" y="400.0" />
+      <point x="223.68333333333334" y="400.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.httpinvoker" target="org.springframework.remoting.support">
+      <point x="48.25" y="-18.0" />
+      <point x="244.15000000000003" y="486.0" />
+      <point x="312.5" y="486.0" />
+      <point x="312.5" y="400.0" />
+      <point x="277.35" y="400.0" />
+      <point x="53.666666666666686" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.RemoteTimeoutException" target="org.springframework.remoting.RemoteAccessException">
+      <point x="0.0" y="-18.0" />
+      <point x="1057.5" y="66.0" />
+      <point x="826.3" y="66.0" />
+      <point x="45.799999999999955" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.jaxws" target="org.springframework.remoting.soap">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.RemoteProxyFailureException" target="org.springframework.remoting.RemoteAccessException">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.RemoteInvocationFailureException" target="org.springframework.remoting.RemoteAccessException">
+      <point x="0.0" y="-18.0" />
+      <point x="158.5" y="56.0" />
+      <point x="688.9" y="56.0" />
+      <point x="-91.60000000000002" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.soap" target="org.springframework.remoting.RemoteInvocationFailureException">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.remoting.rmi" target="org.springframework.remoting.support">
+      <point x="0.0" y="-18.0" />
+      <point x="64.5" y="400.0" />
+      <point x="170.01666666666668" y="400.0" />
+      <point x="-53.66666666666666" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8614976805831677" x="744.5" y="273.5" />
+  <SelectedNodes>
+    <node>org.springframework.remoting.RemoteConnectFailureException</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

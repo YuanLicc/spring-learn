@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- 扫描指定包（将 @Component 注解的类自动定义为 Spring Bean） -->
+    <context:component-scan base-package="com.yl.test"/>
+
+    <aop:aspectj-autoproxy proxy-target-class="true"></aop:aspectj-autoproxy>
+
+    <bean id="aspectjMvcPrintAroundAdvice" class="com.yl.learn.mvc.aop.AspectjMvcPrintAroundAdvice"></bean>
+
+    <aop:config>
+        <aop:pointcut id="all" expression="execution(* com..*.*(..))"></aop:pointcut>
+        <aop:aspect ref="aspectjMvcPrintAroundAdvice">
+            <aop:around method="around" pointcut-ref="all"></aop:around>
+        </aop:aspect>
+    </aop:config>
+</beans>

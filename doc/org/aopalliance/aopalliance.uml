@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.aopalliance</OriginalElement>
+  <nodes>
+    <node x="24.0" y="0.0">org.aopalliance.aop</node>
+    <node x="0.0" y="86.0">org.aopalliance.intercept</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.aopalliance.intercept" target="org.aopalliance.aop">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="88.5" y="61.0" />
+  <SelectedNodes>
+    <node>org.aopalliance.intercept</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

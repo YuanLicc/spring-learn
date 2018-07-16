@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cglib.transform.impl</OriginalElement>
+  <nodes>
+    <node x="0.0" y="491.0">org.springframework.cglib.transform.impl.InterceptFieldFilter</node>
+    <node x="282.0" y="410.0">org.springframework.cglib.transform.impl.InterceptFieldEnabled</node>
+    <node x="0.0" y="572.0">org.springframework.cglib.transform.impl.FieldProvider</node>
+    <node x="266.0" y="491.0">org.springframework.cglib.transform.impl.AddInitTransformer</node>
+    <node x="0.0" y="329.0">org.springframework.cglib.transform.impl.AccessFieldTransformer</node>
+    <node x="0.0" y="248.0">org.springframework.cglib.transform.impl.AddStaticInitTransformer</node>
+    <node x="0.0" y="86.0">org.springframework.cglib.transform.impl.AbstractInterceptFieldCallback</node>
+    <node x="32.0" y="0.0">org.springframework.cglib.transform.impl.InterceptFieldCallback</node>
+    <node x="0.0" y="167.0">org.springframework.cglib.transform.impl.UndeclaredThrowableStrategy</node>
+    <node x="282.0" y="329.0">org.springframework.cglib.transform.impl.AddPropertyTransformer</node>
+    <node x="0.0" y="410.0">org.springframework.cglib.transform.impl.AddDelegateTransformer</node>
+    <node x="298.0" y="248.0">org.springframework.cglib.transform.impl.FieldProviderTransformer</node>
+    <node x="346.0" y="0.0">org.springframework.cglib.transform.impl.UndeclaredThrowableTransformer</node>
+    <node x="322.0" y="167.0">org.springframework.cglib.transform.impl.InterceptFieldTransformer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cglib.transform.impl.AbstractInterceptFieldCallback" target="org.springframework.cglib.transform.impl.InterceptFieldCallback">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="323.5" y="304.0" />
+  <SelectedNodes>
+    <node>org.springframework.cglib.transform.impl.InterceptFieldFilter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

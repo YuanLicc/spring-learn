@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.core.task</OriginalElement>
+  <nodes>
+    <node x="310.5" y="86.0">org.springframework.core.task.SyncTaskExecutor</node>
+    <node x="93.5" y="86.0">org.springframework.core.task.AsyncTaskExecutor</node>
+    <node x="0.0" y="506.0">org.springframework.core.task.package-info</node>
+    <node x="181.0" y="258.0">org.springframework.core.task.SimpleAsyncTaskExecutor</node>
+    <node x="220.0" y="0.0">org.springframework.core.task.TaskExecutor</node>
+    <node x="53.5" y="172.0">org.springframework.core.task.AsyncListenableTaskExecutor</node>
+    <node x="0.0" y="339.0">org.springframework.core.task.TaskRejectedException</node>
+    <node x="0.0" y="258.0">org.springframework.core.task.support</node>
+    <node x="274.0" y="339.0">org.springframework.core.task.TaskDecorator</node>
+    <node x="4.0" y="425.0">org.springframework.core.task.TaskTimeoutException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.core.task.TaskTimeoutException" target="org.springframework.core.task.TaskRejectedException">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.task.SimpleAsyncTaskExecutor" target="org.springframework.core.task.AsyncListenableTaskExecutor">
+      <point x="0.0" y="-18.0" />
+      <point x="303.5" y="233.0" />
+      <point x="261.25" y="233.0" />
+      <point x="69.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.task.AsyncTaskExecutor" target="org.springframework.core.task.TaskExecutor">
+      <point x="0.0" y="-18.0" />
+      <point x="192.0" y="61.0" />
+      <point x="259.25" y="61.0" />
+      <point x="-39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.task.support" target="org.springframework.core.task.AsyncListenableTaskExecutor">
+      <point x="0.0" y="-18.0" />
+      <point x="80.5" y="233.0" />
+      <point x="122.75" y="233.0" />
+      <point x="-69.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.task.SyncTaskExecutor" target="org.springframework.core.task.TaskExecutor">
+      <point x="0.0" y="-18.0" />
+      <point x="405.0" y="61.0" />
+      <point x="337.75" y="61.0" />
+      <point x="39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.task.AsyncListenableTaskExecutor" target="org.springframework.core.task.AsyncTaskExecutor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="250.0" y="271.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

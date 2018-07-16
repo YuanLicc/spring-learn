@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cglib.reflect</OriginalElement>
+  <nodes>
+    <node x="0.0" y="167.0">org.springframework.cglib.reflect.ConstructorDelegate</node>
+    <node x="201.0" y="86.0">org.springframework.cglib.reflect.FastMethod</node>
+    <node x="0.0" y="86.0">org.springframework.cglib.reflect.FastConstructor</node>
+    <node x="110.5" y="0.0">org.springframework.cglib.reflect.FastMember</node>
+    <node x="0.0" y="248.0">org.springframework.cglib.reflect.MulticastDelegate</node>
+    <node x="0.0" y="410.0">org.springframework.cglib.reflect.FastClass</node>
+    <node x="0.0" y="329.0">org.springframework.cglib.reflect.FastClassEmitter</node>
+    <node x="234.0" y="329.0">org.springframework.cglib.reflect.MethodDelegate</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cglib.reflect.FastMethod" target="org.springframework.cglib.reflect.FastMember">
+      <point x="0.0" y="-18.0" />
+      <point x="271.5" y="61.0" />
+      <point x="216.25" y="61.0" />
+      <point x="35.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cglib.reflect.FastConstructor" target="org.springframework.cglib.reflect.FastMember">
+      <point x="0.0" y="-18.0" />
+      <point x="90.5" y="61.0" />
+      <point x="145.75" y="61.0" />
+      <point x="-35.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="203.5" y="223.0" />
+  <SelectedNodes>
+    <node>org.springframework.cglib.reflect.ConstructorDelegate</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

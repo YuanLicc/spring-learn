@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.ejb.config</OriginalElement>
+  <nodes>
+    <node x="329.0" y="0.0">org.springframework.ejb.config.AbstractJndiLocatingBeanDefinitionParser</node>
+    <node x="321.0" y="86.0">org.springframework.ejb.config.RemoteStatelessSessionBeanDefinitionParser</node>
+    <node x="738.0" y="86.0">org.springframework.ejb.config.LocalStatelessSessionBeanDefinitionParser</node>
+    <node x="0.0" y="86.0">org.springframework.ejb.config.JndiLookupBeanDefinitionParser</node>
+    <node x="0.0" y="167.0">org.springframework.ejb.config.JeeNamespaceHandler</node>
+    <node x="258.0" y="167.0">org.springframework.ejb.config.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.ejb.config.RemoteStatelessSessionBeanDefinitionParser" target="org.springframework.ejb.config.AbstractJndiLocatingBeanDefinitionParser">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.ejb.config.JndiLookupBeanDefinitionParser" target="org.springframework.ejb.config.AbstractJndiLocatingBeanDefinitionParser">
+      <point x="0.0" y="-18.0" />
+      <point x="150.5" y="61.0" />
+      <point x="392.5" y="61.0" />
+      <point x="-127.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.ejb.config.LocalStatelessSessionBeanDefinitionParser" target="org.springframework.ejb.config.AbstractJndiLocatingBeanDefinitionParser">
+      <point x="0.0" y="-18.0" />
+      <point x="932.5" y="61.0" />
+      <point x="646.5" y="61.0" />
+      <point x="127.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="563.5" y="101.5" />
+  <SelectedNodes>
+    <node>org.springframework.ejb.config.JndiLookupBeanDefinitionParser</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

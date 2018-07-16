@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.scripting.bsh</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">org.springframework.scripting.bsh.BshScriptEvaluator</node>
+    <node x="0.0" y="243.0">org.springframework.scripting.bsh.package-info</node>
+    <node x="0.0" y="162.0">org.springframework.scripting.bsh.BshScriptUtils</node>
+    <node x="0.0" y="81.0">org.springframework.scripting.bsh.BshScriptFactory</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="102.5" y="139.5" />
+  <SelectedNodes>
+    <node>org.springframework.scripting.bsh.BshScriptEvaluator</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

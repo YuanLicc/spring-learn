@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web</OriginalElement>
+  <nodes>
+    <node x="230.5" y="253.0">org.springframework.web.HttpMediaTypeException</node>
+    <node x="594.0" y="749.0">org.springframework.web.cors</node>
+    <node x="0.0" y="749.0">org.springframework.web.client</node>
+    <node x="198.0" y="749.0">org.springframework.web.method</node>
+    <node x="82.5" y="86.0">org.springframework.web.context</node>
+    <node x="32.5" y="0.0">org.springframework.web.WebApplicationInitializer</node>
+    <node x="0.0" y="830.0">org.springframework.web.jsf</node>
+    <node x="173.0" y="172.0">org.springframework.web.accept</node>
+    <node x="250.0" y="668.0">org.springframework.web.multipart</node>
+    <node x="678.0" y="668.0">org.springframework.web.package-info</node>
+    <node x="361.0" y="339.0">org.springframework.web.HttpMediaTypeNotSupportedException</node>
+    <node x="0.0" y="506.0">org.springframework.web.bind</node>
+    <node x="472.0" y="668.0">org.springframework.web.servlet</node>
+    <node x="182.0" y="420.0">org.springframework.web.HttpRequestMethodNotSupportedException</node>
+    <node x="396.0" y="749.0">org.springframework.web.server</node>
+    <node x="0.0" y="587.0">org.springframework.web.SpringServletContainerInitializer</node>
+    <node x="0.0" y="339.0">org.springframework.web.HttpMediaTypeNotAcceptableException</node>
+    <node x="0.0" y="172.0">org.springframework.web.filter</node>
+    <node x="0.0" y="420.0">org.springframework.web.util</node>
+    <node x="0.0" y="668.0">org.springframework.web.HttpRequestHandler</node>
+    <node x="370.0" y="587.0">org.springframework.web.HttpSessionRequiredException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.filter" target="org.springframework.web.context">
+      <point x="0.0" y="-18.0" />
+      <point x="76.5" y="147.0" />
+      <point x="122.75" y="147.0" />
+      <point x="-40.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.HttpMediaTypeNotAcceptableException" target="org.springframework.web.HttpMediaTypeException">
+      <point x="0.0" y="-18.0" />
+      <point x="170.5" y="314.0" />
+      <point x="289.75" y="314.0" />
+      <point x="-59.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind" target="org.springframework.web.util">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context" target="org.springframework.web.WebApplicationInitializer">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.accept" target="org.springframework.web.context">
+      <point x="0.0" y="-18.0" />
+      <point x="249.5" y="147.0" />
+      <point x="203.25" y="147.0" />
+      <point x="40.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.HttpMediaTypeNotSupportedException" target="org.springframework.web.HttpMediaTypeException">
+      <point x="0.0" y="-18.0" />
+      <point x="527.5" y="314.0" />
+      <point x="408.25" y="314.0" />
+      <point x="59.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9571106094808126" x="417.5" y="433.0" />
+  <SelectedNodes>
+    <node>org.springframework.web.HttpMediaTypeNotAcceptableException</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

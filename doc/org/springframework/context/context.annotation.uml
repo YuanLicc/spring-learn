@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.context.annotation</OriginalElement>
+  <nodes>
+    <node x="1156.0" y="1235.0">org.springframework.context.annotation.Primary</node>
+    <node x="864.0" y="587.0">org.springframework.context.annotation.BeanMethod</node>
+    <node x="394.0" y="749.0">org.springframework.context.annotation.ConflictingBeanDefinitionException</node>
+    <node x="788.0" y="420.0">org.springframework.context.annotation.ProfileCondition</node>
+    <node x="588.0" y="992.0">org.springframework.context.annotation.AnnotationConfigUtils</node>
+    <node x="454.0" y="668.0">org.springframework.context.annotation.ContextAnnotationAutowireCandidateResolver</node>
+    <node x="0.0" y="1073.0">org.springframework.context.annotation.ConfigurationClass</node>
+    <node x="52.0" y="587.0">org.springframework.context.annotation.ClassPathBeanDefinitionScanner</node>
+    <node x="750.0" y="1073.0">org.springframework.context.annotation.ConditionContext</node>
+    <node x="250.0" y="1073.0">org.springframework.context.annotation.ConditionEvaluator</node>
+    <node x="724.0" y="830.0">org.springframework.context.annotation.AnnotatedBeanDefinitionReader</node>
+    <node x="772.0" y="749.0">org.springframework.context.annotation.CommonAnnotationBeanPostProcessor</node>
+    <node x="652.0" y="911.0">org.springframework.context.annotation.ConfigurationClassEnhancer</node>
+    <node x="767.5" y="167.0">org.springframework.context.annotation.ImportSelector</node>
+    <node x="210.0" y="1235.0">org.springframework.context.annotation.package-info</node>
+    <node x="226.0" y="1154.0">org.springframework.context.annotation.ImportResource</node>
+    <node x="450.0" y="587.0">org.springframework.context.annotation.AnnotationConfigApplicationContext</node>
+    <node x="22.0" y="167.0">org.springframework.context.annotation.Configuration</node>
+    <node x="1062.0" y="830.0">org.springframework.context.annotation.ComponentScanAnnotationParser</node>
+    <node x="966.0" y="911.0">org.springframework.context.annotation.LoadTimeWeavingConfigurer</node>
+    <node x="146.0" y="1316.0">org.springframework.context.annotation.Role</node>
+    <node x="284.0" y="1316.0">org.springframework.context.annotation.Lazy</node>
+    <node x="1045.0" y="86.0">org.springframework.context.annotation.AnnotationScopeMetadataResolver</node>
+    <node x="1086.0" y="501.0">org.springframework.context.annotation.Conditional</node>
+    <node x="860.0" y="253.0">org.springframework.context.annotation.AdviceModeImportSelector</node>
+    <node x="500.0" y="1073.0">org.springframework.context.annotation.ScopedProxyCreator</node>
+    <node x="217.0" y="86.0">org.springframework.context.annotation.EnableAspectJAutoProxy</node>
+    <node x="603.0" y="253.0">org.springframework.context.annotation.DeferredImportSelector</node>
+    <node x="281.0" y="420.0">org.springframework.context.annotation.AutoProxyRegistrar</node>
+    <node x="978.0" y="1235.0">org.springframework.context.annotation.DependsOn</node>
+    <node x="0.0" y="420.0">org.springframework.context.annotation.AspectJAutoProxyRegistrar</node>
+    <node x="444.0" y="1154.0">org.springframework.context.annotation.PropertySource</node>
+    <node x="748.0" y="86.0">org.springframework.context.annotation.Jsr330ScopeMetadataResolver</node>
+    <node x="984.0" y="1073.0">org.springframework.context.annotation.PropertySources</node>
+    <node x="0.0" y="1316.0">org.springframework.context.annotation.Scope</node>
+    <node x="1098.0" y="1154.0">org.springframework.context.annotation.ScopeMetadata</node>
+    <node x="828.0" y="501.0">org.springframework.context.annotation.ConfigurationMethod</node>
+    <node x="330.0" y="911.0">org.springframework.context.annotation.AnnotationBeanNameGenerator</node>
+    <node x="110.5" y="334.0">org.springframework.context.annotation.ImportBeanDefinitionRegistrar</node>
+    <node x="662.0" y="1154.0">org.springframework.context.annotation.ComponentScans</node>
+    <node x="0.0" y="749.0">org.springframework.context.annotation.AnnotationConfigBeanDefinitionParser</node>
+    <node x="896.0" y="668.0">org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader</node>
+    <node x="375.0" y="167.0">org.springframework.context.annotation.ImportAware</node>
+    <node x="474.0" y="86.0">org.springframework.context.annotation.EnableLoadTimeWeaving</node>
+    <node x="606.0" y="1235.0">org.springframework.context.annotation.FilterType</node>
+    <node x="0.0" y="992.0">org.springframework.context.annotation.ConfigurationClassParser</node>
+    <node x="412.0" y="1235.0">org.springframework.context.annotation.Description</node>
+    <node x="298.0" y="992.0">org.springframework.context.annotation.ConfigurationClassUtils</node>
+    <node x="0.0" y="668.0">org.springframework.context.annotation.AnnotationConfigApplicationContextExtensionsKt</node>
+    <node x="0.0" y="911.0">org.springframework.context.annotation.ScannedGenericBeanDefinition</node>
+    <node x="880.0" y="1154.0">org.springframework.context.annotation.ImportRegistry</node>
+    <node x="273.0" y="253.0">org.springframework.context.annotation.LoadTimeWeavingConfiguration</node>
+    <node x="862.0" y="992.0">org.springframework.context.annotation.BeanAnnotationHelper</node>
+    <node x="792.0" y="1235.0">org.springframework.context.annotation.AdviceMode</node>
+    <node x="0.0" y="501.0">org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider</node>
+    <node x="699.5" y="334.0">org.springframework.context.annotation.Condition</node>
+    <node x="0.0" y="1154.0">org.springframework.context.annotation.ScopedProxyMode</node>
+    <node x="281.0" y="0.0">org.springframework.context.annotation.Import</node>
+    <node x="0.0" y="86.0">org.springframework.context.annotation.EnableMBeanExport</node>
+    <node x="1128.0" y="992.0">org.springframework.context.annotation.ParserStrategyUtils</node>
+    <node x="1102.0" y="587.0">org.springframework.context.annotation.Profile</node>
+    <node x="0.0" y="1235.0">org.springframework.context.annotation.ComponentScan</node>
+    <node x="531.0" y="420.0">org.springframework.context.annotation.ConfigurationCondition</node>
+    <node x="0.0" y="830.0">org.springframework.context.annotation.ComponentScanBeanDefinitionParser</node>
+    <node x="370.0" y="830.0">org.springframework.context.annotation.ConfigurationClassPostProcessor</node>
+    <node x="928.5" y="0.0">org.springframework.context.annotation.ScopeMetadataResolver</node>
+    <node x="0.0" y="253.0">org.springframework.context.annotation.MBeanExportConfiguration</node>
+    <node x="422.0" y="1316.0">org.springframework.context.annotation.Bean</node>
+    <node x="490.0" y="501.0">org.springframework.context.annotation.AnnotationConfigRegistry</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.context.annotation.EnableAspectJAutoProxy" target="org.springframework.context.annotation.Import">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.AnnotationConfigApplicationContext" target="org.springframework.context.annotation.AnnotationConfigRegistry">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.AnnotationScopeMetadataResolver" target="org.springframework.context.annotation.ScopeMetadataResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="1199.5" y="61.0" />
+      <point x="1100.25" y="61.0" />
+      <point x="57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.ClassPathBeanDefinitionScanner" target="org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.MBeanExportConfiguration" target="org.springframework.context.annotation.Configuration">
+      <point x="-63.25" y="-18.0" />
+      <point x="-41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.Profile" target="org.springframework.context.annotation.Conditional">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.AutoProxyRegistrar" target="org.springframework.context.annotation.ImportBeanDefinitionRegistrar">
+      <point x="0.0" y="-18.0" />
+      <point x="383.5" y="395.0" />
+      <point x="330.25" y="395.0" />
+      <point x="73.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.AdviceModeImportSelector" target="org.springframework.context.annotation.ImportSelector">
+      <point x="0.0" y="-18.0" />
+      <point x="986.5" y="228.0" />
+      <point x="897.25" y="228.0" />
+      <point x="43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.Jsr330ScopeMetadataResolver" target="org.springframework.context.annotation.ScopeMetadataResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="886.5" y="61.0" />
+      <point x="985.75" y="61.0" />
+      <point x="-57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.DeferredImportSelector" target="org.springframework.context.annotation.ImportSelector">
+      <point x="0.0" y="-18.0" />
+      <point x="721.5" y="228.0" />
+      <point x="810.75" y="228.0" />
+      <point x="-43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.LoadTimeWeavingConfiguration" target="org.springframework.context.annotation.ImportAware">
+      <point x="71.25" y="-18.0" />
+      <point x="37.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.BeanMethod" target="org.springframework.context.annotation.ConfigurationMethod">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.EnableLoadTimeWeaving" target="org.springframework.context.annotation.Import">
+      <point x="0.0" y="-18.0" />
+      <point x="588.5" y="61.0" />
+      <point x="371.83333333333337" y="61.0" />
+      <point x="36.33333333333337" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.EnableMBeanExport" target="org.springframework.context.annotation.Import">
+      <point x="0.0" y="-18.0" />
+      <point x="98.5" y="61.0" />
+      <point x="299.1666666666667" y="61.0" />
+      <point x="-36.333333333333314" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.ProfileCondition" target="org.springframework.context.annotation.Condition">
+      <point x="0.0" y="-18.0" />
+      <point x="882.5" y="395.0" />
+      <point x="799.25" y="395.0" />
+      <point x="33.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.AspectJAutoProxyRegistrar" target="org.springframework.context.annotation.ImportBeanDefinitionRegistrar">
+      <point x="0.0" y="-18.0" />
+      <point x="130.5" y="395.0" />
+      <point x="183.75" y="395.0" />
+      <point x="-73.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.ConfigurationCondition" target="org.springframework.context.annotation.Condition">
+      <point x="0.0" y="-18.0" />
+      <point x="649.5" y="395.0" />
+      <point x="732.75" y="395.0" />
+      <point x="-33.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.LoadTimeWeavingConfiguration" target="org.springframework.context.annotation.Configuration">
+      <point x="-71.25" y="-18.0" />
+      <point x="344.25" y="223.0" />
+      <point x="145.75" y="223.0" />
+      <point x="41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.context.annotation.MBeanExportConfiguration" target="org.springframework.context.annotation.ImportAware">
+      <point x="63.25" y="-18.0" />
+      <point x="189.75" y="233.0" />
+      <point x="412.25" y="233.0" />
+      <point x="-37.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6180758017492711" x="677.5" y="676.0" />
+  <SelectedNodes>
+    <node>org.springframework.context.annotation.Primary</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

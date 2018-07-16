@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.aspectj.autoproxy</OriginalElement>
+  <nodes>
+    <node x="0.0" y="81.0">org.springframework.aop.aspectj.autoproxy.AspectJPrecedenceComparator</node>
+    <node x="0.0" y="162.0">org.springframework.aop.aspectj.autoproxy.package-info</node>
+    <node x="0.0" y="0.0">org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="170.5" y="99.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.aspectj.autoproxy.AspectJPrecedenceComparator</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

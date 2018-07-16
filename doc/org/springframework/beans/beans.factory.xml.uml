@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.xml</OriginalElement>
+  <nodes>
+    <node x="314.0" y="926.0">org.springframework.beans.factory.xml.PluggableSchemaResolver</node>
+    <node x="0.0" y="1007.0">org.springframework.beans.factory.xml.BeansDtdResolver</node>
+    <node x="414.0" y="592.0">org.springframework.beans.factory.xml.NamespaceHandlerResolver</node>
+    <node x="0.0" y="678.0">org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader</node>
+    <node x="234.0" y="1007.0">org.springframework.beans.factory.xml.XmlReaderContext</node>
+    <node x="748.0" y="678.0">org.springframework.beans.factory.xml.ResourceEntityResolver</node>
+    <node x="265.0" y="425.0">org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler</node>
+    <node x="28.0" y="759.0">org.springframework.beans.factory.xml.DocumentLoader</node>
+    <node x="56.0" y="0.0">org.springframework.beans.factory.xml.BeanDefinitionParser</node>
+    <node x="686.0" y="1007.0">org.springframework.beans.factory.xml.ParserContext</node>
+    <node x="321.0" y="339.0">org.springframework.beans.factory.xml.NamespaceHandler</node>
+    <node x="628.0" y="759.0">org.springframework.beans.factory.xml.BeanDefinitionParserDelegate</node>
+    <node x="28.0" y="592.0">org.springframework.beans.factory.xml.BeanDefinitionDocumentReader</node>
+    <node x="0.0" y="425.0">org.springframework.beans.factory.xml.NamespaceHandlerSupport</node>
+    <node x="0.0" y="845.0">org.springframework.beans.factory.xml.DefaultDocumentLoader</node>
+    <node x="0.0" y="258.0">org.springframework.beans.factory.xml.AbstractSimpleBeanDefinitionParser</node>
+    <node x="740.0" y="592.0">org.springframework.beans.factory.xml.DelegatingEntityResolver</node>
+    <node x="604.0" y="926.0">org.springframework.beans.factory.xml.XmlBeanDefinitionReader</node>
+    <node x="0.0" y="926.0">org.springframework.beans.factory.xml.DocumentDefaultsDefinition</node>
+    <node x="468.0" y="1007.0">org.springframework.beans.factory.xml.XmlBeanFactory</node>
+    <node x="386.0" y="678.0">org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver</node>
+    <node x="24.0" y="86.0">org.springframework.beans.factory.xml.AbstractBeanDefinitionParser</node>
+    <node x="896.0" y="1007.0">org.springframework.beans.factory.xml.package-info</node>
+    <node x="12.0" y="511.0">org.springframework.beans.factory.xml.UtilNamespaceHandler</node>
+    <node x="0.0" y="172.0">org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser</node>
+    <node x="586.0" y="425.0">org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler</node>
+    <node x="274.0" y="759.0">org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException</node>
+    <node x="894.0" y="926.0">org.springframework.beans.factory.xml.BeanDefinitionDecorator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.beans.factory.xml.AbstractBeanDefinitionParser" target="org.springframework.beans.factory.xml.BeanDefinitionParser">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.ResourceEntityResolver" target="org.springframework.beans.factory.xml.DelegatingEntityResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler" target="org.springframework.beans.factory.xml.NamespaceHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.NamespaceHandlerSupport" target="org.springframework.beans.factory.xml.NamespaceHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="122.5" y="400.0" />
+      <point x="352.5" y="400.0" />
+      <point x="-63.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.DefaultDocumentLoader" target="org.springframework.beans.factory.xml.DocumentLoader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser" target="org.springframework.beans.factory.xml.AbstractBeanDefinitionParser">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader" target="org.springframework.beans.factory.xml.BeanDefinitionDocumentReader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver" target="org.springframework.beans.factory.xml.NamespaceHandlerResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.UtilNamespaceHandler" target="org.springframework.beans.factory.xml.NamespaceHandlerSupport">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.AbstractSimpleBeanDefinitionParser" target="org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler" target="org.springframework.beans.factory.xml.NamespaceHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="748.5" y="400.0" />
+      <point x="478.5" y="400.0" />
+      <point x="63.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7977422389463782" x="569.5" y="521.5" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.xml.PluggableSchemaResolver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

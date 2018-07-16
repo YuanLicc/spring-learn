@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.scheduling</OriginalElement>
+  <nodes>
+    <node x="243.83333333333331" y="172.0">org.springframework.scheduling.concurrent</node>
+    <node x="230.0" y="253.0">org.springframework.scheduling.SchedulingAwareRunnable</node>
+    <node x="543.3333333333333" y="0.0">org.springframework.scheduling.Trigger</node>
+    <node x="16.0" y="253.0">org.springframework.scheduling.config</node>
+    <node x="0.0" y="86.0">org.springframework.scheduling.SchedulingTaskExecutor</node>
+    <node x="257.0" y="86.0">org.springframework.scheduling.TaskScheduler</node>
+    <node x="0.0" y="339.0">org.springframework.scheduling.annotation</node>
+    <node x="442.0" y="86.0">org.springframework.scheduling.support</node>
+    <node x="350.3333333333333" y="0.0">org.springframework.scheduling.TriggerContext</node>
+    <node x="0.0" y="420.0">org.springframework.scheduling.SchedulingException</node>
+    <node x="258.0" y="420.0">org.springframework.scheduling.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.scheduling.annotation" target="org.springframework.scheduling.config">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.concurrent" target="org.springframework.scheduling.TaskScheduler">
+      <point x="0.0" y="-18.0" />
+      <point x="336.3333333333333" y="147.0" />
+      <point x="339.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.support" target="org.springframework.scheduling.Trigger">
+      <point x="40.25" y="-18.0" />
+      <point x="562.75" y="61.0" />
+      <point x="601.8333333333333" y="61.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.support" target="org.springframework.scheduling.TriggerContext">
+      <point x="-40.25" y="-18.0" />
+      <point x="482.25" y="61.0" />
+      <point x="436.8333333333333" y="61.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.concurrent" target="org.springframework.scheduling.SchedulingTaskExecutor">
+      <point x="-61.66666666666663" y="-18.0" />
+      <point x="274.6666666666667" y="147.0" />
+      <point x="118.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.scheduling.concurrent" target="org.springframework.scheduling.support">
+      <point x="61.666666666666686" y="-18.0" />
+      <point x="398.0" y="147.0" />
+      <point x="522.5" y="147.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="330.5" y="228.0" />
+  <SelectedNodes>
+    <node>org.springframework.scheduling.TriggerContext</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

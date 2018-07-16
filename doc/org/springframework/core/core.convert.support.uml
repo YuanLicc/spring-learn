@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.core.convert.support</OriginalElement>
+  <nodes>
+    <node x="362.0" y="253.0">org.springframework.core.convert.support.ConvertingPropertyEditorAdapter</node>
+    <node x="596.0" y="901.0">org.springframework.core.convert.support.ObjectToStringConverter</node>
+    <node x="644.0" y="577.0">org.springframework.core.convert.support.NumberToCharacterConverter</node>
+    <node x="306.0" y="820.0">org.springframework.core.convert.support.ConversionServiceFactory</node>
+    <node x="282.0" y="1063.0">org.springframework.core.convert.support.StringToUUIDConverter</node>
+    <node x="604.0" y="820.0">org.springframework.core.convert.support.StringToCharsetConverter</node>
+    <node x="0.0" y="0.0">org.springframework.core.convert.support.ConfigurableConversionService</node>
+    <node x="668.0" y="415.0">org.springframework.core.convert.support.StringToPropertiesConverter</node>
+    <node x="0.0" y="901.0">org.springframework.core.convert.support.CharacterToNumberFactory</node>
+    <node x="716.0" y="253.0">org.springframework.core.convert.support.CollectionToCollectionConverter</node>
+    <node x="952.0" y="1144.0">org.springframework.core.convert.support.package-info</node>
+    <node x="0.0" y="496.0">org.springframework.core.convert.support.CollectionToObjectConverter</node>
+    <node x="0.0" y="658.0">org.springframework.core.convert.support.StringToCharacterConverter</node>
+    <node x="354.0" y="334.0">org.springframework.core.convert.support.StringToNumberConverterFactory</node>
+    <node x="500.0" y="1144.0">org.springframework.core.convert.support.ConversionUtils</node>
+    <node x="0.0" y="739.0">org.springframework.core.convert.support.StringToCurrencyConverter</node>
+    <node x="830.0" y="1063.0">org.springframework.core.convert.support.ByteBufferConverter</node>
+    <node x="886.0" y="901.0">org.springframework.core.convert.support.StringToLocaleConverter</node>
+    <node x="290.0" y="982.0">org.springframework.core.convert.support.ArrayToStringConverter</node>
+    <node x="700.0" y="334.0">org.springframework.core.convert.support.NumberToNumberConverterFactory</node>
+    <node x="0.0" y="334.0">org.springframework.core.convert.support.FallbackObjectToStringConverter</node>
+    <node x="258.0" y="1144.0">org.springframework.core.convert.support.MapToMapConverter</node>
+    <node x="306.0" y="739.0">org.springframework.core.convert.support.StringToTimeZoneConverter</node>
+    <node x="587.0" y="86.0">org.springframework.core.convert.support.EnumToIntegerConverter</node>
+    <node x="612.0" y="739.0">org.springframework.core.convert.support.ZoneIdToTimeZoneConverter</node>
+    <node x="572.0" y="982.0">org.springframework.core.convert.support.ArrayToObjectConverter</node>
+    <node x="338.0" y="415.0">org.springframework.core.convert.support.StringToEnumConverterFactory</node>
+    <node x="0.0" y="253.0">org.springframework.core.convert.support.ZonedDateTimeToCalendarConverter</node>
+    <node x="556.0" y="1063.0">org.springframework.core.convert.support.ArrayToArrayConverter</node>
+    <node x="298.0" y="901.0">org.springframework.core.convert.support.StringToBooleanConverter</node>
+    <node x="314.0" y="658.0">org.springframework.core.convert.support.ArrayToCollectionConverter</node>
+    <node x="322.0" y="496.0">org.springframework.core.convert.support.ObjectToCollectionConverter</node>
+    <node x="20.0" y="86.0">org.springframework.core.convert.support.GenericConversionService</node>
+    <node x="644.0" y="496.0">org.springframework.core.convert.support.StringToCollectionConverter</node>
+    <node x="420.5" y="0.0">org.springframework.core.convert.support.AbstractConditionalEnumConverter</node>
+    <node x="0.0" y="577.0">org.springframework.core.convert.support.PropertiesToStringConverter</node>
+    <node x="628.0" y="658.0">org.springframework.core.convert.support.CollectionToArrayConverter</node>
+    <node x="726.0" y="1144.0">org.springframework.core.convert.support.StreamConverter</node>
+    <node x="854.0" y="982.0">org.springframework.core.convert.support.StringToArrayConverter</node>
+    <node x="0.0" y="982.0">org.springframework.core.convert.support.ObjectToObjectConverter</node>
+    <node x="0.0" y="820.0">org.springframework.core.convert.support.ObjectToOptionalConverter</node>
+    <node x="0.0" y="1144.0">org.springframework.core.convert.support.IdToEntityConverter</node>
+    <node x="0.0" y="1063.0">org.springframework.core.convert.support.ObjectToArrayConverter</node>
+    <node x="338.0" y="86.0">org.springframework.core.convert.support.EnumToStringConverter</node>
+    <node x="322.0" y="577.0">org.springframework.core.convert.support.CollectionToStringConverter</node>
+    <node x="0.0" y="415.0">org.springframework.core.convert.support.IntegerToEnumConverterFactory</node>
+    <node x="20.0" y="172.0">org.springframework.core.convert.support.DefaultConversionService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.core.convert.support.EnumToStringConverter" target="org.springframework.core.convert.support.AbstractConditionalEnumConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="452.5" y="61.0" />
+      <point x="499.75" y="61.0" />
+      <point x="-79.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.DefaultConversionService" target="org.springframework.core.convert.support.GenericConversionService">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.GenericConversionService" target="org.springframework.core.convert.support.ConfigurableConversionService">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.EnumToIntegerConverter" target="org.springframework.core.convert.support.AbstractConditionalEnumConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="705.5" y="61.0" />
+      <point x="658.25" y="61.0" />
+      <point x="79.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7066666666666667" x="565.5" y="590.0" />
+  <SelectedNodes>
+    <node>org.springframework.core.convert.support.ConvertingPropertyEditorAdapter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jmx.export.metadata</OriginalElement>
+  <nodes>
+    <node x="258.0" y="248.0">org.springframework.jmx.export.metadata.JmxAttributeSource</node>
+    <node x="185.00000000000003" y="86.0">org.springframework.jmx.export.metadata.ManagedOperation</node>
+    <node x="271.5" y="0.0">org.springframework.jmx.export.metadata.AbstractJmxAttribute</node>
+    <node x="595.0" y="86.0">org.springframework.jmx.export.metadata.ManagedAttribute</node>
+    <node x="394.0" y="86.0">org.springframework.jmx.export.metadata.ManagedResource</node>
+    <node x="0.0" y="248.0">org.springframework.jmx.export.metadata.ManagedNotification</node>
+    <node x="0.0" y="329.0">org.springframework.jmx.export.metadata.package-info</node>
+    <node x="0.0" y="86.0">org.springframework.jmx.export.metadata.ManagedMetric</node>
+    <node x="306.0" y="167.0">org.springframework.jmx.export.metadata.InvalidMetadataException</node>
+    <node x="508.0" y="248.0">org.springframework.jmx.export.metadata.JmxMetadataUtils</node>
+    <node x="0.0" y="167.0">org.springframework.jmx.export.metadata.ManagedOperationParameter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jmx.export.metadata.ManagedOperation" target="org.springframework.jmx.export.metadata.AbstractJmxAttribute">
+      <point x="0.0" y="-18.0" />
+      <point x="279.5" y="66.0" />
+      <point x="354.375" y="66.0" />
+      <point x="-27.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.metadata.ManagedResource" target="org.springframework.jmx.export.metadata.AbstractJmxAttribute">
+      <point x="0.0" y="-18.0" />
+      <point x="484.5" y="66.0" />
+      <point x="409.625" y="66.0" />
+      <point x="27.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.metadata.ManagedMetric" target="org.springframework.jmx.export.metadata.AbstractJmxAttribute">
+      <point x="0.0" y="-18.0" />
+      <point x="82.5" y="56.0" />
+      <point x="299.125" y="56.0" />
+      <point x="-82.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.metadata.ManagedAttribute" target="org.springframework.jmx.export.metadata.AbstractJmxAttribute">
+      <point x="0.0" y="-18.0" />
+      <point x="689.5" y="56.0" />
+      <point x="464.875" y="56.0" />
+      <point x="82.875" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="392.0" y="182.5" />
+  <SelectedNodes>
+    <node>org.springframework.jmx.export.metadata.JmxAttributeSource</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

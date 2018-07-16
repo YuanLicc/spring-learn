@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.cache.interceptor</OriginalElement>
+  <nodes>
+    <node x="225.0" y="425.0">org.springframework.cache.interceptor.SimpleCacheResolver</node>
+    <node x="626.0" y="592.0">org.springframework.cache.interceptor.AbstractFallbackCacheOperationSource</node>
+    <node x="370.0" y="840.0">org.springframework.cache.interceptor.VariableNotAvailableException</node>
+    <node x="438.0" y="86.0">org.springframework.cache.interceptor.CacheOperationInvocationContext</node>
+    <node x="476.0" y="1002.0">org.springframework.cache.interceptor.SimpleKey</node>
+    <node x="134.5" y="253.0">org.springframework.cache.interceptor.CacheResolver</node>
+    <node x="483.0" y="253.0">org.springframework.cache.interceptor.AbstractCacheInvoker</node>
+    <node x="349.0" y="506.0">org.springframework.cache.interceptor.CacheOperationSource</node>
+    <node x="274.0" y="1002.0">org.springframework.cache.interceptor.package-info</node>
+    <node x="0.0" y="921.0">org.springframework.cache.interceptor.CacheExpressionRootObject</node>
+    <node x="0.0" y="759.0">org.springframework.cache.interceptor.SimpleCacheErrorHandler</node>
+    <node x="225.00000000000003" y="172.0">org.springframework.cache.interceptor.CacheEvictOperation</node>
+    <node x="375.5" y="0.0">org.springframework.cache.interceptor.BasicOperation</node>
+    <node x="499.0" y="425.0">org.springframework.cache.interceptor.CacheInterceptor</node>
+    <node x="491.0" y="339.0">org.springframework.cache.interceptor.CacheAspectSupport</node>
+    <node x="708.0" y="840.0">org.springframework.cache.interceptor.CacheOperationSourcePointcut</node>
+    <node x="540.0" y="673.0">org.springframework.cache.interceptor.BeanFactoryCacheOperationSourceAdvisor</node>
+    <node x="458.0" y="172.0">org.springframework.cache.interceptor.CachePutOperation</node>
+    <node x="0.0" y="840.0">org.springframework.cache.interceptor.CacheOperationExpressionEvaluator</node>
+    <node x="313.0" y="592.0">org.springframework.cache.interceptor.NameMatchCacheOperationSource</node>
+    <node x="314.0" y="673.0">org.springframework.cache.interceptor.KeyGenerator</node>
+    <node x="588.0" y="921.0">org.springframework.cache.interceptor.CacheOperationInvoker</node>
+    <node x="0.0" y="592.0">org.springframework.cache.interceptor.CompositeCacheOperationSource</node>
+    <node x="306.0" y="921.0">org.springframework.cache.interceptor.CacheEvaluationContext</node>
+    <node x="290.0" y="759.0">org.springframework.cache.interceptor.SimpleKeyGenerator</node>
+    <node x="102.5" y="339.0">org.springframework.cache.interceptor.AbstractCacheResolver</node>
+    <node x="24.0" y="673.0">org.springframework.cache.interceptor.CacheErrorHandler</node>
+    <node x="0.0" y="172.0">org.springframework.cache.interceptor.CacheableOperation</node>
+    <node x="0.0" y="425.0">org.springframework.cache.interceptor.NamedCacheResolver</node>
+    <node x="245.00000000000003" y="86.0">org.springframework.cache.interceptor.CacheOperation</node>
+    <node x="0.0" y="1002.0">org.springframework.cache.interceptor.CacheProxyFactoryBean</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.cache.interceptor.SimpleKeyGenerator" target="org.springframework.cache.interceptor.KeyGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.CacheableOperation" target="org.springframework.cache.interceptor.CacheOperation">
+      <point x="0.0" y="-18.0" />
+      <point x="102.5" y="147.0" />
+      <point x="273.83333333333337" y="147.0" />
+      <point x="-57.666666666666686" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.CacheEvictOperation" target="org.springframework.cache.interceptor.CacheOperation">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.AbstractCacheResolver" target="org.springframework.cache.interceptor.CacheResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.CacheOperationInvocationContext" target="org.springframework.cache.interceptor.BasicOperation">
+      <point x="0.0" y="-18.0" />
+      <point x="592.5" y="61.0" />
+      <point x="505.25" y="61.0" />
+      <point x="43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.SimpleCacheErrorHandler" target="org.springframework.cache.interceptor.CacheErrorHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.NameMatchCacheOperationSource" target="org.springframework.cache.interceptor.CacheOperationSource">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.CompositeCacheOperationSource" target="org.springframework.cache.interceptor.CacheOperationSource">
+      <point x="0.0" y="-18.0" />
+      <point x="146.5" y="567.0" />
+      <point x="385.8333333333333" y="567.0" />
+      <point x="-73.66666666666669" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.CacheAspectSupport" target="org.springframework.cache.interceptor.AbstractCacheInvoker">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.CachePutOperation" target="org.springframework.cache.interceptor.CacheOperation">
+      <point x="0.0" y="-18.0" />
+      <point x="556.5" y="147.0" />
+      <point x="389.16666666666663" y="147.0" />
+      <point x="57.66666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.SimpleCacheResolver" target="org.springframework.cache.interceptor.AbstractCacheResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="331.5" y="400.0" />
+      <point x="274.25" y="400.0" />
+      <point x="57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.AbstractFallbackCacheOperationSource" target="org.springframework.cache.interceptor.CacheOperationSource">
+      <point x="0.0" y="-18.0" />
+      <point x="800.5" y="567.0" />
+      <point x="533.1666666666667" y="567.0" />
+      <point x="73.66666666666674" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.CacheOperation" target="org.springframework.cache.interceptor.BasicOperation">
+      <point x="0.0" y="-18.0" />
+      <point x="331.5" y="61.0" />
+      <point x="418.75" y="61.0" />
+      <point x="-43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.CacheInterceptor" target="org.springframework.cache.interceptor.CacheAspectSupport">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.cache.interceptor.NamedCacheResolver" target="org.springframework.cache.interceptor.AbstractCacheResolver">
+      <point x="0.0" y="-18.0" />
+      <point x="102.5" y="400.0" />
+      <point x="159.75" y="400.0" />
+      <point x="-57.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8015122873345936" x="496.5" y="519.0" />
+  <SelectedNodes>
+    <node>org.springframework.cache.interceptor.NamedCacheResolver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

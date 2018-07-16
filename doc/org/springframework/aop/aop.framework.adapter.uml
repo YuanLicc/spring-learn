@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.framework.adapter</OriginalElement>
+  <nodes>
+    <node x="0.0" y="415.0">org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry</node>
+    <node x="338.0" y="167.0">org.springframework.aop.framework.adapter.AdvisorAdapterRegistrationManager</node>
+    <node x="28.0" y="167.0">org.springframework.aop.framework.adapter.AdvisorAdapterRegistry</node>
+    <node x="0.0" y="334.0">org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor</node>
+    <node x="0.0" y="253.0">org.springframework.aop.framework.adapter.DefaultAdvisorAdapterRegistry</node>
+    <node x="297.0" y="86.0">org.springframework.aop.framework.adapter.MethodBeforeAdviceAdapter</node>
+    <node x="330.0" y="415.0">org.springframework.aop.framework.adapter.UnknownAdviceTypeException</node>
+    <node x="341.0" y="0.0">org.springframework.aop.framework.adapter.AdvisorAdapter</node>
+    <node x="0.0" y="496.0">org.springframework.aop.framework.adapter.ThrowsAdviceInterceptor</node>
+    <node x="578.0" y="86.0">org.springframework.aop.framework.adapter.ThrowsAdviceAdapter</node>
+    <node x="0.0" y="86.0">org.springframework.aop.framework.adapter.AfterReturningAdviceAdapter</node>
+    <node x="290.0" y="496.0">org.springframework.aop.framework.adapter.package-info</node>
+    <node x="354.0" y="334.0">org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.framework.adapter.MethodBeforeAdviceAdapter" target="org.springframework.aop.framework.adapter.AdvisorAdapter">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.adapter.AfterReturningAdviceAdapter" target="org.springframework.aop.framework.adapter.AdvisorAdapter">
+      <point x="0.0" y="-18.0" />
+      <point x="138.5" y="61.0" />
+      <point x="369.8333333333333" y="61.0" />
+      <point x="-57.666666666666686" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.adapter.ThrowsAdviceAdapter" target="org.springframework.aop.framework.adapter.AdvisorAdapter">
+      <point x="0.0" y="-18.0" />
+      <point x="684.5" y="61.0" />
+      <point x="485.16666666666663" y="61.0" />
+      <point x="57.66666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.adapter.DefaultAdvisorAdapterRegistry" target="org.springframework.aop.framework.adapter.AdvisorAdapterRegistry">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="395.5" y="266.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.framework.adapter.GlobalAdvisorAdapterRegistry</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

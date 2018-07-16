@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.jmx.export.naming</OriginalElement>
+  <nodes>
+    <node x="257.0" y="86.0">org.springframework.jmx.export.naming.MetadataNamingStrategy</node>
+    <node x="202.0" y="167.0">org.springframework.jmx.export.naming.SelfNaming</node>
+    <node x="265.0" y="0.0">org.springframework.jmx.export.naming.ObjectNamingStrategy</node>
+    <node x="514.0" y="86.0">org.springframework.jmx.export.naming.KeyNamingStrategy</node>
+    <node x="0.0" y="167.0">org.springframework.jmx.export.naming.package-info</node>
+    <node x="0.0" y="86.0">org.springframework.jmx.export.naming.IdentityNamingStrategy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.jmx.export.naming.MetadataNamingStrategy" target="org.springframework.jmx.export.naming.ObjectNamingStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.naming.KeyNamingStrategy" target="org.springframework.jmx.export.naming.ObjectNamingStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="612.5" y="61.0" />
+      <point x="449.1666666666667" y="61.0" />
+      <point x="73.66666666666669" y="18.0" />
+    </edge>
+    <edge source="org.springframework.jmx.export.naming.IdentityNamingStrategy" target="org.springframework.jmx.export.naming.ObjectNamingStrategy">
+      <point x="0.0" y="-18.0" />
+      <point x="118.5" y="61.0" />
+      <point x="301.8333333333333" y="61.0" />
+      <point x="-73.66666666666669" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="355.5" y="101.5" />
+  <SelectedNodes>
+    <node>org.springframework.jmx.export.naming.IdentityNamingStrategy</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

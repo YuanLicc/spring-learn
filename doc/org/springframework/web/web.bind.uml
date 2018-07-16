@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.bind</OriginalElement>
+  <nodes>
+    <node x="273.0" y="253.0">org.springframework.web.bind.support</node>
+    <node x="0.0" y="253.0">org.springframework.web.bind.ServletRequestDataBinder</node>
+    <node x="425.0" y="86.0">org.springframework.web.bind.MissingServletRequestParameterException</node>
+    <node x="354.0" y="334.0">org.springframework.web.bind.ServletRequestUtils</node>
+    <node x="818.0" y="86.0">org.springframework.web.bind.MissingPathVariableException</node>
+    <node x="0.0" y="334.0">org.springframework.web.bind.MethodArgumentNotValidException</node>
+    <node x="461.0" y="0.0">org.springframework.web.bind.ServletRequestBindingException</node>
+    <node x="0.0" y="86.0">org.springframework.web.bind.UnsatisfiedServletRequestParameterException</node>
+    <node x="842.0" y="334.0">org.springframework.web.bind.EscapedErrors</node>
+    <node x="157.5" y="167.0">org.springframework.web.bind.WebDataBinder</node>
+    <node x="612.0" y="334.0">org.springframework.web.bind.annotation</node>
+    <node x="479.0" y="167.0">org.springframework.web.bind.ServletRequestParameterPropertyValues</node>
+    <node x="0.0" y="415.0">org.springframework.web.bind.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.bind.support" target="org.springframework.web.bind.WebDataBinder">
+      <point x="0.0" y="-18.0" />
+      <point x="353.5" y="228.0" />
+      <point x="281.25" y="228.0" />
+      <point x="41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.MissingPathVariableException" target="org.springframework.web.bind.ServletRequestBindingException">
+      <point x="0.0" y="-18.0" />
+      <point x="960.5" y="61.0" />
+      <point x="711.8333333333333" y="61.0" />
+      <point x="100.33333333333326" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.ServletRequestDataBinder" target="org.springframework.web.bind.WebDataBinder">
+      <point x="0.0" y="-18.0" />
+      <point x="126.5" y="228.0" />
+      <point x="198.75" y="228.0" />
+      <point x="-41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.UnsatisfiedServletRequestParameterException" target="org.springframework.web.bind.ServletRequestBindingException">
+      <point x="0.0" y="-18.0" />
+      <point x="202.5" y="61.0" />
+      <point x="511.1666666666667" y="61.0" />
+      <point x="-100.33333333333331" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.bind.MissingServletRequestParameterException" target="org.springframework.web.bind.ServletRequestBindingException">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="551.5" y="225.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.bind.WebDataBinder</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

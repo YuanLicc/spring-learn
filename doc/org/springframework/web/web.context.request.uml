@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.context.request</OriginalElement>
+  <nodes>
+    <node x="379.0" y="511.0">org.springframework.web.context.request.AsyncWebRequestInterceptor</node>
+    <node x="177.0" y="511.0">org.springframework.web.context.request.SessionScope</node>
+    <node x="301.0" y="86.0">org.springframework.web.context.request.WebRequest</node>
+    <node x="4.0" y="172.0">org.springframework.web.context.request.ServletRequestAttributes</node>
+    <node x="0.0" y="86.0">org.springframework.web.context.request.AbstractRequestAttributes</node>
+    <node x="204.57954545454547" y="344.0">org.springframework.web.context.request.async</node>
+    <node x="0.0" y="592.0">org.springframework.web.context.request.DestructionCallbackBindingListener</node>
+    <node x="277.0" y="172.0">org.springframework.web.context.request.NativeWebRequest</node>
+    <node x="81.25" y="258.0">org.springframework.web.context.request.ServletWebRequest</node>
+    <node x="0.0" y="673.0">org.springframework.web.context.request.RequestContextHolder</node>
+    <node x="399.0" y="425.0">org.springframework.web.context.request.WebRequestInterceptor</node>
+    <node x="16.5" y="425.0">org.springframework.web.context.request.AbstractRequestAttributesScope</node>
+    <node x="462.0" y="86.0">org.springframework.web.context.request.FacesRequestAttributes</node>
+    <node x="0.0" y="511.0">org.springframework.web.context.request.RequestScope</node>
+    <node x="266.0" y="673.0">org.springframework.web.context.request.package-info</node>
+    <node x="273.0" y="0.0">org.springframework.web.context.request.RequestAttributes</node>
+    <node x="378.0" y="592.0">org.springframework.web.context.request.RequestContextListener</node>
+    <node x="444.75" y="258.0">org.springframework.web.context.request.FacesWebRequest</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.context.request.async" target="org.springframework.web.context.request.NativeWebRequest">
+      <point x="36.25" y="-18.0" />
+      <point x="313.3295454545455" y="319.0" />
+      <point x="371.5" y="319.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.AsyncWebRequestInterceptor" target="org.springframework.web.context.request.WebRequestInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.FacesRequestAttributes" target="org.springframework.web.context.request.RequestAttributes">
+      <point x="0.0" y="-18.0" />
+      <point x="580.5" y="61.0" />
+      <point x="437.1666666666667" y="61.0" />
+      <point x="65.66666666666669" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.FacesWebRequest" target="org.springframework.web.context.request.NativeWebRequest">
+      <point x="-45.25" y="-18.0" />
+      <point x="490.0" y="233.0" />
+      <point x="434.5" y="233.0" />
+      <point x="63.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.ServletWebRequest" target="org.springframework.web.context.request.NativeWebRequest">
+      <point x="49.25" y="-18.0" />
+      <point x="229.0" y="233.0" />
+      <point x="308.5" y="233.0" />
+      <point x="-63.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.NativeWebRequest" target="org.springframework.web.context.request.WebRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.async" target="org.springframework.web.context.request.ServletWebRequest">
+      <point x="-36.25" y="-18.0" />
+      <point x="240.82954545454547" y="319.0" />
+      <point x="179.75" y="319.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.SessionScope" target="org.springframework.web.context.request.AbstractRequestAttributesScope">
+      <point x="0.0" y="-18.0" />
+      <point x="255.5" y="486.0" />
+      <point x="242.25" y="486.0" />
+      <point x="75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.FacesWebRequest" target="org.springframework.web.context.request.FacesRequestAttributes">
+      <point x="45.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.WebRequest" target="org.springframework.web.context.request.RequestAttributes">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.AbstractRequestAttributes" target="org.springframework.web.context.request.RequestAttributes">
+      <point x="0.0" y="-18.0" />
+      <point x="130.5" y="61.0" />
+      <point x="305.8333333333333" y="61.0" />
+      <point x="-65.66666666666669" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.RequestScope" target="org.springframework.web.context.request.AbstractRequestAttributesScope">
+      <point x="0.0" y="-18.0" />
+      <point x="78.5" y="486.0" />
+      <point x="91.75" y="486.0" />
+      <point x="-75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.ServletRequestAttributes" target="org.springframework.web.context.request.AbstractRequestAttributes">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.context.request.ServletWebRequest" target="org.springframework.web.context.request.ServletRequestAttributes">
+      <point x="-49.25" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="349.5" y="354.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.context.request.WebRequestInterceptor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

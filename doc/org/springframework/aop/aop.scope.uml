@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.aop.scope</OriginalElement>
+  <nodes>
+    <node x="0.0" y="86.0">org.springframework.aop.scope.DefaultScopedObject</node>
+    <node x="28.0" y="0.0">org.springframework.aop.scope.ScopedObject</node>
+    <node x="0.0" y="167.0">org.springframework.aop.scope.ScopedProxyFactoryBean</node>
+    <node x="234.0" y="248.0">org.springframework.aop.scope.package-info</node>
+    <node x="0.0" y="248.0">org.springframework.aop.scope.ScopedProxyUtils</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.aop.scope.DefaultScopedObject" target="org.springframework.aop.scope.ScopedObject">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="195.5" y="142.0" />
+  <SelectedNodes>
+    <node>org.springframework.aop.scope.ScopedObject</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

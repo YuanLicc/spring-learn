@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.codec.multipart</OriginalElement>
+  <nodes>
+    <node x="185.0" y="86.0">org.springframework.http.codec.multipart.FilePart</node>
+    <node x="0.0" y="86.0">org.springframework.http.codec.multipart.FormFieldPart</node>
+    <node x="0.0" y="167.0">org.springframework.http.codec.multipart.SynchronossPartHttpMessageReader</node>
+    <node x="0.0" y="248.0">org.springframework.http.codec.multipart.MultipartHttpMessageWriter</node>
+    <node x="118.5" y="0.0">org.springframework.http.codec.multipart.Part</node>
+    <node x="314.0" y="329.0">org.springframework.http.codec.multipart.package-info</node>
+    <node x="0.0" y="329.0">org.springframework.http.codec.multipart.MultipartHttpMessageReader</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.codec.multipart.FormFieldPart" target="org.springframework.http.codec.multipart.Part">
+      <point x="0.0" y="-18.0" />
+      <point x="82.5" y="61.0" />
+      <point x="141.75" y="61.0" />
+      <point x="-23.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.codec.multipart.FilePart" target="org.springframework.http.codec.multipart.Part">
+      <point x="0.0" y="-18.0" />
+      <point x="247.5" y="61.0" />
+      <point x="188.25" y="61.0" />
+      <point x="23.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="235.5" y="182.5" />
+  <SelectedNodes>
+    <node>org.springframework.http.codec.multipart.Part</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

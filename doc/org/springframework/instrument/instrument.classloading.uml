@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.instrument.classloading</OriginalElement>
+  <nodes>
+    <node x="800.0" y="106.0">org.springframework.instrument.classloading.tomcat</node>
+    <node x="197.0" y="106.0">org.springframework.instrument.classloading.glassfish</node>
+    <node x="635.0" y="106.0">org.springframework.instrument.classloading.jboss</node>
+    <node x="1286.0" y="106.0">org.springframework.instrument.classloading.weblogic</node>
+    <node x="973.0" y="106.0">org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver</node>
+    <node x="1078.0" y="187.0">org.springframework.instrument.classloading.WeavingTransformer</node>
+    <node x="764.0" y="187.0">org.springframework.instrument.classloading.SimpleThrowawayClassLoader</node>
+    <node x="410.0" y="187.0">org.springframework.instrument.classloading.SimpleInstrumentableClassLoader</node>
+    <node x="1475.0" y="106.0">org.springframework.instrument.classloading.ReflectiveLoadTimeWeaver</node>
+    <node x="394.0" y="106.0">org.springframework.instrument.classloading.SimpleLoadTimeWeaver</node>
+    <node x="0.0" y="273.0">org.springframework.instrument.classloading.ResourceOverridingShadowingClassLoader</node>
+    <node x="72.0" y="187.0">org.springframework.instrument.classloading.ShadowingClassLoader</node>
+    <node x="1328.0" y="187.0">org.springframework.instrument.classloading.package-info</node>
+    <node x="0.0" y="106.0">org.springframework.instrument.classloading.websphere</node>
+    <node x="705.5" y="0.0">org.springframework.instrument.classloading.LoadTimeWeaver</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.instrument.classloading.weblogic" target="org.springframework.instrument.classloading.LoadTimeWeaver">
+      <point x="0.0" y="-18.0" />
+      <point x="1370.5" y="66.0" />
+      <point x="846.0625" y="66.0" />
+      <point x="54.0625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.instrument.classloading.ResourceOverridingShadowingClassLoader" target="org.springframework.instrument.classloading.ShadowingClassLoader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.instrument.classloading.InstrumentationLoadTimeWeaver" target="org.springframework.instrument.classloading.LoadTimeWeaver">
+      <point x="0.0" y="-18.0" />
+      <point x="1119.5" y="76.0" />
+      <point x="824.4375" y="76.0" />
+      <point x="32.4375" y="18.0" />
+    </edge>
+    <edge source="org.springframework.instrument.classloading.glassfish" target="org.springframework.instrument.classloading.LoadTimeWeaver">
+      <point x="0.0" y="-18.0" />
+      <point x="285.5" y="66.0" />
+      <point x="737.9375" y="66.0" />
+      <point x="-54.0625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.instrument.classloading.tomcat" target="org.springframework.instrument.classloading.LoadTimeWeaver">
+      <point x="0.0" y="-18.0" />
+      <point x="876.5" y="86.0" />
+      <point x="802.8125" y="86.0" />
+      <point x="10.8125" y="18.0" />
+    </edge>
+    <edge source="org.springframework.instrument.classloading.jboss" target="org.springframework.instrument.classloading.LoadTimeWeaver">
+      <point x="0.0" y="-18.0" />
+      <point x="707.5" y="86.0" />
+      <point x="781.1875" y="86.0" />
+      <point x="-10.8125" y="18.0" />
+    </edge>
+    <edge source="org.springframework.instrument.classloading.websphere" target="org.springframework.instrument.classloading.LoadTimeWeaver">
+      <point x="0.0" y="-18.0" />
+      <point x="88.5" y="56.0" />
+      <point x="716.3125" y="56.0" />
+      <point x="-75.6875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.instrument.classloading.SimpleLoadTimeWeaver" target="org.springframework.instrument.classloading.LoadTimeWeaver">
+      <point x="0.0" y="-18.0" />
+      <point x="504.5" y="76.0" />
+      <point x="759.5625" y="76.0" />
+      <point x="-32.4375" y="18.0" />
+    </edge>
+    <edge source="org.springframework.instrument.classloading.ReflectiveLoadTimeWeaver" target="org.springframework.instrument.classloading.LoadTimeWeaver">
+      <point x="0.0" y="-18.0" />
+      <point x="1601.5" y="56.0" />
+      <point x="867.6875" y="56.0" />
+      <point x="75.6875" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7437070938215103" x="864.0" y="154.5" />
+  <SelectedNodes>
+    <node>org.springframework.instrument.classloading.LoadTimeWeaver</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

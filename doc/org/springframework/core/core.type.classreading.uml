@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.core.type.classreading</OriginalElement>
+  <nodes>
+    <node x="8.0" y="172.0">org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor</node>
+    <node x="0.0" y="425.0">org.springframework.core.type.classreading.CachingMetadataReaderFactory</node>
+    <node x="266.0" y="506.0">org.springframework.core.type.classreading.AnnotationReadingVisitorUtils</node>
+    <node x="330.0" y="673.0">org.springframework.core.type.classreading.package-info</node>
+    <node x="182.5" y="0.0">org.springframework.core.type.classreading.AbstractRecursiveAnnotationVisitor</node>
+    <node x="330.0" y="339.0">org.springframework.core.type.classreading.AnnotationMetadataReadingVisitor</node>
+    <node x="369.0" y="86.0">org.springframework.core.type.classreading.RecursiveAnnotationArrayVisitor</node>
+    <node x="0.0" y="673.0">org.springframework.core.type.classreading.MethodMetadataReadingVisitor</node>
+    <node x="28.0" y="253.0">org.springframework.core.type.classreading.MetadataReaderFactory</node>
+    <node x="4.0" y="339.0">org.springframework.core.type.classreading.SimpleMetadataReaderFactory</node>
+    <node x="24.0" y="506.0">org.springframework.core.type.classreading.MetadataReader</node>
+    <node x="350.0" y="253.0">org.springframework.core.type.classreading.ClassMetadataReadingVisitor</node>
+    <node x="0.0" y="86.0">org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor</node>
+    <node x="0.0" y="592.0">org.springframework.core.type.classreading.SimpleMetadataReader</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.core.type.classreading.AnnotationMetadataReadingVisitor" target="org.springframework.core.type.classreading.ClassMetadataReadingVisitor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading.RecursiveAnnotationArrayVisitor" target="org.springframework.core.type.classreading.AbstractRecursiveAnnotationVisitor">
+      <point x="0.0" y="-18.0" />
+      <point x="523.5" y="61.0" />
+      <point x="432.25" y="61.0" />
+      <point x="83.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading.CachingMetadataReaderFactory" target="org.springframework.core.type.classreading.SimpleMetadataReaderFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor" target="org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading.SimpleMetadataReaderFactory" target="org.springframework.core.type.classreading.MetadataReaderFactory">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading.SimpleMetadataReader" target="org.springframework.core.type.classreading.MetadataReader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor" target="org.springframework.core.type.classreading.AbstractRecursiveAnnotationVisitor">
+      <point x="0.0" y="-18.0" />
+      <point x="174.5" y="61.0" />
+      <point x="265.75" y="61.0" />
+      <point x="-83.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="339.0" y="354.5" />
+  <SelectedNodes>
+    <node>org.springframework.core.type.classreading.RecursiveAnnotationAttributesVisitor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

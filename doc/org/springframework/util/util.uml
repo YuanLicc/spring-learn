@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.util</OriginalElement>
+  <nodes>
+    <node x="820.0" y="820.0">org.springframework.util.Base64Utils</node>
+    <node x="596.0" y="496.0">org.springframework.util.StringValueResolver</node>
+    <node x="0.0" y="901.0">org.springframework.util.NumberUtils</node>
+    <node x="500.0" y="577.0">org.springframework.util.CompositeIterator</node>
+    <node x="716.0" y="86.0">org.springframework.util.DefaultPropertiesPersister</node>
+    <node x="0.0" y="415.0">org.springframework.util.CustomizableThreadCreator</node>
+    <node x="910.0" y="982.0">org.springframework.util.MimeType</node>
+    <node x="416.0" y="820.0">org.springframework.util.ErrorHandler</node>
+    <node x="618.0" y="820.0">org.springframework.util.package-info</node>
+    <node x="234.0" y="658.0">org.springframework.util.comparator</node>
+    <node x="217.0" y="86.0">org.springframework.util.AlternativeJdkIdGenerator</node>
+    <node x="464.0" y="658.0">org.springframework.util.concurrent</node>
+    <node x="516.0" y="253.0">org.springframework.util.AntPathMatcher</node>
+    <node x="0.0" y="577.0">org.springframework.util.AutoPopulatingList</node>
+    <node x="734.0" y="167.0">org.springframework.util.ResizableByteArrayOutputStream</node>
+    <node x="306.0" y="415.0">org.springframework.util.PropertyPlaceholderHelper</node>
+    <node x="194.0" y="982.0">org.springframework.util.ClassUtils</node>
+    <node x="742.0" y="577.0">org.springframework.util.PatternMatchUtils</node>
+    <node x="0.0" y="334.0">org.springframework.util.UpdateMessageDigestInputStream</node>
+    <node x="380.0" y="982.0">org.springframework.util.StopWatch</node>
+    <node x="694.0" y="658.0">org.springframework.util.FileSystemUtils</node>
+    <node x="744.0" y="0.0">org.springframework.util.PropertiesPersister</node>
+    <node x="194.0" y="901.0">org.springframework.util.SocketUtils</node>
+    <node x="0.0" y="739.0">org.springframework.util.CollectionUtils</node>
+    <node x="346.0" y="334.0">org.springframework.util.ConcurrencyThrottleSupport</node>
+    <node x="498.0" y="86.0">org.springframework.util.JdkIdGenerator</node>
+    <node x="612.0" y="415.0">org.springframework.util.FastByteArrayOutputStream</node>
+    <node x="0.0" y="658.0">org.springframework.util.CommonsLogWriter</node>
+    <node x="452.0" y="739.0">org.springframework.util.FileCopyUtils</node>
+    <node x="0.0" y="496.0">org.springframework.util.LinkedCaseInsensitiveMap</node>
+    <node x="388.0" y="901.0">org.springframework.util.DigestUtils</node>
+    <node x="210.0" y="820.0">org.springframework.util.backoff</node>
+    <node x="660.0" y="334.0">org.springframework.util.ConcurrentReferenceHashMap</node>
+    <node x="662.0" y="739.0">org.springframework.util.MethodInvoker</node>
+    <node x="854.0" y="496.0">org.springframework.util.SystemPropertyUtils</node>
+    <node x="250.0" y="577.0">org.springframework.util.SerializationUtils</node>
+    <node x="582.0" y="901.0">org.springframework.util.StreamUtils</node>
+    <node x="298.0" y="496.0">org.springframework.util.InvalidMimeTypeException</node>
+    <node x="528.0" y="167.0">org.springframework.util.PathMatcher</node>
+    <node x="776.0" y="901.0">org.springframework.util.ObjectUtils</node>
+    <node x="558.0" y="982.0">org.springframework.util.TypeUtils</node>
+    <node x="0.0" y="253.0">org.springframework.util.ExceptionTypeFilter</node>
+    <node x="282.0" y="167.0">org.springframework.util.MultiValueMap</node>
+    <node x="872.0" y="739.0">org.springframework.util.MimeTypeUtils</node>
+    <node x="0.0" y="820.0">org.springframework.util.ResourceUtils</node>
+    <node x="20.0" y="167.0">org.springframework.util.InstanceFilter</node>
+    <node x="0.0" y="86.0">org.springframework.util.SimpleIdGenerator</node>
+    <node x="273.0" y="0.0">org.springframework.util.IdGenerator</node>
+    <node x="226.0" y="739.0">org.springframework.util.ReflectionUtils</node>
+    <node x="736.0" y="982.0">org.springframework.util.xml</node>
+    <node x="258.0" y="253.0">org.springframework.util.LinkedMultiValueMap</node>
+    <node x="0.0" y="1063.0">org.springframework.util.Assert</node>
+    <node x="0.0" y="982.0">org.springframework.util.StringUtils</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.util.ExceptionTypeFilter" target="org.springframework.util.InstanceFilter">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.AntPathMatcher" target="org.springframework.util.PathMatcher">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.DefaultPropertiesPersister" target="org.springframework.util.PropertiesPersister">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.SimpleIdGenerator" target="org.springframework.util.IdGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="98.5" y="61.0" />
+      <point x="297.8333333333333" y="61.0" />
+      <point x="-49.666666666666686" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.JdkIdGenerator" target="org.springframework.util.IdGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="584.5" y="61.0" />
+      <point x="397.16666666666663" y="61.0" />
+      <point x="49.66666666666663" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.AlternativeJdkIdGenerator" target="org.springframework.util.IdGenerator">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.LinkedMultiValueMap" target="org.springframework.util.MultiValueMap">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7578194816800715" x="533.5" y="549.5" />
+  <SelectedNodes>
+    <node>org.springframework.util.Base64Utils</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.client.reactive</OriginalElement>
+  <nodes>
+    <node x="281.0" y="339.0">org.springframework.http.client.reactive.ClientHttpResponseDecorator</node>
+    <node x="0.0" y="506.0">org.springframework.http.client.reactive.ReactorClientHttpConnector</node>
+    <node x="314.0" y="420.0">org.springframework.http.client.reactive.package-info</node>
+    <node x="0.0" y="86.0">org.springframework.http.client.reactive.AbstractClientHttpRequest</node>
+    <node x="281.0" y="86.0">org.springframework.http.client.reactive.ClientHttpRequestDecorator</node>
+    <node x="174.5" y="0.0">org.springframework.http.client.reactive.ClientHttpRequest</node>
+    <node x="0.0" y="339.0">org.springframework.http.client.reactive.ReactorClientHttpResponse</node>
+    <node x="4.0" y="172.0">org.springframework.http.client.reactive.ReactorClientHttpRequest</node>
+    <node x="172.5" y="253.0">org.springframework.http.client.reactive.ClientHttpResponse</node>
+    <node x="28.0" y="420.0">org.springframework.http.client.reactive.ClientHttpConnector</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.client.reactive.ClientHttpResponseDecorator" target="org.springframework.http.client.reactive.ClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="419.5" y="314.0" />
+      <point x="326.25" y="314.0" />
+      <point x="51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.reactive.ClientHttpRequestDecorator" target="org.springframework.http.client.reactive.ClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="415.5" y="61.0" />
+      <point x="322.25" y="61.0" />
+      <point x="49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.reactive.ReactorClientHttpResponse" target="org.springframework.http.client.reactive.ClientHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="130.5" y="314.0" />
+      <point x="223.75" y="314.0" />
+      <point x="-51.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.reactive.ReactorClientHttpRequest" target="org.springframework.http.client.reactive.AbstractClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.reactive.AbstractClientHttpRequest" target="org.springframework.http.client.reactive.ClientHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="130.5" y="61.0" />
+      <point x="223.75" y="61.0" />
+      <point x="-49.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.client.reactive.ReactorClientHttpConnector" target="org.springframework.http.client.reactive.ClientHttpConnector">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="279.0" y="271.0" />
+  <SelectedNodes>
+    <node>org.springframework.http.client.reactive.ClientHttpResponse</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

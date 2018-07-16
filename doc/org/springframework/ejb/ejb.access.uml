@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.ejb.access</OriginalElement>
+  <nodes>
+    <node x="238.49999999999997" y="0.0">org.springframework.ejb.access.AbstractSlsbInvokerInterceptor</node>
+    <node x="32.0" y="86.0">org.springframework.ejb.access.AbstractRemoteSlsbInvokerInterceptor</node>
+    <node x="393.0" y="172.0">org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean</node>
+    <node x="0.0" y="258.0">org.springframework.ejb.access.SimpleRemoteStatelessSessionProxyFactoryBean</node>
+    <node x="40.0" y="172.0">org.springframework.ejb.access.SimpleRemoteSlsbInvokerInterceptor</node>
+    <node x="250.0" y="339.0">org.springframework.ejb.access.package-info</node>
+    <node x="0.0" y="339.0">org.springframework.ejb.access.EjbAccessException</node>
+    <node x="433.0" y="86.0">org.springframework.ejb.access.LocalSlsbInvokerInterceptor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.ejb.access.SimpleRemoteStatelessSessionProxyFactoryBean" target="org.springframework.ejb.access.SimpleRemoteSlsbInvokerInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean" target="org.springframework.ejb.access.LocalSlsbInvokerInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.ejb.access.AbstractRemoteSlsbInvokerInterceptor" target="org.springframework.ejb.access.AbstractSlsbInvokerInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="206.5" y="61.0" />
+      <point x="313.75" y="61.0" />
+      <point x="-75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.ejb.access.LocalSlsbInvokerInterceptor" target="org.springframework.ejb.access.AbstractSlsbInvokerInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="571.5" y="61.0" />
+      <point x="464.25" y="61.0" />
+      <point x="75.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.ejb.access.SimpleRemoteSlsbInvokerInterceptor" target="org.springframework.ejb.access.AbstractRemoteSlsbInvokerInterceptor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="375.0" y="187.5" />
+  <SelectedNodes>
+    <node>org.springframework.ejb.access.LocalSlsbInvokerInterceptor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

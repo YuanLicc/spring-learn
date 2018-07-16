@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.util.xml</OriginalElement>
+  <nodes>
+    <node x="290.0" y="420.0">org.springframework.util.xml.SimpleTransformErrorListener</node>
+    <node x="209.0" y="339.0">org.springframework.util.xml.StaxStreamHandler</node>
+    <node x="122.5" y="0.0">org.springframework.util.xml.AbstractXMLReader</node>
+    <node x="233.0" y="172.0">org.springframework.util.xml.StaxEventXMLReader</node>
+    <node x="106.5" y="86.0">org.springframework.util.xml.AbstractStaxXMLReader</node>
+    <node x="508.0" y="668.0">org.springframework.util.xml.TransformerUtils</node>
+    <node x="451.0" y="339.0">org.springframework.util.xml.ListBasedXMLEventReader</node>
+    <node x="574.0" y="749.0">org.springframework.util.xml.StaxUtils</node>
+    <node x="202.0" y="749.0">org.springframework.util.xml.StaxSource</node>
+    <node x="0.0" y="749.0">org.springframework.util.xml.package-info</node>
+    <node x="0.0" y="830.0">org.springframework.util.xml.DomUtils</node>
+    <node x="0.0" y="668.0">org.springframework.util.xml.XMLEventStreamWriter</node>
+    <node x="266.0" y="668.0">org.springframework.util.xml.DomContentHandler</node>
+    <node x="0.0" y="587.0">org.springframework.util.xml.XmlValidationModeDetector</node>
+    <node x="94.5" y="253.0">org.springframework.util.xml.AbstractStaxHandler</node>
+    <node x="588.0" y="587.0">org.springframework.util.xml.SimpleSaxErrorHandler</node>
+    <node x="388.0" y="749.0">org.springframework.util.xml.StaxResult</node>
+    <node x="0.0" y="420.0">org.springframework.util.xml.AbstractXMLStreamReader</node>
+    <node x="455.0" y="253.0">org.springframework.util.xml.AbstractXMLEventReader</node>
+    <node x="306.0" y="587.0">org.springframework.util.xml.SimpleNamespaceContext</node>
+    <node x="12.0" y="506.0">org.springframework.util.xml.XMLEventStreamReader</node>
+    <node x="0.0" y="172.0">org.springframework.util.xml.StaxStreamXMLReader</node>
+    <node x="0.0" y="339.0">org.springframework.util.xml.StaxEventHandler</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.util.xml.XMLEventStreamReader" target="org.springframework.util.xml.AbstractXMLStreamReader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.ListBasedXMLEventReader" target="org.springframework.util.xml.AbstractXMLEventReader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxEventXMLReader" target="org.springframework.util.xml.AbstractStaxXMLReader">
+      <point x="0.0" y="-18.0" />
+      <point x="335.5" y="147.0" />
+      <point x="278.25" y="147.0" />
+      <point x="57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxEventHandler" target="org.springframework.util.xml.AbstractStaxHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="94.5" y="314.0" />
+      <point x="147.75" y="314.0" />
+      <point x="-53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxStreamHandler" target="org.springframework.util.xml.AbstractStaxHandler">
+      <point x="0.0" y="-18.0" />
+      <point x="307.5" y="314.0" />
+      <point x="254.25" y="314.0" />
+      <point x="53.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.AbstractStaxXMLReader" target="org.springframework.util.xml.AbstractXMLReader">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.util.xml.StaxStreamXMLReader" target="org.springframework.util.xml.AbstractStaxXMLReader">
+      <point x="0.0" y="-18.0" />
+      <point x="106.5" y="147.0" />
+      <point x="163.75" y="147.0" />
+      <point x="-57.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9571106094808126" x="408.5" y="433.0" />
+  <SelectedNodes>
+    <node>org.springframework.util.xml.SimpleTransformErrorListener</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

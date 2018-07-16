@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.objenesis.instantiator.basic</OriginalElement>
+  <nodes>
+    <node x="0.0" y="167.0">org.springframework.objenesis.instantiator.basic.ObjectInputStreamInstantiator</node>
+    <node x="0.0" y="329.0">org.springframework.objenesis.instantiator.basic.NewInstanceInstantiator</node>
+    <node x="0.0" y="491.0">org.springframework.objenesis.instantiator.basic.NullInstantiator</node>
+    <node x="0.0" y="0.0">org.springframework.objenesis.instantiator.basic.ConstructorInstantiator</node>
+    <node x="0.0" y="410.0">org.springframework.objenesis.instantiator.basic.ProxyingInstantiator</node>
+    <node x="0.0" y="248.0">org.springframework.objenesis.instantiator.basic.ObjectStreamClassInstantiator</node>
+    <node x="266.0" y="410.0">org.springframework.objenesis.instantiator.basic.FailingInstantiator</node>
+    <node x="4.0" y="86.0">org.springframework.objenesis.instantiator.basic.AccessibleInstantiator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.objenesis.instantiator.basic.AccessibleInstantiator" target="org.springframework.objenesis.instantiator.basic.ConstructorInstantiator">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="239.5" y="263.5" />
+  <SelectedNodes>
+    <node>org.springframework.objenesis.instantiator.basic.ObjectInputStreamInstantiator</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

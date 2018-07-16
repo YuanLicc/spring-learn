@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.server</OriginalElement>
+  <nodes>
+    <node x="28.0" y="253.0">org.springframework.http.server.ServerHttpAsyncRequestControl</node>
+    <node x="394.0" y="339.0">org.springframework.http.server.ServletServerHttpResponse</node>
+    <node x="0.0" y="506.0">org.springframework.http.server.ServletServerHttpRequest</node>
+    <node x="298.0" y="420.0">org.springframework.http.server.reactive</node>
+    <node x="0.0" y="339.0">org.springframework.http.server.ServletServerHttpAsyncRequestControl</node>
+    <node x="28.0" y="420.0">org.springframework.http.server.ServerHttpRequest</node>
+    <node x="122.5" y="0.0">org.springframework.http.server.PathContainer</node>
+    <node x="197.0" y="86.0">org.springframework.http.server.DefaultPathContainer</node>
+    <node x="28.0" y="86.0">org.springframework.http.server.RequestPath</node>
+    <node x="422.0" y="253.0">org.springframework.http.server.ServerHttpResponse</node>
+    <node x="0.0" y="587.0">org.springframework.http.server.package-info</node>
+    <node x="0.0" y="172.0">org.springframework.http.server.DefaultRequestPath</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.server.RequestPath" target="org.springframework.http.server.PathContainer">
+      <point x="0.0" y="-18.0" />
+      <point x="102.5" y="61.0" />
+      <point x="163.75" y="61.0" />
+      <point x="-41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.server.ServletServerHttpAsyncRequestControl" target="org.springframework.http.server.ServerHttpAsyncRequestControl">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.server.ServletServerHttpRequest" target="org.springframework.http.server.ServerHttpRequest">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.server.DefaultRequestPath" target="org.springframework.http.server.RequestPath">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.server.DefaultPathContainer" target="org.springframework.http.server.PathContainer">
+      <point x="0.0" y="-18.0" />
+      <point x="307.5" y="61.0" />
+      <point x="246.25" y="61.0" />
+      <point x="41.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.server.ServletServerHttpResponse" target="org.springframework.http.server.ServerHttpResponse">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="327.5" y="311.5" />
+  <SelectedNodes>
+    <node>org.springframework.http.server.ServletServerHttpAsyncRequestControl</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

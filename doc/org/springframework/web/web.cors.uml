@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.web.cors</OriginalElement>
+  <nodes>
+    <node x="32.0" y="0.0">org.springframework.web.cors.CorsConfigurationSource</node>
+    <node x="0.0" y="253.0">org.springframework.web.cors.DefaultCorsProcessor</node>
+    <node x="0.0" y="415.0">org.springframework.web.cors.CorsUtils</node>
+    <node x="28.0" y="167.0">org.springframework.web.cors.CorsProcessor</node>
+    <node x="0.0" y="86.0">org.springframework.web.cors.UrlBasedCorsConfigurationSource</node>
+    <node x="266.0" y="167.0">org.springframework.web.cors.CorsConfiguration</node>
+    <node x="0.0" y="334.0">org.springframework.web.cors.reactive</node>
+    <node x="214.0" y="334.0">org.springframework.web.cors.package-info</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.web.cors.DefaultCorsProcessor" target="org.springframework.web.cors.CorsProcessor">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.web.cors.UrlBasedCorsConfigurationSource" target="org.springframework.web.cors.CorsConfigurationSource">
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="231.5" y="225.5" />
+  <SelectedNodes>
+    <node>org.springframework.web.cors.UrlBasedCorsConfigurationSource</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.http.converter.xml</OriginalElement>
+  <nodes>
+    <node x="410.0" y="253.0">org.springframework.http.converter.xml.SourceHttpMessageConverter</node>
+    <node x="369.0" y="172.0">org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverter</node>
+    <node x="194.5" y="86.0">org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter</node>
+    <node x="371.0" y="0.0">org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter</node>
+    <node x="0.0" y="334.0">org.springframework.http.converter.xml.package-info</node>
+    <node x="539.5" y="86.0">org.springframework.http.converter.xml.MarshallingHttpMessageConverter</node>
+    <node x="0.0" y="253.0">org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter</node>
+    <node x="0.0" y="172.0">org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.http.converter.xml.MarshallingHttpMessageConverter" target="org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="694.0" y="61.0" />
+      <point x="602.75" y="61.0" />
+      <point x="77.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.xml.Jaxb2CollectionHttpMessageConverter" target="org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="539.5" y="147.0" />
+      <point x="438.25" y="147.0" />
+      <point x="81.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter" target="org.springframework.http.converter.xml.AbstractXmlHttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="357.0" y="61.0" />
+      <point x="448.25" y="61.0" />
+      <point x="-77.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter" target="org.springframework.http.converter.xml.AbstractJaxb2HttpMessageConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="174.5" y="147.0" />
+      <point x="275.75" y="147.0" />
+      <point x="-81.25" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="424.5" y="185.0" />
+  <SelectedNodes>
+    <node>org.springframework.http.converter.xml.SourceHttpMessageConverter</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

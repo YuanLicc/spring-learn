@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.objenesis.instantiator.android</OriginalElement>
+  <nodes>
+    <node x="0.0" y="81.0">org.springframework.objenesis.instantiator.android.Android17Instantiator</node>
+    <node x="0.0" y="0.0">org.springframework.objenesis.instantiator.android.AndroidSerializationInstantiator</node>
+    <node x="0.0" y="162.0">org.springframework.objenesis.instantiator.android.Android18Instantiator</node>
+    <node x="0.0" y="243.0">org.springframework.objenesis.instantiator.android.Android10Instantiator</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="1.0" x="158.5" y="139.5" />
+  <SelectedNodes>
+    <node>org.springframework.objenesis.instantiator.android.Android17Instantiator</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
