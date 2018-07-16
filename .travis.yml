@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 before_script:
-  - chmod +777 gradlew
+  - echo `date "+%Y-%m-%d %H:%M:%S"` start test
   - ./gradlew build
   - ./gradlew test
 script:
@@ -10,4 +10,4 @@ script:
   - ./gradlew test
   - ./gradlew codeCoverageReport
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -t uuid-repo-token
