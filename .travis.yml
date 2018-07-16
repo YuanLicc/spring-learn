@@ -3,7 +3,10 @@ jdk:
   - oraclejdk8
 before_script:
   - chmod +777 gradlew
+  - ./gradlew build
+  - ./gradlew test
 script:
+  - ./gradlew build
   - ./gradlew test
   - ./gradlew codeCoverageReport
 after_success:
