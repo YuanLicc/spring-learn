@@ -2,13 +2,8 @@ language: java
 jdk:
   - oraclejdk8
 before_script:
-  - chmod +x gradlew
-  - chmod +x ./gradlew
   - echo `date "+%Y-%m-%d %H:%M:%S"` start test
-  - ./gradlew build
-  - ./gradlew test
 script:
-  - ./gradlew build
   - ./gradlew test
   - ./gradlew codeCoverageReport
 after_success:

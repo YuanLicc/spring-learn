@@ -9,3 +9,19 @@ spring 框架的学习demo 及源码类图（doc/文件夹下）
 - kotlin
 - idea
 
+#### Question
+
+**1)  Travis CI Error**
+
+```shell
+./gradlew : Permission denied
+```
+
+解决办法：修改脚本权限
+
+```shell
+git update-index --chmod=+x gradlew
+```
+
+提交修改到远程即可。
+
