@@ -3,15 +3,30 @@
   <ID>JAVA</ID>
   <OriginalElement>org.aopalliance.aop</OriginalElement>
   <nodes>
-    <node x="0.0" y="81.0">org.aopalliance.aop.Advice</node>
-    <node x="0.0" y="0.0">org.aopalliance.aop.AspectException</node>
+    <node x="140.5" y="194.0">org.aopalliance.aop.Advice</node>
+    <node x="101.0" y="403.0">org.aopalliance.aop.AspectException</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="0.0" y="0.0">
+      <node>org.aopalliance.aop.Advice</node>
+      <value>通知，在 Aop 中存在三种通知，执行方法前、执行后、\n抛出异常时，实现相应的接口并通过配置或注解即可使用。\n在网上有位博主称之为“增强”，我为他点赞，因为所谓的\nAOP 宽泛的讲就是对某一方法（不止方法）的行为的增强。\n对应三种通知我们可分为前置增强，后置增强，异常增强。\n这三类增强Spring 均提供了继承至Advice 接口的接口。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="72.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="275.0">
+      <node>org.aopalliance.aop.AspectException</node>
+      <value>所有 AOP 相关的基础异常的超类。非检查型异常，这样的\n异常是毁灭性的并会终止用户代码，请不要强制捕获此类\n异常。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="39.0" />
+      </edge>
+    </note>
+  </notes>
   <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="90.5" y="58.5" />
-  <SelectedNodes>
-    <node>org.aopalliance.aop.Advice</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="1.0" x="195.0" y="219.5" />
+  <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>public</VISIBILITY>

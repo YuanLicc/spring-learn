@@ -3,48 +3,134 @@
   <ID>JAVA</ID>
   <OriginalElement>org.aopalliance.intercept</OriginalElement>
   <nodes>
-    <node x="142.5" y="0.0">org.aopalliance.intercept.Joinpoint</node>
-    <node x="257.0" y="339.0">org.aopalliance.intercept.MethodInterceptor</node>
-    <node x="162.5" y="253.0">org.aopalliance.intercept.Interceptor</node>
-    <node x="209.0" y="172.0">org.aopalliance.intercept.ConstructorInvocation</node>
-    <node x="0.0" y="172.0">org.aopalliance.intercept.MethodInvocation</node>
-    <node x="0.0" y="339.0">org.aopalliance.intercept.ConstructorInterceptor</node>
-    <node x="138.5" y="86.0">org.aopalliance.intercept.Invocation</node>
+    <node x="142.5" y="793.0">org.aopalliance.intercept.Joinpoint</node>
+    <node x="117.75" y="474.0">org.aopalliance.intercept.MethodInterceptor</node>
+    <node x="126.25" y="965.0">org.aopalliance.intercept.ConstructorInvocation</node>
+    <node x="255.25" y="388.0">org.aopalliance.intercept.Interceptor</node>
+    <node x="375.25" y="965.0">org.aopalliance.intercept.MethodInvocation</node>
+    <node x="334.75" y="474.0">org.aopalliance.intercept.ConstructorInterceptor</node>
+    <node x="140.5" y="248.0">org.aopalliance.aop.Advice</node>
+    <node x="289.75" y="879.0">org.aopalliance.intercept.Invocation</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="105.125" y="389.0">
+      <node>org.aopalliance.intercept.MethodInterceptor</node>
+      <value>方法拦截器。</value>
+      <edge>
+        <point x="-49.25" y="-18.0" />
+        <point x="167.0" y="449.0" />
+        <point x="160.125" y="449.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="555.0">
+      <node>org.aopalliance.intercept.Joinpoint</node>
+      <value>此接口表示一个运行时连接点（在AOP 术语中），运行时连接点\n是发生在静态连接点（即程序中的位置）之上的事件。比如，\n一次调用（运行时连接点）是基于一个方法（静态连接点）而\n言的。所以对于一个连接点而言可以使用getStaticPart()方法\n来获取静态的部分（如：Method），在拦截框架的上下文中，\n运行时连接点是对可访问对象（方法、构造器、字段）的访问\n的具体化，即连接点的静态部分。这些静态的部分会作为参数\n传入那些基于静态连接点的拦截器中。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="94.0" />
+      </edge>
+    </note>
+    <note x="99.125" y="880.0">
+      <node>org.aopalliance.intercept.ConstructorInvocation</node>
+      <value>表示构造器的调用。</value>
+      <edge>
+        <point x="-57.25" y="-18.0" />
+        <point x="183.5" y="940.0" />
+        <point x="175.125" y="940.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="269.5" y="194.0">
+      <node>org.aopalliance.intercept.Interceptor</node>
+      <value>拦截器，拦截器可以拦截基本程序中发生的运行时事件。\n而这些事件是连接点实现的，比如前置增强、后置增强等。\n在我看来，拦截器就是一个全能的增强，可实现前置增强、\n后置增强等。所以我们可实现此接口的子接口定义环绕\n增强（通知）。源码的注释中有一个利于理解的例子，\n可进去看看。</value>
+      <edge>
+        <point x="37.25" y="-18.0" />
+        <point x="367.0" y="363.0" />
+        <point x="464.5" y="363.0" />
+        <point x="0.0" y="72.0" />
+      </edge>
+    </note>
+    <note x="462.875" y="880.0">
+      <node>org.aopalliance.intercept.MethodInvocation</node>
+      <value>表示方法的调用。</value>
+      <edge>
+        <point x="47.25" y="-18.0" />
+        <point x="517.0" y="940.0" />
+        <point x="531.875" y="940.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="440.375" y="389.0">
+      <node>org.aopalliance.intercept.ConstructorInterceptor</node>
+      <value>对象构造方法拦截器。</value>
+      <edge>
+        <point x="59.25" y="-18.0" />
+        <point x="512.5" y="449.0" />
+        <point x="523.375" y="449.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="0.0">
+      <node>org.aopalliance.aop.Advice</node>
+      <value>通知，在 Aop 中存在三种通知，执行方法前、执行后、\n抛出异常时，实现相应的接口并通过配置或注解即可使用。\n在网上有位博主称之为“增强”，我很赞同，因为所谓的\nAOP 宽泛的讲就是对某一方法（不止方法）的行为的增强。\n对应三种通知我们可分为前置增强，后置增强，异常增强。\n这三类增强Spring 均提供了继承至Advice 接口的接口。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="72.0" />
+      </edge>
+    </note>
+    <note x="295.5" y="794.0">
+      <node>org.aopalliance.intercept.Invocation</node>
+      <value>此接口表示程序中的一次调用，调用是切点且可以被拦截器拦截。</value>
+      <edge>
+        <point x="35.25" y="-18.0" />
+        <point x="395.5" y="854.0" />
+        <point x="511.5" y="854.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+  </notes>
   <edges>
     <edge source="org.aopalliance.intercept.Invocation" target="org.aopalliance.intercept.Joinpoint">
-      <point x="0.0" y="-18.0" />
+      <point x="-35.25" y="-18.0" />
+      <point x="325.0" y="854.0" />
+      <point x="209.0" y="854.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.aopalliance.intercept.MethodInvocation" target="org.aopalliance.intercept.Invocation">
-      <point x="0.0" y="-18.0" />
-      <point x="94.5" y="147.0" />
-      <point x="173.75" y="147.0" />
-      <point x="-35.25" y="18.0" />
-    </edge>
-    <edge source="org.aopalliance.intercept.MethodInterceptor" target="org.aopalliance.intercept.Interceptor">
-      <point x="0.0" y="-18.0" />
-      <point x="355.5" y="314.0" />
-      <point x="274.25" y="314.0" />
-      <point x="37.25" y="18.0" />
-    </edge>
-    <edge source="org.aopalliance.intercept.ConstructorInterceptor" target="org.aopalliance.intercept.Interceptor">
-      <point x="0.0" y="-18.0" />
-      <point x="118.5" y="314.0" />
-      <point x="199.75" y="314.0" />
-      <point x="-37.25" y="18.0" />
-    </edge>
-    <edge source="org.aopalliance.intercept.ConstructorInvocation" target="org.aopalliance.intercept.Invocation">
-      <point x="0.0" y="-18.0" />
-      <point x="323.5" y="147.0" />
-      <point x="244.25" y="147.0" />
+      <point x="-47.25" y="-18.0" />
+      <point x="422.5" y="940.0" />
+      <point x="395.5" y="940.0" />
       <point x="35.25" y="18.0" />
     </edge>
+    <edge source="org.aopalliance.intercept.Interceptor" target="org.aopalliance.aop.Advice">
+      <point x="-37.25" y="-18.0" />
+      <point x="292.5" y="363.0" />
+      <point x="195.0" y="363.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.aopalliance.intercept.MethodInterceptor" target="org.aopalliance.intercept.Interceptor">
+      <point x="49.25" y="-18.0" />
+      <point x="265.5" y="449.0" />
+      <point x="292.5" y="449.0" />
+      <point x="-37.25" y="18.0" />
+    </edge>
+    <edge source="org.aopalliance.intercept.ConstructorInterceptor" target="org.aopalliance.intercept.Interceptor">
+      <point x="-59.25" y="-18.0" />
+      <point x="394.0" y="449.0" />
+      <point x="367.0" y="449.0" />
+      <point x="37.25" y="18.0" />
+    </edge>
+    <edge source="org.aopalliance.intercept.ConstructorInvocation" target="org.aopalliance.intercept.Invocation">
+      <point x="57.25" y="-18.0" />
+      <point x="298.0" y="940.0" />
+      <point x="325.0" y="940.0" />
+      <point x="-35.25" y="18.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="227.0" y="187.5" />
+  <settings layout="Hierarchic Group" zoom="1.030558276199804" x="372.41007115934167" y="518.4846137099769" />
   <SelectedNodes>
-    <node>org.aopalliance.intercept.Invocation</node>
+    <node>org.aopalliance.aop.Advice</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>

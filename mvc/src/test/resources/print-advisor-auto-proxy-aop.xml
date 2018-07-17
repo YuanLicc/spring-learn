@@ -12,7 +12,7 @@
 
     <bean id="controllerPrintBeforeAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
         <property name="advice" ref="printBeforeAdvice"></property>
-        <property name="pattern" value="com.yl.test.mvc.controller.*.*.hello"></property>
+        <property name="pattern" value="com.yl.learn.mvc.controller.*.*.hello"></property>
     </bean>
 
     <bean id="controllerPrintAfterAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">

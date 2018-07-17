@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 @Aspect
 public class AspectjMvcPrintAroundAdvice {
 
-    @Pointcut("execution(* com.yl.test.mvc..*.*(..))")
+    @Pointcut("execution(* com.yl.learn.mvc..*.*(..))")
     private void aspectjMethod(){}
 
     @Around("aspectjMethod()")

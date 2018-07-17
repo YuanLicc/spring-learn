@@ -10,15 +10,15 @@
     <!-- 扫描指定包（将 @Component 注解的类自动定义为 Spring Bean） -->
     <context:component-scan base-package="com.yl.learn"/>
 
-    <bean id="controllerPrintBeforeAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
-        <property name="advice" ref="printBeforeAdvice"></property>
+    <bean id="controllerPrintTraceInterceptor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="printTraceInterceptor"></property>
         <property name="pattern" value="com.yl.learn.mvc.controller.*.*"></property>
     </bean>
 
     <!-- 通过 beanNames 自动代理 -->
     <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
         <property name="beanNames" value="*Controller"/>
-        <property name="interceptorNames" value="controllerPrintBeforeAdvisor"></property>
+        <property name="interceptorNames" value="controllerPrintTraceInterceptor"></property>
         <property name="proxyTargetClass" value="true"></property>
     </bean>
 

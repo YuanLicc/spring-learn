@@ -15,7 +15,7 @@
   </edges>
   <settings layout="Hierarchic Group" zoom="1.0" x="88.5" y="61.0" />
   <SelectedNodes>
-    <node>org.aopalliance.intercept</node>
+    <node>org.aopalliance.aop</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>

@@ -10,6 +10,10 @@ allprojects {
         mavenLocal()
         mavenCentral()
         jcenter()
+        maven {
+            name 'aliyun'
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
     }
 }
 
@@ -35,6 +39,7 @@ codeCoverageReport.dependsOn {
 // 所有子项目配置
 subprojects { project ->
     apply plugin: 'java'
+    apply plugin: 'idea'
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
@@ -42,6 +47,13 @@ subprojects { project ->
     version = project.version + '-SNAPSHOT'
 
     test.useTestNG()
+
+    idea {
+        module {
+            downloadJavadoc = false
+            downloadSources = true
+        }
+    }
 
     repositories {
         jcenter()
@@ -60,7 +72,7 @@ subprojects { project ->
 
     ext {
         junitVersion = '4.11'
-        springVersion = '5.0.4.RELEASE'
+        springVersion = '5.0.6.RELEASE'
         cglibVersion = '3.2.6'
         aspectjVersion = '1.8.6'
     }

@@ -3,70 +3,232 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.aop.interceptor</OriginalElement>
   <nodes>
-    <node x="0.0" y="420.0">org.springframework.aop.interceptor.ExposeInvocationInterceptor</node>
-    <node x="501.50000000000006" y="86.0">org.springframework.aop.interceptor.CustomizableTraceInterceptor</node>
-    <node x="394.0" y="339.0">org.springframework.aop.interceptor.AsyncExecutionInterceptor</node>
-    <node x="806.5" y="86.0">org.springframework.aop.interceptor.SimpleTraceInterceptor</node>
-    <node x="708.0" y="253.0">org.springframework.aop.interceptor.ConcurrencyThrottleInterceptor</node>
-    <node x="24.0" y="253.0">org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler</node>
-    <node x="830.5" y="172.0">org.springframework.aop.interceptor.DebugInterceptor</node>
-    <node x="515.5" y="0.0">org.springframework.aop.interceptor.AbstractTraceInterceptor</node>
-    <node x="604.0" y="420.0">org.springframework.aop.interceptor.package-info</node>
-    <node x="188.50000000000006" y="86.0">org.springframework.aop.interceptor.AbstractMonitoringInterceptor</node>
-    <node x="0.0" y="172.0">org.springframework.aop.interceptor.JamonPerformanceMonitorInterceptor</node>
-    <node x="353.0" y="172.0">org.springframework.aop.interceptor.PerformanceMonitorInterceptor</node>
-    <node x="322.0" y="420.0">org.springframework.aop.interceptor.ExposeBeanNameAdvisors</node>
-    <node x="0.0" y="339.0">org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler</node>
-    <node x="386.0" y="253.0">org.springframework.aop.interceptor.AsyncExecutionAspectSupport</node>
+    <node x="1646.375" y="375.0">org.springframework.aop.interceptor.ExposeInvocationInterceptor</node>
+    <node x="1130.8628472222222" y="502.0">org.springframework.aop.interceptor.CustomizableTraceInterceptor</node>
+    <node x="2246.989583333333" y="375.0">org.springframework.aop.interceptor.AsyncExecutionInterceptor</node>
+    <node x="2448.359375" y="502.0">org.springframework.aop.interceptor.SimpleTraceInterceptor</node>
+    <node x="119.75" y="375.0">org.springframework.aop.interceptor.ConcurrencyThrottleInterceptor</node>
+    <node x="41.5" y="785.0">org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler</node>
+    <node x="2644.8125" y="598.0">org.springframework.aop.interceptor.DebugInterceptor</node>
+    <node x="1316.75" y="375.0">org.springframework.aop.interceptor.AbstractTraceInterceptor</node>
+    <node x="1078.5" y="679.0">org.springframework.aop.interceptor.package-info</node>
+    <node x="583.5" y="502.0">org.springframework.aop.interceptor.AbstractMonitoringInterceptor</node>
+    <node x="1515.5625" y="204.0">org.aopalliance.intercept.MethodInterceptor</node>
+    <node x="353.98784722222194" y="598.0">org.springframework.aop.interceptor.JamonPerformanceMonitorInterceptor</node>
+    <node x="1420.7482638888887" y="598.0">org.springframework.aop.interceptor.PerformanceMonitorInterceptor</node>
+    <node x="796.5" y="679.0">org.springframework.aop.interceptor.ExposeBeanNameAdvisors</node>
+    <node x="200.0" y="871.0">org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler</node>
+    <node x="2149.5625" y="204.0">org.springframework.aop.interceptor.AsyncExecutionAspectSupport</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="1732.5625" y="172.0">
+      <node>org.springframework.aop.interceptor.ExposeInvocationInterceptor</node>
+      <value>此拦截器会把方法调用（MethodInvocation）作为线程变量\n暴露，可通过currentInvocation()方法获取。注：拦截器与\n方法调用都是增强的一种，同时它实现了PriorotyOrdered，\n所以它还有优先级顺序。</value>
+      <edge>
+        <point x="69.25" y="-18.0" />
+        <point x="1854.125" y="334.0" />
+        <point x="1931.0625" y="334.0" />
+        <point x="0.0" y="50.0" />
+      </edge>
+    </note>
+    <note x="892.75" y="354.0">
+      <node>org.springframework.aop.interceptor.CustomizableTraceInterceptor</node>
+      <value>可配置日志信息的tracing 拦截器。可通过固定的几种占位符\n拼写满足指定格式的拦截器。源码注释中提供了这些占位符及\n占位符的解释。</value>
+      <edge>
+        <point x="-71.25" y="-18.0" />
+        <point x="1202.1128472222222" y="452.0" />
+        <point x="1094.75" y="452.0" />
+        <point x="0.0" y="39.0" />
+      </edge>
+    </note>
+    <note x="2446.5625" y="205.0">
+      <node>org.springframework.aop.interceptor.AsyncExecutionInterceptor</node>
+      <value>方法拦截器的实现类，方法调用的流程会被异步执行。</value>
+      <edge>
+        <point x="87.0" y="-18.0" />
+        <point x="2464.489583333333" y="334.0" />
+        <point x="2627.5625" y="334.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="2527.989583333333" y="354.0">
+      <node>org.springframework.aop.interceptor.SimpleTraceInterceptor</node>
+      <value>用于 tracing 的方法拦截器的实现类。可以被引入一个\nchain 来展示冗长的被拦截的方法的调用的跟踪信息，包括\n方法的进入与退出的信息。</value>
+      <edge>
+        <point x="59.25" y="-18.0" />
+        <point x="2626.109375" y="472.0" />
+        <point x="2722.989583333333" y="472.0" />
+        <point x="0.0" y="39.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="205.0">
+      <node>org.springframework.aop.interceptor.ConcurrencyThrottleInterceptor</node>
+      <value>并发控制拦截器，当达到指定的并发限制时，会锁住调用。</value>
+      <edge>
+        <point x="-75.25" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="2705.359375" y="492.0">
+      <node>org.springframework.aop.interceptor.DebugInterceptor</node>
+      <value>Debug 模式进行tracing 的拦截器的实现类，此类log包含\n方法进入与退出，调用次数等信息。</value>
+      <edge>
+        <point x="47.25" y="-18.0" />
+        <point x="2786.5625" y="573.0" />
+        <point x="2896.859375" y="573.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="679.0">
+      <node>org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler</node>
+      <value>对于异步执行的方法抛出的未捕获的异常的一种处理策略\n接口。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="1098.5625" y="150.0">
+      <node>org.springframework.aop.interceptor.AbstractTraceInterceptor</node>
+      <value>用于tracing 的方法拦截器的基本实现。默认情况下，日志\n信息会被写入拦截器类的日志中，而不是被拦截的类。配置\nuseDynamicLogger=true 会造成所有的日志信息都被写入被\n拦截的目标类中。\n子类必须实现 invokeUnderTrace方法，此方法只会被当前类\n调用。</value>
+      <edge>
+        <point x="-63.25" y="-18.0" />
+        <point x="1380.0" y="314.0" />
+        <point x="1297.0625" y="314.0" />
+        <point x="0.0" y="72.0" />
+      </edge>
+    </note>
+    <note x="1510.0625" y="33.0">
+      <node>org.aopalliance.intercept.MethodInterceptor</node>
+      <value>方法拦截器，它是一种增强。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="440.75" y="365.0">
+      <node>org.springframework.aop.interceptor.AbstractMonitoringInterceptor</node>
+      <value>监控拦截器的拦截器的抽象基类，如性能监控等。提供可配置和的\nprefix 与 suffix 来帮助性能监控结果的分组或分类。</value>
+      <edge>
+        <point x="-73.25" y="-18.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="187.5" y="492.0">
+      <node>org.springframework.aop.interceptor.JamonPerformanceMonitorInterceptor</node>
+      <value>性能监控拦截器的一种实现，使用了JAMon 这样的工具来\n执行性能分析及统计数据的输出。</value>
+      <edge>
+        <point x="-83.25" y="-18.0" />
+        <point x="437.23784722222194" y="573.0" />
+        <point x="375.5" y="573.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="1777.8732638888887" y="503.0">
+      <node>org.springframework.aop.interceptor.PerformanceMonitorInterceptor</node>
+      <value>性能监控拦截器的一种实现。</value>
+      <edge>
+        <point x="73.25" y="-18.0" />
+        <point x="1640.4982638888887" y="573.0" />
+        <point x="1881.8732638888887" y="573.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="2044.0625" y="0.0">
+      <node>org.springframework.aop.interceptor.AsyncExecutionAspectSupport</node>
+      <value>异步执行 aspects 的基类。如：AnnotationAsyncExecutionInterceptor、\nAnnotationAsyncExecutionAspect。提供了一个执行器，此执行器限制了\n方法的执行。此类的实例必须默认构造一个执行器。每一个单独的方法都可\n以指定一个执行器。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="50.0" />
+      </edge>
+    </note>
+    <note x="354.5" y="786.0">
+      <node>org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler</node>
+      <value>实现了简单的异常处理：log，可进入源码查看默认的实现。</value>
+      <edge>
+        <point x="85.25" y="-18.0" />
+        <point x="455.75" y="846.0" />
+        <point x="553.0" y="846.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+  </notes>
   <edges>
     <edge source="org.springframework.aop.interceptor.AbstractMonitoringInterceptor" target="org.springframework.aop.interceptor.AbstractTraceInterceptor">
-      <point x="0.0" y="-18.0" />
-      <point x="335.00000000000006" y="61.0" />
-      <point x="557.6666666666667" y="61.0" />
-      <point x="-84.33333333333331" y="18.0" />
+      <point x="73.25" y="-18.0" />
+      <point x="803.25" y="462.0" />
+      <point x="1358.9166666666667" y="462.0" />
+      <point x="-84.33333333333326" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.AbstractTraceInterceptor" target="org.aopalliance.intercept.MethodInterceptor">
+      <point x="63.25" y="-18.0" />
+      <point x="1506.5" y="334.0" />
+      <point x="1589.4375" y="334.0" />
+      <point x="-24.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.ConcurrencyThrottleInterceptor" target="org.aopalliance.intercept.MethodInterceptor">
+      <point x="75.25" y="-18.0" />
+      <point x="345.5" y="324.0" />
+      <point x="1540.1875" y="324.0" />
+      <point x="-73.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.ExposeInvocationInterceptor" target="org.aopalliance.intercept.MethodInterceptor">
+      <point x="-69.25" y="-18.0" />
+      <point x="1715.625" y="334.0" />
+      <point x="1638.6875" y="334.0" />
+      <point x="24.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.SimpleTraceInterceptor" target="org.springframework.aop.interceptor.AbstractTraceInterceptor">
+      <point x="-59.25" y="-18.0" />
+      <point x="2507.609375" y="472.0" />
+      <point x="1527.5833333333333" y="472.0" />
+      <point x="84.33333333333326" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.DebugInterceptor" target="org.springframework.aop.interceptor.SimpleTraceInterceptor">
+      <point x="-47.25" y="-18.0" />
+      <point x="2692.0625" y="573.0" />
+      <point x="2566.859375" y="573.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.AsyncExecutionInterceptor" target="org.aopalliance.intercept.MethodInterceptor">
+      <point x="-87.0" y="-18.0" />
+      <point x="2290.489583333333" y="324.0" />
+      <point x="1687.9375" y="324.0" />
+      <point x="73.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.interceptor.CustomizableTraceInterceptor" target="org.springframework.aop.interceptor.AbstractTraceInterceptor">
+      <point x="71.25" y="-18.0" />
+      <point x="1344.6128472222222" y="472.0" />
+      <point x="1443.25" y="472.0" />
+      <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.interceptor.AsyncExecutionInterceptor" target="org.springframework.aop.interceptor.AsyncExecutionAspectSupport">
       <point x="0.0" y="-18.0" />
-      <point x="0.0" y="18.0" />
-    </edge>
-    <edge source="org.springframework.aop.interceptor.CustomizableTraceInterceptor" target="org.springframework.aop.interceptor.AbstractTraceInterceptor">
-      <point x="0.0" y="-18.0" />
-      <point x="644.0" y="61.0" />
-      <point x="642.0" y="61.0" />
+      <point x="2377.489583333333" y="314.0" />
+      <point x="2288.0625" y="314.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler" target="org.springframework.aop.interceptor.AsyncUncaughtExceptionHandler">
-      <point x="0.0" y="-18.0" />
+      <point x="-85.25" y="-18.0" />
+      <point x="285.25" y="846.0" />
+      <point x="188.0" y="846.0" />
       <point x="0.0" y="18.0" />
-    </edge>
-    <edge source="org.springframework.aop.interceptor.DebugInterceptor" target="org.springframework.aop.interceptor.SimpleTraceInterceptor">
-      <point x="0.0" y="-18.0" />
-      <point x="0.0" y="18.0" />
-    </edge>
-    <edge source="org.springframework.aop.interceptor.SimpleTraceInterceptor" target="org.springframework.aop.interceptor.AbstractTraceInterceptor">
-      <point x="0.0" y="-18.0" />
-      <point x="925.0" y="61.0" />
-      <point x="726.3333333333334" y="61.0" />
-      <point x="84.33333333333331" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.interceptor.PerformanceMonitorInterceptor" target="org.springframework.aop.interceptor.AbstractMonitoringInterceptor">
-      <point x="0.0" y="-18.0" />
-      <point x="499.5" y="147.0" />
-      <point x="408.25000000000006" y="147.0" />
+      <point x="-73.25" y="-18.0" />
+      <point x="1493.9982638888887" y="573.0" />
+      <point x="803.25" y="573.0" />
       <point x="73.25" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.interceptor.JamonPerformanceMonitorInterceptor" target="org.springframework.aop.interceptor.AbstractMonitoringInterceptor">
-      <point x="0.0" y="-18.0" />
-      <point x="166.5" y="147.0" />
-      <point x="261.75000000000006" y="147.0" />
+      <point x="83.25" y="-18.0" />
+      <point x="603.737847222222" y="573.0" />
+      <point x="656.75" y="573.0" />
       <point x="-73.25" y="18.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="522.0" y="228.0" />
+  <settings layout="Hierarchic Group" zoom="1.0417582417582416" x="680.7383966244727" y="629.214135021097" />
   <SelectedNodes>
-    <node>org.springframework.aop.interceptor.ExposeInvocationInterceptor</node>
+    <node>org.springframework.aop.interceptor.SimpleAsyncUncaughtExceptionHandler</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
