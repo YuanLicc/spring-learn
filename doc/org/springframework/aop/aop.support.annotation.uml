@@ -3,14 +3,74 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.aop.support.annotation</OriginalElement>
   <nodes>
-    <node x="0.0" y="162.0">org.springframework.aop.support.annotation.AnnotationClassFilter</node>
-    <node x="0.0" y="81.0">org.springframework.aop.support.annotation.AnnotationMethodMatcher</node>
-    <node x="0.0" y="243.0">org.springframework.aop.support.annotation.package-info</node>
-    <node x="0.0" y="0.0">org.springframework.aop.support.annotation.AnnotationMatchingPointcut</node>
+    <node x="0.0" y="674.0">org.springframework.aop.support.annotation.AnnotationClassFilter</node>
+    <node x="209.5" y="172.0">org.springframework.aop.Pointcut</node>
+    <node x="107.25" y="509.0">org.springframework.aop.support.annotation.AnnotationMethodMatcher</node>
+    <node x="274.0" y="590.0">org.springframework.aop.support.annotation.package-info</node>
+    <node x="242.0" y="423.0">org.springframework.aop.support.StaticMethodMatcher</node>
+    <node x="51.25" y="258.0">org.springframework.aop.support.annotation.AnnotationMatchingPointcut</node>
   </nodes>
-  <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="1.0" x="134.5" y="139.5" />
+  <notes>
+    <note x="31.5" y="590.0">
+      <node>org.springframework.aop.support.annotation.AnnotationClassFilter</node>
+      <value>实现了注解匹配 Class</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="0.0">
+      <node>org.springframework.aop.Pointcut</node>
+      <value>切点接口，表示增强目标的匹配，与增强组合成为切面（Advisor）。\n此接口暴露了两个接口：ClassFilter、MethodMatcher,\n分别表示类的过滤以及方法的匹配，总之都是属于目标的匹配。\n这两个接口都不是此接口的子接口，只是提供了一个子接口（ComposablePointcut）\n来组合这两个接口。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="61.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="424.0">
+      <node>org.springframework.aop.support.annotation.AnnotationMethodMatcher</node>
+      <value>实现了注解匹配方法的匹配器。</value>
+      <edge>
+        <point x="-61.25" y="-18.0" />
+        <point x="168.5" y="484.0" />
+        <point x="111.0" y="484.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="9.5" y="173.0">
+      <node>org.springframework.aop.support.annotation.AnnotationMatchingPointcut</node>
+      <value>实现了注解匹配的切点。</value>
+      <edge>
+        <point x="-67.25" y="-18.0" />
+        <point x="118.5" y="233.0" />
+        <point x="99.5" y="233.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="153.5" y="339.0">
+      <node>org.springframework.aop.support.StaticMethodMatcher</node>
+      <value>便利的静态方法匹配的抽象超类，它不关心运行时的参数。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="org.springframework.aop.support.annotation.AnnotationMatchingPointcut" target="org.springframework.aop.Pointcut">
+      <point x="67.25" y="-18.0" />
+      <point x="253.0" y="233.0" />
+      <point x="272.0" y="233.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.support.annotation.AnnotationMethodMatcher" target="org.springframework.aop.support.StaticMethodMatcher">
+      <point x="61.25" y="-18.0" />
+      <point x="291.0" y="484.0" />
+      <point x="348.5" y="484.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="-43.5" y="240.0" />
   <SelectedNodes>
     <node>org.springframework.aop.support.annotation.AnnotationClassFilter</node>
   </SelectedNodes>

@@ -9,7 +9,7 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile "junit:junit:${junitVersion}"
     compile("org.springframework:spring-context:${springVersion}")
     compile project(":global")
     compile("cglib:cglib:${cglibVersion}")

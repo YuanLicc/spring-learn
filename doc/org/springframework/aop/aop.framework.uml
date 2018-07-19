@@ -3,60 +3,116 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.aop.framework</OriginalElement>
   <nodes>
-    <node x="221.0" y="425.0">org.springframework.aop.framework.JdkDynamicAopProxy</node>
-    <node x="89.25" y="0.0">org.springframework.aop.framework.Advised</node>
-    <node x="0.0" y="759.0">org.springframework.aop.framework.ReflectiveMethodInvocation</node>
-    <node x="668.5" y="258.0">org.springframework.aop.framework.autoproxy</node>
-    <node x="508.0" y="172.0">org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor</node>
-    <node x="618.0" y="840.0">org.springframework.aop.framework.AopContext</node>
-    <node x="210.0" y="840.0">org.springframework.aop.framework.adapter</node>
-    <node x="471.0" y="425.0">org.springframework.aop.framework.DefaultAdvisorChainFactory</node>
-    <node x="158.5" y="339.0">org.springframework.aop.framework.AopProxy</node>
-    <node x="596.0" y="759.0">org.springframework.aop.framework.AopConfigException</node>
-    <node x="0.0" y="840.0">org.springframework.aop.framework.AopProxyUtils</node>
-    <node x="642.5" y="86.0">org.springframework.aop.framework.ProxyProcessorSupport</node>
-    <node x="0.0" y="678.0">org.springframework.aop.framework.DefaultAopProxyFactory</node>
-    <node x="314.0" y="759.0">org.springframework.aop.framework.AdvisedSupportListener</node>
-    <node x="104.5" y="86.0">org.springframework.aop.framework.AdvisedSupport</node>
-    <node x="0.0" y="258.0">org.springframework.aop.framework.ProxyFactoryBean</node>
-    <node x="84.5" y="172.0">org.springframework.aop.framework.ProxyCreatorSupport</node>
-    <node x="0.0" y="511.0">org.springframework.aop.framework.ObjenesisCglibAopProxy</node>
-    <node x="282.0" y="592.0">org.springframework.aop.framework.InterceptorAndDynamicMethodMatcher</node>
-    <node x="297.5" y="86.0">org.springframework.aop.framework.AbstractSingletonProxyFactoryBean</node>
-    <node x="385.5" y="0.0">org.springframework.aop.framework.ProxyConfig</node>
-    <node x="209.0" y="258.0">org.springframework.aop.framework.ProxyFactory</node>
-    <node x="699.75" y="0.0">org.springframework.aop.framework.AopInfrastructureBean</node>
-    <node x="36.0" y="425.0">org.springframework.aop.framework.CglibAopProxy</node>
-    <node x="28.0" y="592.0">org.springframework.aop.framework.AopProxyFactory</node>
-    <node x="499.0" y="339.0">org.springframework.aop.framework.AdvisorChainFactory</node>
-    <node x="416.0" y="840.0">org.springframework.aop.framework.package-info</node>
+    <node x="221.0" y="723.0">org.springframework.aop.framework.JdkDynamicAopProxy</node>
+    <node x="396.0" y="288.0">org.springframework.aop.framework.Advised</node>
+    <node x="0.0" y="890.0">org.springframework.aop.framework.ReflectiveMethodInvocation</node>
+    <node x="1362.0" y="556.0">org.springframework.aop.framework.autoproxy</node>
+    <node x="1186.5277777777778" y="470.0">org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor</node>
+    <node x="1464.0" y="890.0">org.springframework.aop.framework.AopContext</node>
+    <node x="1056.0" y="890.0">org.springframework.aop.framework.adapter</node>
+    <node x="471.0" y="723.0">org.springframework.aop.framework.DefaultAdvisorChainFactory</node>
+    <node x="158.5" y="637.0">org.springframework.aop.framework.AopProxy</node>
+    <node x="176.65277777777783" y="149.0">org.springframework.aop.TargetClassAware</node>
+    <node x="596.0" y="890.0">org.springframework.aop.framework.AopConfigException</node>
+    <node x="1323.0" y="384.0">org.springframework.aop.framework.ProxyProcessorSupport</node>
+    <node x="846.0" y="890.0">org.springframework.aop.framework.AopProxyUtils</node>
+    <node x="785.0" y="723.0">org.springframework.aop.framework.DefaultAopProxyFactory</node>
+    <node x="314.0" y="890.0">org.springframework.aop.framework.AdvisedSupportListener</node>
+    <node x="346.40277777777777" y="384.0">org.springframework.aop.framework.AdvisedSupport</node>
+    <node x="394.40277777777777" y="556.0">org.springframework.aop.framework.ProxyFactoryBean</node>
+    <node x="478.90277777777777" y="470.0">org.springframework.aop.framework.ProxyCreatorSupport</node>
+    <node x="0.0" y="809.0">org.springframework.aop.framework.ObjenesisCglibAopProxy</node>
+    <node x="1067.0" y="637.0">org.springframework.aop.framework.InterceptorAndDynamicMethodMatcher</node>
+    <node x="978.0" y="384.0">org.springframework.aop.framework.AbstractSingletonProxyFactoryBean</node>
+    <node x="1066.0" y="288.0">org.springframework.aop.framework.ProxyConfig</node>
+    <node x="603.4027777777778" y="556.0">org.springframework.aop.framework.ProxyFactory</node>
+    <node x="1380.25" y="288.0">org.springframework.aop.framework.AopInfrastructureBean</node>
+    <node x="36.0" y="723.0">org.springframework.aop.framework.CglibAopProxy</node>
+    <node x="813.0" y="637.0">org.springframework.aop.framework.AopProxyFactory</node>
+    <node x="1262.0" y="890.0">org.springframework.aop.framework.package-info</node>
+    <node x="499.0" y="637.0">org.springframework.aop.framework.AdvisorChainFactory</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="938.5" y="139.0">
+      <node>org.springframework.aop.framework.ProxyConfig</node>
+      <value>创建代理的配置超类，应该保证所有的代理 creator 含有\n一致的有关代理的相同属性，此类就定义了这样的一些属性。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="83.15277777777783" y="0.0">
+      <node>org.springframework.aop.TargetClassAware</node>
+      <value>此接口目的是暴露代理中的目标类，其中定义了一个唯一\n的方法getTargetClass()正好表明了此接口的含义。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="539.4027777777778" y="385.0">
+      <node>org.springframework.aop.framework.ProxyCreatorSupport</node>
+      <value>代理工厂基类，提供访问可配置的AopProxyFactory的便利。</value>
+      <edge>
+        <point x="53.25" y="-18.0" />
+        <point x="638.6527777777778" y="445.0" />
+        <point x="737.9027777777778" y="445.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="385.65277777777777" y="106.0">
+      <node>org.springframework.aop.framework.Advised</node>
+      <value>该接口的实现类应该如接口的期望那样，持有代理对象的\nfactory 的配置信息，包括：Interceptors and other advice,\nAdvisors, and the proxied interfaces。任何从Spring 中\n获取的代理对象都可以通过 cast 转换为此接口类型以获取\n对应的信息。</value>
+      <edge>
+        <point x="29.25" y="-18.0" />
+        <point x="483.75" y="253.0" />
+        <point x="594.6527777777778" y="253.0" />
+        <point x="0.0" y="61.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="278.0">
+      <node>org.springframework.aop.framework.AdvisedSupport</node>
+      <value>AOP 代理配置管理器的基类。此类的子类通常是直接获得\nAOP代理实例的工厂。</value>
+      <edge>
+        <point x="-57.66666666666674" y="-18.0" />
+        <point x="375.23611111111103" y="359.0" />
+        <point x="188.0" y="359.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+  </notes>
   <edges>
     <edge source="org.springframework.aop.framework.DefaultAopProxyFactory" target="org.springframework.aop.framework.AopProxyFactory">
       <point x="0.0" y="-18.0" />
       <point x="0.0" y="18.0" />
     </edge>
+    <edge source="org.springframework.aop.framework.Advised" target="org.springframework.aop.TargetClassAware">
+      <point x="-29.25" y="-18.0" />
+      <point x="425.25" y="253.0" />
+      <point x="271.1527777777778" y="253.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
     <edge source="org.springframework.aop.framework.ProxyFactoryBean" target="org.springframework.aop.framework.ProxyCreatorSupport">
       <point x="0.0" y="-18.0" />
-      <point x="94.5" y="233.0" />
-      <point x="137.75" y="233.0" />
+      <point x="488.90277777777777" y="531.0" />
+      <point x="532.1527777777778" y="531.0" />
       <point x="-53.25" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.autoproxy" target="org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor">
       <point x="-44.25" y="-18.0" />
-      <point x="712.75" y="233.0" />
-      <point x="670.5" y="233.0" />
+      <point x="1406.25" y="531.0" />
+      <point x="1349.0277777777778" y="531.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.ProxyCreatorSupport" target="org.springframework.aop.framework.AdvisedSupport">
-      <point x="0.0" y="-18.0" />
+      <point x="-53.25" y="-18.0" />
+      <point x="532.1527777777778" y="445.0" />
+      <point x="432.90277777777777" y="445.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.ProxyFactory" target="org.springframework.aop.framework.ProxyCreatorSupport">
       <point x="0.0" y="-18.0" />
-      <point x="287.5" y="233.0" />
-      <point x="244.25" y="233.0" />
+      <point x="681.9027777777778" y="531.0" />
+      <point x="638.6527777777778" y="531.0" />
       <point x="53.25" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.ProxyProcessorSupport" target="org.springframework.aop.framework.AopInfrastructureBean">
@@ -64,9 +120,9 @@
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.AdvisedSupport" target="org.springframework.aop.framework.ProxyConfig">
-      <point x="43.25" y="-18.0" />
-      <point x="234.25" y="61.0" />
-      <point x="410.3333333333333" y="61.0" />
+      <point x="57.66666666666674" y="-18.0" />
+      <point x="490.5694444444445" y="359.0" />
+      <point x="1090.8333333333333" y="359.0" />
       <point x="-49.666666666666686" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.AbstractSingletonProxyFactoryBean" target="org.springframework.aop.framework.ProxyConfig">
@@ -79,49 +135,49 @@
     </edge>
     <edge source="org.springframework.aop.framework.ProxyProcessorSupport" target="org.springframework.aop.framework.ProxyConfig">
       <point x="-57.25" y="-18.0" />
-      <point x="699.75" y="61.0" />
-      <point x="509.66666666666663" y="61.0" />
+      <point x="1380.25" y="359.0" />
+      <point x="1190.1666666666665" y="359.0" />
       <point x="49.66666666666663" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.CglibAopProxy" target="org.springframework.aop.framework.AopProxy">
       <point x="0.0" y="-18.0" />
-      <point x="118.5" y="400.0" />
-      <point x="189.75" y="400.0" />
+      <point x="118.5" y="698.0" />
+      <point x="189.75" y="698.0" />
       <point x="-31.25" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor" target="org.springframework.aop.framework.ProxyProcessorSupport">
       <point x="0.0" y="-18.0" />
-      <point x="670.5" y="147.0" />
-      <point x="699.75" y="147.0" />
+      <point x="1349.0277777777778" y="445.0" />
+      <point x="1380.25" y="445.0" />
       <point x="-57.25" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.autoproxy" target="org.springframework.aop.framework.ProxyProcessorSupport">
       <point x="44.25" y="-18.0" />
-      <point x="801.25" y="233.0" />
-      <point x="843.5" y="233.0" />
-      <point x="843.5" y="147.0" />
-      <point x="814.25" y="147.0" />
+      <point x="1494.75" y="531.0" />
+      <point x="1522.0277777777778" y="531.0" />
+      <point x="1522.0277777777778" y="445.0" />
+      <point x="1494.75" y="445.0" />
       <point x="57.25" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.JdkDynamicAopProxy" target="org.springframework.aop.framework.AopProxy">
       <point x="0.0" y="-18.0" />
-      <point x="323.5" y="400.0" />
-      <point x="252.25" y="400.0" />
+      <point x="323.5" y="698.0" />
+      <point x="252.25" y="698.0" />
       <point x="31.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.framework.AdvisedSupport" target="org.springframework.aop.framework.Advised">
+      <point x="0.0" y="-18.0" />
+      <point x="432.90277777777777" y="359.0" />
+      <point x="454.5" y="359.0" />
+      <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.framework.ObjenesisCglibAopProxy" target="org.springframework.aop.framework.CglibAopProxy">
       <point x="0.0" y="-18.0" />
       <point x="0.0" y="18.0" />
     </edge>
-    <edge source="org.springframework.aop.framework.AdvisedSupport" target="org.springframework.aop.framework.Advised">
-      <point x="-43.25" y="-18.0" />
-      <point x="0.0" y="18.0" />
-    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.9464285714285714" x="464.5" y="438.0" />
-  <SelectedNodes>
-    <node>org.springframework.aop.framework.CglibAopProxy</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="0.9464285714285714" x="836.1320754716982" y="432.62264150943395" />
+  <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>public</VISIBILITY>

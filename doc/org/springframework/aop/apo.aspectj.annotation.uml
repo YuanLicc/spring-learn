@@ -3,66 +3,197 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.aop.aspectj.annotation</OriginalElement>
   <nodes>
-    <node x="540.0" y="506.0">org.springframework.aop.aspectj.annotation.AspectMetadata</node>
-    <node x="585.5" y="0.0">org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory</node>
-    <node x="1187.0" y="86.0">org.springframework.aop.aspectj.annotation.SimpleMetadataAwareAspectInstanceFactory</node>
-    <node x="0.0" y="506.0">org.springframework.aop.aspectj.annotation.NotAnAtAspectException</node>
-    <node x="40.0" y="253.0">org.springframework.aop.aspectj.annotation.AspectJAdvisorFactory</node>
-    <node x="8.0" y="339.0">org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory</node>
-    <node x="0.0" y="86.0">org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory</node>
-    <node x="762.0" y="86.0">org.springframework.aop.aspectj.annotation.LazySingletonAspectInstanceFactoryDecorator</node>
-    <node x="282.0" y="506.0">org.springframework.aop.aspectj.annotation.AspectJProxyFactory</node>
-    <node x="758.0" y="506.0">org.springframework.aop.aspectj.annotation.package-info</node>
-    <node x="1206.0" y="253.0">org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder</node>
-    <node x="354.0" y="253.0">org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl</node>
-    <node x="8.0" y="172.0">org.springframework.aop.aspectj.annotation.PrototypeAspectInstanceFactory</node>
-    <node x="796.0" y="253.0">org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator</node>
-    <node x="337.00000000000006" y="86.0">org.springframework.aop.aspectj.annotation.SingletonMetadataAwareAspectInstanceFactory</node>
-    <node x="0.0" y="425.0">org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory</node>
+    <node x="797.625" y="276.0">org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory</node>
+    <node x="113.0" y="425.0">org.springframework.aop.aspectj.annotation.SimpleMetadataAwareAspectInstanceFactory</node>
+    <node x="2034.5" y="613.0">org.springframework.aop.aspectj.annotation.NotAnAtAspectException</node>
+    <node x="256.0" y="825.0">org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory</node>
+    <node x="121.5" y="718.0">org.springframework.aop.aspectj.annotation.AspectJAdvisorFactory</node>
+    <node x="583.5625" y="425.0">org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory</node>
+    <node x="963.125" y="425.0">org.springframework.aop.aspectj.annotation.LazySingletonAspectInstanceFactoryDecorator</node>
+    <node x="0.0" y="992.0">org.springframework.aop.aspectj.annotation.AspectJProxyFactory</node>
+    <node x="1664.5" y="613.0">org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder</node>
+    <node x="258.0" y="992.0">org.springframework.aop.aspectj.annotation.package-info</node>
+    <node x="812.5" y="697.0">org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl</node>
+    <node x="1012.9505208333335" y="532.0">org.springframework.aop.aspectj.annotation.PrototypeAspectInstanceFactory</node>
+    <node x="1254.5" y="613.0">org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator</node>
+    <node x="1833.125" y="425.0">org.springframework.aop.aspectj.annotation.SingletonMetadataAwareAspectInstanceFactory</node>
+    <node x="1019.625" y="127.0">org.springframework.aop.aspectj.AspectInstanceFactory</node>
+    <node x="105.75" y="911.0">org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="483.58723958333337" y="106.0">
+      <node>org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory</node>
+      <value>可获取到AspectMetadata 的工厂，本来这样的数据应该定义在\nAspectInstanceFactory 中，但其中包含了某项数据只使用与\nJava 5，因此提出来形成了此接口。</value>
+      <edge>
+        <point x="-83.25" y="-18.0" />
+        <point x="880.875" y="204.0" />
+        <point x="689.0872395833334" y="204.0" />
+        <point x="0.0" y="39.0" />
+      </edge>
+    </note>
+    <note x="840.5" y="613.0">
+      <node>org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl</node>
+      <value>InstantiaonModelAwarePointcutAdvisor 的实现类</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="277.0">
+      <node>org.springframework.aop.aspectj.annotation.SimpleMetadataAwareAspectInstanceFactory</node>
+      <value>每次调用 getInstance() 方法返回新的实例。</value>
+      <edge>
+        <point x="-127.0" y="-18.0" />
+        <point x="176.5" y="384.0" />
+        <point x="156.5" y="384.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="1388.125" y="404.0">
+      <node>org.springframework.aop.aspectj.annotation.PrototypeAspectInstanceFactory</node>
+      <value>其父类没有限制 Aspect 类在 BeanFactory 中的模式，此类\n仅仅是限制了必须为原型模式。同其父类，若想实现单例，可\n使用 LazySingletonAspectInstanceFactoryDecorator 来装饰。</value>
+      <edge>
+        <point x="75.25" y="-18.0" />
+        <point x="1238.7005208333335" y="507.0" />
+        <point x="1600.625" y="507.0" />
+        <point x="0.0" y="39.0" />
+      </edge>
+    </note>
+    <note x="62.0" y="613.0">
+      <node>org.springframework.aop.aspectj.annotation.AspectJAdvisorFactory</node>
+      <value>可创建含 Aspect 注解的类的切面实例的工厂接口。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="370.5" y="697.0">
+      <node>org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory</node>
+      <value>此类并不是 Spring 中 Advisor 的实现类，它仅仅是实现\n了对 AspectJ 注解的解析和验证，所以不能继承自此抽象类\n来创建一个可在 Spring 中使用的 Advisor。</value>
+      <edge>
+        <point x="73.25" y="-18.0" />
+        <point x="475.75" y="800.0" />
+        <point x="569.0" y="800.0" />
+        <point x="0.0" y="39.0" />
+      </edge>
+    </note>
+    <note x="2007.375" y="266.0">
+      <node>org.springframework.aop.aspectj.annotation.SingletonMetadataAwareAspectInstanceFactory</node>
+      <value>单例模式，每次调用 getInstance（）方法返回同样的Aspect\n对象。</value>
+      <edge>
+        <point x="135.0" y="-18.0" />
+        <point x="2170.625" y="384.0" />
+        <point x="2209.375" y="384.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="977.625" y="0.0">
+      <node>org.springframework.aop.aspectj.AspectInstanceFactory</node>
+      <value>实现此接口提供 AspectJ 中 aspect 的实例，\n从beanFactory 中解耦出来。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="345.625" y="244.0">
+      <node>org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory</node>
+      <value>通过 BeanFactory 来实现 AspectInstanceFactory。如果\n BeanFactory 为原型模式，将造成实例化多次 AspectInstance，\n所以可以使用 LazySingletonAspectInstanceFactoryDecorator \n来封装此类的实例（装饰），以达到单例的效果。</value>
+      <edge>
+        <point x="-79.25" y="-18.0" />
+        <point x="662.8125" y="364.0" />
+        <point x="561.625" y="364.0" />
+        <point x="0.0" y="50.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="826.0">
+      <node>org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory</node>
+      <value>使用反射机制来调用增强的方法。</value>
+      <edge>
+        <point x="-77.25" y="-18.0" />
+        <point x="183.0" y="886.0" />
+        <point x="118.0" y="886.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="1151.0625" y="266.0">
+      <node>org.springframework.aop.aspectj.annotation.LazySingletonAspectInstanceFactoryDecorator</node>
+      <value>单例 MetadataAwareAspectInstanceFactory 只会被\n实例化一次。</value>
+      <edge>
+        <point x="101.25" y="-18.0" />
+        <point x="1266.875" y="384.0" />
+        <point x="1325.0625" y="384.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+  </notes>
   <edges>
     <edge source="org.springframework.aop.aspectj.annotation.SingletonMetadataAwareAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
-      <point x="0.0" y="-18.0" />
-      <point x="539.5" y="66.0" />
-      <point x="710.375" y="66.0" />
-      <point x="-41.625" y="18.0" />
-    </edge>
-    <edge source="org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
-      <point x="0.0" y="-18.0" />
-      <point x="158.5" y="56.0" />
-      <point x="627.125" y="56.0" />
-      <point x="-124.875" y="18.0" />
-    </edge>
-    <edge source="org.springframework.aop.aspectj.annotation.LazySingletonAspectInstanceFactoryDecorator" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
-      <point x="0.0" y="-18.0" />
-      <point x="964.5" y="66.0" />
-      <point x="793.625" y="66.0" />
-      <point x="41.625" y="18.0" />
-    </edge>
-    <edge source="org.springframework.aop.aspectj.annotation.SimpleMetadataAwareAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
-      <point x="0.0" y="-18.0" />
-      <point x="1377.5" y="56.0" />
-      <point x="876.875" y="56.0" />
+      <point x="-135.0" y="-18.0" />
+      <point x="1900.625" y="374.0" />
+      <point x="1089.0" y="374.0" />
       <point x="124.875" y="18.0" />
     </edge>
-    <edge source="org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory" target="org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory">
+    <edge source="org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
+      <point x="79.25" y="-18.0" />
+      <point x="821.3125" y="384.0" />
+      <point x="922.5" y="384.0" />
+      <point x="-41.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.SimpleMetadataAwareAspectInstanceFactory" target="org.springframework.aop.aspectj.AspectInstanceFactory">
       <point x="0.0" y="-18.0" />
+      <point x="303.5" y="384.0" />
+      <point x="323.5" y="384.0" />
+      <point x="323.5" y="214.0" />
+      <point x="1057.7916666666667" y="214.0" />
+      <point x="-76.33333333333331" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.LazySingletonAspectInstanceFactoryDecorator" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
+      <point x="-101.25" y="-18.0" />
+      <point x="1064.375" y="384.0" />
+      <point x="1005.75" y="384.0" />
+      <point x="41.625" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory" target="org.springframework.aop.aspectj.AspectInstanceFactory">
+      <point x="83.25" y="-18.0" />
+      <point x="1047.375" y="224.0" />
+      <point x="1134.125" y="224.0" />
       <point x="0.0" y="18.0" />
     </edge>
-    <edge source="org.springframework.aop.aspectj.annotation.PrototypeAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory">
+    <edge source="org.springframework.aop.aspectj.annotation.SimpleMetadataAwareAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.MetadataAwareAspectInstanceFactory">
+      <point x="127.0" y="-18.0" />
+      <point x="430.5" y="374.0" />
+      <point x="839.25" y="374.0" />
+      <point x="-124.875" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory" target="org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory">
+      <point x="77.25" y="-18.0" />
+      <point x="337.5" y="886.0" />
+      <point x="402.5" y="886.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.SingletonMetadataAwareAspectInstanceFactory" target="org.springframework.aop.aspectj.AspectInstanceFactory">
       <point x="0.0" y="-18.0" />
+      <point x="2035.625" y="384.0" />
+      <point x="1996.875" y="384.0" />
+      <point x="1996.875" y="224.0" />
+      <point x="1210.4583333333333" y="224.0" />
+      <point x="76.33333333333331" y="18.0" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.PrototypeAspectInstanceFactory" target="org.springframework.aop.aspectj.annotation.BeanFactoryAspectInstanceFactory">
+      <point x="-75.25" y="-18.0" />
+      <point x="1088.2005208333335" y="507.0" />
+      <point x="742.0625" y="507.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.aop.aspectj.annotation.AbstractAspectJAdvisorFactory" target="org.springframework.aop.aspectj.annotation.AspectJAdvisorFactory">
-      <point x="0.0" y="-18.0" />
+      <point x="-73.25" y="-18.0" />
+      <point x="329.25" y="800.0" />
+      <point x="236.0" y="800.0" />
       <point x="0.0" y="18.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.818639798488665" x="784.0" y="271.0" />
-  <SelectedNodes>
-    <node>org.springframework.aop.aspectj.annotation.AspectMetadata</node>
-  </SelectedNodes>
+  <settings layout="Hierarchic Group" zoom="1.1022670025188916" x="1092.7662248628885" y="474.3622029250457" />
+  <SelectedNodes />
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>public</VISIBILITY>

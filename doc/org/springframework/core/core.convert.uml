@@ -3,46 +3,97 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.core.convert</OriginalElement>
   <nodes>
-    <node x="289.0" y="86.0">org.springframework.core.convert.ConversionFailedException</node>
-    <node x="0.0" y="334.0">org.springframework.core.convert.TypeDescriptor</node>
-    <node x="218.0" y="334.0">org.springframework.core.convert.package-info</node>
-    <node x="0.0" y="167.0">org.springframework.core.convert.converter</node>
-    <node x="170.5" y="0.0">org.springframework.core.convert.ConversionException</node>
-    <node x="52.25" y="253.0">org.springframework.core.convert.support</node>
-    <node x="197.0" y="167.0">org.springframework.core.convert.ConversionService</node>
-    <node x="420.0" y="334.0">org.springframework.core.convert.Property</node>
-    <node x="0.0" y="86.0">org.springframework.core.convert.ConverterNotFoundException</node>
+    <node x="114.625" y="170.0">org.springframework.core.convert.ConversionFailedException</node>
+    <node x="10.5" y="586.0">org.springframework.core.convert.TypeDescriptor</node>
+    <node x="239.0" y="502.0">org.springframework.core.convert.package-info</node>
+    <node x="0.0" y="335.0">org.springframework.core.convert.converter</node>
+    <node x="298.0" y="84.0">org.springframework.core.convert.ConversionException</node>
+    <node x="52.25" y="421.0">org.springframework.core.convert.support</node>
+    <node x="197.0" y="335.0">org.springframework.core.convert.ConversionService</node>
+    <node x="517.5" y="335.0">org.springframework.core.convert.Property</node>
+    <node x="422.375" y="170.0">org.springframework.core.convert.ConverterNotFoundException</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="0.0" y="85.0">
+      <node>org.springframework.core.convert.ConversionFailedException</node>
+      <value>转化为正确的类型出错时，抛出此异常。</value>
+      <edge>
+        <point x="-65.25" y="-18.0" />
+        <point x="179.875" y="145.0" />
+        <point x="139.0" y="145.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="502.0">
+      <node>org.springframework.core.convert.TypeDescriptor</node>
+      <value>类型转换中类型的描述类。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="363.5" y="0.0">
+      <node>org.springframework.core.convert.ConversionException</node>
+      <value>转化异常</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="170.5" y="251.0">
+      <node>org.springframework.core.convert.ConversionService</node>
+      <value>类型转换服务的接口（线程安全的）</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="531.0" y="85.0">
+      <node>org.springframework.core.convert.ConverterNotFoundException</node>
+      <value>converter 找不到时，抛出此异常。</value>
+      <edge>
+        <point x="67.25" y="-18.0" />
+        <point x="624.125" y="145.0" />
+        <point x="656.0" y="145.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="465.5" y="251.0">
+      <node>org.springframework.core.convert.Property</node>
+      <value>JavaBeans Property 的描述类。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+  </notes>
   <edges>
     <edge source="org.springframework.core.convert.support" target="org.springframework.core.convert.converter">
-      <point x="-53.66666666666666" y="-18.0" />
-      <point x="79.08333333333334" y="228.0" />
-      <point x="44.25" y="228.0" />
-      <point x="-44.25" y="18.0" />
+      <point x="0.0" y="-18.0" />
+      <point x="44.25" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.ConversionFailedException" target="org.springframework.core.convert.ConversionException">
-      <point x="0.0" y="-18.0" />
-      <point x="419.5" y="61.0" />
-      <point x="330.25" y="61.0" />
-      <point x="53.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.ConverterNotFoundException" target="org.springframework.core.convert.ConversionException">
-      <point x="0.0" y="-18.0" />
-      <point x="134.5" y="61.0" />
-      <point x="223.75" y="61.0" />
+      <point x="65.25" y="-18.0" />
+      <point x="310.375" y="145.0" />
+      <point x="351.25" y="145.0" />
       <point x="-53.25" y="18.0" />
     </edge>
+    <edge source="org.springframework.core.convert.ConverterNotFoundException" target="org.springframework.core.convert.ConversionException">
+      <point x="-67.25" y="-18.0" />
+      <point x="489.625" y="145.0" />
+      <point x="457.75" y="145.0" />
+      <point x="53.25" y="18.0" />
+    </edge>
     <edge source="org.springframework.core.convert.support" target="org.springframework.core.convert.ConversionService">
-      <point x="53.666666666666686" y="-18.0" />
-      <point x="186.41666666666669" y="228.0" />
-      <point x="295.5" y="228.0" />
+      <point x="53.66666666666666" y="-18.0" />
+      <point x="186.41666666666666" y="396.0" />
+      <point x="295.5" y="396.0" />
       <point x="0.0" y="18.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="275.0" y="185.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="60.0" y="307.0" />
   <SelectedNodes>
-    <node>org.springframework.core.convert.ConverterNotFoundException</node>
+    <node>org.springframework.core.convert.ConversionFailedException</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>

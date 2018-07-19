@@ -3,10 +3,19 @@ group 'com.yl.learn'
 apply plugin : 'war'
 
 dependencies {
+
+    dependencyManagement {
+        imports {
+            mavenBom "io.projectreactor:reactor-bom:Bismuth-SR9"
+        }
+    }
+
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 
     compile ("org.springframework:spring-webmvc:${springVersion}")
     compile project(":aop")
-    compile 'org.aspectj:aspectjrt:1.8.6'
-    compile 'org.aspectj:aspectjweaver:1.8.6'
+    compile "org.aspectj:aspectjrt:${aspectjVersion}"
+    compile "org.aspectj:aspectjweaver:${aspectjVersion}"
+    compile "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
+    compile 'io.projectreactor:reactor-core:+'
 }
