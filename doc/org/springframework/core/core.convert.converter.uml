@@ -5,7 +5,7 @@
   <nodes>
     <node x="549.5" y="379.0">org.springframework.core.convert.converter.Converter</node>
     <node x="217.75" y="192.0">org.springframework.core.convert.converter.ConditionalGenericConverter</node>
-    <node x="428.0" y="625.0">org.springframework.core.convert.converter.package-info</node>
+    <node x="428.0" y="709.0">org.springframework.core.convert.converter.package-info</node>
     <node x="139.0" y="544.0">org.springframework.core.convert.converter.ConverterFactory</node>
     <node x="93.0" y="709.0">org.springframework.core.convert.converter.ConverterRegistry</node>
     <node x="412.5" y="106.0">org.springframework.core.convert.converter.GenericConverter</node>
@@ -19,6 +19,14 @@
       <edge>
         <point x="0.0" y="-18.0" />
         <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="465.5" y="625.0">
+      <node>org.springframework.core.convert.converter.package-info</node>
+      <value>包信息。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
       </edge>
     </note>
     <note x="0.0" y="460.0">
@@ -76,9 +84,9 @@
       <point x="0.0" y="18.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="215.0" y="430.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="398.5" y="372.5" />
   <SelectedNodes>
-    <node>org.springframework.core.convert.converter.Converter</node>
+    <node>org.springframework.core.convert.converter.package-info</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>

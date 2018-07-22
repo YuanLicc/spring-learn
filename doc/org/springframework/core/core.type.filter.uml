@@ -3,53 +3,84 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.core.type.filter</OriginalElement>
   <nodes>
-    <node x="457.5" y="0.0">org.springframework.core.type.filter.TypeFilter</node>
-    <node x="678.5" y="172.0">org.springframework.core.type.filter.RegexPatternTypeFilter</node>
-    <node x="0.0" y="253.0">org.springframework.core.type.filter.package-info</node>
-    <node x="52.5" y="86.0">org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter</node>
-    <node x="646.5" y="86.0">org.springframework.core.type.filter.AbstractClassTestingTypeFilter</node>
-    <node x="0.0" y="172.0">org.springframework.core.type.filter.AssignableTypeFilter</node>
-    <node x="429.5" y="86.0">org.springframework.core.type.filter.AspectJTypeFilter</node>
-    <node x="240.99999999999997" y="172.0">org.springframework.core.type.filter.AnnotationTypeFilter</node>
+    <node x="766.3750000000001" y="84.0">org.springframework.core.type.filter.TypeFilter</node>
+    <node x="283.2500000000001" y="256.0">org.springframework.core.type.filter.RegexPatternTypeFilter</node>
+    <node x="0.0" y="337.0">org.springframework.core.type.filter.package-info</node>
+    <node x="952.2500000000001" y="170.0">org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter</node>
+    <node x="123.25000000000011" y="170.0">org.springframework.core.type.filter.AbstractClassTestingTypeFilter</node>
+    <node x="735.2500000000001" y="170.0">org.springframework.core.type.filter.AspectJTypeFilter</node>
+    <node x="1140.75" y="256.0">org.springframework.core.type.filter.AssignableTypeFilter</node>
+    <node x="899.7500000000001" y="256.0">org.springframework.core.type.filter.AnnotationTypeFilter</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="743.3750000000001" y="0.0">
+      <node>org.springframework.core.type.filter.TypeFilter</node>
+      <value>MetadataReader 的匹配。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="444.2500000000001" y="171.0">
+      <node>org.springframework.core.type.filter.RegexPatternTypeFilter</node>
+      <value>通过类名及传入的 Pattern 进行匹配。</value>
+      <edge>
+        <point x="59.24999999999994" y="-18.0" />
+        <point x="461.00000000000006" y="231.0" />
+        <point x="579.7500000000001" y="231.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="0.0" y="85.0">
+      <node>org.springframework.core.type.filter.AbstractClassTestingTypeFilter</node>
+      <value>此抽象类暴露了 ClassMetadata 数据给其子类，方便测试。</value>
+      <edge>
+        <point x="-75.25" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+  </notes>
   <edges>
     <edge source="org.springframework.core.type.filter.AnnotationTypeFilter" target="org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter">
       <point x="0.0" y="-18.0" />
-      <point x="351.5" y="147.0" />
-      <point x="320.25" y="147.0" />
-      <point x="89.25" y="18.0" />
+      <point x="1010.2500000000001" y="231.0" />
+      <point x="1041.5" y="231.0" />
+      <point x="-89.25" y="18.0" />
     </edge>
     <edge source="org.springframework.core.type.filter.AssignableTypeFilter" target="org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter">
       <point x="0.0" y="-18.0" />
-      <point x="110.5" y="147.0" />
-      <point x="141.75" y="147.0" />
-      <point x="-89.25" y="18.0" />
+      <point x="1251.25" y="231.0" />
+      <point x="1220.0" y="231.0" />
+      <point x="89.25" y="18.0" />
     </edge>
     <edge source="org.springframework.core.type.filter.AbstractTypeHierarchyTraversingFilter" target="org.springframework.core.type.filter.TypeFilter">
       <point x="0.0" y="-18.0" />
-      <point x="231.0" y="61.0" />
-      <point x="481.0" y="61.0" />
-      <point x="-47.0" y="18.0" />
+      <point x="1130.75" y="145.0" />
+      <point x="883.8750000000001" y="145.0" />
+      <point x="47.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.type.filter.AspectJTypeFilter" target="org.springframework.core.type.filter.TypeFilter">
       <point x="0.0" y="-18.0" />
+      <point x="833.7500000000001" y="145.0" />
+      <point x="836.8750000000001" y="145.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.type.filter.RegexPatternTypeFilter" target="org.springframework.core.type.filter.AbstractClassTestingTypeFilter">
-      <point x="0.0" y="-18.0" />
+      <point x="-59.25000000000006" y="-18.0" />
+      <point x="342.50000000000006" y="231.0" />
+      <point x="273.7500000000001" y="231.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.type.filter.AbstractClassTestingTypeFilter" target="org.springframework.core.type.filter.TypeFilter">
-      <point x="0.0" y="-18.0" />
-      <point x="797.0" y="61.0" />
-      <point x="575.0" y="61.0" />
-      <point x="47.0" y="18.0" />
+      <point x="75.25" y="-18.0" />
+      <point x="349.0000000000001" y="145.0" />
+      <point x="789.8750000000001" y="145.0" />
+      <point x="-47.0" y="18.0" />
     </edge>
   </edges>
   <settings layout="Hierarchic Group" zoom="1.0" x="474.0" y="144.5" />
   <SelectedNodes>
-    <node>org.springframework.core.type.filter.AnnotationTypeFilter</node>
+    <node>org.springframework.core.type.filter.RegexPatternTypeFilter</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>

@@ -3,35 +3,43 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.core.annotation</OriginalElement>
   <nodes>
-    <node x="0.0" y="499.0">org.springframework.core.annotation.AnnotatedElementUtils</node>
-    <node x="112.50000000000003" y="170.0">org.springframework.core.annotation.AbstractAliasAwareAnnotationAttributeExtractor</node>
-    <node x="186.0" y="661.0">org.springframework.core.annotation.AliasFor</node>
-    <node x="356.0" y="661.0">org.springframework.core.annotation.Order</node>
-    <node x="410.0" y="337.0">org.springframework.core.annotation.AnnotationConfigurationException</node>
-    <node x="266.0" y="580.0">org.springframework.core.annotation.AnnotationUtils</node>
-    <node x="346.0" y="418.0">org.springframework.core.annotation.SynthesizingMethodParameter</node>
-    <node x="329.00000000000006" y="256.0">org.springframework.core.annotation.DefaultAnnotationAttributeExtractor</node>
-    <node x="492.0" y="580.0">org.springframework.core.annotation.package-info</node>
-    <node x="32.0" y="84.0">org.springframework.core.annotation.AnnotationAttributeExtractor</node>
-    <node x="0.0" y="256.0">org.springframework.core.annotation.MapAnnotationAttributeExtractor</node>
-    <node x="0.0" y="337.0">org.springframework.core.annotation.SynthesizedAnnotationInvocationHandler</node>
-    <node x="0.0" y="580.0">org.springframework.core.annotation.AnnotationAttributes</node>
-    <node x="274.0" y="499.0">org.springframework.core.annotation.SynthesizedAnnotation</node>
-    <node x="0.0" y="661.0">org.springframework.core.annotation.OrderUtils</node>
-    <node x="0.0" y="418.0">org.springframework.core.annotation.AnnotationAwareOrderComparator</node>
+    <node x="154.375" y="170.0">org.springframework.core.annotation.AbstractAliasAwareAnnotationAttributeExtractor</node>
+    <node x="0.0" y="667.0">org.springframework.core.annotation.AnnotatedElementUtils</node>
+    <node x="0.0" y="829.0">org.springframework.core.annotation.Order</node>
+    <node x="614.0" y="748.0">org.springframework.core.annotation.AliasFor</node>
+    <node x="0.0" y="586.0">org.springframework.core.annotation.AnnotationConfigurationException</node>
+    <node x="0.0" y="748.0">org.springframework.core.annotation.AnnotationUtils</node>
+    <node x="362.0" y="502.0">org.springframework.core.annotation.SynthesizingMethodParameter</node>
+    <node x="0.0" y="256.0">org.springframework.core.annotation.DefaultAnnotationAttributeExtractor</node>
+    <node x="226.0" y="748.0">org.springframework.core.annotation.package-info</node>
+    <node x="73.875" y="84.0">org.springframework.core.annotation.AnnotationAttributeExtractor</node>
+    <node x="0.0" y="421.0">org.springframework.core.annotation.SynthesizedAnnotationInvocationHandler</node>
+    <node x="425.0" y="256.0">org.springframework.core.annotation.MapAnnotationAttributeExtractor</node>
+    <node x="548.0" y="667.0">org.springframework.core.annotation.AnnotationAttributes</node>
+    <node x="274.0" y="667.0">org.springframework.core.annotation.SynthesizedAnnotation</node>
+    <node x="428.0" y="748.0">org.springframework.core.annotation.OrderUtils</node>
+    <node x="433.5" y="421.0">org.springframework.core.annotation.AnnotationAwareOrderComparator</node>
   </nodes>
   <notes>
-    <note x="337.00000000000006" y="85.0">
+    <note x="378.875" y="85.0">
       <node>org.springframework.core.annotation.AbstractAliasAwareAnnotationAttributeExtractor</node>
       <value>含别名注解 @AliasFor 的注解的提取器。</value>
       <edge>
         <point x="107.25" y="-18.0" />
-        <point x="434.25" y="145.0" />
-        <point x="479.50000000000006" y="145.0" />
+        <point x="476.125" y="145.0" />
+        <point x="521.375" y="145.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="35.5" y="0.0">
+    <note x="58.0" y="502.0">
+      <node>org.springframework.core.annotation.AnnotationConfigurationException</node>
+      <value>Annotation 配置不当异常。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="77.375" y="0.0">
       <node>org.springframework.core.annotation.AnnotationAttributeExtractor</node>
       <value>注解的属性提取器，负责提取注解信息。</value>
       <edge>
@@ -39,30 +47,66 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
+    <note x="603.375" y="171.0">
+      <node>org.springframework.core.annotation.MapAnnotationAttributeExtractor</node>
+      <value>Map&lt;String, Object&gt;</value>
+      <edge>
+        <point x="77.25" y="-18.0" />
+        <point x="656.75" y="231.0" />
+        <point x="682.875" y="231.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="33.0" y="337.0">
+      <node>org.springframework.core.annotation.SynthesizedAnnotationInvocationHandler</node>
+      <value>综合 InvocationHandler 与 Annotation 。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="410.0" y="337.0">
+      <node>org.springframework.core.annotation.AnnotationAwareOrderComparator</node>
+      <value>可通过注解了的优先级进行排序。这是一个比较器。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="24.375" y="171.0">
+      <node>org.springframework.core.annotation.DefaultAnnotationAttributeExtractor</node>
+      <value>&lt;Annotation&gt;</value>
+      <edge>
+        <point x="-85.25" y="-18.0" />
+        <point x="85.25" y="231.0" />
+        <point x="79.375" y="231.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
   </notes>
   <edges>
     <edge source="org.springframework.core.annotation.AbstractAliasAwareAnnotationAttributeExtractor" target="org.springframework.core.annotation.AnnotationAttributeExtractor">
       <point x="-107.25" y="-18.0" />
-      <point x="219.75000000000003" y="145.0" />
-      <point x="174.5" y="145.0" />
+      <point x="261.625" y="145.0" />
+      <point x="216.375" y="145.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.annotation.MapAnnotationAttributeExtractor" target="org.springframework.core.annotation.AbstractAliasAwareAnnotationAttributeExtractor">
-      <point x="0.0" y="-18.0" />
-      <point x="154.5" y="231.0" />
-      <point x="219.75000000000003" y="231.0" />
-      <point x="-107.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.annotation.DefaultAnnotationAttributeExtractor" target="org.springframework.core.annotation.AbstractAliasAwareAnnotationAttributeExtractor">
-      <point x="0.0" y="-18.0" />
-      <point x="499.50000000000006" y="231.0" />
-      <point x="434.25" y="231.0" />
+      <point x="-77.25" y="-18.0" />
+      <point x="502.25" y="231.0" />
+      <point x="476.125" y="231.0" />
       <point x="107.25" y="18.0" />
     </edge>
+    <edge source="org.springframework.core.annotation.DefaultAnnotationAttributeExtractor" target="org.springframework.core.annotation.AbstractAliasAwareAnnotationAttributeExtractor">
+      <point x="85.25" y="-18.0" />
+      <point x="255.75" y="231.0" />
+      <point x="261.625" y="231.0" />
+      <point x="-107.25" y="18.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="335.0" y="308.5" />
+  <settings layout="Hierarchic Group" zoom="1.0186440677966102" x="384.5000000000001" y="432.50000000000006" />
   <SelectedNodes>
-    <node>org.springframework.core.annotation.AbstractAliasAwareAnnotationAttributeExtractor</node>
+    <node>org.springframework.core.annotation.AnnotationAwareOrderComparator</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>

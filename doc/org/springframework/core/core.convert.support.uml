@@ -3,60 +3,60 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.core.convert.support</OriginalElement>
   <nodes>
-    <node x="2547.7948621553883" y="448.0">org.springframework.core.convert.support.ObjectToStringConverter</node>
-    <node x="1810.8583333333331" y="613.0">org.springframework.core.convert.support.ConversionServiceFactory</node>
-    <node x="369.8583333333333" y="699.0">org.springframework.core.convert.support.ConfigurableConversionService</node>
-    <node x="1137.2499999999995" y="448.0">org.springframework.core.convert.support.StringToCharsetConverter</node>
-    <node x="8548.265899122805" y="448.0">org.springframework.core.convert.support.StringToPropertiesConverter</node>
-    <node x="3415.7499999999995" y="448.0">org.springframework.core.convert.support.StringToCharacterConverter</node>
-    <node x="1085.3583333333333" y="613.0">org.springframework.core.convert.support.StringToNumberConverterFactory</node>
-    <node x="3076.8583333333336" y="529.0">org.springframework.core.convert.support.ConversionUtils</node>
-    <node x="7830.515899122806" y="302.0">org.springframework.core.convert.support.ByteBufferConverter</node>
-    <node x="8320.515899122805" y="302.0">org.springframework.core.convert.support.NumberToNumberConverterFactory</node>
-    <node x="1691.2499999999995" y="448.0">org.springframework.core.convert.support.StringToTimeZoneConverter</node>
-    <node x="8063.515899122806" y="302.0">org.springframework.core.convert.support.ArrayToObjectConverter</node>
-    <node x="856.25" y="448.0">org.springframework.core.convert.support.ZoneIdToTimeZoneConverter</node>
-    <node x="2448.8583333333336" y="529.0">org.springframework.core.convert.support.StringToEnumConverterFactory</node>
-    <node x="4005.4999999999995" y="302.0">org.springframework.core.convert.support.ArrayToArrayConverter</node>
-    <node x="7251.765899122806" y="448.0">org.springframework.core.convert.support.StringToBooleanConverter</node>
-    <node x="5674.015899122806" y="302.0">org.springframework.core.convert.support.ArrayToCollectionConverter</node>
-    <node x="93.0" y="613.0">org.springframework.core.convert.converter.ConverterRegistry</node>
-    <node x="2408.7499999999995" y="302.0">org.springframework.core.convert.support.ObjectToCollectionConverter</node>
-    <node x="9291.515899122805" y="302.0">org.springframework.core.convert.support.AbstractConditionalEnumConverter</node>
-    <node x="45.25" y="448.0">org.springframework.core.convert.support.PropertiesToStringConverter</node>
-    <node x="6534.015899122806" y="302.0">org.springframework.core.convert.support.CollectionToArrayConverter</node>
-    <node x="3748.4999999999995" y="302.0">org.springframework.core.convert.support.StringToArrayConverter</node>
-    <node x="7565.515899122806" y="302.0">org.springframework.core.convert.support.ObjectToObjectConverter</node>
-    <node x="6823.015899122806" y="302.0">org.springframework.core.convert.support.ObjectToOptionalConverter</node>
-    <node x="8890.515899122805" y="302.0">org.springframework.core.convert.support.ObjectToArrayConverter</node>
-    <node x="9417.157957393483" y="448.0">org.springframework.core.convert.support.EnumToStringConverter</node>
-    <node x="421.99999999999994" y="871.0">org.springframework.core.convert.support.DefaultConversionService</node>
-    <node x="1454.8583333333333" y="613.0">org.springframework.core.convert.support.ConvertingPropertyEditorAdapter</node>
-    <node x="5872.265899122806" y="448.0">org.springframework.core.convert.support.NumberToCharacterConverter</node>
-    <node x="342.25" y="448.0">org.springframework.core.convert.support.StringToUUIDConverter</node>
-    <node x="2778.8583333333336" y="529.0">org.springframework.core.convert.support.CharacterToNumberFactory</node>
-    <node x="4835.5" y="302.0">org.springframework.core.convert.support.CollectionToCollectionConverter</node>
-    <node x="3302.8583333333336" y="529.0">org.springframework.core.convert.support.package-info</node>
-    <node x="2962.7499999999995" y="302.0">org.springframework.core.convert.support.CollectionToObjectConverter</node>
-    <node x="1410.2499999999995" y="448.0">org.springframework.core.convert.support.StringToCurrencyConverter</node>
-    <node x="591.25" y="448.0">org.springframework.core.convert.support.StringToLocaleConverter</node>
-    <node x="2705.7499999999995" y="302.0">org.springframework.core.convert.support.ArrayToStringConverter</node>
-    <node x="6205.015899122806" y="302.0">org.springframework.core.convert.support.FallbackObjectToStringConverter</node>
-    <node x="2191.7499999999995" y="302.0">org.springframework.core.convert.support.MapToMapConverter</node>
-    <node x="429.49999999999994" y="613.0">org.springframework.core.convert.ConversionService</node>
-    <node x="1925.4999999999995" y="302.0">org.springframework.core.convert.converter.Converter</node>
-    <node x="9093.407957393483" y="448.0">org.springframework.core.convert.support.EnumToIntegerConverter</node>
-    <node x="4445.75" y="448.0">org.springframework.core.convert.support.ZonedDateTimeToCalendarConverter</node>
-    <node x="568.25" y="785.0">org.springframework.core.convert.support.GenericConversionService</node>
-    <node x="5377.015899122806" y="302.0">org.springframework.core.convert.support.StringToCollectionConverter</node>
-    <node x="5164.5" y="302.0">org.springframework.core.convert.support.StreamConverter</node>
-    <node x="7104.515899122806" y="302.0">org.springframework.core.convert.support.IdToEntityConverter</node>
-    <node x="5592.499999999999" y="116.0">org.springframework.core.convert.converter.ConditionalConverter</node>
-    <node x="4254.5" y="302.0">org.springframework.core.convert.support.CollectionToStringConverter</node>
-    <node x="2110.8583333333336" y="529.0">org.springframework.core.convert.support.IntegerToEnumConverterFactory</node>
+    <node x="3703.0882675438593" y="468.0">org.springframework.core.convert.support.ObjectToStringConverter</node>
+    <node x="1860.75" y="633.0">org.springframework.core.convert.support.ConversionServiceFactory</node>
+    <node x="470.39166666666665" y="719.0">org.springframework.core.convert.support.ConfigurableConversionService</node>
+    <node x="8685.588267543859" y="468.0">org.springframework.core.convert.support.StringToCharsetConverter</node>
+    <node x="9247.588267543859" y="468.0">org.springframework.core.convert.support.StringToPropertiesConverter</node>
+    <node x="5044.588267543859" y="468.0">org.springframework.core.convert.support.StringToCharacterConverter</node>
+    <node x="1135.25" y="633.0">org.springframework.core.convert.support.StringToNumberConverterFactory</node>
+    <node x="3126.75" y="549.0">org.springframework.core.convert.support.ConversionUtils</node>
+    <node x="6812.838267543859" y="312.0">org.springframework.core.convert.support.ByteBufferConverter</node>
+    <node x="5756.838267543859" y="312.0">org.springframework.core.convert.support.NumberToNumberConverterFactory</node>
+    <node x="9544.588267543859" y="468.0">org.springframework.core.convert.support.StringToTimeZoneConverter</node>
+    <node x="1321.0882675438593" y="468.0">org.springframework.core.convert.support.ZoneIdToTimeZoneConverter</node>
+    <node x="2523.8382675438593" y="312.0">org.springframework.core.convert.support.ArrayToObjectConverter</node>
+    <node x="2498.75" y="549.0">org.springframework.core.convert.support.StringToEnumConverterFactory</node>
+    <node x="7834.588267543859" y="468.0">org.springframework.core.convert.support.StringToBooleanConverter</node>
+    <node x="1810.8382675438593" y="312.0">org.springframework.core.convert.support.ArrayToArrayConverter</node>
+    <node x="3109.8382675438593" y="312.0">org.springframework.core.convert.support.ArrayToCollectionConverter</node>
+    <node x="506.75" y="633.0">org.springframework.core.convert.converter.ConverterRegistry</node>
+    <node x="5459.838267543859" y="312.0">org.springframework.core.convert.support.ObjectToCollectionConverter</node>
+    <node x="795.8418076441108" y="312.0">org.springframework.core.convert.support.AbstractConditionalEnumConverter</node>
+    <node x="8388.588267543859" y="468.0">org.springframework.core.convert.support.PropertiesToStringConverter</node>
+    <node x="4382.838267543859" y="312.0">org.springframework.core.convert.support.CollectionToArrayConverter</node>
+    <node x="6077.838267543859" y="312.0">org.springframework.core.convert.support.StringToArrayConverter</node>
+    <node x="70.25" y="312.0">org.springframework.core.convert.support.ObjectToOptionalConverter</node>
+    <node x="3398.8382675438593" y="312.0">org.springframework.core.convert.support.ObjectToObjectConverter</node>
+    <node x="6334.838267543859" y="312.0">org.springframework.core.convert.support.ObjectToArrayConverter</node>
+    <node x="1057.75" y="468.0">org.springframework.core.convert.support.EnumToStringConverter</node>
+    <node x="165.75" y="891.0">org.springframework.core.convert.support.DefaultConversionService</node>
+    <node x="1504.75" y="633.0">org.springframework.core.convert.support.ConvertingPropertyEditorAdapter</node>
+    <node x="8958.588267543859" y="468.0">org.springframework.core.convert.support.NumberToCharacterConverter</node>
+    <node x="2353.0882675438593" y="468.0">org.springframework.core.convert.support.StringToUUIDConverter</node>
+    <node x="2780.8382675438593" y="312.0">org.springframework.core.convert.support.CollectionToCollectionConverter</node>
+    <node x="2828.75" y="549.0">org.springframework.core.convert.support.CharacterToNumberFactory</node>
+    <node x="3352.75" y="549.0">org.springframework.core.convert.support.package-info</node>
+    <node x="3884.8382675438593" y="312.0">org.springframework.core.convert.support.CollectionToObjectConverter</node>
+    <node x="8107.588267543859" y="468.0">org.springframework.core.convert.support.StringToCurrencyConverter</node>
+    <node x="7121.71680764411" y="468.0">org.springframework.core.convert.support.StringToLocaleConverter</node>
+    <node x="2059.8382675438593" y="312.0">org.springframework.core.convert.support.ArrayToStringConverter</node>
+    <node x="4671.838267543859" y="312.0">org.springframework.core.convert.support.FallbackObjectToStringConverter</node>
+    <node x="5242.838267543859" y="312.0">org.springframework.core.convert.support.MapToMapConverter</node>
+    <node x="843.25" y="633.0">org.springframework.core.convert.ConversionService</node>
+    <node x="7727.088267543859" y="312.0">org.springframework.core.convert.converter.Converter</node>
+    <node x="741.0" y="468.0">org.springframework.core.convert.support.EnumToIntegerConverter</node>
+    <node x="404.0" y="468.0">org.springframework.core.convert.support.ZonedDateTimeToCalendarConverter</node>
+    <node x="312.0" y="805.0">org.springframework.core.convert.support.GenericConversionService</node>
+    <node x="7045.838267543859" y="312.0">org.springframework.core.convert.support.StringToCollectionConverter</node>
+    <node x="4181.838267543859" y="312.0">org.springframework.core.convert.support.StreamConverter</node>
+    <node x="7342.838267543859" y="312.0">org.springframework.core.convert.support.IdToEntityConverter</node>
+    <node x="4247.588267543859" y="116.0">org.springframework.core.convert.converter.ConditionalConverter</node>
+    <node x="1513.8382675438593" y="312.0">org.springframework.core.convert.support.CollectionToStringConverter</node>
+    <node x="2160.75" y="549.0">org.springframework.core.convert.support.IntegerToEnumConverterFactory</node>
   </nodes>
   <notes>
-    <note x="1480.8583333333333" y="529.0">
+    <note x="1530.75" y="549.0">
       <node>org.springframework.core.convert.support.ConvertingPropertyEditorAdapter</node>
       <value>适配器，暴露一个 PropertyEditor。</value>
       <edge>
@@ -64,7 +64,7 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="5963.015899122806" y="303.0">
+    <note x="9049.338267543859" y="313.0">
       <node>org.springframework.core.convert.support.NumberToCharacterConverter</node>
       <value>Converter&lt;Number, Character&gt;</value>
       <edge>
@@ -72,25 +72,23 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="3259.7499999999995" y="303.0">
+    <note x="3663.8382675438593" y="313.0">
       <node>org.springframework.core.convert.support.ObjectToStringConverter</node>
       <value>Converter&lt;Object, String&gt;</value>
       <edge>
-        <point x="61.25" y="-18.0" />
-        <point x="2731.5448621553883" y="428.0" />
-        <point x="3360.2499999999995" y="428.0" />
+        <point x="-61.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="1808.8583333333331" y="529.0">
+    <note x="1858.75" y="549.0">
       <node>org.springframework.core.convert.support.ConversionServiceFactory</node>
       <value>可配置的 ConversionService 的工厂</value>
       <edge>
-        <point x="2.2737367544323206E-13" y="-18.0" />
+        <point x="0.0" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="306.0" y="303.0">
+    <note x="2316.8382675438593" y="313.0">
       <node>org.springframework.core.convert.support.StringToUUIDConverter</node>
       <value>Converter&lt;String, UUID&gt;</value>
       <edge>
@@ -98,25 +96,25 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="646.5" y="614.0">
+    <note x="306.75000000000006" y="634.0">
       <node>org.springframework.core.convert.support.ConfigurableConversionService</node>
       <value>可配置的转化服务接口。</value>
       <edge>
-        <point x="97.66666666666663" y="-18.0" />
-        <point x="614.0249999999999" y="674.0" />
-        <point x="736.5" y="674.0" />
+        <point x="-97.66666666666663" y="-18.0" />
+        <point x="519.225" y="694.0" />
+        <point x="396.75000000000006" y="694.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="1096.4999999999995" y="303.0">
+    <note x="8771.338267543859" y="313.0">
       <node>org.springframework.core.convert.support.StringToCharsetConverter</node>
       <value>Converter&lt;String, Charset&gt;</value>
       <edge>
-        <point x="-63.25" y="-18.0" />
+        <point x="63.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="8641.515899122805" y="303.0">
+    <note x="9340.838267543859" y="313.0">
       <node>org.springframework.core.convert.support.StringToPropertiesConverter</node>
       <value>Converter&lt;String, Properties&gt;</value>
       <edge>
@@ -124,7 +122,7 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="4864.75" y="117.0">
+    <note x="2810.0882675438593" y="117.0">
       <node>org.springframework.core.convert.support.CollectionToCollectionConverter</node>
       <value>集合转集合</value>
       <edge>
@@ -132,7 +130,7 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="2948.9999999999995" y="117.0">
+    <note x="3871.0882675438593" y="117.0">
       <node>org.springframework.core.convert.support.CollectionToObjectConverter</node>
       <value>Collection 转 Object</value>
       <edge>
@@ -140,15 +138,15 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="3506.4999999999995" y="303.0">
+    <note x="5000.838267543859" y="313.0">
       <node>org.springframework.core.convert.support.StringToCharacterConverter</node>
       <value>Converter&lt;String, Character&gt;</value>
       <edge>
-        <point x="67.25" y="-18.0" />
+        <point x="-67.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="1061.8583333333333" y="529.0">
+    <note x="1111.75" y="549.0">
       <node>org.springframework.core.convert.support.StringToNumberConverterFactory</node>
       <value>将String 转换为 jdk 原生数值类型的转换器工厂。</value>
       <edge>
@@ -156,15 +154,15 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="1367.9999999999995" y="303.0">
+    <note x="8195.838267543859" y="313.0">
       <node>org.springframework.core.convert.support.StringToCurrencyConverter</node>
       <value>Converter&lt;String, Currency&gt;</value>
       <edge>
-        <point x="-65.25" y="-18.0" />
+        <point x="65.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="7907.265899122806" y="117.0">
+    <note x="6889.588267543859" y="117.0">
       <node>org.springframework.core.convert.support.ByteBufferConverter</node>
       <value>Objetc 转 ByteBuffer</value>
       <edge>
@@ -172,15 +170,17 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="552.0" y="303.0">
+    <note x="6591.838267543859" y="313.0">
       <node>org.springframework.core.convert.support.StringToLocaleConverter</node>
       <value>Converter&lt;String, Locale&gt;</value>
       <edge>
         <point x="-61.25" y="-18.0" />
+        <point x="7182.96680764411" y="368.0" />
+        <point x="6692.338267543859" y="368.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="2699.4999999999995" y="117.0">
+    <note x="2053.5882675438593" y="117.0">
       <node>org.springframework.core.convert.support.ArrayToStringConverter</node>
       <value>Array 转 String</value>
       <edge>
@@ -188,7 +188,7 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="6353.765899122806" y="117.0">
+    <note x="4820.588267543859" y="117.0">
       <node>org.springframework.core.convert.support.FallbackObjectToStringConverter</node>
       <value>Object 转换为 String</value>
       <edge>
@@ -196,7 +196,7 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="8463.265899122805" y="117.0">
+    <note x="5899.588267543859" y="117.0">
       <node>org.springframework.core.convert.support.NumberToNumberConverterFactory</node>
       <value>Number 转换为 Number</value>
       <edge>
@@ -204,15 +204,15 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="2192.9999999999995" y="117.0">
+    <note x="5342.588267543859" y="117.0">
       <node>org.springframework.core.convert.support.MapToMapConverter</node>
       <value>Map 转 Map</value>
       <edge>
-        <point x="-49.25" y="-18.0" />
+        <point x="49.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="402.99999999999994" y="529.0">
+    <note x="816.75" y="549.0">
       <node>org.springframework.core.convert.ConversionService</node>
       <value>类型转换服务的接口（线程安全的）</value>
       <edge>
@@ -220,7 +220,7 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="1810.9999999999995" y="106.0">
+    <note x="7612.588267543859" y="106.0">
       <node>org.springframework.core.convert.converter.Converter</node>
       <value>转换器的接口，实现类应该为线程安全的，且同时实现\nConditionalConverter。</value>
       <edge>
@@ -228,35 +228,33 @@
         <point x="0.0" y="28.0" />
       </edge>
     </note>
-    <note x="1644.7658991228063" y="303.0">
+    <note x="9632.838267543859" y="313.0">
       <node>org.springframework.core.convert.support.StringToTimeZoneConverter</node>
       <value>Converter&lt;String, TimeZone&gt;</value>
       <edge>
-        <point x="-65.25" y="-18.0" />
-        <point x="1756.4999999999995" y="358.0" />
-        <point x="1752.2658991228063" y="358.0" />
+        <point x="65.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="9147.515899122805" y="303.0">
+    <note x="651.3418076441103" y="313.0">
       <node>org.springframework.core.convert.support.EnumToIntegerConverter</node>
       <value>枚举转 Integer</value>
       <edge>
-        <point x="0.0" y="-18.0" />
-        <point x="9211.907957393483" y="428.0" />
-        <point x="9209.515899122805" y="428.0" />
+        <point x="-79.0" y="-18.0" />
+        <point x="780.5" y="368.0" />
+        <point x="713.3418076441103" y="368.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="8175.765899122806" y="117.0">
+    <note x="2517.5882675438593" y="117.0">
       <node>org.springframework.core.convert.support.ArrayToObjectConverter</node>
       <value>Array 转 Object</value>
       <edge>
-        <point x="59.25" y="-18.0" />
+        <point x="-59.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="814.0" y="303.0">
+    <note x="1278.8382675438593" y="313.0">
       <node>org.springframework.core.convert.support.ZoneIdToTimeZoneConverter</node>
       <value>Converter&lt;ZoneId, TimeZone&gt;</value>
       <edge>
@@ -264,7 +262,7 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="4000.7499999999995" y="117.0">
+    <note x="1806.0882675438593" y="117.0">
       <node>org.springframework.core.convert.support.ArrayToArrayConverter</node>
       <value>Array 转 Array</value>
       <edge>
@@ -272,85 +270,83 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="7337.515899122806" y="303.0">
+    <note x="7921.59180764411" y="313.0">
       <node>org.springframework.core.convert.support.StringToBooleanConverter</node>
       <value>Converter&lt;String, Boolean&gt;</value>
       <edge>
         <point x="63.25" y="-18.0" />
+        <point x="8024.338267543859" y="448.0" />
+        <point x="8025.59180764411" y="448.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="4551.5" y="303.0">
+    <note x="351.25" y="313.0">
       <node>org.springframework.core.convert.support.ZonedDateTimeToCalendarConverter</node>
       <value>Converter&lt;ZonedDateTime, Calendar&gt;</value>
       <edge>
-        <point x="79.25" y="-18.0" />
+        <point x="-79.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="5836.407957393483" y="117.0">
+    <note x="3097.5882675438593" y="117.0">
       <node>org.springframework.core.convert.support.ArrayToCollectionConverter</node>
       <value>Array 转 Collection</value>
       <edge>
-        <point x="67.25" y="-18.0" />
-        <point x="5875.765899122806" y="282.0" />
-        <point x="5915.907957393483" y="282.0" />
+        <point x="-67.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="0.0" y="529.0">
+    <note x="413.7500000000001" y="549.0">
       <node>org.springframework.core.convert.converter.ConverterRegistry</node>
       <value>Converter 注册器。可添加 Converter 到转化系统中去。</value>
       <edge>
-        <point x="0.0" y="-18.0" />
+        <point x="5.6843418860808015E-14" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="682.8583333333333" y="700.0">
+    <note x="116.39166666666665" y="720.0">
       <node>org.springframework.core.convert.support.GenericConversionService</node>
       <value>通用的类型转换服务实现类，适用大多数的环境。</value>
       <edge>
-        <point x="63.25" y="-18.0" />
-        <point x="758.0" y="760.0" />
-        <point x="849.8583333333333" y="760.0" />
+        <point x="-63.25" y="-18.0" />
+        <point x="375.25" y="780.0" />
+        <point x="283.39166666666665" y="780.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="2394.9999999999995" y="117.0">
+    <note x="5584.588267543859" y="117.0">
       <node>org.springframework.core.convert.support.ObjectToCollectionConverter</node>
       <value>Object 转 Collection</value>
       <edge>
-        <point x="-69.25" y="-18.0" />
+        <point x="69.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="9446.265899122805" y="117.0">
+    <note x="792.0918076441108" y="117.0">
       <node>org.springframework.core.convert.support.AbstractConditionalEnumConverter</node>
       <value>抽象的枚举类型转换器</value>
       <edge>
-        <point x="79.25" y="-18.0" />
+        <point x="-79.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="5323.75" y="117.0">
+    <note x="7142.588267543859" y="117.0">
       <node>org.springframework.core.convert.support.StringToCollectionConverter</node>
       <value>以逗号隔开的String 转 集合。</value>
       <edge>
-        <point x="-69.25" y="-18.0" />
-        <point x="5446.265899122806" y="182.0" />
-        <point x="5434.75" y="182.0" />
+        <point x="69.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="0.0" y="303.0">
+    <note x="8481.838267543859" y="313.0">
       <node>org.springframework.core.convert.support.PropertiesToStringConverter</node>
       <value>Converter&lt;Properties, String&gt;</value>
       <edge>
-        <point x="-69.25" y="-18.0" />
+        <point x="69.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="6684.265899122806" y="117.0">
+    <note x="4533.088267543859" y="117.0">
       <node>org.springframework.core.convert.support.CollectionToArrayConverter</node>
       <value>集合转Array</value>
       <edge>
@@ -358,39 +354,41 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="5168.75" y="117.0">
+    <note x="4145.588267543859" y="117.0">
       <node>org.springframework.core.convert.support.StreamConverter</node>
       <value>流转换。</value>
       <edge>
-        <point x="-45.250000000000455" y="-18.0" />
+        <point x="-45.25" y="-18.0" />
+        <point x="4227.088267543859" y="182.0" />
+        <point x="4186.588267543859" y="182.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="3742.2499999999995" y="117.0">
+    <note x="6190.088267543859" y="117.0">
       <node>org.springframework.core.convert.support.StringToArrayConverter</node>
       <value>String 转 Array</value>
       <edge>
-        <point x="-59.25" y="-18.0" />
+        <point x="59.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="7652.265899122806" y="117.0">
+    <note x="3363.0882675438593" y="117.0">
       <node>org.springframework.core.convert.support.ObjectToObjectConverter</node>
       <value>源 object 转 目标 object</value>
       <edge>
-        <point x="61.25" y="-18.0" />
+        <point x="-61.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="6883.265899122806" y="117.0">
+    <note x="0.0" y="117.0">
       <node>org.springframework.core.convert.support.ObjectToOptionalConverter</node>
       <value>将 Object 转化为 java.util.Optional</value>
       <edge>
-        <point x="65.25" y="-18.0" />
+        <point x="-65.25" y="-18.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="8988.765899122805" y="117.0">
+    <note x="6433.088267543859" y="117.0">
       <node>org.springframework.core.convert.support.ObjectToArrayConverter</node>
       <value>将对象转换为Array。</value>
       <edge>
@@ -398,7 +396,7 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="7174.265899122806" y="117.0">
+    <note x="7412.588267543859" y="117.0">
       <node>org.springframework.core.convert.support.IdToEntityConverter</node>
       <value>通过实体标识查找实体。</value>
       <edge>
@@ -406,17 +404,17 @@
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="9628.515899122805" y="303.0">
+    <note x="1132.8418076441108" y="313.0">
       <node>org.springframework.core.convert.support.EnumToStringConverter</node>
       <value>枚举转String</value>
       <edge>
-        <point x="76.33333333333337" y="-18.0" />
-        <point x="9607.991290726815" y="428.0" />
-        <point x="9683.515899122805" y="428.0" />
+        <point x="0.0" y="-18.0" />
+        <point x="1172.25" y="368.0" />
+        <point x="1187.8418076441108" y="368.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="5497.499999999999" y="0.0">
+    <note x="4152.588267543859" y="0.0">
       <node>org.springframework.core.convert.converter.ConditionalConverter</node>
       <value>将 TypeDescriptor 类型的 sourceType 转换为 targetType。\n这种转换是基于一定条件的转换。</value>
       <edge>
@@ -424,17 +422,17 @@
         <point x="0.0" y="28.0" />
       </edge>
     </note>
-    <note x="256.24999999999994" y="786.0">
+    <note x="0.0" y="806.0">
       <node>org.springframework.core.convert.support.DefaultConversionService</node>
       <value>包含默认的一些转换器的默认转换服务类。</value>
       <edge>
         <point x="-63.25" y="-18.0" />
-        <point x="485.24999999999994" y="846.0" />
-        <point x="402.24999999999994" y="846.0" />
+        <point x="229.0" y="866.0" />
+        <point x="146.0" y="866.0" />
         <point x="0.0" y="17.0" />
       </edge>
     </note>
-    <note x="4226.75" y="117.0">
+    <note x="1486.0882675438593" y="117.0">
       <node>org.springframework.core.convert.support.CollectionToStringConverter</node>
       <value>集合转字符串，逗号隔开。</value>
       <edge>
@@ -444,260 +442,260 @@
     </note>
   </notes>
   <edges>
-    <edge source="org.springframework.core.convert.support.PropertiesToStringConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="69.25" y="-18.0" />
-      <point x="253.0" y="368.0" />
-      <point x="1929.933333333333" y="368.0" />
-      <point x="-62.066666666666606" y="18.0" />
-    </edge>
     <edge source="org.springframework.core.convert.support.EnumToStringConverter" target="org.springframework.core.convert.support.AbstractConditionalEnumConverter">
-      <point x="0.0" y="-18.0" />
-      <point x="9531.657957393483" y="428.0" />
-      <point x="9529.265899122805" y="428.0" />
+      <point x="-76.33333333333326" y="-18.0" />
+      <point x="1095.916666666667" y="368.0" />
+      <point x="1033.5918076441108" y="368.0" />
       <point x="79.25" y="18.0" />
     </edge>
-    <edge source="org.springframework.core.convert.support.NumberToNumberConverterFactory" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="-75.25" y="-18.0" />
-      <point x="8395.765899122805" y="202.0" />
-      <point x="5787.190476190475" y="202.0" />
-      <point x="84.19047619047615" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.StringToLocaleConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="61.25" y="-18.0" />
-      <point x="775.0" y="388.0" />
-      <point x="1947.6666666666665" y="388.0" />
-      <point x="-44.33333333333303" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.StringToBooleanConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="-63.25" y="-18.0" />
-      <point x="7315.015899122806" y="388.0" />
-      <point x="2027.4666666666658" y="388.0" />
-      <point x="35.46666666666624" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.StringToPropertiesConverter" target="org.springframework.core.convert.converter.Converter">
+    <edge source="org.springframework.core.convert.support.PropertiesToStringConverter" target="org.springframework.core.convert.converter.Converter">
       <point x="-69.25" y="-18.0" />
-      <point x="8617.515899122805" y="378.0" />
-      <point x="2036.3333333333326" y="378.0" />
-      <point x="44.33333333333303" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.ZonedDateTimeToCalendarConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="-79.25" y="-18.0" />
-      <point x="4525.0" y="408.0" />
-      <point x="2009.7333333333331" y="408.0" />
-      <point x="17.733333333333576" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.ObjectToCollectionConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="69.25" y="-18.0" />
-      <point x="2616.4999999999995" y="202.0" />
-      <point x="5608.285714285714" y="202.0" />
-      <point x="-94.71428571428578" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.StringToCurrencyConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="65.25" y="-18.0" />
-      <point x="1605.9999999999995" y="418.0" />
-      <point x="1974.266666666666" y="418.0" />
-      <point x="-17.733333333333576" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.EnumToIntegerConverter" target="org.springframework.core.convert.support.AbstractConditionalEnumConverter">
-      <point x="79.0" y="-18.0" />
-      <point x="9290.907957393483" y="428.0" />
-      <point x="9370.765899122805" y="428.0" />
-      <point x="-79.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.CollectionToCollectionConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="77.25" y="-18.0" />
-      <point x="5067.25" y="262.0" />
-      <point x="5671.428571428571" y="262.0" />
-      <point x="-31.57142857142844" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.EnumToStringConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="-76.33333333333326" y="-18.0" />
-      <point x="9455.324624060151" y="358.0" />
-      <point x="2054.066666666666" y="358.0" />
-      <point x="62.066666666666606" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.StringToTimeZoneConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="65.25" y="-18.0" />
-      <point x="1886.9999999999995" y="428.0" />
-      <point x="1983.1333333333328" y="428.0" />
-      <point x="-8.866666666666788" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.StringToUUIDConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="57.25" y="-18.0" />
-      <point x="514.0" y="378.0" />
-      <point x="1938.7999999999997" y="378.0" />
-      <point x="-53.19999999999982" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.ConfigurableConversionService" target="org.springframework.core.convert.converter.ConverterRegistry">
-      <point x="-97.66666666666669" y="-18.0" />
-      <point x="418.6916666666666" y="674.0" />
-      <point x="191.5" y="674.0" />
-      <point x="0.0" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.ByteBufferConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="-53.25" y="-18.0" />
-      <point x="7883.765899122806" y="222.0" />
-      <point x="5766.142857142856" y="222.0" />
-      <point x="63.14285714285688" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.CollectionToStringConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="69.25" y="-18.0" />
-      <point x="4462.25" y="252.0" />
-      <point x="5660.9047619047615" y="252.0" />
-      <point x="-42.095238095238074" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.ObjectToArrayConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="-59.25" y="-18.0" />
-      <point x="8949.765899122805" y="192.0" />
-      <point x="5797.714285714284" y="192.0" />
-      <point x="94.71428571428532" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.CollectionToObjectConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="69.25" y="-18.0" />
-      <point x="3170.4999999999995" y="222.0" />
-      <point x="5629.333333333333" y="222.0" />
-      <point x="-73.66666666666652" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.ArrayToArrayConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="57.25" y="-18.0" />
-      <point x="4177.25" y="242.0" />
-      <point x="5650.380952380951" y="242.0" />
-      <point x="-52.619047619047706" y="18.0" />
+      <point x="8457.838267543859" y="428.0" />
+      <point x="7820.188267543859" y="428.0" />
+      <point x="26.600000000000364" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.CollectionToArrayConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
       <point x="-67.25" y="-18.0" />
-      <point x="6601.265899122806" y="262.0" />
-      <point x="5724.047619047618" y="262.0" />
-      <point x="21.047619047619264" y="18.0" />
+      <point x="4450.088267543859" y="292.0" />
+      <point x="4368.612077067668" y="292.0" />
+      <point x="10.523809523809177" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.NumberToNumberConverterFactory" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="-75.25" y="-18.0" />
+      <point x="5832.088267543859" y="252.0" />
+      <point x="4410.7073151629065" y="252.0" />
+      <point x="52.619047619047706" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.FallbackObjectToStringConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
       <point x="-77.25" y="-18.0" />
-      <point x="6282.265899122806" y="272.0" />
-      <point x="5713.523809523808" y="272.0" />
-      <point x="10.523809523809177" y="18.0" />
+      <point x="4749.088267543859" y="282.0" />
+      <point x="4379.135886591479" y="282.0" />
+      <point x="21.047619047619264" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.StringToLocaleConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="61.25" y="-18.0" />
+      <point x="7305.46680764411" y="448.0" />
+      <point x="7793.588267543859" y="448.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.StreamConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="45.25" y="-18.0" />
+      <point x="4317.588267543859" y="292.0" />
+      <point x="4358.088267543859" y="292.0" />
+      <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.ArrayToStringConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
       <point x="59.25" y="-18.0" />
-      <point x="2883.4999999999995" y="212.0" />
-      <point x="5618.809523809523" y="212.0" />
-      <point x="-84.19047619047615" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.convert.support.StreamConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="45.249999999999545" y="-18.0" />
-      <point x="5300.249999999999" y="272.0" />
-      <point x="5681.95238095238" y="272.0" />
-      <point x="-21.047619047619264" y="18.0" />
+      <point x="2237.5882675438593" y="232.0" />
+      <point x="4294.945410401002" y="232.0" />
+      <point x="-63.14285714285688" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.NumberToCharacterConverter" target="org.springframework.core.convert.converter.Converter">
       <point x="-67.25" y="-18.0" />
-      <point x="5939.515899122806" y="398.0" />
-      <point x="2018.6" y="398.0" />
-      <point x="26.600000000000364" y="18.0" />
+      <point x="9025.838267543859" y="408.0" />
+      <point x="7837.921600877193" y="408.0" />
+      <point x="44.33333333333303" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.ConfigurableConversionService" target="org.springframework.core.convert.ConversionService">
-      <point x="0.0" y="-18.0" />
-      <point x="516.3583333333333" y="674.0" />
-      <point x="528.0" y="674.0" />
+      <point x="97.66666666666669" y="-18.0" />
+      <point x="714.5583333333334" y="694.0" />
+      <point x="941.75" y="694.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.ArrayToCollectionConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="-67.25" y="-18.0" />
-      <point x="5741.265899122806" y="282.0" />
-      <point x="5702.999999999999" y="282.0" />
-      <point x="0.0" y="18.0" />
+      <point x="67.25" y="-18.0" />
+      <point x="3311.5882675438593" y="262.0" />
+      <point x="4326.516838972431" y="262.0" />
+      <point x="-31.57142857142844" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.StringToBooleanConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="-63.25" y="-18.0" />
+      <point x="7897.838267543859" y="448.0" />
+      <point x="7802.454934210526" y="448.0" />
+      <point x="8.866666666666788" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.StringToPropertiesConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="-69.25" y="-18.0" />
+      <point x="9316.838267543859" y="398.0" />
+      <point x="7846.78826754386" y="398.0" />
+      <point x="53.19999999999982" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.ZoneIdToTimeZoneConverter" target="org.springframework.core.convert.converter.Converter">
       <point x="65.25" y="-18.0" />
-      <point x="1052.0" y="398.0" />
-      <point x="1956.5333333333333" y="398.0" />
+      <point x="1516.8382675438593" y="408.0" />
+      <point x="7758.1216008771935" y="408.0" />
       <point x="-35.46666666666624" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.GenericConversionService" target="org.springframework.core.convert.support.ConfigurableConversionService">
-      <point x="-63.25" y="-18.0" />
-      <point x="631.5" y="760.0" />
-      <point x="516.3583333333333" y="760.0" />
+      <point x="63.25" y="-18.0" />
+      <point x="501.75" y="780.0" />
+      <point x="616.8916666666667" y="780.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.StringToCharacterConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="-67.25" y="-18.0" />
-      <point x="3482.9999999999995" y="418.0" />
-      <point x="2000.8666666666663" y="418.0" />
-      <point x="8.866666666666788" y="18.0" />
+      <point x="67.25" y="-18.0" />
+      <point x="5246.338267543859" y="438.0" />
+      <point x="7784.721600877192" y="438.0" />
+      <point x="-8.866666666666788" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.ZonedDateTimeToCalendarConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="79.25" y="-18.0" />
+      <point x="641.75" y="378.0" />
+      <point x="7731.521600877193" y="378.0" />
+      <point x="-62.066666666666606" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.EnumToIntegerConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="-79.0" y="-18.0" />
-      <point x="9132.907957393483" y="368.0" />
-      <point x="2045.1999999999994" y="368.0" />
-      <point x="53.19999999999982" y="18.0" />
+      <point x="79.0" y="-18.0" />
+      <point x="938.5" y="388.0" />
+      <point x="7740.38826754386" y="388.0" />
+      <point x="-53.19999999999982" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.MapToMapConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="49.25" y="-18.0" />
-      <point x="2339.4999999999995" y="192.0" />
-      <point x="5597.761904761904" y="192.0" />
-      <point x="-105.23809523809541" y="18.0" />
+      <point x="-49.25" y="-18.0" />
+      <point x="5292.088267543859" y="272.0" />
+      <point x="4389.659696115288" y="272.0" />
+      <point x="31.57142857142844" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.StringToCollectionConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="69.25" y="-18.0" />
-      <point x="5584.765899122806" y="282.0" />
-      <point x="5692.47619047619" y="282.0" />
-      <point x="-10.523809523809177" y="18.0" />
+      <point x="-69.25" y="-18.0" />
+      <point x="7115.088267543859" y="212.0" />
+      <point x="4452.802553258145" y="212.0" />
+      <point x="94.71428571428532" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.ObjectToCollectionConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="-69.25" y="-18.0" />
+      <point x="5529.088267543859" y="262.0" />
+      <point x="4400.183505639097" y="262.0" />
+      <point x="42.09523809523762" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.StringToCharsetConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="63.25" y="-18.0" />
-      <point x="1326.9999999999995" y="408.0" />
-      <point x="1965.3999999999992" y="408.0" />
-      <point x="-26.600000000000364" y="18.0" />
+      <point x="-63.25" y="-18.0" />
+      <point x="8748.838267543859" y="418.0" />
+      <point x="7829.054934210526" y="418.0" />
+      <point x="35.46666666666624" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.DefaultConversionService" target="org.springframework.core.convert.support.GenericConversionService">
       <point x="63.25" y="-18.0" />
-      <point x="611.75" y="846.0" />
-      <point x="694.75" y="846.0" />
+      <point x="355.5" y="866.0" />
+      <point x="438.5" y="866.0" />
       <point x="0.0" y="18.0" />
     </edge>
+    <edge source="org.springframework.core.convert.support.StringToCurrencyConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="-65.25" y="-18.0" />
+      <point x="8172.838267543859" y="438.0" />
+      <point x="7811.321600877192" y="438.0" />
+      <point x="17.733333333333576" y="18.0" />
+    </edge>
     <edge source="org.springframework.core.convert.support.AbstractConditionalEnumConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="-79.25" y="-18.0" />
-      <point x="9370.765899122805" y="182.0" />
-      <point x="5808.2380952380945" y="182.0" />
-      <point x="105.23809523809541" y="18.0" />
+      <point x="79.25" y="-18.0" />
+      <point x="1033.5918076441108" y="202.0" />
+      <point x="4263.373981829574" y="202.0" />
+      <point x="-94.71428571428532" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.ArrayToObjectConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="-59.25" y="-18.0" />
-      <point x="8122.765899122806" y="212.0" />
-      <point x="5776.666666666666" y="212.0" />
-      <point x="73.66666666666697" y="18.0" />
+      <point x="59.25" y="-18.0" />
+      <point x="2701.5882675438593" y="242.0" />
+      <point x="4305.469219924811" y="242.0" />
+      <point x="-52.619047619047706" y="18.0" />
     </edge>
-    <edge source="org.springframework.core.convert.support.ObjectToOptionalConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="-65.25" y="-18.0" />
-      <point x="6888.265899122806" y="252.0" />
-      <point x="5734.5714285714275" y="252.0" />
-      <point x="31.57142857142844" y="18.0" />
+    <edge source="org.springframework.core.convert.support.EnumToIntegerConverter" target="org.springframework.core.convert.support.AbstractConditionalEnumConverter">
+      <point x="0.0" y="-18.0" />
+      <point x="859.5" y="368.0" />
+      <point x="875.0918076441108" y="368.0" />
+      <point x="-79.25" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.StringToArrayConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="59.25" y="-18.0" />
-      <point x="3926.2499999999995" y="232.0" />
-      <point x="5639.857142857142" y="232.0" />
-      <point x="-63.14285714285734" y="18.0" />
+      <point x="-59.25" y="-18.0" />
+      <point x="6137.088267543859" y="242.0" />
+      <point x="4421.231124686716" y="242.0" />
+      <point x="63.14285714285688" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.ObjectToOptionalConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="65.25" y="-18.0" />
+      <point x="266.0" y="192.0" />
+      <point x="4252.850172305763" y="192.0" />
+      <point x="-105.23809523809541" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.CollectionToCollectionConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="77.25" y="-18.0" />
+      <point x="3012.5882675438593" y="252.0" />
+      <point x="4315.99302944862" y="252.0" />
+      <point x="-42.09523809523853" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.EnumToStringConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="76.33333333333337" y="-18.0" />
+      <point x="1248.5833333333335" y="398.0" />
+      <point x="7749.254934210527" y="398.0" />
+      <point x="-44.33333333333303" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.ObjectToObjectConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="61.25" y="-18.0" />
+      <point x="3582.5882675438593" y="272.0" />
+      <point x="4337.0406484962405" y="272.0" />
+      <point x="-21.047619047619264" y="18.0" />
     </edge>
     <edge source="org.springframework.core.convert.support.IdToEntityConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
       <point x="-53.25" y="-18.0" />
-      <point x="7157.765899122806" y="242.0" />
-      <point x="5745.095238095237" y="242.0" />
-      <point x="42.09523809523762" y="18.0" />
+      <point x="7396.088267543859" y="202.0" />
+      <point x="4463.326362781954" y="202.0" />
+      <point x="105.23809523809541" y="18.0" />
     </edge>
-    <edge source="org.springframework.core.convert.support.ObjectToObjectConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
-      <point x="-61.25" y="-18.0" />
-      <point x="7626.765899122806" y="232.0" />
-      <point x="5755.619047619047" y="232.0" />
-      <point x="52.619047619047706" y="18.0" />
+    <edge source="org.springframework.core.convert.support.StringToTimeZoneConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="-65.25" y="-18.0" />
+      <point x="9609.838267543859" y="388.0" />
+      <point x="7855.654934210526" y="388.0" />
+      <point x="62.066666666666606" y="18.0" />
     </edge>
-    <edge source="org.springframework.core.convert.support.ObjectToStringConverter" target="org.springframework.core.convert.converter.Converter">
-      <point x="-61.25" y="-18.0" />
-      <point x="2609.0448621553883" y="428.0" />
-      <point x="1991.9999999999995" y="428.0" />
+    <edge source="org.springframework.core.convert.support.StringToUUIDConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="57.25" y="-18.0" />
+      <point x="2524.8382675438593" y="418.0" />
+      <point x="7766.9882675438585" y="418.0" />
+      <point x="-26.600000000000364" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.ConfigurableConversionService" target="org.springframework.core.convert.converter.ConverterRegistry">
+      <point x="5.6843418860808015E-14" y="-18.0" />
+      <point x="616.8916666666667" y="694.0" />
+      <point x="605.25" y="694.0" />
       <point x="0.0" y="18.0" />
     </edge>
+    <edge source="org.springframework.core.convert.support.ObjectToStringConverter" target="org.springframework.core.convert.converter.Converter">
+      <point x="61.25" y="-18.0" />
+      <point x="3886.8382675438593" y="428.0" />
+      <point x="7775.854934210525" y="428.0" />
+      <point x="-17.733333333333576" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.ByteBufferConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="-53.25" y="-18.0" />
+      <point x="6866.088267543859" y="222.0" />
+      <point x="4442.278743734336" y="222.0" />
+      <point x="84.19047619047615" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.CollectionToStringConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="69.25" y="-18.0" />
+      <point x="1721.5882675438593" y="212.0" />
+      <point x="4273.897791353384" y="212.0" />
+      <point x="-84.19047619047615" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.ObjectToArrayConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="-59.25" y="-18.0" />
+      <point x="6394.088267543859" y="232.0" />
+      <point x="4431.754934210527" y="232.0" />
+      <point x="73.66666666666697" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.CollectionToObjectConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="69.25" y="-18.0" />
+      <point x="4092.5882675438593" y="282.0" />
+      <point x="4347.56445802005" y="282.0" />
+      <point x="-10.523809523809177" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.convert.support.ArrayToArrayConverter" target="org.springframework.core.convert.converter.ConditionalConverter">
+      <point x="57.25" y="-18.0" />
+      <point x="1982.5882675438593" y="222.0" />
+      <point x="4284.421600877193" y="222.0" />
+      <point x="-73.66666666666697" y="18.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.167342032967033" x="2428.1672697320037" y="414.69870267408" />
+  <settings layout="Hierarchic Group" zoom="1.1431499129009124" x="3762.0722084022696" y="361.9133517994385" />
   <SelectedNodes>
     <node>org.springframework.core.convert.support.ConversionServiceFactory</node>
   </SelectedNodes>

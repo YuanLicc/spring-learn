@@ -3,81 +3,146 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.core.type</OriginalElement>
   <nodes>
-    <node x="202.0" y="253.0">org.springframework.core.type.filter</node>
-    <node x="589.5" y="86.0">org.springframework.core.type.MethodMetadata</node>
-    <node x="600.75" y="172.0">org.springframework.core.type.StandardMethodMetadata</node>
-    <node x="249.0" y="86.0">org.springframework.core.type.AnnotationMetadata</node>
-    <node x="0.0" y="253.0">org.springframework.core.type.package-info</node>
-    <node x="0.0" y="86.0">org.springframework.core.type.StandardClassMetadata</node>
-    <node x="217.75" y="0.0">org.springframework.core.type.ClassMetadata</node>
-    <node x="378.375" y="172.0">org.springframework.core.type.classreading</node>
-    <node x="77.95833333333337" y="172.0">org.springframework.core.type.StandardAnnotationMetadata</node>
-    <node x="502.875" y="0.0">org.springframework.core.type.AnnotatedTypeMetadata</node>
+    <node x="202.0" y="357.0">org.springframework.core.type.filter</node>
+    <node x="208.40104166666663" y="190.0">org.springframework.core.type.MethodMetadata</node>
+    <node x="631.9348958333334" y="190.0">org.springframework.core.type.AnnotationMetadata</node>
+    <node x="60.77604166666663" y="276.0">org.springframework.core.type.StandardMethodMetadata</node>
+    <node x="0.0" y="357.0">org.springframework.core.type.package-info</node>
+    <node x="1158.25" y="190.0">org.springframework.core.type.StandardClassMetadata</node>
+    <node x="964.0" y="94.0">org.springframework.core.type.ClassMetadata</node>
+    <node x="607.75" y="276.0">org.springframework.core.type.classreading</node>
+    <node x="1138.25" y="276.0">org.springframework.core.type.StandardAnnotationMetadata</node>
+    <node x="326.0" y="94.0">org.springframework.core.type.AnnotatedTypeMetadata</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="0.0" y="95.0">
+      <node>org.springframework.core.type.MethodMetadata</node>
+      <value>定义了访问指定方法的注解信息及方法信息。</value>
+      <edge>
+        <point x="-43.25" y="-18.0" />
+        <point x="251.65104166666663" y="165.0" />
+        <point x="153.0" y="165.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="575.0" y="84.0">
+      <node>org.springframework.core.type.AnnotationMetadata</node>
+      <value>继承自 ClassMetadata接口及AnnotatedTypeMetadata，\n可以理解为描述指定类元数据及其注解信息。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="734.4348958333334" y="165.0" />
+        <point x="759.5" y="165.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="86.15104166666663" y="191.0">
+      <node>org.springframework.core.type.StandardMethodMetadata</node>
+      <value>实现类。</value>
+      <edge>
+        <point x="-59.25" y="-18.0" />
+        <point x="120.02604166666663" y="256.0" />
+        <point x="127.15104166666663" y="256.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="1149.0" y="95.0">
+      <node>org.springframework.core.type.StandardClassMetadata</node>
+      <value>ClassMetadata 的实现类，使用的是标准的反射实现。</value>
+      <edge>
+        <point x="57.25" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="942.5" y="0.0">
+      <node>org.springframework.core.type.ClassMetadata</node>
+      <value>定义了指定类的抽象元数据。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="1407.25" y="191.0">
+      <node>org.springframework.core.type.StandardAnnotationMetadata</node>
+      <value>其父类的实现类。</value>
+      <edge>
+        <point x="89.66666666666663" y="-18.0" />
+        <point x="1362.4166666666665" y="256.0" />
+        <point x="1476.25" y="256.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="280.5" y="0.0">
+      <node>org.springframework.core.type.AnnotatedTypeMetadata</node>
+      <value>定义了访问指定类型（类或方法）的注解信息。</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+  </notes>
   <edges>
-    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.ClassMetadata">
-      <point x="0.0" y="-18.0" />
-      <point x="478.875" y="147.0" />
-      <point x="476.25" y="147.0" />
-      <point x="476.25" y="56.0" />
-      <point x="355.25" y="56.0" />
-      <point x="55.0" y="18.0" />
-    </edge>
     <edge source="org.springframework.core.type.StandardAnnotationMetadata" target="org.springframework.core.type.StandardClassMetadata">
-      <point x="-67.25" y="-18.0" />
-      <point x="145.20833333333337" y="147.0" />
-      <point x="114.5" y="147.0" />
+      <point x="0.0" y="-18.0" />
+      <point x="0.0" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.ClassMetadata">
+      <point x="67.0" y="-18.0" />
+      <point x="775.25" y="256.0" />
+      <point x="1046.5" y="256.0" />
       <point x="0.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.type.StandardClassMetadata" target="org.springframework.core.type.ClassMetadata">
-      <point x="0.0" y="-18.0" />
-      <point x="114.5" y="66.0" />
-      <point x="245.25" y="66.0" />
-      <point x="-55.0" y="18.0" />
+      <point x="-57.25" y="-18.0" />
+      <point x="1215.5" y="165.0" />
+      <point x="1101.5" y="165.0" />
+      <point x="55.0" y="18.0" />
     </edge>
     <edge source="org.springframework.core.type.MethodMetadata" target="org.springframework.core.type.AnnotatedTypeMetadata">
-      <point x="0.0" y="-18.0" />
-      <point x="676.0" y="66.0" />
-      <point x="674.625" y="66.0" />
-      <point x="57.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.MethodMetadata">
-      <point x="67.0" y="-18.0" />
-      <point x="545.875" y="147.0" />
-      <point x="632.75" y="147.0" />
-      <point x="-43.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.AnnotationMetadata">
-      <point x="-67.0" y="-18.0" />
-      <point x="411.875" y="147.0" />
-      <point x="402.75" y="147.0" />
-      <point x="51.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.type.StandardMethodMetadata" target="org.springframework.core.type.MethodMetadata">
-      <point x="0.0" y="-18.0" />
-      <point x="43.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.type.AnnotationMetadata" target="org.springframework.core.type.AnnotatedTypeMetadata">
-      <point x="51.25" y="-18.0" />
-      <point x="402.75" y="66.0" />
-      <point x="560.125" y="66.0" />
+      <point x="43.25" y="-18.0" />
+      <point x="338.15104166666663" y="165.0" />
+      <point x="383.25" y="165.0" />
       <point x="-57.25" y="18.0" />
     </edge>
-    <edge source="org.springframework.core.type.StandardAnnotationMetadata" target="org.springframework.core.type.AnnotationMetadata">
-      <point x="67.25" y="-18.0" />
-      <point x="279.70833333333337" y="147.0" />
-      <point x="300.25" y="147.0" />
+    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.AnnotationMetadata">
+      <point x="0.0" y="-18.0" />
+      <point x="708.25" y="256.0" />
+      <point x="683.1848958333334" y="256.0" />
       <point x="-51.25" y="18.0" />
     </edge>
+    <edge source="org.springframework.core.type.classreading" target="org.springframework.core.type.MethodMetadata">
+      <point x="-67.0" y="-18.0" />
+      <point x="641.25" y="256.0" />
+      <point x="338.15104166666663" y="256.0" />
+      <point x="43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.StandardMethodMetadata" target="org.springframework.core.type.MethodMetadata">
+      <point x="59.25" y="-18.0" />
+      <point x="238.52604166666663" y="256.0" />
+      <point x="251.65104166666663" y="256.0" />
+      <point x="-43.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.AnnotationMetadata" target="org.springframework.core.type.AnnotatedTypeMetadata">
+      <point x="-68.33333333333326" y="-18.0" />
+      <point x="666.1015625000001" y="165.0" />
+      <point x="497.75" y="165.0" />
+      <point x="57.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.type.StandardAnnotationMetadata" target="org.springframework.core.type.AnnotationMetadata">
+      <point x="-89.66666666666669" y="-18.0" />
+      <point x="1183.0833333333333" y="246.0" />
+      <point x="785.6848958333334" y="246.0" />
+      <point x="51.25" y="18.0" />
+    </edge>
     <edge source="org.springframework.core.type.AnnotationMetadata" target="org.springframework.core.type.ClassMetadata">
-      <point x="-51.25" y="-18.0" />
-      <point x="0.0" y="18.0" />
+      <point x="68.33333333333337" y="-18.0" />
+      <point x="802.7682291666667" y="165.0" />
+      <point x="991.5" y="165.0" />
+      <point x="-55.0" y="18.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="419.0" y="144.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="888.5" y="144.5" />
   <SelectedNodes>
-    <node>org.springframework.core.type.filter</node>
+    <node>org.springframework.core.type.StandardMethodMetadata</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
