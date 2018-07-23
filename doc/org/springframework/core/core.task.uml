@@ -3,54 +3,102 @@
   <ID>JAVA</ID>
   <OriginalElement>org.springframework.core.task</OriginalElement>
   <nodes>
-    <node x="310.5" y="86.0">org.springframework.core.task.SyncTaskExecutor</node>
-    <node x="93.5" y="86.0">org.springframework.core.task.AsyncTaskExecutor</node>
-    <node x="0.0" y="506.0">org.springframework.core.task.package-info</node>
-    <node x="181.0" y="258.0">org.springframework.core.task.SimpleAsyncTaskExecutor</node>
-    <node x="220.0" y="0.0">org.springframework.core.task.TaskExecutor</node>
-    <node x="53.5" y="172.0">org.springframework.core.task.AsyncListenableTaskExecutor</node>
-    <node x="0.0" y="339.0">org.springframework.core.task.TaskRejectedException</node>
-    <node x="0.0" y="258.0">org.springframework.core.task.support</node>
-    <node x="274.0" y="339.0">org.springframework.core.task.TaskDecorator</node>
-    <node x="4.0" y="425.0">org.springframework.core.task.TaskTimeoutException</node>
+    <node x="232.875" y="1594.0">org.springframework.core.task.SyncTaskExecutor</node>
+    <node x="809.75" y="1392.0">java.util.concurrent.Executor</node>
+    <node x="540.625" y="1594.0">org.springframework.core.task.AsyncTaskExecutor</node>
+    <node x="1620.75" y="0.0">org.springframework.core.task.package-info</node>
+    <node x="447.37500000000006" y="1766.0">org.springframework.core.task.SimpleAsyncTaskExecutor</node>
+    <node x="417.00000000000006" y="1498.0">org.springframework.core.task.TaskExecutor</node>
+    <node x="500.62500000000006" y="1680.0">org.springframework.core.task.AsyncListenableTaskExecutor</node>
+    <node x="1136.75" y="0.0">org.springframework.core.task.TaskRejectedException</node>
+    <node x="782.75" y="1766.0">org.springframework.core.task.support</node>
+    <node x="1410.75" y="0.0">org.springframework.core.task.TaskDecorator</node>
+    <node x="1140.75" y="86.0">org.springframework.core.task.TaskTimeoutException</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="0.0" y="1488.0">
+      <node>org.springframework.core.task.SyncTaskExecutor</node>
+      <value>TaskExecutor 的实现，采用在调用线程中同步执行每个任务\n的策略。此实现类主要适用于测试环境。</value>
+      <edge>
+        <point x="-47.25" y="-18.0" />
+        <point x="280.125" y="1569.0" />
+        <point x="198.5" y="1569.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+    <note x="652.75" y="0.0">
+      <node>java.util.concurrent.Executor</node>
+      <value>java.util.concurrent.Executor:\n执行 Runnable tasks，此接口提供一种将任务提交与任务\n执行分离的方法，包括线程使用及调度等详情。一个Executor\n可以被多个任务使用而不是每一个任务创建一个executor：\nExecutor exe = ...;\nexe.execute(new RunnableTask1());\nexe.execute(new RunnableTask2());\n...\n\nExecutor 并不严格的要求执行是异步的。在最简单的情况下，\n一个 executor 可以立即在调用者的线程中运行任务：\n\nclass DirectExecutor implements Executor {\n  public void execite(Runnable runnable) {\n    runnable.run();\n  }\n}\n\n更典型的情况是，任务在调用线程之外的其它线程执行。下面\n的例子为每个任务创建一个新的线程：\n\nclass ThreadPerTaskExecutor implements Executor {\n  public void execute(Runnable r) {\n    new Thread(r).start();\n  }\n}\n\n一些Executor 在任务怎样以及何时调用上加了简单的限制。\n下面的例子中序列化了任务的提交到另一个 executor：\nclass SerialExecutor implements Executor {\n  final Queue&lt;Runnable&gt; tasks = new ArrayDeque&lt;Runnable&gt;();\n  final Executor executor;\n  Runnable active;\n\n  SerialExecutor(Executor executor) {\n    this.executor = executor;\n  }\n\n  public synchronized void execute(Runnable r) {\n    tasks.offer(new Runnable) {\n      public void run() {\n        try{\n          r.run();\n        }\n        finally {\n          scheduleNext();\n        }\n      }\n    });\n    if(active == null) {\n      scheduleNext();\n    }\n  }\n\n  protected synchronized void scheduleNext() {\n    if((active = tasks.poll()) != null) {\n      executor.execute(active);\n    }\n  }\n}</value>
+      <edge>
+        <point x="0.0" y="-18.0" />
+        <point x="0.0" y="666.0" />
+      </edge>
+    </note>
+    <note x="594.0" y="1499.0">
+      <node>org.springframework.core.task.AsyncTaskExecutor</node>
+      <value>TaskExecutor 的实现，采用异步执行策略。</value>
+      <edge>
+        <point x="49.25" y="-18.0" />
+        <point x="688.375" y="1569.0" />
+        <point x="743.5" y="1569.0" />
+        <point x="0.0" y="17.0" />
+      </edge>
+    </note>
+    <note x="261.25000000000006" y="1382.0">
+      <node>org.springframework.core.task.TaskExecutor</node>
+      <value>与父接口无任何差别，实现类可使用任意的执行策略，如：\n异步，同步，线程池等。</value>
+      <edge>
+        <point x="-39.25" y="-18.0" />
+        <point x="0.0" y="28.0" />
+      </edge>
+    </note>
+  </notes>
   <edges>
     <edge source="org.springframework.core.task.TaskTimeoutException" target="org.springframework.core.task.TaskRejectedException">
       <point x="0.0" y="-18.0" />
       <point x="0.0" y="18.0" />
     </edge>
+    <edge source="org.springframework.core.task.support" target="java.util.concurrent.Executor">
+      <point x="40.25" y="-18.0" />
+      <point x="31.25" y="18.0" />
+    </edge>
     <edge source="org.springframework.core.task.SimpleAsyncTaskExecutor" target="org.springframework.core.task.AsyncListenableTaskExecutor">
       <point x="0.0" y="-18.0" />
-      <point x="303.5" y="233.0" />
-      <point x="261.25" y="233.0" />
-      <point x="69.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.task.AsyncTaskExecutor" target="org.springframework.core.task.TaskExecutor">
-      <point x="0.0" y="-18.0" />
-      <point x="192.0" y="61.0" />
-      <point x="259.25" y="61.0" />
-      <point x="-39.25" y="18.0" />
-    </edge>
-    <edge source="org.springframework.core.task.support" target="org.springframework.core.task.AsyncListenableTaskExecutor">
-      <point x="0.0" y="-18.0" />
-      <point x="80.5" y="233.0" />
-      <point x="122.75" y="233.0" />
       <point x="-69.25" y="18.0" />
     </edge>
-    <edge source="org.springframework.core.task.SyncTaskExecutor" target="org.springframework.core.task.TaskExecutor">
-      <point x="0.0" y="-18.0" />
-      <point x="405.0" y="61.0" />
-      <point x="337.75" y="61.0" />
+    <edge source="org.springframework.core.task.AsyncTaskExecutor" target="org.springframework.core.task.TaskExecutor">
+      <point x="-49.25" y="-18.0" />
+      <point x="589.875" y="1569.0" />
+      <point x="534.75" y="1569.0" />
       <point x="39.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.task.support" target="org.springframework.core.task.AsyncListenableTaskExecutor">
+      <point x="-40.25" y="-18.0" />
+      <point x="823.0" y="1741.0" />
+      <point x="708.375" y="1741.0" />
+      <point x="69.25" y="18.0" />
+    </edge>
+    <edge source="org.springframework.core.task.SyncTaskExecutor" target="org.springframework.core.task.TaskExecutor">
+      <point x="47.25" y="-18.0" />
+      <point x="374.625" y="1569.0" />
+      <point x="456.25000000000006" y="1569.0" />
+      <point x="-39.25" y="18.0" />
     </edge>
     <edge source="org.springframework.core.task.AsyncListenableTaskExecutor" target="org.springframework.core.task.AsyncTaskExecutor">
       <point x="0.0" y="-18.0" />
       <point x="0.0" y="18.0" />
     </edge>
+    <edge source="org.springframework.core.task.TaskExecutor" target="java.util.concurrent.Executor">
+      <point x="39.25" y="-18.0" />
+      <point x="534.75" y="1463.0" />
+      <point x="841.0" y="1463.0" />
+      <point x="-31.25" y="18.0" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="250.0" y="271.0" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="459.0" y="1418.5" />
+  <SelectedNodes>
+    <node>org.springframework.core.task.AsyncTaskExecutor</node>
+  </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>public</VISIBILITY>
