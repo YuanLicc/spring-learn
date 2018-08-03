@@ -1,2 +1,7 @@
 version '1.0'
 group 'com.yl.learn'
+
+dependencies {
+    compile ("org.springframework:spring-beans:${springVersion}")
+    compile "com.yl:common:1.0"
+}

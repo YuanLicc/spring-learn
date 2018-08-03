@@ -18,4 +18,6 @@ dependencies {
     compile "org.aspectj:aspectjweaver:${aspectjVersion}"
     compile "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
     compile 'io.projectreactor:reactor-core:+'
+    compile "org.springframework:spring-jdbc:${springVersion}"
+    compile "com.yl:common:1.0"
 }

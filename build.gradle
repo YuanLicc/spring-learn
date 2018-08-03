@@ -19,6 +19,10 @@ allprojects {
             name 'aliyun'
             url 'http://maven.aliyun.com/nexus/content/groups/public/'
         }
+        maven {
+            name 'github_yuanli'
+            url 'https://raw.github.com/YuanLicc/maven-repository/1.0/'
+        }
     }
 }
 
