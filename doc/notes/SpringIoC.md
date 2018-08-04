@@ -1,6 +1,6 @@
 笔记摘自书籍[《Spring 技术内幕》](https://www.amazon.cn/dp/B0077K9ZXY/ref=sr_1_1?s=books&ie=UTF8&qid=1533281111&sr=1-1&keywords=Spring+%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95)
 
-## Spring 核心：IoC 的实现
+## Spring 核心：IoC
 
 ### Spring IoC 容器概述
 
@@ -192,69 +192,68 @@ IoC 容器对 Bean 的管理和依赖注入功能的实现，是通过对其持�
 
 ```java
 public void refresh() throws BeansException, IllegalStateException {
-		synchronized (this.startupShutdownMonitor) {
-            // 为上下文刷新做准备，包含 Environment 的创建及环境相关的 properties 的初始化及验证
-            //  
-            prepareRefresh();
+    synchronized (this.startupShutdownMonitor) {
+        // 为上下文刷新做准备，包含 Environment 的创建及环境相关的 properties 的初始化及验证
+        //  
+        prepareRefresh();
 
-            // 刷新内部的 bean factory （存在 bean factory 则销毁再创建）
-            // 刷新过程中还包含对 BeanDefinition 的载入
-            ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
+        // 刷新内部的 bean factory （存在 bean factory 则销毁再创建）
+        // 刷新过程中还包含对 BeanDefinition 的载入
+        ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
-            // 对BeanFactory进行一些配置，包含上下文的类加载器、表达式解析器，忽略一些依赖的接口等
-            prepareBeanFactory(beanFactory);
+        // 对BeanFactory进行一些配置，包含上下文的类加载器、表达式解析器，忽略一些依赖的接口等
+        prepareBeanFactory(beanFactory);
 
-            try {
-                // 配置 BeanFactory 的后置处理
-                postProcessBeanFactory(beanFactory);
+        try {
+            // 配置 BeanFactory 的后置处理
+            postProcessBeanFactory(beanFactory);
 
-                // 调用 BeanFactory 的后处理器，这些后处理器是在 Bean 定义中向容器注册的
-                invokeBeanFactoryPostProcessors(beanFactory);
+            // 调用 BeanFactory 的后处理器，这些后处理器是在 Bean 定义中向容器注册的
+            invokeBeanFactoryPostProcessors(beanFactory);
 
-                // 注册 bean 的后处理器，在 Bean 创建过程中调用。
-                registerBeanPostProcessors(beanFactory);
+            // 注册 bean 的后处理器，在 Bean 创建过程中调用。
+            registerBeanPostProcessors(beanFactory);
 
-                // 上下文的消息源进行初始化
-                initMessageSource();
+            // 上下文的消息源进行初始化
+            initMessageSource();
 
-                // 初始化上下文的事件机制
-                initApplicationEventMulticaster();
+            // 初始化上下文的事件机制
+            initApplicationEventMulticaster();
 
-                // Initialize other special beans in specific context subclasses.
-                onRefresh();
+            // 初始化其它特殊 bean.
+            onRefresh();
 
-                // Check for listener beans and register them.
-                registerListeners();
+            // 检测监听 bean 并向容器注册这些 bean
+            registerListeners();
 
-                // Instantiate all remaining (non-lazy-init) singletons.
-                finishBeanFactoryInitialization(beanFactory);
+            // 实例化所有需要直接初始化的单例 bean
+            // init-lazy=false
+            finishBeanFactoryInitialization(beanFactory);
 
-                // Last step: publish corresponding event.
-                finishRefresh();
-            }
-
-            catch (BeansException ex) {
-                if (logger.isWarnEnabled()) {
-                    logger.warn("Exception encountered during context initialization - " +
-                                "cancelling refresh attempt: " + ex);
-                }
-
-                // Destroy already created singletons to avoid dangling resources.
-                destroyBeans();
-
-                // Reset 'active' flag.
-                cancelRefresh(ex);
-
-                // Propagate exception to caller.
-                throw ex;
-            }
-
-            finally {
-                // Reset common introspection caches in Spring's core, since we
-                // might not ever need metadata for singleton beans anymore...
-                resetCommonCaches();
-            }
+            // 发布容器时间，结束 refresh 过程
+            finishRefresh();
         }
+
+        catch (BeansException ex) {
+            if (logger.isWarnEnabled()) {
+                logger.warn("Exception encountered during context initialization - " +
+                            "cancelling refresh attempt: " + ex);
+            }
+
+            // 为防止 bean 资源占用，在异常处理中，销毁已经在前面过程中生成的单例 bean
+            destroyBeans();
+
+            // 重置 active 标志
+            cancelRefresh(ex);
+
+            throw ex;
+        }
+        finally {
+            // Reset common introspection caches in Spring's core, since we
+            // might not ever need metadata for singleton beans anymore...
+            resetCommonCaches();
+        }
+    }
 }
 ```
 
@@ -268,4 +267,263 @@ registerBeanDefinition 方法进行解析并转化为容器内部数据结构，
 
 ### 依赖注入
 
-依赖注入的发生其实就是当需要一个 Bean 时发生的，若需要的 bean 存在依赖，那么就会触发依赖注入，完成后IOC 会返回一个已经注入的 Bean。
+依赖注入的发生其实就是当需要一个 Bean 时发生的，若需要的 bean 存在依赖，那么就会触发依赖注入，完成后IOC 会返回一个已经注入的 Bean。在 Bean 的创建和对象依赖注入的过程中，需要根据 BeanDefinition 中的信息来递归的完成依赖注入。从 getBean 为入口，从上下文中查找需要的 Bean 和创建 bean 的递归调用，另一个递归是依赖注入时，通过递归调用容器的 getBean 方法，得到当前 Bean 依赖的 Bean，同时也触发对依赖 Bean 的创建和注入。在 Bean 创建和依赖注入完成之后，在 IoC 容器中建立起一系列依靠依赖关系联系起来的 Bean，这个 Bean 已经不是简单的 Java 对象了。该 Bean 系列以及 Bean 之间的依赖关系建立完成之后，通过 IoC 容器的相关接口方法，就可以非常方便的供上层应用使用了。
+
+
+
+### 容器其它特性
+
+#### ApplicationContext 和 Bean 的初始化及销毁
+
+对 BeanFactory，特别是 ApplicationContext，容器自身也有一个初始化和销毁关闭的过程。在分析 Bean 初始化和销毁之前，需要介绍一下 IoC 容器中的 Bean 声明周期：
+
+1）Bean 实例的创建
+
+2）为 Bean 实例设置属性
+
+3）调用 Bean 的初始化方法
+
+4）应用可以通过 IoC 容器使用 Bean
+
+5）当容器关闭时，调用 Bean 销毁方法
+
+Bean 的初始化方法调用如下：
+
+```java
+protected Object initializeBean(final String beanName, final Object bean, @Nullable RootBeanDefinition mbd) {
+    if (System.getSecurityManager() != null) {
+        AccessController.doPrivileged((PrivilegedAction<Object>) () -> {
+            invokeAwareMethods(beanName, bean);
+            return null;
+        }, getAccessControlContext());
+    }
+    else {
+        invokeAwareMethods(beanName, bean);
+    }
+
+    Object wrappedBean = bean;
+    if (mbd == null || !mbd.isSynthetic()) {
+        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);
+    }
+
+    try {
+        invokeInitMethods(beanName, wrappedBean, mbd);
+    }
+    catch (Throwable ex) {
+        throw new BeanCreationException(
+            (mbd != null ? mbd.getResourceDescription() : null),
+            beanName, "Invocation of init method failed", ex);
+    }
+    if (mbd == null || !mbd.isSynthetic()) {
+        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);
+    }
+
+    return wrappedBean;
+}
+
+private void invokeAwareMethods(final String beanName, final Object bean) {
+    if (bean instanceof Aware) {
+        if (bean instanceof BeanNameAware) {
+            ((BeanNameAware) bean).setBeanName(beanName);
+        }
+        if (bean instanceof BeanClassLoaderAware) {
+            ClassLoader bcl = getBeanClassLoader();
+            if (bcl != null) {
+                ((BeanClassLoaderAware) bean).setBeanClassLoader(bcl);
+            }
+        }
+        if (bean instanceof BeanFactoryAware) {
+            ((BeanFactoryAware) bean).setBeanFactory(AbstractAutowireCapableBeanFactory.this);
+        }
+    }
+}
+```
+
+在 bean 的初始化之前，会调用一系列的 Aware 接口实现，把相关的信息注入到 Bean 中去。接着会调用 invokeInitMethods 方法：
+
+```java
+protected void invokeInitMethods(String beanName, final Object bean, @Nullable RootBeanDefinition mbd) throws Throwable {
+
+    boolean isInitializingBean = (bean instanceof InitializingBean);
+    if (isInitializingBean && (mbd == null ||
+             !mbd.isExternallyManagedInitMethod("afterPropertiesSet"))) {
+        
+        if (logger.isDebugEnabled()) {
+            logger.debug("Invoking afterPropertiesSet() on bean with name '" + beanName + "'");
+        }
+        if (System.getSecurityManager() != null) {
+            try {
+                AccessController.doPrivileged((PrivilegedExceptionAction<Object>) () -> {
+                    ((InitializingBean) bean).afterPropertiesSet();
+                    return null;
+                }, getAccessControlContext());
+            }
+            catch (PrivilegedActionException pae) {
+                throw pae.getException();
+            }
+        }
+        else {
+            ((InitializingBean) bean).afterPropertiesSet();
+        }
+    }
+
+    if (mbd != null && bean.getClass() != NullBean.class) {
+        String initMethodName = mbd.getInitMethodName();
+        if (StringUtils.hasLength(initMethodName) &&
+            !(isInitializingBean && "afterPropertiesSet".equals(initMethodName)) &&
+            !mbd.isExternallyManagedInitMethod(initMethodName)) {
+            invokeCustomInitMethod(beanName, bean, mbd);
+        }
+    }
+}
+```
+
+而 Bean 的销毁与初始化类似：
+
+```java
+protected void doClose() {
+    if (this.active.get() && this.closed.compareAndSet(false, true)) {
+        if (logger.isInfoEnabled()) {
+            logger.info("Closing " + this);
+        }
+
+        LiveBeansView.unregisterApplicationContext(this);
+
+        try {
+            // Publish shutdown event.
+            publishEvent(new ContextClosedEvent(this));
+        }
+        catch (Throwable ex) {
+            logger.warn("Exception thrown from ApplicationListener handling ContextClosedEvent", ex);
+        }
+
+        // Stop all Lifecycle beans, to avoid delays during individual destruction.
+        if (this.lifecycleProcessor != null) {
+            try {
+                this.lifecycleProcessor.onClose();
+            }
+            catch (Throwable ex) {
+                logger.warn("Exception thrown from LifecycleProcessor on context close", ex);
+            }
+        }
+
+        // Destroy all cached singletons in the context's BeanFactory.
+        destroyBeans();
+
+        // Close the state of this context itself.
+        closeBeanFactory();
+
+        // Let subclasses do some final clean-up if they wish...
+        onClose();
+
+        this.active.set(false);
+    }
+}
+```
+
+其中调用 destroy 方法，对 Bean 进行销毁处理
+
+```java
+public void destroy() {
+    if (!CollectionUtils.isEmpty(this.beanPostProcessors)) {
+        for (DestructionAwareBeanPostProcessor processor : this.beanPostProcessors) {
+            processor.postProcessBeforeDestruction(this.bean, this.beanName);
+        }
+    }
+
+    if (this.invokeDisposableBean) {
+        if (logger.isDebugEnabled()) {
+            logger.debug("Invoking destroy() on bean with name '" + this.beanName + "'");
+        }
+        try {
+            if (System.getSecurityManager() != null) {
+                AccessController.doPrivileged((PrivilegedExceptionAction<Object>) () -> {
+                    ((DisposableBean) bean).destroy();
+                    return null;
+                }, acc);
+            }
+            else {
+                ((DisposableBean) bean).destroy();
+            }
+        }
+        catch (Throwable ex) {
+            String msg = "Invocation of destroy method failed on bean with name '" + this.beanName + "'";
+            if (logger.isDebugEnabled()) {
+                logger.warn(msg, ex);
+            }
+            else {
+                logger.warn(msg + ": " + ex);
+            }
+        }
+    }
+
+    if (this.destroyMethod != null) {
+        invokeCustomDestroyMethod(this.destroyMethod);
+    }
+    else if (this.destroyMethodName != null) {
+        Method methodToCall = determineDestroyMethod(this.destroyMethodName);
+        if (methodToCall != null) {
+            invokeCustomDestroyMethod(methodToCall);
+        }
+    }
+}
+```
+
+#### FactoryBean 
+
+FactoryBean 为应用生成需要的对象，这些对象往往是经过特殊处理的，如 ProxyFactoryBean 这样的特殊 Bean。这种 FactoryBean 的机制可以为我们提供一个很好的封装机制，比如封装 Proxy、RMI、JNDI等。
+
+
+
+#### BeanPostProcessor
+
+BeanPostProcessor 是使用 IoC 容器时经常会遇到的一个特性，这个 Bean 的后置处理器是一个监听器，它可以监听触发的事件。将它向 IoC 容器注册后，容器中管理的 Bean 具备了接收 IoC 容器事件回调的能力。使用 BeanPostProcessor 很简单，首先实现接口 BeanPostProcessor ：
+
+```java
+class InstanceProcessor implements BeanPostProcessor {
+    @Override
+    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+        return null;
+    }
+
+    @Override
+    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+        return null;
+    }
+}
+```
+
+实现后通过 XML 配置到 Bean 中去即可。前一个方法会在 Bean 的初始化前调用，后一个方法会在 Bean 初始化后进行调用。
+
+
+
+#### autowiring
+
+IoC 自动依赖装配的方式，为应用使用容器提供更大的方便，不需对Bean属性做显式的依赖关系声明，只需要配置好 autowiring 属性，IoC 容器会根据这个属性的而配置，使用反射自动找到属性的类型或者名字，然后基于属性的类型或名字来自动匹配 IoC 容器中的 Bean，从而自动完成依赖注入。
+
+
+
+#### bean 的依赖检查
+
+在 Bean 中配置 dependency-check 属性来指定依赖检查模式，包括：`none`、`simple`、`object`、`all`。
+
+
+
+#### Bean 对 IoC 容器的感知
+
+bean 可以实现 aware 接口来获取这些对象：
+
+1）BeanNameAware，可以在 Bean 中得到在 IOC 容器中的 Bean name。
+
+2）BeanFactoryAware，可以在 Bean 中得到 Bean 所在的IoC 容器。
+
+3）ApplicationContextAware，得到 Bean 所在的应用上下文。
+
+4）MessageSourceAware，得到消息源。
+
+5）ApplicationEventPublisherAware，得到应用上下文的事件发布器，从而可以在 Bean 中发布应用上下文的事件。
+
+6）ResourceLoaderAware，得到ResourceLoader，从而在 Bean 中使用 ResourceLoader 加载外部对应的 Resource 资源。
+
+在bean 初始化过程中会对这些资源进行注入。
+
