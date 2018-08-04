@@ -193,68 +193,79 @@ IoC 容器对 Bean 的管理和依赖注入功能的实现，是通过对其持�
 ```java
 public void refresh() throws BeansException, IllegalStateException {
 		synchronized (this.startupShutdownMonitor) {
-			// 为上下文刷新做准备，包含 Environment 的创建及环境相关的 properties 的初始化及验证
-             //  
-			prepareRefresh();
+            // 为上下文刷新做准备，包含 Environment 的创建及环境相关的 properties 的初始化及验证
+            //  
+            prepareRefresh();
 
-			// 刷新内部的 bean factory （存在 bean factory 则销毁再创建）
-             // 刷新过程中还包含对 BeanDefinition 的载入
-			ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
+            // 刷新内部的 bean factory （存在 bean factory 则销毁再创建）
+            // 刷新过程中还包含对 BeanDefinition 的载入
+            ConfigurableListableBeanFactory beanFactory = obtainFreshBeanFactory();
 
-			// 对BeanFactory进行一些配置，包含上下文的类加载器、表达式解析器，忽略一些依赖的接口等
-			prepareBeanFactory(beanFactory);
+            // 对BeanFactory进行一些配置，包含上下文的类加载器、表达式解析器，忽略一些依赖的接口等
+            prepareBeanFactory(beanFactory);
 
-			try {
-				// 配置 BeanFactory 的后置处理
-				postProcessBeanFactory(beanFactory);
+            try {
+                // 配置 BeanFactory 的后置处理
+                postProcessBeanFactory(beanFactory);
 
-				// 调用 BeanFactory 的后处理器，这些后处理器是在 Bean 定义中向容器注册的
-				invokeBeanFactoryPostProcessors(beanFactory);
+                // 调用 BeanFactory 的后处理器，这些后处理器是在 Bean 定义中向容器注册的
+                invokeBeanFactoryPostProcessors(beanFactory);
 
-				// 注册 bean 的后处理器，在 Bean 创建过程中调用。
-				registerBeanPostProcessors(beanFactory);
+                // 注册 bean 的后处理器，在 Bean 创建过程中调用。
+                registerBeanPostProcessors(beanFactory);
 
-				// 上下文的消息源进行初始化
-				initMessageSource();
+                // 上下文的消息源进行初始化
+                initMessageSource();
 
-				// 初始化上下文的事件机制
-				initApplicationEventMulticaster();
+                // 初始化上下文的事件机制
+                initApplicationEventMulticaster();
 
-				// Initialize other special beans in specific context subclasses.
-				onRefresh();
+                // Initialize other special beans in specific context subclasses.
+                onRefresh();
 
-				// Check for listener beans and register them.
-				registerListeners();
+                // Check for listener beans and register them.
+                registerListeners();
 
-				// Instantiate all remaining (non-lazy-init) singletons.
-				finishBeanFactoryInitialization(beanFactory);
+                // Instantiate all remaining (non-lazy-init) singletons.
+                finishBeanFactoryInitialization(beanFactory);
 
-				// Last step: publish corresponding event.
-				finishRefresh();
-			}
+                // Last step: publish corresponding event.
+                finishRefresh();
+            }
 
-			catch (BeansException ex) {
-				if (logger.isWarnEnabled()) {
-					logger.warn("Exception encountered during context initialization - " +
-							"cancelling refresh attempt: " + ex);
-				}
+            catch (BeansException ex) {
+                if (logger.isWarnEnabled()) {
+                    logger.warn("Exception encountered during context initialization - " +
+                                "cancelling refresh attempt: " + ex);
+                }
 
-				// Destroy already created singletons to avoid dangling resources.
-				destroyBeans();
+                // Destroy already created singletons to avoid dangling resources.
+                destroyBeans();
 
-				// Reset 'active' flag.
-				cancelRefresh(ex);
+                // Reset 'active' flag.
+                cancelRefresh(ex);
 
-				// Propagate exception to caller.
-				throw ex;
-			}
+                // Propagate exception to caller.
+                throw ex;
+            }
 
-			finally {
-				// Reset common introspection caches in Spring's core, since we
-				// might not ever need metadata for singleton beans anymore...
-				resetCommonCaches();
-			}
-		}
-	}
+            finally {
+                // Reset common introspection caches in Spring's core, since we
+                // might not ever need metadata for singleton beans anymore...
+                resetCommonCaches();
+            }
+        }
+}
 ```
 
+registerBeanDefinition 方法进行解析并转化为容器内部数据结构，BeanDefinition 的载入包括两部分，首先是通过调用 XML 的解析器得到 document 对象，但这些 document 对象并没有按照 Spring 的 Bean 规则进行解析。在完成通用的 XML 解析过后，才是按照 Spring 的 Bean 规则进行解析的地方，按照Spring 的 Bean 规则进行解析的过程是在 documentReader 中实现的，处理过后再完成 BeanDefinition 的处理，处理结果由 BeanDefinitionHolder 对象持有。这个 BeanDefinitionHolder 除了持有 BeanDefinition 对象外，还持有了其它与 BeanDefinition 的使用相关的信息，比如 Bean 的名字、别名集合等。而具体的解析在 BeanDefinitionParserDelegate 中完成。这个类包含了 Bean 定义规则的处理。对于其它元素配置的解析，会由parseBeanDefinitionElement 来完成。
+
+#### BeanDefinition 在容器中的注册
+
+前面已经解析的 BeanDefinition 此时还不能直接被 IOC 容器使用，需要在 IOC 容器中对这些 BeanDefinition 进行注册。这个注册为 IOC 容器提供更友好的使用方式。在 DefaultListableBeanFactory 中实现了 BeanDefinitionRegistry 的接口，这个接口的实现完成 BeanDefinition 向容器的注册。注册就是把 BeanDefinition 设置到 Map 中去。需要注意的是，如果遇见同名的 BeanDefinition 的情况，进行处理的时候需要依据 allowBeanDefinitionOverriding 的配置来完成，若存在相同名字的 BeanDefinition，再检查是否允许覆盖，若不允许则抛出异常。
+
+完成了 BeanDefinition 的注册，就完成了 IOC 容器的初始化过程，此时，在我们使用的 IOC 容器 中已经建立了整个 Bean 的配置信息，而且这些 BeanDefinition已经可以被容器使用。容器的作用就是对这些信息进行处理和维护。这些信息是容器建立依赖注入的基础。
+
+### 依赖注入
+
+依赖注入的发生其实就是当需要一个 Bean 时发生的，若需要的 bean 存在依赖，那么就会触发依赖注入，完成后IOC 会返回一个已经注入的 Bean。
