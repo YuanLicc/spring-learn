@@ -133,3 +133,23 @@ AOP 模块是 Spring 的核心模块，AOP 的核心技术就是代理技术。
 </bean>
 ```
 
+
+
+### Spring AOP 的高级特性
+
+在使用 AOP 时，对目标对象的增强是通过拦截器来完成而定，对于一些场景下，需要对目标对象本身进行一些处理，比如，如何从一个对象池中获得目标对象等。这些情况，需要使用 Spring 的targetSource 接口特性，把这种当做 AOP 的高级特性。
+
+Spring 提供了许多线程的 TargetSource 实现，比如 HotSwapableTargetSource，HotSwappableTargetSource 使用户可以以线程安全的方式切换目标对象，提供所谓的热交换功能。这个特性是很有用的，尽管它的开启需要 AOP 应用进行显示的配置，但配置并不复杂，在使用时，只需要把 HotSwappableTargetSource 配置到 ProxyFactoryBean 的 target 属性即可，在需要更换真正的目标对象时，调用 HotSwappableTargetSource 的 swap 方法就可以完成。
+
+```java
+public synchronized Object swap(Object newTarget) throws IllegalArgumentException {
+    Assert.notNull(newTarget, "Target object must not be null");
+    Object old = this.target;
+    this.target = newTarget;
+    return old;
+}
+```
+
+这个 target 是怎样在 AOP 中起作用的呢？HotSwappableTargetSource 只是对真正的 target 做了一个简单的封装，提供热交换的能力，并没有其他特别之处。
+
+AOP 对 Proxy 代理对象进行 Invoke 方法调用时，会通过getTarget 调用去的真正的目标对象，如果已经调用过 swap 方法完成目标对象的热交换，那么交给 AOP 的已经是交换后的目标对象了。这个热交换功能为 AOP 的使用提供了更多的便利，对构建应用的基础服务非常有帮助，比如可以在运行支持需要改变的对象进行重新配置。对
