@@ -250,8 +250,137 @@ public final void init() throws ServletException {
 }
 ```
 
-在初始化开始时，需要读取配置在 ServletContext 中的 Bean 属性参数，这写属性参数设置在 web.xml 的 web 容器初始化参数中，使用编程式的方式来设置这些 bean 属性，这里的依赖注入是与 web 容器初始化相关的。
+在初始化开始时，需要读取配置在 ServletContext 中的 Bean 属性参数，这些属性参数设置在 web.xml 的 web 容器初始化参数中，使用编程式的方式来设置这些 bean 属性，这里的依赖注入是与 web 容器初始化相关的。
 
-接着会执行 DispatcherServlet 持有的 IoC 容器的初始化过程，在这个初始化过程中，一个新的上下文被建立起来，这个 DispatcherServlet 持有的上下文被设置为根上下文的子上下文，DispatcherServlet 持有的上下文是和 Servlet对应的一个上下文。在一个 web 应用中，往往可以容纳多个 Servlet 存在。与此相对应，对于应用在 Web 容器中的上下文体系，一个根上下文可以作为许多 Servlet 上下文的双亲上下文。
+接着会执行 DispatcherServlet 持有的 IoC 容器的初始化过程，在这个初始化过程中，一个新的上下文被建立起来，这个 DispatcherServlet 持有的上下文被设置为根上下文的子上下文，DispatcherServlet 持有的上下文是和 Servlet 对应的一个上下文。在一个 web 应用中，往往可以容纳多个 Servlet 存在。与此相对应，对于应用在 Web 容器中的上下文体系，一个根上下文可以作为许多 Servlet 上下文的双亲上下文。
 
-根上下文 ContextLoader 设置到 ServletContext 中去的，
+建立 DispatcherServlet 的上下文，需要把跟上下文作为参数传递给它，然后使用反射技术来实例化上下文对象，并为它设置参数。根据默认的配置，这个上下文对象也是 XMLWebApplicationContext 对象，这个类型是在 DEFAULT_CONTEXT_CLASS 参数中设置好并允许 BeanUtils 使用的。在实例化结束以后，需要为这个上下文对象设置好一些基本的配置，这些配置包括它的双亲上下文、Bean 定义配置的文件位置等。完成这些配置以后，最后通过调用 IOC 容器的 refresh 方法来完成 IOC 容器的最终初始化。
+
+此时 DispatcherServlet 中的 IOC 容器已经建立起来了，这个 IOC 容器是根上下文的子容器。这样的设置，使得具体的一个 Bean 定义查找过程来说，如果要查找一个 由 DispatcherServlet 所在容器来管理的 Bean，系统会首先到根上下文中去查找。如果查找不到，才会到 DispatcherServlet 所管理的 IOC 容器中进行查找，这是由 IOC 容器 getBean 的实现来决定的。
+
+DispatcherServlet 持有一个以自己的 Servlet 名称命名的容器。这个容器是一个 WebApplicationContext 对象，这个 IOC 容器建立起来以后，意味着 DispatcherServlet 拥有自己的 bean 定义空间，这为使用各个独立的 XML 文件来配置 MVC 中各个 Bean 创造了条件。由于初始化结束以后，与 Web 容器相关的加载过程实际上已经完成了，Spring MVC 的具体实现和普通的 Spring 应用程序的实现并没有太大的区别。在 Spring MVC DispatcherServlet 的初始化过程中，以对 HandlerMapping 的初始化调用作为触发点，可以了解模块初始化的方法调用关系。
+
+DispatcherServlet 的 initStrategies 方法，会启动 Spring MVC 框架的初始化。包括对各种 MVC 框架的实现元素，比如支持国际化的 LoadResolver、支持request 映射的 HandlerMapping以及视图生成的 ViewResolver等的初始化。
+
+```java
+protected void initStrategies(ApplicationContext context) {
+    initMultipartResolver(context);
+    initLocaleResolver(context);
+    initThemeResolver(context);
+    initHandlerMappings(context);
+    initHandlerAdapters(context);
+    initHandlerExceptionResolvers(context);
+    initRequestToViewNameTranslator(context);
+    initViewResolvers(context);
+    initFlashMapManager(context);
+}
+```
+
+以 HandlerMapping 为例，这里的 Mapping 关系的作用是，为 HTTP 请求找到相应的 Controller 控制器，从而利用这些控制器 Controller 去完成设计好的数据处理工作。HandlerMapping 完成对 MVC 中 Controller 的定义和配置，只不过在 Web 这个特定的应用环境中，这些控制器与具体的 HTTP 请求向对应。DispatcherServlet 中 HandlerMapping 初始化过程的具体实现如下：
+
+```java
+private void initHandlerMappings(ApplicationContext context) {
+		this.handlerMappings = null;
+
+		if (this.detectAllHandlerMappings) {
+			// Find all HandlerMappings in the ApplicationContext, including ancestor contexts.
+			Map<String, HandlerMapping> matchingBeans =
+					BeanFactoryUtils.beansOfTypeIncludingAncestors(context, HandlerMapping.class, true, false);
+			if (!matchingBeans.isEmpty()) {
+				this.handlerMappings = new ArrayList<>(matchingBeans.values());
+				// We keep HandlerMappings in sorted order.
+				AnnotationAwareOrderComparator.sort(this.handlerMappings);
+			}
+		}
+		else {
+			try {
+				HandlerMapping hm = context.getBean(HANDLER_MAPPING_BEAN_NAME, HandlerMapping.class);
+				this.handlerMappings = Collections.singletonList(hm);
+			}
+			catch (NoSuchBeanDefinitionException ex) {
+				// Ignore, we'll add a default HandlerMapping later.
+			}
+		}
+
+		// Ensure we have at least one HandlerMapping, by registering
+		// a default HandlerMapping if no other mappings are found.
+		if (this.handlerMappings == null) {
+			this.handlerMappings = getDefaultStrategies(context, HandlerMapping.class);
+			if (logger.isDebugEnabled()) {
+				logger.debug("No HandlerMappings found in servlet '" + getServletName() + "': using default");
+			}
+		}
+	}
+```
+
+在 HandlerMapping 初始化过程中，把 Bean 配置文件中配置好的 HandlerMapping 从 IOC 容器中取得，经过读取后，HandlerMapping 变量就已经获取了在 BeanDefinition 中配置好的映射关系。其它的初始化过程与此类似，都是直接从 IOC 中读入配置，所以MVC 初始化过程是建立在 IOC 容器已经初始化完成的基础上的。
+
+#### MVC 处理 HTTP 分发请求
+
+1）HandlerMapping 的配置和设计原理
+
+在初始化完成时，在上下文环境中已定义的所有 HandlerMapping 都已经被加载了，这些加载的HandlerMapping 被放在一个 List 中并被排序，存储着 HTTP 请求对应的映射数据。这个List 中的每一个元素都对应着一个具体的HandlerMapping 的配置，一般每个 HandlerMapping 可以持有一系列从 URL 请求到 COntroller 的映射，而 Spring MVC 提供了一系列的 HandlerMapping 的实现。
+
+以 SimpleURLHandlerMapping 这个 HandlerMapping 为例，在SimpleURLHandlerMapping 中，定义了一个 Map 来持有一系列的映射关系，通过这些在 HandlerMapping 中定义的映射关系，即这些 URL 请求和控制器的关系，使 Spring MVC 应用可以根据 HTTP 请求确定一个对应的 Controller。具体地说，这些映射关系是通过 HandlerMapping 来封装的，在 HandlerMapping 接口中定义了一个 getHandler 方法，通过这个方法可以获得与 HTTP 请求对应的 HandlerExecutionChain，这个chain 中，封装了具体的 Controller对象。
+
+这个 HandlerExecutionCharin 持有一个 Inteceptor 链和一个 Handler 对象，这个 Handler 对象实际上就是 HTTP 请求对应的 Controller，在持有这个 Handler 对象的同事，还在 HandlerExecutionChain 中设置了一个拦截器链，通过这个拦截器链中的拦截器，可以为 Handler 对象提供功能的增强。
+
+HandlerExecutionChain 中定义的Handler 和 Interceptor 需要在定义 HandlerMapping 时配置好，例如对具体的 SimpleURLHandlerMapping，要做的就是根据 RUL 映射的方式，注册 Handler 和 Interceptor，从而维护一个反映这种映射关系的 HandlerMap。当需要匹配 HTTP 请求时，需要查询这个 HandlerMap 中的信息来得到对应的 HandlerExecutionChain。这些信息是什么时候配置好的呢？这里有一个注册过程，这个注册过程在容器对 Bean 进行依赖注入时发生，它实际上是通过一个 Bean 的 postProcessor 来完成的。以 SimpleHandlerMapping 为例，注册的完成，很大一部分需要它的基类来配合，这个基类就是 AbstractURLHandlerMapping，AbstractURLHandlerMapping 中的处理过程如下：
+
+```java
+protected void registerHandler(String urlPath, Object handler) throws BeansException, IllegalStateException {
+		Assert.notNull(urlPath, "URL path must not be null");
+		Assert.notNull(handler, "Handler object must not be null");
+		Object resolvedHandler = handler;
+
+		// Eagerly resolve handler if referencing singleton via name.
+		if (!this.lazyInitHandlers && handler instanceof String) {
+			String handlerName = (String) handler;
+			ApplicationContext applicationContext = obtainApplicationContext();
+			if (applicationContext.isSingleton(handlerName)) {
+				resolvedHandler = applicationContext.getBean(handlerName);
+			}
+		}
+
+		Object mappedHandler = this.handlerMap.get(urlPath);
+		if (mappedHandler != null) {
+			if (mappedHandler != resolvedHandler) {
+				throw new IllegalStateException(
+						"Cannot map " + getHandlerDescription(handler) + " to URL path [" + urlPath +
+						"]: There is already " + getHandlerDescription(mappedHandler) + " mapped.");
+			}
+		}
+		else {
+			if (urlPath.equals("/")) {
+				if (logger.isInfoEnabled()) {
+					logger.info("Root mapping to " + getHandlerDescription(handler));
+				}
+				setRootHandler(resolvedHandler);
+			}
+			else if (urlPath.equals("/*")) {
+				if (logger.isInfoEnabled()) {
+					logger.info("Default mapping to " + getHandlerDescription(handler));
+				}
+				setDefaultHandler(resolvedHandler);
+			}
+			else {
+				this.handlerMap.put(urlPath, resolvedHandler);
+				if (logger.isInfoEnabled()) {
+					logger.info("Mapped URL path [" + urlPath + "] onto " + getHandlerDescription(handler));
+				}
+			}
+		}
+	}
+```
+
+在这个处理过程中，如果使用 Bean 的名称作为映射，那么直接从容器中获取这个 HTTP 映射对应的 Bean，然后还要对不同的 URL 配置进行解析处理，比如 在 HTTP 请求中配置成 / 和通配符 /* 的URL，以及正常的 URL 请求，完成这个解析处理过程后，会把 URL 和 Handler 作为键值对放到一个 HandlerMap 中去。这里的 HandlerMap 是一个 hashMap，其中保存了 URL 请求和 Controller的映射关系，这个 HandlerMap 是在 AbstractURLHandlerMapping 中定义的。这个配置好 URL 请求和 Handler 映射数据的 handlerMap，为 Spring MVC 响应 HTTP 请求准备好了基本的映射数据，根据这个 HandlerMap 以及设置于其中的英社数据，可以方便的由 URL 请求得到它锁对应的handler。
+
+2）使用 HandlerMapping 完成请求的映射处理
+
+getHandler 方法会根据初始化得到的映射关系来生成 DispatcherServlet 需要的 HandlerExecutionChain，也就是说，这个 getHandler 方法实际使用 HandlerMapping 完成请求的映射处理的。
+
+3）Spring MVC 对 HTTP 请求的分发处理
+
+DispatcherServlet 是 Spring MVC 框架中非常重要的一个类，不但建立了自己持有的 IOC 容器，还肩负着请求分发处理的重任。在 MVC 框架的初始化完成以后，对 HTTP 请求的处理是在 doService 方法中完成的。DispatcherServlet 是 HttpServlet 的子类，可以通过 doSevice 来响应 HTTP 请求。然而，依照 Spring MVC 的使用，业务逻辑的入口是在 handler 的 handler 函数中实现的，这里是链接 Spring MVC 和业务逻辑实现的地方。
+
+队请求的处理实际上是由 doDispatch 来完成的，包括 准备 ModelAndView，调用getHandler 来响应 HTTP 请求，然后通过执行 Handler 的处理来得到返回的 ModelAndView 结果，最后把这个 ModelAndView 对象交给相应的 试图对象去呈现。
