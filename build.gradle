@@ -87,6 +87,12 @@ subprojects { project ->
         cglibVersion = '3.2.6'
         aspectjVersion = '1.9.1'
         rxJavaVersion = "2.1.1"
+        mybatisVersion = "3.4.6"
+        mybatisSpringVersion = "1.3.2"
+        hibernateVersion = "5.3.4.Final"
+        mysqlConnectorVersion = "8.0.11"
+        druidVersion = "1.1.9"
+        fastjsonVersion = "1.2.9"
     }
 
     dependencies {

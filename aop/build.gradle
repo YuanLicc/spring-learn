@@ -15,4 +15,5 @@ dependencies {
     compile("cglib:cglib:${cglibVersion}")
     compile("org.aspectj:aspectjrt:${aspectjVersion}")
     compile("org.aspectj:aspectjweaver:${aspectjVersion}")
+    compile "com.yl:common:1.0"
 }

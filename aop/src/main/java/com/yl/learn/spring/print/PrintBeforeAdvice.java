@@ -1,5 +1,6 @@
 package com.yl.learn.spring.print;
 
+import com.yl.common.util.PrintUtil;
 import org.springframework.aop.MethodBeforeAdvice;
 import org.springframework.stereotype.Component;
 
@@ -10,7 +11,10 @@ public class PrintBeforeAdvice implements MethodBeforeAdvice {
 
     @Override
     public void before(Method method, Object[] args, Object target) throws Throwable {
-        System.out.println("[Before Invoke Method] " + method.toString());
+        PrintUtil.template("Before Invoke Method", () -> {
+            PrintUtil.println("Invoke method: " + method.toString());
+            PrintUtil.println("Parameters: " + args.toString());
+        });
     }
 
 }

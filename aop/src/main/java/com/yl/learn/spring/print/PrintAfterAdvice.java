@@ -1,5 +1,6 @@
 package com.yl.learn.spring.print;
 
+import com.yl.common.util.PrintUtil;
 import org.springframework.aop.AfterReturningAdvice;
 import org.springframework.stereotype.Component;
 
@@ -9,6 +10,9 @@ import java.lang.reflect.Method;
 public class PrintAfterAdvice implements AfterReturningAdvice {
     @Override
     public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
-        System.out.println("[After Invoke Method] " + method.toString());
+        PrintUtil.template("After Invoke Method", () -> {
+            PrintUtil.println("Invoke method: " + method.toString());
+            PrintUtil.println("Return Value: " + returnValue);
+        });
     }
 }

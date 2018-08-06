@@ -2,15 +2,82 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                         http://www.springframework.org/schema/beans/spring-beans.xsd
                         http://www.springframework.org/schema/context
                         http://www.springframework.org/schema/context/spring-context.xsd
                         http://www.springframework.org/schema/mvc
-                        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+                        http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <context:component-scan base-package="com.yl.test.mvc.controller"></context:component-scan>
+    <context:component-scan base-package="com.yl.learn"></context:component-scan>
     <mvc:annotation-driven></mvc:annotation-driven>
+
+    <bean id="controllerPrintBeforeAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="printBeforeAdvice"></property>
+        <property name="pattern" value="com.yl.learn.mvc.controller.*.*.*"></property>
+    </bean>
+
+    <bean id="controllerPrintAfterAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice" ref="printAfterAdvice"></property>
+        <property name="pattern" value="com.yl.learn.mvc.controller.*.*.*"></property>
+    </bean>
+
+    <!-- 通过 beanNames 自动代理 -->
+    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="beanNames" value="*Controller"/>
+        <property name="interceptorNames">
+            <list>
+                <value>controllerPrintBeforeAdvisor</value>
+                <value>controllerPrintAfterAdvisor</value>
+            </list>
+        </property>
+        <property name="proxyTargetClass" value="true"></property>
+    </bean>
+
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="loginTimeout" value="1000"></property>
+        <property name="url" value="jdbc:mysql://120.77.171.82:3306/test?characterEncoding=utf-8"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+    </bean>
+
+    <!-- 配置 sessionFactory，因为 HibernateTemplate 需要注入此 factory 产生的对象 -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:hibernate.cfg.xml"></property>
+        <property name="mappingLocations" value="classpath:mapping/*.hbm.xml"></property>
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--<bean id="transaction" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager" ref="transactionManager"></property>
+        <property name="pointcut" value="TRUE"></property>
+        <property name="optimize" value="true"></property>
+        <property name="proxyTargetClass" value="true"></property>
+        <property name="target" value="personDao"></property>
+        <property name="transactionAttributes">
+            <props>
+                <prop key="get*">PROPAGATION_REQUIRED, readOnly</prop>
+                <prop key="*">PROPAGATION_REQUIRED</prop>
+            </props>
+        </property>
+    </bean>-->
+
+    <tx:advice id="transactionAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save*" isolation="DEFAULT" propagation="REQUIRED"/>
+            <tx:method name="get*" propagation="REQUIRED" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:advisor advice-ref="transactionAdvice" pointcut="execution(* com.yl.learn.mvc.controller.*.*(..))"></aop:advisor>
+    </aop:config>
 
 </beans>

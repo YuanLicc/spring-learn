@@ -12,12 +12,17 @@ dependencies {
 
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
 
-    compile ("org.springframework:spring-webmvc:${springVersion}")
+    compile "org.springframework:spring-webmvc:${springVersion}"
     compile project(":aop")
     compile "org.aspectj:aspectjrt:${aspectjVersion}"
     compile "org.aspectj:aspectjweaver:${aspectjVersion}"
     compile "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
-    compile 'io.projectreactor:reactor-core:+'
+    compile "io.projectreactor:reactor-core:+"
     compile "org.springframework:spring-jdbc:${springVersion}"
     compile "com.yl:common:1.0"
+    compile "org.hibernate:hibernate-core:${hibernateVersion}"
+    compile "mysql:mysql-connector-java:${mysqlConnectorVersion}"
+    compile "org.springframework:spring-orm:${springVersion}"
+    compile "com.alibaba:druid:${druidVersion}"
+    compile "com.alibaba:fastjson:${fastjsonVersion}"
 }
