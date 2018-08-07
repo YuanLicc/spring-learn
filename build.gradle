@@ -12,9 +12,6 @@ allprojects {
     targetCompatibility = 1.8
 
     repositories {
-        mavenLocal()
-        mavenCentral()
-        jcenter()
         maven {
             name 'aliyun'
             url 'http://maven.aliyun.com/nexus/content/groups/public/'

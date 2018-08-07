@@ -21,6 +21,8 @@ public class DefaultCglibDynamicProxy extends AbstractDynamicProxy implements Cg
 
         super(null, aroundAdvice);
         this.proxiedClass = proxiedClass;
+        Integer a = 1;
+        a.compareTo(2);
     }
 
     @Override

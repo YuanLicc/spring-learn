@@ -73,12 +73,16 @@ public WebApplicationContext initWebApplicationContext(ServletContext servletCon
                     ApplicationContext parent = loadParentContext(servletContext);
                     cwac.setParent(parent);
                 }
-                // 
+                // 初始化 beanFactory
                 configureAndRefreshWebApplicationContext(cwac, servletContext);
             }
         }
-        servletContext.setAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, this.context);
+        // 将根上下文添加到 servletContext 中去。
+        servletContext
+            .setAttribute(WebApplicationContext
+                          .ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, this.context);
 
+      
         ClassLoader ccl = Thread.currentThread().getContextClassLoader();
         if (ccl == ContextLoader.class.getClassLoader()) {
             currentContext = this.context;
@@ -105,7 +109,8 @@ public WebApplicationContext initWebApplicationContext(ServletContext servletCon
     }
     catch (Error err) {
         logger.error("Context initialization failed", err);
-        servletContext.setAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, err);
+        servletContext.setAttribute(WebApplicationContext
+                                    .ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, err);
         throw err;
     }
 }
@@ -394,22 +399,28 @@ public void refresh() throws BeansException, IllegalStateException {
           // RequiredAnnotationBeanPostProcessor 等。
           registerBeanPostProcessors(beanFactory);
 
-          // Initialize message source for this context.
+          // 初始化 message source。
+          // 在下面进行说明。
           initMessageSource();
 
-          // Initialize event multicaster for this context.
+          // 在下面进行说明。
           initApplicationEventMulticaster();
 
-          // Initialize other special beans in specific context subclasses.
+          // 在这里仅仅是初始化了一个 themeSource
           onRefresh();
 
-          // Check for listener beans and register them.
+          // 将 ApplicationEvent 类型的 bean 添加到名为 applicationEventMulticaster 的对象中。
+          // 广播 earlyApplicationEvents 内持有的事件。
           registerListeners();
 
-          // Instantiate all remaining (non-lazy-init) singletons.
+          // 完成 beanFactory 的初始化。
+          // 1. 初始化上下文的类型转换服务。
+          // 2. 注册一个默认的嵌入式值解析器，
+          // 3. 预先初始单例 bean，以及配置了 lazy-init=false 的 bean。
           finishBeanFactoryInitialization(beanFactory);
 
-          // Last step: publish corresponding event.
+          // 开启生命周期，启动生命周期 processor。
+          // 发布刷新完成事件。
           finishRefresh();
       }
 
@@ -448,6 +459,71 @@ protected ConfigurableListableBeanFactory obtainFreshBeanFactory() {
         logger.debug("Bean factory for " + getDisplayName() + ": " + beanFactory);
     }
     return beanFactory;
+}
+
+protected void initMessageSource() {
+    // 获取内部 bean factory。
+    ConfigurableListableBeanFactory beanFactory = getBeanFactory();
+    // 判断当前 beanfactory 是否包含名为 messageSource 的 bean。
+    if (beanFactory.containsLocalBean(MESSAGE_SOURCE_BEAN_NAME)) {
+        // 获取 messageSource
+        this.messageSource = beanFactory.getBean(MESSAGE_SOURCE_BEAN_NAME, MessageSource.class);
+        // 如果此上下文存在父级上下文且 messageSource 是有层次的 messageSource，咋进行下面的操作。
+        if (this.parent != null && this.messageSource instanceof HierarchicalMessageSource) {
+            HierarchicalMessageSource hms = (HierarchicalMessageSource) this.messageSource;
+            if (hms.getParentMessageSource() == null) {
+                // 设置父级上下文的 messageSource 为当前 messageSource 的父级 source
+                hms.setParentMessageSource(getInternalParentMessageSource());
+            }
+        }
+        if (logger.isDebugEnabled()) {
+            logger.debug("Using MessageSource [" + this.messageSource + "]");
+        }
+    }
+    else {
+        // 实例化一个 DelegatingMessageSource，此类型的MessageSource，不会处理任何逻辑，
+        // 它只会委派其父级进行处理，若无父级将无法处理任何逻辑。
+        DelegatingMessageSource dms = new DelegatingMessageSource();
+        // 设置其父级。
+        dms.setParentMessageSource(getInternalParentMessageSource());
+        // 将 dms 赋值给 messageSource。
+        this.messageSource = dms;
+        // 将 messageSource 以单例模式注册到 bean factory 中去。
+        beanFactory.registerSingleton(MESSAGE_SOURCE_BEAN_NAME, this.messageSource);
+        if (logger.isDebugEnabled()) {
+            logger.debug("Unable to locate MessageSource with name '" 
+                         + MESSAGE_SOURCE_BEAN_NAME +
+                         "': using default [" + this.messageSource + "]");
+        }
+    }
+}
+
+protected void initApplicationEventMulticaster() {
+    // 获取 bean factory
+    ConfigurableListableBeanFactory beanFactory = getBeanFactory();
+    // 判断是否存在名为 applicationEventMulticaster 的 bean。
+    if (beanFactory.containsLocalBean(APPLICATION_EVENT_MULTICASTER_BEAN_NAME)) {
+        // 获取名为 applicationEventMulticaster 的 bean。
+        this.applicationEventMulticaster =
+            beanFactory.getBean(APPLICATION_EVENT_MULTICASTER_BEAN_NAME,
+                                ApplicationEventMulticaster.class);
+        if (logger.isDebugEnabled()) {
+            logger.debug("Using ApplicationEventMulticaster [" 
+                         + this.applicationEventMulticaster + "]");
+        }
+    }
+    else {
+        // 实例化一个默认的 ApplicationEventMulticaster。
+        this.applicationEventMulticaster = new SimpleApplicationEventMulticaster(beanFactory);
+        // 注册一个 ApplicationEventMulticaster 的单例 bean
+        beanFactory.registerSingleton(APPLICATION_EVENT_MULTICASTER_BEAN_NAME, 
+                                      this.applicationEventMulticaster);
+        if (logger.isDebugEnabled()) {
+            logger.debug("Unable to locate ApplicationEventMulticaster with name '" +
+                         APPLICATION_EVENT_MULTICASTER_BEAN_NAME +
+                         "': using default [" + this.applicationEventMulticaster + "]");
+        }
+    }
 }
 ```
 
