@@ -1,4 +1,4 @@
-## MVC 启动
+## MVC 启动过程
 
 首先，`ServletContext` 在 `web` 容器中被初始化时将造成 `ServletContextListener` 内定义的 `contextInitialized` 方法被执行，但是在这之前会触发类的初始化，先执行静态变量、静态块，在 Spring MVC 中就利用了这一点进行根上下文以及其它一些工作的初始化，`MVC` 中配置的是继承自 `ServletContextListener` 的 `ContextLoaderListener`，在其父类 `ContextLoader` 中存在以下静态块：
 
@@ -24,7 +24,8 @@ static {
 `org/springframework/web/context/ContextLoader.properties` 内容：
 
 ```properties
-org.springframework.web.context.WebApplicationContext=org.springframework.web.context.support.XmlWebApplicationContext
+org.springframework.web.context.WebApplicationContext
+=org.springframework.web.context.support.XmlWebApplicationContext
 ```
 
 这里配置了应用将会初始化哪种 `ApplicationContext` 的实现类。进入下一步：`contextInitialized` 方法的调用：
@@ -73,14 +74,16 @@ public WebApplicationContext initWebApplicationContext(ServletContext servletCon
                     ApplicationContext parent = loadParentContext(servletContext);
                     cwac.setParent(parent);
                 }
-                // 初始化 beanFactory
+                // 初始化根上下文，包括资源读取，资源解析，内部 beanFactory 的初始化，
+                // beanFactory 刷新（核心）等。
+                // 在下面进行说明。
                 configureAndRefreshWebApplicationContext(cwac, servletContext);
             }
         }
         // 将根上下文添加到 servletContext 中去。
-        servletContext
-            .setAttribute(WebApplicationContext
-                          .ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, this.context);
+        servletContext.setAttribute(WebApplicationContext
+                          .ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, 
+                          this.context);
 
       
         ClassLoader ccl = Thread.currentThread().getContextClassLoader();
@@ -91,31 +94,11 @@ public WebApplicationContext initWebApplicationContext(ServletContext servletCon
             currentContextPerThread.put(ccl, this.context);
         }
 
-        if (logger.isDebugEnabled()) {
-            logger.debug("Published root WebApplicationContext as" 
-                         +" ServletContext attribute with name [" 
-                         + WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE 
-                         + "]");
-        }
-        if (logger.isInfoEnabled()) {
-            long elapsedTime = System.currentTimeMillis() - startTime;
-            logger.info("Root WebApplicationContext: initialization completed in " 
-                        + elapsedTime + " ms");
-        }
+        // ... 省略无关逻辑的代码
 
         return this.context;
     }
-    catch (RuntimeException ex) {
-        logger.error("Context initialization failed", ex);
-        servletContext.setAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, ex);
-        throw ex;
-    }
-    catch (Error err) {
-        logger.error("Context initialization failed", err);
-        servletContext.setAttribute(WebApplicationContext
-                                    .ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, err);
-        throw err;
-    }
+    // ... 省略一些列 catch
 }
 
 protected WebApplicationContext createWebApplicationContext(ServletContext sc) {

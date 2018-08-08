@@ -8,6 +8,8 @@
 
 #### 源码调试
 
+我有两个忠实的助手，一个是我的耐心，另一个就是我的双手。——蒙田（法） 
+
 - [MVC 启动过程](https://github.com/YuanLicc/spring-learn/blob/master/doc/notes/MVCStart.md)
 
 #### 笔记
