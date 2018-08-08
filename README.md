@@ -6,6 +6,10 @@
 
 3）源码调试及说明，这一块是我看了书以及其它资料后对 Spring 一些过程的源码解析。
 
+#### 注意
+
+此项目的构件 `com.yl:common:1.0` 在我的 `github` `maven` 仓库 [maven-repository](https://github.com/YuanLicc/maven-repository) 中，下载此依赖时会很慢，emm。
+
 #### 源码调试
 
 我有两个忠实的助手，一个是我的耐心，另一个就是我的双手。——蒙田（法） 
