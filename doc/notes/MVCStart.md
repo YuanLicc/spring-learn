@@ -733,3 +733,200 @@ public int registerBeanDefinitions(Document doc, Resource resource)
     return getRegistry().getBeanDefinitionCount() - countBefore;
 }
 ```
+上面的所有操作完成后标志着 根上下文初始化完成，接下来是 `DispatcherServlet` 的初始化过程，如前面 `ContextLoader` 一样，利用静态块优先读取策略文件：
+
+```java
+static {
+    try {
+        ClassPathResource resource = new ClassPathResource(DEFAULT_STRATEGIES_PATH
+                                    , DispatcherServlet.class);
+        defaultStrategies = PropertiesLoaderUtils.loadProperties(resource);
+    }
+    catch (IOException ex) {
+        throw new IllegalStateException("Could not load '" + DEFAULT_STRATEGIES_PATH 
+                                        + "': " + ex.getMessage());
+    }
+}
+```
+
+文件 `org\springframework\web\servlet\DispatcherServlet.properties` 内容如下：
+
+```properties
+org.springframework.web.servlet.LocaleResolver=org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver
+
+org.springframework.web.servlet.ThemeResolver=org.springframework.web.servlet.theme.FixedThemeResolver
+
+org.springframework.web.servlet.HandlerMapping=org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,\
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+
+org.springframework.web.servlet.HandlerAdapter=org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,\
+	org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,\
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter
+
+org.springframework.web.servlet.HandlerExceptionResolver=org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver,\
+	org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver,\
+	org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver
+
+org.springframework.web.servlet.RequestToViewNameTranslator=org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator
+
+org.springframework.web.servlet.ViewResolver=org.springframework.web.servlet.view.InternalResourceViewResolver
+
+org.springframework.web.servlet.FlashMapManager=org.springframework.web.servlet.support.SessionFlashMapManager
+```
+
+然后 `DispatcherServlet` 进行初始化：
+
+```java
+public DispatcherServlet() {
+    super();
+    // 设置是否将 OPTIONS 请求分派给 doService 方法。
+    setDispatchOptionsRequest(true);
+}
+```
+
+`web` 容器回调 `servlet` 的 `init` 方法，这里 `DispatcherServlet` 并没有实现此方法，而是其父类的父类 `HttpServletBean` 实现了此方法：
+
+```java
+// class HttpServletBean
+
+public final void init() throws ServletException {
+    if (logger.isDebugEnabled()) {
+        logger.debug("Initializing servlet '" + getServletName() + "'");
+    }
+
+    // 将 ServletConfig 中的 parameters 封装为 PropertyValues，
+    // 另外一个参数 requiredProperties 表示这些属性时必须存在的，
+    // 若在 ServletConfig 中不存在对应的值，将抛出异常。
+    PropertyValues pvs = new ServletConfigPropertyValues(getServletConfig(),
+                         this.requiredProperties);
+    if (!pvs.isEmpty()) {
+        try {
+            // 将 this 包装，这种包装可以方便属性的操作等。
+            BeanWrapper bw = PropertyAccessorFactory.forBeanPropertyAccess(this);
+            // 实例化一个 resourceLoader
+            ResourceLoader resourceLoader 
+                		= new ServletContextResourceLoader(getServletContext());
+            // 通过 ResourceLoader 实例化一个 resourceEditor，
+            // 将 editor 注册到 beanWrapper, 这表示为 this 中 Resource 类型的
+            // 属性将使用对应的 editor 来进行处理。
+            bw.registerCustomEditor(Resource.class, 
+                       new ResourceEditor(resourceLoader, getEnvironment()));
+            // 初始化 beanWrapper
+            initBeanWrapper(bw);
+            // 设置 PropertyValues
+            bw.setPropertyValues(pvs, true);
+        }
+        // ... 省略 catch 块。
+    }
+
+    // 交给子类实现自己的初始化操作，这里调用的是其子类 FrameworkServlet 中的实现。
+    // 在下面进行说明。
+    initServletBean();
+
+    if (logger.isDebugEnabled()) {
+        logger.debug("Servlet '" + getServletName() + "' configured successfully");
+    }
+}
+```
+
+```java
+// class FrameworkServlet
+
+protected final void initServletBean() throws ServletException {
+    getServletContext().log("Initializing Spring FrameworkServlet '" 
+                            + getServletName() + "'");
+    if (this.logger.isInfoEnabled()) {
+        this.logger.info("FrameworkServlet '" + getServletName() 
+                         + "': initialization started");
+    }
+    long startTime = System.currentTimeMillis();
+
+    try {
+        // 初始化 WebApplicationContext，这与前面的根上下文不同，
+        // 这里是创建一个新的上下文。
+        // 在下面进行说明。
+        this.webApplicationContext = initWebApplicationContext();
+        // 这里默认实现无任何操作。
+        initFrameworkServlet();
+    }
+    catch (ServletException | RuntimeException ex) {
+        this.logger.error("Context initialization failed", ex);
+        throw ex;
+    }
+
+    if (this.logger.isInfoEnabled()) {
+        long elapsedTime = System.currentTimeMillis() - startTime;
+        this.logger.info("FrameworkServlet '" + getServletName() 
+                         + "': initialization completed in " +
+                         elapsedTime + " ms");
+    }
+}
+
+protected WebApplicationContext initWebApplicationContext() {
+    // 获取根上下文。
+    WebApplicationContext rootContext =
+        WebApplicationContextUtils.getWebApplicationContext(getServletContext());
+    WebApplicationContext wac = null;
+
+    // 若存在构造时注入一个上下文的情况，直接使用。
+    if (this.webApplicationContext != null) {
+        // 直接赋值。
+        wac = this.webApplicationContext;
+        // 为其设置父级上下文。
+        if (wac instanceof ConfigurableWebApplicationContext) {
+            ConfigurableWebApplicationContext cwac = (ConfigurableWebApplicationContext) wac;
+            if (!cwac.isActive()) {
+                // The context has not yet been refreshed -> provide services such as
+                // setting the parent context, setting the application context id, etc
+                if (cwac.getParent() == null) {
+                    // The context instance was injected without an explicit parent -> set
+                    // the root application context (if any; may be null) as the parent
+                    cwac.setParent(rootContext);
+                }
+                // 同样的进行配置和上下文的初始化。
+                configureAndRefreshWebApplicationContext(cwac);
+            }
+        }
+    }
+    if (wac == null) {
+        // 查看根根上下文是否存在一个bean name与变量 contextAttribute 的值相同的 bean，存在则返回。
+        wac = findWebApplicationContext();
+    }
+    if (wac == null) {
+        // 无上下文实例注入，创建一个上下文。
+        // 同根上下文初始化操作，也会读取 xml 文件并初始化单例 bean。
+        wac = createWebApplicationContext(rootContext);
+    }
+
+    if (!this.refreshEventReceived) {
+        // Either the context is not a ConfigurableApplicationContext with refresh
+        // support or the context injected at construction time had already been
+        // refreshed -> trigger initial onRefresh manually here.
+        onRefresh(wac);
+    }
+
+    if (this.publishContext) {
+        // Publish the context as a servlet context attribute.
+        String attrName = getServletContextAttributeName();
+        getServletContext().setAttribute(attrName, wac);
+        if (this.logger.isDebugEnabled()) {
+            this.logger.debug("Published WebApplicationContext of servlet '" 
+                              + getServletName() +
+                              "' as ServletContext attribute with name [" + attrName + "]");
+        }
+    }
+
+    return wac;
+}
+```
+
+这里应用就已经启动完成了。总结一下：
+
+1）根上下文初始化。
+
+2）`DispatcherServlet` 上下文初始化。
+
+3）这两个上下文初始化完成的基本内容相同。
+
+4）根上下文会作为`DispatcherServlet` 上下文的父级上下文。
+
