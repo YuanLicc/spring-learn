@@ -1,3 +1,5 @@
+本文摘自书籍 [《Spring技术内幕：深入解析Spring架构与设计原理（第2版）》](https://www.amazon.cn/dp/B0077K9ZXY/ref=sr_1_1?s=books&ie=UTF8&qid=1533693228&sr=1-1&keywords=Spring+%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95)
+
 ## Spring MVC
 
 MVC 模式：

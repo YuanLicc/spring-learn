@@ -63,15 +63,6 @@ subprojects { project ->
         }
     }
 
-    repositories {
-        jcenter()
-        mavenLocal()
-        maven {
-            name 'aliyun'
-            url 'http://maven.aliyun.com/nexus/content/groups/public/'
-        }
-    }
-
     [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
 
     tasks.withType(JavaCompile) {
