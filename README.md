@@ -1,4 +1,4 @@
-# spring-learn [![Build Status](https://travis-ci.org/YuanLicc/spring-learn.svg?branch=master)](https://travis-ci.org/YuanLicc/spring-learn)![GitHub version](https://badge.fury.io/gh/yuanlicc%2Fspring-learn.svg)
+# spring-learn [![Build Status](https://travis-ci.org/YuanLicc/spring-learn.svg?branch=master) ](https://travis-ci.org/YuanLicc/spring-learn)![GitHub version](https://badge.fury.io/gh/yuanlicc%2Fspring-learn.svg)
 #### 简介
 1）spring 框架的学习 demo 及源码类图（doc/文件夹下，请使用Idea 查看这些类图，请保证您的 gradle 能成功加载依赖，否则无法查看类图）。
 
