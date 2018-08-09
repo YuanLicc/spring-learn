@@ -15,16 +15,21 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
     }
     // 其它方法如：GET、POST、HEAD 等执行 HttPServlet 的 service 方法。
     else {
+        // 这里调用父级 service 方法，此方法在 HttpServlet 中有实现， 
+        // 在下面进行说明。
         super.service(request, response);
     }
 }
 ```
 
-先来看下 `service` 方法：
+先假设请求的 `method` 为非 `PATH` 方法，所以从上面的调度来看执行 `HttpServlet` 中的 `service` 方法：
 
 ```java
 // class HttpServlet
 
+// 此处将不同的 method 分派给不同的方法进行处理，
+// do* 方法在此类中有默认的实现，但在 FrameworkServlet 中进行了重写，
+// 所以会调用 FrameworkServlet 中的实现。
 protected void service(HttpServletRequest req, HttpServletResponse resp)
         throws ServletException, IOException {
     // 获取 method
@@ -64,38 +69,118 @@ protected void service(HttpServletRequest req, HttpServletResponse resp)
         maybeSetLastModified(resp, lastModified);
         doHead(req, resp);
 
-    } else if (method.equals(METHOD_POST)) {
+    } 
+    // 判断 method 等于 POST
+    else if (method.equals(METHOD_POST)) {
         doPost(req, resp);
 
-    } else if (method.equals(METHOD_PUT)) {
+    } 
+    // 判断 method 等于 PUT
+    else if (method.equals(METHOD_PUT)) {
         doPut(req, resp);
 
-    } else if (method.equals(METHOD_DELETE)) {
+    } 
+    // 判断 method 等于 DELETE
+    else if (method.equals(METHOD_DELETE)) {
         doDelete(req, resp);
 
-    } else if (method.equals(METHOD_OPTIONS)) {
+    } 
+    // 判断 method 等于 OPTIONS
+    else if (method.equals(METHOD_OPTIONS)) {
         doOptions(req,resp);
 
-    } else if (method.equals(METHOD_TRACE)) {
+    } 
+    // 判断 method 等于 TRACE
+    else if (method.equals(METHOD_TRACE)) {
         doTrace(req,resp);
 
-    } else {
-        //
-        // Note that this means NO servlet supports whatever
-        // method was requested, anywhere on this server.
-        //
-
+    } 
+    // method 不匹配
+    else {
         String errMsg = lStrings.getString("http.method_not_implemented");
         Object[] errArgs = new Object[1];
         errArgs[0] = method;
         errMsg = MessageFormat.format(errMsg, errArgs);
-
+	    // 返回错误 501
         resp.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED, errMsg);
     }
 }
 ```
 
+虽然上面的 `do*` 方法在 `HttpServlet` 中有默认的实现，但是由于 FrameworkServlet 中进行了重写：
 
+```java
+// class FrameworkServlet
+
+// GET 请求某个资源
+protected final void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+
+    processRequest(request, response);
+}
+
+// 
+protected final void doPost(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+
+    processRequest(request, response);
+}
+
+protected final void doPut(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+
+    processRequest(request, response);
+}
+
+protected final void doDelete(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+
+    processRequest(request, response);
+}
+
+
+protected void doOptions(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+	// 判断是否调度 OPTIONS method 及
+    if (this.dispatchOptionsRequest || CorsUtils.isPreFlightRequest(request)) {
+        processRequest(request, response);
+        if (response.containsHeader("Allow")) {
+            // Proper OPTIONS response coming from a handler - we're done.
+            return;
+        }
+    }
+
+    // Use response wrapper in order to always add PATCH to the allowed methods
+    super.doOptions(request, new HttpServletResponseWrapper(response) {
+        @Override
+        public void setHeader(String name, String value) {
+            if ("Allow".equals(name)) {
+                value = (StringUtils.hasLength(value) ? value + ", " : "") + HttpMethod.PATCH.name();
+            }
+            super.setHeader(name, value);
+        }
+    });
+}
+
+/**
+	 * Delegate TRACE requests to {@link #processRequest}, if desired.
+	 * <p>Applies HttpServlet's standard TRACE processing otherwise.
+	 * @see #doService
+	 */
+@Override
+protected void doTrace(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+
+    if (this.dispatchTraceRequest) {
+        processRequest(request, response);
+        if ("message/http".equals(response.getContentType())) {
+            // Proper TRACE response coming from a handler - we're done.
+            return;
+        }
+    }
+    super.doTrace(request, response);
+}
+```
 
 
 
