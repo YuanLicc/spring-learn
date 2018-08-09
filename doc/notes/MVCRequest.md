@@ -1,5 +1,104 @@
 ## MVC 请求处理过程
 
+一个请求到达后，会执行对应 `Servlet`  的 `service` 方法，在 `HttpServlet` 中默认实现了此方法，将不同的请求分派给不同的方法处理，如 `doGet`、`doPost` 等。而对于 `Spring MVC` 中的 `DispatcherServlet` 来说，它的父类 `FrameworkServlet` 重写了 `service` 方法，如下：
+
+```java
+// class FrameworkServlet
+
+protected void service(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+	// 获取 method
+    HttpMethod httpMethod = HttpMethod.resolve(request.getMethod());
+    // 如果 method 为 patch 或为 null，调用 processRequest 方法。
+    if (httpMethod == HttpMethod.PATCH || httpMethod == null) {
+        processRequest(request, response);
+    }
+    // 其它方法如：GET、POST、HEAD 等执行 HttPServlet 的 service 方法。
+    else {
+        super.service(request, response);
+    }
+}
+```
+
+先来看下 `service` 方法：
+
+```java
+// class HttpServlet
+
+protected void service(HttpServletRequest req, HttpServletResponse resp)
+        throws ServletException, IOException {
+    // 获取 method
+    String method = req.getMethod();
+	// 判断是否等于 GET
+    if (method.equals(METHOD_GET)) {
+        // 返回请求对象上次修改的时间戳，这里无实现，统统返回 -1。
+        long lastModified = getLastModified(req);
+        if (lastModified == -1) {
+            // 调用 doGet 方法处理。   
+            doGet(req, resp);
+        } 
+        else {
+            // 获取请求头中 if-modified-since 值，
+            // 这是一个标准的 HTTP 请求头，表示浏览器缓存文件最后修改时间，
+            // 若再次请求此文件时，浏览器会将此参数设置到请求头。
+            long ifModifiedSince = req.getDateHeader(HEADER_IFMODSINCE);
+            // 判断时间比上次修改小，说明文件修改了，执行 doGet 重新获取。
+            if (ifModifiedSince < lastModified) {
+                // 将修改时间设置到 response 的头中（Last-Modified）返回给客户端。
+                maybeSetLastModified(resp, lastModified);
+                doGet(req, resp);
+            } 
+            else {
+                // 判断文件未修改，不再请求文件，仅仅返回状态码 304，
+                // 浏览器得到这个状态码，会直接使用缓存。
+                resp.setStatus(HttpServletResponse.SC_NOT_MODIFIED);
+            }
+        }
+
+    } 
+    // 判断 method 等于 HEAD
+    else if (method.equals(METHOD_HEAD)) {
+        // 获取请求上次修改时间。
+        long lastModified = getLastModified(req);
+        // 将修改时间设置到 response 的头中（Last-Modified）返回给客户端。
+        maybeSetLastModified(resp, lastModified);
+        doHead(req, resp);
+
+    } else if (method.equals(METHOD_POST)) {
+        doPost(req, resp);
+
+    } else if (method.equals(METHOD_PUT)) {
+        doPut(req, resp);
+
+    } else if (method.equals(METHOD_DELETE)) {
+        doDelete(req, resp);
+
+    } else if (method.equals(METHOD_OPTIONS)) {
+        doOptions(req,resp);
+
+    } else if (method.equals(METHOD_TRACE)) {
+        doTrace(req,resp);
+
+    } else {
+        //
+        // Note that this means NO servlet supports whatever
+        // method was requested, anywhere on this server.
+        //
+
+        String errMsg = lStrings.getString("http.method_not_implemented");
+        Object[] errArgs = new Object[1];
+        errArgs[0] = method;
+        errMsg = MessageFormat.format(errMsg, errArgs);
+
+        resp.sendError(HttpServletResponse.SC_NOT_IMPLEMENTED, errMsg);
+    }
+}
+```
+
+
+
+
+
 `DispatcherServlet` 内 `doService` 方法：
 
 ```java
@@ -77,10 +176,12 @@ protected void doService(HttpServletRequest request
 
 protected void doDispatch(HttpServletRequest request
 							, HttpServletResponse response) throws Exception {
-	HttpServletRequest processedRequest = request;
+	
+    HttpServletRequest processedRequest = request;
+    // 声明执行链。
     HandlerExecutionChain mappedHandler = null;
     boolean multipartRequestParsed = false;
-
+	// 获取异步管理器。
 	WebAsyncManager asyncManager = WebAsyncUtils.getAsyncManager(request);
 
 	try {
