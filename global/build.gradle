@@ -1,13 +1,6 @@
-plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.2.51'
-}
-
 version '1.0'
 group 'com.yl.learn'
-
-repositories {
-    mavenCentral()
-}
+apply plugin: 'kotlin'
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
@@ -18,4 +11,18 @@ compileKotlin {
 }
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+buildscript {
+    ext.kotlin_version = '1.2.41'
+
+    repositories {
+        maven {
+            name 'aliyun'
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
 }
