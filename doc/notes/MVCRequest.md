@@ -107,7 +107,7 @@ protected void service(HttpServletRequest req, HttpServletResponse resp)
 }
 ```
 
-虽然上面的 `do*` 方法在 `HttpServlet` 中有默认的实现，但是由于 FrameworkServlet 中进行了重写：
+虽然上面的 `do*` 方法在 `HttpServlet` 中有默认的实现，但是由于 `FrameworkServlet` 中进行了重写：
 
 ```java
 // class FrameworkServlet
@@ -141,7 +141,17 @@ protected final void doDelete(HttpServletRequest request, HttpServletResponse re
 
 protected void doOptions(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-	// 判断是否调度 OPTIONS method 及
+	// 判断是否调度 OPTIONS method 及是否为跨域预检请求。
+    // CORS 全称为跨域资源共享，是 W3C 标准，允许浏览器向跨域服务器发出 xmlHttpRequest 请求。
+    // 跨域需要浏览器和服务器同时支持，目前几乎所有浏览器都支持跨域。
+    // 浏览器将跨域请求分为两类：简单请求，非简单请求。
+    // 简单请求：HEAD，GET，POST 且请求头信息的字段有限制，若不满足前面的条件即非简单请求。
+    // 浏览器发现跨域请求时，会对请求头添加字段：Origin, 表示请求的目标源。
+    // 服务器接收到请求后可以决定是否允许跨域，设置 Access-Control-Allow-Origin 响应头字段
+    // 来标识允许哪些源可以跨域请求，可以为 *，表示允许任意源。浏览器会根据这个字段来进行判断，
+    // 若请求的源不在 Access-Control-Allow-Origin 字段中，表示不允许跨域，会抛出异常。
+    // 另一种非简单请求会在真正的请求前增加一次请求，称为预检请求。预检请求的方法为 OPTIONS,
+    // 道理同简单请求，就是询问是否能对目标域进行跨域请求，服务器响应后，若同意跨域则进行真正的请求。
     if (this.dispatchOptionsRequest || CorsUtils.isPreFlightRequest(request)) {
         processRequest(request, response);
         if (response.containsHeader("Allow")) {
@@ -150,27 +160,25 @@ protected void doOptions(HttpServletRequest request, HttpServletResponse respons
         }
     }
 
-    // Use response wrapper in order to always add PATCH to the allowed methods
+    // 调用 HttpServlet 中的实现，且重写了 HttpServletResponseWrapper 中的 setHeader 方法。
+    // 在后面进行说明。
     super.doOptions(request, new HttpServletResponseWrapper(response) {
         @Override
         public void setHeader(String name, String value) {
             if ("Allow".equals(name)) {
-                value = (StringUtils.hasLength(value) ? value + ", " : "") + HttpMethod.PATCH.name();
+                value = (StringUtils.hasLength(value) ? value + ", " : "") 
+                    + HttpMethod.PATCH.name();
             }
             super.setHeader(name, value);
         }
     });
 }
 
-/**
-	 * Delegate TRACE requests to {@link #processRequest}, if desired.
-	 * <p>Applies HttpServlet's standard TRACE processing otherwise.
-	 * @see #doService
-	 */
-@Override
+// 跟踪
 protected void doTrace(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
+    // 是否调度 TRACE 请求。
     if (this.dispatchTraceRequest) {
         processRequest(request, response);
         if ("message/http".equals(response.getContentType())) {
@@ -178,7 +186,138 @@ protected void doTrace(HttpServletRequest request, HttpServletResponse response)
             return;
         }
     }
+    // 在下面进行说明。
     super.doTrace(request, response);
+}
+```
+
+```java
+// class HttpServlet
+
+protected void doOptions(HttpServletRequest req, HttpServletResponse resp)
+        		throws ServletException, IOException {
+    // 反射获取当前对象对应 class 方法及其父类一直到 HttpServlet 的方法。
+    Method[] methods = getAllDeclaredMethods(this.getClass());
+
+    boolean ALLOW_GET = false;
+    boolean ALLOW_HEAD = false;
+    boolean ALLOW_POST = false;
+    boolean ALLOW_PUT = false;
+    boolean ALLOW_DELETE = false;
+    boolean ALLOW_TRACE = true;
+    boolean ALLOW_OPTIONS = true;
+
+    // 遍历方法，若实现了 do* 方法，则对应的 method 允许。
+    for (int i=0; i<methods.length; i++) {
+        String methodName = methods[i].getName();
+
+        if (methodName.equals("doGet")) {
+            ALLOW_GET = true;
+            ALLOW_HEAD = true;
+        } else if (methodName.equals("doPost")) {
+            ALLOW_POST = true;
+        } else if (methodName.equals("doPut")) {
+            ALLOW_PUT = true;
+        } else if (methodName.equals("doDelete")) {
+            ALLOW_DELETE = true;
+        }
+    }
+
+    StringBuilder allow = new StringBuilder();
+    if (ALLOW_GET) {
+        allow.append(METHOD_GET);
+    }
+    // ... 此处省略类似的操作。
+    
+	// 设置响应头
+    resp.setHeader("Allow", allow.toString());
+}
+
+// 这是一种 TRACE 信息的实现，将信息拼接并写到主体中去。
+// 很容已看出处理逻辑，不做过多的解释。
+protected void doTrace(HttpServletRequest req, HttpServletResponse resp) 
+        		throws ServletException, IOException {
+
+    int responseLength;
+
+    String CRLF = "\r\n";
+    StringBuilder buffer = new StringBuilder("TRACE ").append(req.getRequestURI())
+        .append(" ").append(req.getProtocol());
+
+    Enumeration<String> reqHeaderEnum = req.getHeaderNames();
+
+    while( reqHeaderEnum.hasMoreElements() ) {
+        String headerName = reqHeaderEnum.nextElement();
+        buffer.append(CRLF).append(headerName).append(": ")
+            .append(req.getHeader(headerName));
+    }
+
+    buffer.append(CRLF);
+
+    responseLength = buffer.length();
+
+    resp.setContentType("message/http");
+    resp.setContentLength(responseLength);
+    ServletOutputStream out = resp.getOutputStream();
+    out.print(buffer.toString());
+}
+```
+
+在 `FrameworkServlet` 中除了 `doTrace` 及 `doOptions` 由 `HttpServlet` 处理，其它均通过调用 `processRequest` 方法，若允许调度 `TRACE` 及 `OPTIONS` 请求，这两种请求也会被 `processRequest` 方法处理：
+
+```java
+protected final void processRequest(HttpServletRequest request
+		, HttpServletResponse response) throws ServletException, IOException {
+
+    long startTime = System.currentTimeMillis();
+    Throwable failureCause = null;
+	// 从当前线程中获取 LocaleContext。
+    LocaleContext previousLocaleContext = LocaleContextHolder.getLocaleContext();
+    // 获取请求信息中 Accept-Language 首部来确定一个 localeContext。
+    LocaleContext localeContext = buildLocaleContext(request);
+
+    RequestAttributes previousAttributes = RequestContextHolder.getRequestAttributes();
+    ServletRequestAttributes requestAttributes = buildRequestAttributes(request, response, previousAttributes);
+
+    WebAsyncManager asyncManager = WebAsyncUtils.getAsyncManager(request);
+    asyncManager.registerCallableInterceptor(FrameworkServlet.class.getName(), new RequestBindingInterceptor());
+
+    initContextHolders(request, localeContext, requestAttributes);
+
+    try {
+        doService(request, response);
+    }
+    catch (ServletException | IOException ex) {
+        failureCause = ex;
+        throw ex;
+    }
+    catch (Throwable ex) {
+        failureCause = ex;
+        throw new NestedServletException("Request processing failed", ex);
+    }
+
+    finally {
+        resetContextHolders(request, previousLocaleContext, previousAttributes);
+        if (requestAttributes != null) {
+            requestAttributes.requestCompleted();
+        }
+
+        if (logger.isDebugEnabled()) {
+            if (failureCause != null) {
+                this.logger.debug("Could not complete request", failureCause);
+            }
+            else {
+                if (asyncManager.isConcurrentHandlingStarted()) {
+                    logger.debug("Leaving response open for concurrent processing");
+                }
+                else {
+                    this.logger.debug("Successfully completed request");
+                }
+            }
+        }
+
+        publishRequestHandledEvent(request, response, startTime, failureCause);
+    }
 }
 ```
 
